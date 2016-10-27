@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_XmzeUM2hEeWXa4SqMc_1_A" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_aIvPkM2hEeWXa4SqMc_1_A" name="gpay">
+    <packagedElement xmi:type="uml:Package" xmi:id="_s12N8M2sEeWXa4SqMc_1_A" name="Loan Repayments">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_wkJssM2hEeWXa4SqMc_1_A" name="View Loan Repayment History">
+        <extend xmi:type="uml:Extend" xmi:id="_b5nocM3PEeWXa4SqMc_1_A" extendedCase="_EhPMwM3PEeWXa4SqMc_1_A" extensionLocation="_b5nocc3PEeWXa4SqMc_1_A"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_IwPKUM2vEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_63zXsM2qEeWXa4SqMc_1_A" name="View Loan Balance">
+        <extend xmi:type="uml:Extend" xmi:id="_Z82ZwM3PEeWXa4SqMc_1_A" extendedCase="_EhPMwM3PEeWXa4SqMc_1_A" extensionLocation="_Z83A0M3PEeWXa4SqMc_1_A"/>
+        <include xmi:type="uml:Include" xmi:id="_EQDNkM24EeWXa4SqMc_1_A" addition="_s2xF4M2qEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_s2xF4M2qEeWXa4SqMc_1_A" name="Make Loan Repayment">
+        <extend xmi:type="uml:Extend" xmi:id="_asRrkM3PEeWXa4SqMc_1_A" extendedCase="_EhPMwM3PEeWXa4SqMc_1_A" extensionLocation="_asRrkc3PEeWXa4SqMc_1_A"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_dOaXUM2yEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_pqJ_8M2qEeWXa4SqMc_1_A" name="Claim Airtime Bonus">
+        <extend xmi:type="uml:Extend" xmi:id="_dALA0M3PEeWXa4SqMc_1_A" extendedCase="_EhPMwM3PEeWXa4SqMc_1_A" extensionLocation="_dALn4M3PEeWXa4SqMc_1_A"/>
+        <include xmi:type="uml:Include" xmi:id="_Rmk8EM2zEeWXa4SqMc_1_A" addition="_wkJssM2hEeWXa4SqMc_1_A"/>
+        <include xmi:type="uml:Include" xmi:id="_TiYhcM2zEeWXa4SqMc_1_A" addition="_3Z8XcM2vEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_EhPMwM3PEeWXa4SqMc_1_A" name="Manage Loan Repayments">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Z83A0M3PEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_asRrkc3PEeWXa4SqMc_1_A" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_b5nocc3PEeWXa4SqMc_1_A" name="ExtensionPoint3"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_dALn4M3PEeWXa4SqMc_1_A" name="ExtensionPoint4"/>
+        <include xmi:type="uml:Include" xmi:id="_uSh5cM3PEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_p7YygM2tEeWXa4SqMc_1_A" name="Credit Score">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_TpRQwM2sEeWXa4SqMc_1_A" name="View Credit score">
+        <include xmi:type="uml:Include" xmi:id="_s02BMM3UEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_wWFlEM2tEeWXa4SqMc_1_A" name="Inbox">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_mIbTsM2sEeWXa4SqMc_1_A" name="view messages from GTel">
+        <include xmi:type="uml:Include" xmi:id="_lIn8YM3UEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_xK7F4M2uEeWXa4SqMc_1_A" name="First Time Authentication">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_lRIgUM2hEeWXa4SqMc_1_A" name="First Time Authentication"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sipdwM2vEeWXa4SqMc_1_A" name="Wallet">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_3Z8XcM2vEeWXa4SqMc_1_A" name="View Total accumulated Commissions">
+        <extend xmi:type="uml:Extend" xmi:id="_81VmIM3QEeWXa4SqMc_1_A" extendedCase="_0xTeQM3QEeWXa4SqMc_1_A" extensionLocation="_81VmIc3QEeWXa4SqMc_1_A"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xQBWYM2wEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1pcNsM2wEeWXa4SqMc_1_A" name="View consumed commissions">
+        <extend xmi:type="uml:Extend" xmi:id="_-Bt5sM3QEeWXa4SqMc_1_A" extendedCase="_0xTeQM3QEeWXa4SqMc_1_A" extensionLocation="_-Bt5sc3QEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_jm0gUM2xEeWXa4SqMc_1_A" name="Make Payment">
+        <extend xmi:type="uml:Extend" xmi:id="_dOZJMM2yEeWXa4SqMc_1_A" extendedCase="_s2xF4M2qEeWXa4SqMc_1_A" extensionLocation="_dOaXUM2yEeWXa4SqMc_1_A"/>
+        <extend xmi:type="uml:Extend" xmi:id="_7clqgM3QEeWXa4SqMc_1_A" extendedCase="_0xTeQM3QEeWXa4SqMc_1_A" extensionLocation="_7clqgc3QEeWXa4SqMc_1_A"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_lqoLIM2xEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_KvbTgc2yEeWXa4SqMc_1_A" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_YqkYsM2yEeWXa4SqMc_1_A" name="ExtensionPoint3"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_DAhHEM2yEeWXa4SqMc_1_A" name="Make Mpesa Payment">
+        <extend xmi:type="uml:Extend" xmi:id="_KvbTgM2yEeWXa4SqMc_1_A" extendedCase="_jm0gUM2xEeWXa4SqMc_1_A" extensionLocation="_KvbTgc2yEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_0xTeQM3QEeWXa4SqMc_1_A" name="Manage Wallet">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_7clqgc3QEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_81VmIc3QEeWXa4SqMc_1_A" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-Bt5sc3QEeWXa4SqMc_1_A" name="ExtensionPoint3"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Bmx74c3REeWXa4SqMc_1_A" name="ExtensionPoint4"/>
+        <include xmi:type="uml:Include" xmi:id="_vxib0M3UEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3HqwIM25EeWXa4SqMc_1_A" name="Support">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_4qyIsM25EeWXa4SqMc_1_A" name="Activate Support call">
+        <extend xmi:type="uml:Extend" xmi:id="_jL21EM3REeWXa4SqMc_1_A" extendedCase="_ZmTskM3QEeWXa4SqMc_1_A" extensionLocation="_jL21Ec3REeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_NIb4oM26EeWXa4SqMc_1_A" name="View FAQs">
+        <extend xmi:type="uml:Extend" xmi:id="_iiPQUM3REeWXa4SqMc_1_A" extendedCase="_ZmTskM3QEeWXa4SqMc_1_A" extensionLocation="_iiPQUc3REeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PbfgYM26EeWXa4SqMc_1_A" name="View Terms and conditions"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_VH_JIM26EeWXa4SqMc_1_A" name="Create support ticket">
+        <extend xmi:type="uml:Extend" xmi:id="_iDdpoM3REeWXa4SqMc_1_A" extendedCase="_ZmTskM3QEeWXa4SqMc_1_A" extensionLocation="_iDe3wM3REeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ZmTskM3QEeWXa4SqMc_1_A" name="Manage customer support">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iDe3wM3REeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iiPQUc3REeWXa4SqMc_1_A" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jL21Ec3REeWXa4SqMc_1_A" name="ExtensionPoint3"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_n2KoEc3REeWXa4SqMc_1_A" name="ExtensionPoint4"/>
+        <include xmi:type="uml:Include" xmi:id="_44BfMM3UEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bB6J4M26EeWXa4SqMc_1_A" name="Refferals">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_eOk6MM26EeWXa4SqMc_1_A" name="Refer a friend">
+        <extend xmi:type="uml:Extend" xmi:id="_ga_agM3SEeWXa4SqMc_1_A" extendedCase="_yIOtwM3REeWXa4SqMc_1_A" extensionLocation="_gbABkM3SEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_vuEQ4M2vEeWXa4SqMc_1_A" name="View number of refferals">
+        <extend xmi:type="uml:Extend" xmi:id="_g-Jx8M3SEeWXa4SqMc_1_A" extendedCase="_yIOtwM3REeWXa4SqMc_1_A" extensionLocation="_g-Jx8c3SEeWXa4SqMc_1_A"/>
+        <include xmi:type="uml:Include" xmi:id="_vGjj8M26EeWXa4SqMc_1_A" name="Manage" addition="_eOk6MM26EeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yIOtwM3REeWXa4SqMc_1_A" name="Manage Refferals">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gbABkM3SEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_g-Jx8c3SEeWXa4SqMc_1_A" name="ExtensionPoint2"/>
+        <include xmi:type="uml:Include" xmi:id="_0X2foM3UEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ezeu8M2xEeWXa4SqMc_1_A" name="Insurance">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_RHhTcM2xEeWXa4SqMc_1_A" name="Make Insurance claim">
+        <extend xmi:type="uml:Extend" xmi:id="_uEpZAM3QEeWXa4SqMc_1_A" extendedCase="_h4gzUM3QEeWXa4SqMc_1_A" extensionLocation="_uEqAEM3QEeWXa4SqMc_1_A"/>
+        <include xmi:type="uml:Include" xmi:id="_gDZ_wM24EeWXa4SqMc_1_A" addition="_6w6y8M2yEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_UMaAwM2xEeWXa4SqMc_1_A" name="View insurance claim history">
+        <extend xmi:type="uml:Extend" xmi:id="_ncq_cM3QEeWXa4SqMc_1_A" extendedCase="_h4gzUM3QEeWXa4SqMc_1_A" extensionLocation="_ncq_cc3QEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_6w6y8M2yEeWXa4SqMc_1_A" name="View Insurance status">
+        <extend xmi:type="uml:Extend" xmi:id="_oomnEM3QEeWXa4SqMc_1_A" extendedCase="_h4gzUM3QEeWXa4SqMc_1_A" extensionLocation="_oomnEc3QEeWXa4SqMc_1_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_h4gzUM3QEeWXa4SqMc_1_A" name="Manage Insurance">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_mkn9Ic3QEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ncq_cc3QEeWXa4SqMc_1_A" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_oomnEc3QEeWXa4SqMc_1_A" name="ExtensionPoint3"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uEqAEM3QEeWXa4SqMc_1_A" name="ExtensionPoint4"/>
+        <include xmi:type="uml:Include" xmi:id="__ZfBEM3UEeWXa4SqMc_1_A" addition="_lRIgUM2hEeWXa4SqMc_1_A"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_gFndsM2hEeWXa4SqMc_1_A" name="Customer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ozRKUM2hEeWXa4SqMc_1_A" name="" memberEnd="_ozdXkM2hEeWXa4SqMc_1_A _ozdXkc2hEeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ozTmkM2hEeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ozTmkc2hEeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ozdXkM2hEeWXa4SqMc_1_A" name="first time authentication" type="_lRIgUM2hEeWXa4SqMc_1_A" association="_ozRKUM2hEeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ozdXkc2hEeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_ozRKUM2hEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ytr38M3PEeWXa4SqMc_1_A" memberEnd="_YtsfAc3PEeWXa4SqMc_1_A _YtsfAs3PEeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ytr38c3PEeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YtsfAM3PEeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YtsfAc3PEeWXa4SqMc_1_A" name="manage loan repayments" type="_EhPMwM3PEeWXa4SqMc_1_A" association="_Ytr38M3PEeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YtsfAs3PEeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_Ytr38M3PEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WJiDsM3QEeWXa4SqMc_1_A" memberEnd="_WJiqws3QEeWXa4SqMc_1_A _WJiqw83QEeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WJiqwM3QEeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WJiqwc3QEeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WJiqws3QEeWXa4SqMc_1_A" name="view credit score" type="_TpRQwM2sEeWXa4SqMc_1_A" association="_WJiDsM3QEeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WJiqw83QEeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_WJiDsM3QEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W5NNIM3QEeWXa4SqMc_1_A" memberEnd="_W5NNI83QEeWXa4SqMc_1_A _W5N0MM3QEeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W5NNIc3QEeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_W5NNIs3QEeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W5NNI83QEeWXa4SqMc_1_A" name="view messages from gtel" type="_mIbTsM2sEeWXa4SqMc_1_A" association="_W5NNIM3QEeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W5N0MM3QEeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_W5NNIM3QEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lNtNgM3QEeWXa4SqMc_1_A" memberEnd="_lNtNg83QEeWXa4SqMc_1_A _lNtNhM3QEeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lNtNgc3QEeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lNtNgs3QEeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lNtNg83QEeWXa4SqMc_1_A" name="manage insurance" type="_h4gzUM3QEeWXa4SqMc_1_A" association="_lNtNgM3QEeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lNtNhM3QEeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_lNtNgM3QEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MLB9wM3REeWXa4SqMc_1_A" memberEnd="_MLCk0s3REeWXa4SqMc_1_A _MLCk083REeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MLCk0M3REeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MLCk0c3REeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MLCk0s3REeWXa4SqMc_1_A" name="manage wallet" type="_0xTeQM3QEeWXa4SqMc_1_A" association="_MLB9wM3REeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MLCk083REeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_MLB9wM3REeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_N3QPAM3REeWXa4SqMc_1_A" memberEnd="_N3Q2Es3REeWXa4SqMc_1_A _N3Q2E83REeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N3Q2EM3REeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N3Q2Ec3REeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_N3Q2Es3REeWXa4SqMc_1_A" name="refer a friend" type="_yIOtwM3REeWXa4SqMc_1_A" association="_N3QPAM3REeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_N3Q2E83REeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_N3QPAM3REeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ehf-wM3REeWXa4SqMc_1_A" memberEnd="_ehgl0M3REeWXa4SqMc_1_A _ehgl0c3REeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ehf-wc3REeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ehf-ws3REeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ehgl0M3REeWXa4SqMc_1_A" name="manage support" type="_ZmTskM3QEeWXa4SqMc_1_A" association="_ehf-wM3REeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ehgl0c3REeWXa4SqMc_1_A" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_ehf-wM3REeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C_xy8M_xEeW6re1WnLn9xQ" memberEnd="_C_yaAs_xEeW6re1WnLn9xQ _C_zBEM_xEeW6re1WnLn9xQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C_yaAM_xEeW6re1WnLn9xQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C_yaAc_xEeW6re1WnLn9xQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C_yaAs_xEeW6re1WnLn9xQ" name="customer" type="_gFndsM2hEeWXa4SqMc_1_A" association="_C_xy8M_xEeW6re1WnLn9xQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C_zBEM_xEeW6re1WnLn9xQ" name="view terms and conditions" type="_PbfgYM26EeWXa4SqMc_1_A" association="_C_xy8M_xEeW6re1WnLn9xQ"/>
+  </packagedElement>
+</uml:Model>

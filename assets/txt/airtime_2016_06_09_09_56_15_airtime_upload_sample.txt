@@ -1,0 +1,6 @@
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="97934",scnum="725839633",senum="001408140005501",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="94377",scnum="725882444",senum="001408140005502",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="43556",scnum="725801955",senum="001408140005503",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="97999",scnum="725839666",senum="001408140005504",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="94345",scnum="725882477",senum="001408140005505",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="43578",scnum="725801988",senum="001408140005506",SCRPREF="CELEPN1000",SUSP_F="0";

@@ -1,0 +1,17 @@
+
+CREATE TABLE house_attributes
+(
+  house_attrib_id serial NOT NULL,
+  house_id integer,
+  attrib_name character varying(255),
+  value character varying(255),
+  status boolean,
+  CONSTRAINT house_attributes_house_id_fkey FOREIGN KEY (house_id)
+      REFERENCES houses (house_id) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE house_attributes
+  OWNER TO postgres;

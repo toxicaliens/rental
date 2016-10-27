@@ -1,0 +1,45 @@
+1465497406:2016-06-09 21:36:46==
+1465497428:2016-06-09 21:37:08==
+1465497428:2016-06-09 21:37:08==Billing File: INSERT INTO customer_billing_file(
+            created_by, customer_account_code, start_date, 
+            billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+            created)
+    VALUES ('779', 'jdslfjdsl', '', 
+            'Monthly', '2490', '2490', '9',
+            '2016-06-09 21:37:08') RETURNING billing_file_id
+1465497508:2016-06-09 21:38:28==Billing File: INSERT INTO customer_billing_file(
+            created_by, customer_account_code, start_date, 
+            billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+            created)
+    VALUES ('779', 'jsdljflsj', '2016-06-09', 
+            'Monthly', '5990', '5990', '7',
+            '2016-06-09 21:38:28') RETURNING billing_file_id
+1465497508:2016-06-09 21:38:28==INSERT INTO customer_bills(
+            bill_due_date, bill_amount, 
+            bill_date, bill_status, 
+            bill_amount_paid, bill_balance, 
+            billing_file_id, service_account, 
+            mf_id, service_channel_id)
+    		VALUES ('2016-7-09', '5990', 
+    		'2016-06-09', '0', 
+    		'0', '5990', 
+    		'167', 'jsdljflsj',
+    		'874', '13');
+1465501331:2016-06-09 22:42:11==Billing File: INSERT INTO customer_billing_file(
+            created_by, customer_account_code, start_date, 
+            billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+            created)
+    VALUES ('779', 'GT0797979', '2016-06-09', 
+            'Monthly', '2490', '2490', '9',
+            '2016-06-09 22:42:11') RETURNING billing_file_id
+1465501331:2016-06-09 22:42:11==INSERT INTO customer_bills(
+            bill_due_date, bill_amount, 
+            bill_date, bill_status, 
+            bill_amount_paid, bill_balance, 
+            billing_file_id, service_account, 
+            mf_id, service_channel_id)
+    		VALUES ('2016-7-09', '2490', 
+    		'2016-06-09', '0', 
+    		'0', '2490', 
+    		'168', 'GT0797979',
+    		'876', '15');

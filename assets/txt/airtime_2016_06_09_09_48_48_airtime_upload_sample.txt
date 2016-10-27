@@ -1,0 +1,3 @@
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="97931",scnum="725839631",senum="001408140005590",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="94392",scnum="725882492",senum="001408140005591",SCRPREF="CELEPN1000",SUSP_F="0";
+sdpvouc_kcell.scratch1.create,end_date="14/08/2017",pin="43563",scnum="725801903",senum="001408140005592",SCRPREF="CELEPN1000",SUSP_F="0";

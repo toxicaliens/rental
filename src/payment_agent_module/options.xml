@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ServiceMenu>
+<Options>
+<ServiceId>8</ServiceId>
+<OptionId>311</OptionId>
+<OptionName>1 - 13 Seater</OptionName>
+<Price>4500</Price>
+<Description>Register a 1 -13 Seater (Matatu)</Description>
+<OptionCode>310</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>53</ServiceId>
+<OptionId>379</OptionId>
+<OptionName>Register PSV</OptionName>
+<Price>0</Price>
+<Description>Register PSV</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>51</ServiceId>
+<OptionId>372</OptionId>
+<OptionName>1 Day</OptionName>
+<Price></Price>
+<Description>1 Day Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>1</ServiceId>
+<OptionId>301</OptionId>
+<OptionName>On Street</OptionName>
+<Price>140</Price>
+<Description>1 Day Onstreet Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>1</ServiceId>
+<OptionId>302</OptionId>
+<OptionName>Off Street</OptionName>
+<Price>200</Price>
+<Description>1 Day Offstreet Parking</Description>
+<OptionCode>335</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>8</ServiceId>
+<OptionId>312</OptionId>
+<OptionName>14 - 42 Seater</OptionName>
+<Price>4500</Price>
+<Description>Register a 14 - 42 Seater (Minibus)</Description>
+<OptionCode>311</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>51</ServiceId>
+<OptionId>373</OptionId>
+<OptionName>1 Month</OptionName>
+<Price></Price>
+<Description>1 Month Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>53</ServiceId>
+<OptionId>380</OptionId>
+<OptionName>Deregister PSV</OptionName>
+<Price>500</Price>
+<Description>Deregister PSV</Description>
+<OptionCode>207</OptionCode>
+<InputId>204</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>8</ServiceId>
+<OptionId>313</OptionId>
+<OptionName>43 - 62 Seater</OptionName>
+<Price>4500</Price>
+<Description>Register a 43 - 62 Seater (Bus)</Description>
+<OptionCode>312</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>1</ServiceId>
+<OptionId>323</OptionId>
+<OptionName>Outside CBD</OptionName>
+<Price>100</Price>
+<Description>Payment for Parking out of the CBD</Description>
+<OptionCode>334</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>51</ServiceId>
+<OptionId>374</OptionId>
+<OptionName>3 Months</OptionName>
+<Price></Price>
+<Description>3 Months</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>53</ServiceId>
+<OptionId>381</OptionId>
+<OptionName>Change Route</OptionName>
+<Price>500</Price>
+<Description>Change PSV Route</Description>
+<OptionCode>250</OptionCode>
+<InputId>212</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>8</ServiceId>
+<OptionId>314</OptionId>
+<OptionName>Taxi</OptionName>
+<Price>4500</Price>
+<Description>Register a Taxi</Description>
+<OptionCode>313</OptionCode>
+<InputId>301</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>53</ServiceId>
+<OptionId>382</OptionId>
+<OptionName>1 Month Parking</OptionName>
+<Price></Price>
+<Description>1 Month Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>53</ServiceId>
+<OptionId>383</OptionId>
+<OptionName>3 Months Parking</OptionName>
+<Price></Price>
+<Description>3 Months Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>8</ServiceId>
+<OptionId>337</OptionId>
+<OptionName>Tuk Tuk</OptionName>
+<Price>500</Price>
+<Description>Payment for Registering a Tuk Tuk</Description>
+<OptionCode>341</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>303</OptionId>
+<OptionName>Saloon</OptionName>
+<Price>2000</Price>
+<Description>1 Month Saloon Parking</Description>
+<OptionCode>302</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>304</OptionId>
+<OptionName>Pickup</OptionName>
+<Price>2000</Price>
+<Description>1 Month Pickup Parking</Description>
+<OptionCode>303</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>305</OptionId>
+<OptionName>Canter</OptionName>
+<Price>4000</Price>
+<Description>1 Month Canter Parking</Description>
+<OptionCode>304</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>306</OptionId>
+<OptionName>Lorry</OptionName>
+<Price>4000</Price>
+<Description>1 Month Lorry Parking</Description>
+<OptionCode>305</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>3</ServiceId>
+<OptionId>307</OptionId>
+<OptionName>Saloon</OptionName>
+<Price>5000</Price>
+<Description>3 Months Saloon Parking</Description>
+<OptionCode>306</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>3</ServiceId>
+<OptionId>308</OptionId>
+<OptionName>Pickup</OptionName>
+<Price>5000</Price>
+<Description>3 Months Pickup Parking</Description>
+<OptionCode>307</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>3</ServiceId>
+<OptionId>309</OptionId>
+<OptionName>Canter</OptionName>
+<Price>7000</Price>
+<Description>3 Months Canter Parking</Description>
+<OptionCode>308</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>3</ServiceId>
+<OptionId>310</OptionId>
+<OptionName>Lorry</OptionName>
+<Price>8000</Price>
+<Description>3 Months Lorry Parking</Description>
+<OptionCode>309</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>4</ServiceId>
+<OptionId>319</OptionId>
+<OptionName>Market Fee</OptionName>
+<Price>25</Price>
+<Description>Payment for Normal Market Fee</Description>
+<OptionCode>318</OptionCode>
+<InputId>306</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>4</ServiceId>
+<OptionId>320</OptionId>
+<OptionName>Cess</OptionName>
+<Price>0</Price>
+<Description>Payment for Normal Market Cess</Description>
+<OptionCode>319</OptionCode>
+<InputId>305</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>5</ServiceId>
+<OptionId>321</OptionId>
+<OptionName>Market Fee</OptionName>
+<Price>50</Price>
+<Description>Payment for Maasai Market Fee</Description>
+<OptionCode>320</OptionCode>
+<InputId>307</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>5</ServiceId>
+<OptionId>322</OptionId>
+<OptionName>Cess</OptionName>
+<Price>0</Price>
+<Description>Payment for Maasai Market Cess</Description>
+<OptionCode>321</OptionCode>
+<InputId>305</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>1</ServiceId>
+<OptionId>324</OptionId>
+<OptionName>Parking Inside CCN Markets</OptionName>
+<Price>200</Price>
+<Description>Payment for Parking at the CCN Markets</Description>
+<OptionCode>323</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>325</OptionId>
+<OptionName>Trailer</OptionName>
+<Price>16000</Price>
+<Description>Payment for 1 Month Parking of a trailer</Description>
+<OptionCode>324</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>326</OptionId>
+<OptionName>Break Down</OptionName>
+<Price>3000</Price>
+<Description>Payment for 1 Month Parking of a break-down vehicle</Description>
+<OptionCode>325</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>3</ServiceId>
+<OptionId>327</OptionId>
+<OptionName>Break Down</OptionName>
+<Price>8000</Price>
+<Description>Payment for 3 Months Parking of a break-down vehicle</Description>
+<OptionCode>326</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>17</ServiceId>
+<OptionId>328</OptionId>
+<OptionName>Taxi</OptionName>
+<Price>2000</Price>
+<Description>Payment for 1 Month Parking of a taxi</Description>
+<OptionCode>327</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>17</ServiceId>
+<OptionId>329</OptionId>
+<OptionName>Matatu 1-13 Seater</OptionName>
+<Price>2200</Price>
+<Description>Payment for 1 Month Parking of a matatu</Description>
+<OptionCode>328</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>17</ServiceId>
+<OptionId>330</OptionId>
+<OptionName>Minibus 14-42 Seater</OptionName>
+<Price>3000</Price>
+<Description>Payment for 1 Month Parking of a minibus</Description>
+<OptionCode>329</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>17</ServiceId>
+<OptionId>331</OptionId>
+<OptionName>Bus 43-62 Seater</OptionName>
+<Price>4000</Price>
+<Description>Payment for 1 Month Parking of a bus</Description>
+<OptionCode>330</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>21</ServiceId>
+<OptionId>332</OptionId>
+<OptionName>Matatu 1-13 Seater</OptionName>
+<Price>6000</Price>
+<Description>Payment for 3 Months Parking of a matatu </Description>
+<OptionCode>331</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>21</ServiceId>
+<OptionId>333</OptionId>
+<OptionName>Minibus 14-42 Seater</OptionName>
+<Price>7000</Price>
+<Description>Payment for 3 Months Parking of a minibus</Description>
+<OptionCode>332</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>21</ServiceId>
+<OptionId>334</OptionId>
+<OptionName>Bus 43-62 Seater</OptionName>
+<Price>11500</Price>
+<Description>Payment for 3 Months Parking of a bus</Description>
+<OptionCode>333</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>335</OptionId>
+<OptionName>Tuk Tuk</OptionName>
+<Price>2000</Price>
+<Description>Payment for 1 Month Tuk Tuk</Description>
+<OptionCode>334</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>2</ServiceId>
+<OptionId>336</OptionId>
+<OptionName>Motor Bike/Scooters</OptionName>
+<Price>1000</Price>
+<Description>Payment for 1 Month Motor Bike/Scooter</Description>
+<OptionCode>335</OptionCode>
+<InputId>300</InputId>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>13</ServiceId>
+<OptionId>315</OptionId>
+<OptionName>Business Permit Receipt</OptionName>
+<Price></Price>
+<Description>Check if the SBP Receipt you have is valid</Description>
+<OptionCode>314</OptionCode>
+<InputId>302</InputId>
+<CategoryIdentifier>5</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>13</ServiceId>
+<OptionId>316</OptionId>
+<OptionName>Land Rates Receipt</OptionName>
+<Price></Price>
+<Description>Check if the LR Receipt you have is valid</Description>
+<OptionCode>314</OptionCode>
+<InputId>303</InputId>
+<CategoryIdentifier>5</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>13</ServiceId>
+<OptionId>317</OptionId>
+<OptionName>Parking Receipt </OptionName>
+<Price></Price>
+<Description>Check whether the Parking receipt you have is valid</Description>
+<OptionCode>314</OptionCode>
+<InputId>304</InputId>
+<CategoryIdentifier>5</CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>32</ServiceId>
+<OptionId>338</OptionId>
+<OptionName>Pay Per View</OptionName>
+<Price>200</Price>
+<Description>Pay Per View Service</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>32</ServiceId>
+<OptionId>339</OptionId>
+<OptionName>Monthy</OptionName>
+<Price>4000</Price>
+<Description>Monthly Service</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>32</ServiceId>
+<OptionId>340</OptionId>
+<OptionName>Quarterly</OptionName>
+<Price>6000</Price>
+<Description>Quaterly Service</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>32</ServiceId>
+<OptionId>341</OptionId>
+<OptionName>Semi-Annually</OptionName>
+<Price>8000</Price>
+<Description>Semi Annual Service</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>32</ServiceId>
+<OptionId>342</OptionId>
+<OptionName>Annually</OptionName>
+<Price>10000</Price>
+<Description>Annual Service</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>33</ServiceId>
+<OptionId>343</OptionId>
+<OptionName>Pay Per View</OptionName>
+<Price>200</Price>
+<Description>Pay Per View Service
+</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>33</ServiceId>
+<OptionId>344</OptionId>
+<OptionName>Monthly</OptionName>
+<Price>4000</Price>
+<Description>Monthly Service
+</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>33</ServiceId>
+<OptionId>345</OptionId>
+<OptionName>Quaterly</OptionName>
+<Price>6000</Price>
+<Description>Quaterly Service
+</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>33</ServiceId>
+<OptionId>346</OptionId>
+<OptionName>Semi-Annually</OptionName>
+<Price>8000</Price>
+<Description>Semi Annual Service
+</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>33</ServiceId>
+<OptionId>347</OptionId>
+<OptionName>Annually</OptionName>
+<Price>10000</Price>
+<Description>Annual Service
+</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>34</ServiceId>
+<OptionId>348</OptionId>
+<OptionName>Pay Per View</OptionName>
+<Price>200</Price>
+<Description>Pay Per View</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>34</ServiceId>
+<OptionId>349</OptionId>
+<OptionName>Monthly</OptionName>
+<Price>4000</Price>
+<Description>Monthly</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>34</ServiceId>
+<OptionId>350</OptionId>
+<OptionName>Quarterly</OptionName>
+<Price>6000</Price>
+<Description>Quarterly</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>34</ServiceId>
+<OptionId>351</OptionId>
+<OptionName>Semi-Annually</OptionName>
+<Price>8000</Price>
+<Description>Semi-Annually</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>34</ServiceId>
+<OptionId>352</OptionId>
+<OptionName>Annually</OptionName>
+<Price>10000</Price>
+<Description>Annually</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>35</ServiceId>
+<OptionId>353</OptionId>
+<OptionName>Pay Per View</OptionName>
+<Price>200</Price>
+<Description>Pay Per View</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>35</ServiceId>
+<OptionId>354</OptionId>
+<OptionName>Monthly</OptionName>
+<Price>4000</Price>
+<Description>Monthly</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>35</ServiceId>
+<OptionId>355</OptionId>
+<OptionName>Quaterly</OptionName>
+<Price>6000</Price>
+<Description>Quarterly</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>35</ServiceId>
+<OptionId>356</OptionId>
+<OptionName>Semi-Annually</OptionName>
+<Price>8000</Price>
+<Description>Semi-Annually</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>35</ServiceId>
+<OptionId>357</OptionId>
+<OptionName>Annually</OptionName>
+<Price>10000</Price>
+<Description>Annually</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>36</ServiceId>
+<OptionId>358</OptionId>
+<OptionName>Pay Per View</OptionName>
+<Price>200</Price>
+<Description>Pay Per View</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>36</ServiceId>
+<OptionId>359</OptionId>
+<OptionName>Monthly</OptionName>
+<Price>4000</Price>
+<Description>Monthly</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>36</ServiceId>
+<OptionId>360</OptionId>
+<OptionName>Quarterly</OptionName>
+<Price>6000</Price>
+<Description>Quarterly</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>36</ServiceId>
+<OptionId>361</OptionId>
+<OptionName>Semi-Annually</OptionName>
+<Price>8000</Price>
+<Description>Semi-Annually</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>36</ServiceId>
+<OptionId>362</OptionId>
+<OptionName>Annually</OptionName>
+<Price>10000</Price>
+<Description>Annually</Description>
+<OptionCode></OptionCode>
+<InputId>314</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>37</ServiceId>
+<OptionId>363</OptionId>
+<OptionName>Road Transport</OptionName>
+<Price></Price>
+<Description>Road Transport Enquiries</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>37</ServiceId>
+<OptionId>364</OptionId>
+<OptionName>Air Transport</OptionName>
+<Price></Price>
+<Description>Air Transport Enquiries</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>38</ServiceId>
+<OptionId>365</OptionId>
+<OptionName>Hotel/Restaurant A</OptionName>
+<Price></Price>
+<Description>Hotel/Restaurant A</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>38</ServiceId>
+<OptionId>366</OptionId>
+<OptionName>Hotel/Restaurant B</OptionName>
+<Price></Price>
+<Description>Hotel/Restaurant B</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>38</ServiceId>
+<OptionId>367</OptionId>
+<OptionName>Hotel/Restaurant C</OptionName>
+<Price></Price>
+<Description>Hotel/Restaurant C</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>6</ServiceId>
+<OptionId>368</OptionId>
+<OptionName>Small Kiosk</OptionName>
+<Price>200</Price>
+<Description>Small Kiosk</Description>
+<OptionCode>318</OptionCode>
+<InputId>315</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>6</ServiceId>
+<OptionId>369</OptionId>
+<OptionName>Medium Kiosk</OptionName>
+<Price>300</Price>
+<Description>Medium Kiosk
+</Description>
+<OptionCode>318</OptionCode>
+<InputId>316</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>6</ServiceId>
+<OptionId>370</OptionId>
+<OptionName>Large Kiosk</OptionName>
+<Price>500</Price>
+<Description>Large Kiosk</Description>
+<OptionCode>318</OptionCode>
+<InputId>317</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>6</ServiceId>
+<OptionId>371</OptionId>
+<OptionName>Hawkers</OptionName>
+<Price>25</Price>
+<Description>Hawkers</Description>
+<OptionCode>318</OptionCode>
+<InputId>318</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>52</ServiceId>
+<OptionId>375</OptionId>
+<OptionName>Normal</OptionName>
+<Price></Price>
+<Description>Normal Markets</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>52</ServiceId>
+<OptionId>377</OptionId>
+<OptionName>Wards</OptionName>
+<Price></Price>
+<Description>Wards</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>52</ServiceId>
+<OptionId>376</OptionId>
+<OptionName>Maasai</OptionName>
+<Price></Price>
+<Description>Maasai Markets</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>52</ServiceId>
+<OptionId>378</OptionId>
+<OptionName>Transit Fees</OptionName>
+<Price>500</Price>
+<Description>Transit Fees</Description>
+<OptionCode>200</OptionCode>
+<InputId>214</InputId>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Options>
+<Options>
+<ServiceId>13</ServiceId>
+<OptionId>318</OptionId>
+<OptionName>Rents Receipt</OptionName>
+<Price></Price>
+<Description>Check whether Rents Receipt you have is valid</Description>
+<OptionCode>314</OptionCode>
+<InputId>303</InputId>
+<CategoryIdentifier>5</CategoryIdentifier>
+
+</Options>
+</ServiceMenu>
+

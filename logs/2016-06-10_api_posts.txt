@@ -1,0 +1,6 @@
+1465509968:2016-06-10 01:06:08==SELECT device_id FROM customer_account 
+       WHERE customer_account_id = '202'
+1465509968:2016-06-10 01:06:08==SELECT device_model_id FROM gtel_device 
+       WHERE device_id = '218'
+1465509968:2016-06-10 01:06:08==SELECT service_channel_id FROM revenue_service_bill 
+       WHERE product_id = '19'

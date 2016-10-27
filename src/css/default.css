@@ -1,0 +1,268 @@
+/* CSS Document */
+
+/* General Body CSS */
+BODY {
+	
+	background-position: left center;
+	scrollbar-face-color: #800001;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #DC686D;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-track-color: #ffffff;
+	scrollbar-darkshadow-color: #800001;
+	overflow: auto }
+	
+
+
+body {
+	margin-top: 5px;
+	background-image: url(../images/lines_cam.jpg);
+	background-repeat: repeat;
+	
+}
+.tablemain {
+	border-top-width: 0px;
+	border-right-width: 10px;
+	border-bottom-width: 10px;
+	border-left-width: 10px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+.topnav {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.pmaincontent {
+	padding-top: -3px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.mainnav {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+}
+h4 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #990000;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+ul#navlist
+{
+padding: 0;
+margin: 0;
+list-style-type: none;
+float: left;
+width: 100%;
+color: #fff;
+background-color: #036;
+}
+
+ul#navlist li { display: inline; }
+
+ul#navlist li a
+{
+float: left;
+width: 5em;
+color: #fff;
+background-color: #036;
+padding: 0.2em 1em;
+text-decoration: none;
+border-right: 1px solid #fff;
+}
+
+ul#navlist li a:hover
+{
+background-color: #369;
+color: #fff;
+}
+h3 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #0099CC;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+h2 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0099CC;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.imgright {
+	border: 1px solid #990000;
+	padding: 2px;
+	margin-right: 3px;
+	margin-left: 10px;
+	margin-top: 3px;
+	float:left;	
+}
+.imgleft {
+	border: 1px solid #ff9900;
+	
+	float:left;	
+}
+.imgtal {
+	border: 1px solid #a4c5a3;
+	padding: 2px;
+	margin-right: 3px;
+	margin-left: 10px;
+	margin-top: 3px;
+	float:right;	
+}
+.imgtal1 {
+	border: 1px solid #a4c5a3;
+	padding: 2px;
+	margin-right: 3px;
+	margin-left: 10px;
+	margin-top: 3px;
+	float:left;	
+}
+.imgad {
+	border: 2px solid #dbe3e3;
+	padding: 2px;
+	margin-right: 3px;
+	margin-left: 10px;
+	margin-top: 3px;
+	float:left;	
+	}
+.readmorelinks {
+	font-size: 11px;
+	font-weight: bold;
+	color: #990000;
+}
+.imgmainconent {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid #000000;
+	margin-left: 10px;
+}
+.style1 {font-size: 14px}
+
+.notes
+{
+	padding-right: 10px;
+	padding-left:10px;
+	line-height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;		
+}
+.cambord
+{
+border:#CCCCCC 1px dotted;
+
+}
+.news
+{
+border:#000066 solid 1px;
+}
+.newstop
+{
+border:#ff6600 solid 1px;
+}
+}
+/* CSS for institutional development */
+
+div.pgtitle{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #FFFFFF;
+	margin-right: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;			
+}
+
+div.links {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #336600;
+	margin-left: 5px;
+	padding-left: 5px;
+	list-style-position: outside;
+	list-style-image: url(../images/bullet.gif);
+	margin-right: 5px;
+	padding-right: 5px;
+	line-height: 1.5em;
+}
+div.links2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #000066;
+	margin-left: 5px;
+	padding-left: 5px;
+	list-style-position: outside;
+	list-style-image: url(../images/bullet3.gif);
+	margin-right: 5px;
+	padding-right: 5px;
+	line-height: 1.5em;
+}
+.links3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #990000;
+	margin-left: 5px;
+	padding-left: 5px;
+	list-style-position: outside;
+	list-style-image: url(../images/bullet2.gif);
+	margin-right: 5px;
+	padding-right: 5px;
+	line-height: 1.5em;
+}
+.links4{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #D78100;
+	margin-left: 5px;
+	padding-left: 5px;
+	list-style-position: outside;
+	list-style-image: url(../images/bullet4.gif);
+	margin-right: 5px;
+	padding-right: 5px;
+	line-height: 1.5em;
+}
+.linedown{
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-left-color: #336600;
+	}
+.content {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #336600;
+	background-color: #E7FEEF;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+/** topics **/
+.heading {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding:5px;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ServiceMenu>
+<ServiceTypes>
+<ServiceTypeID>27</ServiceTypeID>
+<ServiceTypeName>Parking/Markets/PSV</ServiceTypeName>
+<Description>Pay for Parking/Markets/PSV</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+<Image>pay.png</Image>
+
+</ServiceTypes>
+<ServiceTypes>
+<ServiceTypeID>4</ServiceTypeID>
+<ServiceTypeName>Pay Invoiced Bills</ServiceTypeName>
+<Description>Land Rates/SBP/House Rents e.t.c</Description>
+<OptionCode>209</OptionCode>
+<InputId>100</InputId>
+<Price></Price>
+<CategoryIdentifier>2</CategoryIdentifier>
+<Image>pay_bill.png</Image>
+
+</ServiceTypes>
+<ServiceTypes>
+<ServiceTypeID>5</ServiceTypeID>
+<ServiceTypeName>Query Bill</ServiceTypeName>
+<Description>Check your Bill Statements</Description>
+<OptionCode></OptionCode>
+<InputId>100</InputId>
+<Price></Price>
+<CategoryIdentifier>4</CategoryIdentifier>
+<Image>check_bill.png</Image>
+
+</ServiceTypes>
+<ServiceTypes>
+<ServiceTypeID>6</ServiceTypeID>
+<ServiceTypeName>Validations</ServiceTypeName>
+<Description>Check Validity of Staff and  Documents</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>5</CategoryIdentifier>
+<Image>check_compliance.png</Image>
+
+</ServiceTypes>
+</ServiceMenu>
+

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8QSgsM3CEeWXa4SqMc_1_A" type="UseCase" name="UseCase Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_8zqTgM3CEeWXa4SqMc_1_A" type="2016">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8zqTg83CEeWXa4SqMc_1_A" type="5025"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8zqThM3CEeWXa4SqMc_1_A" type="7013">
+      <children xmi:type="notation:Shape" xmi:id="_OFAfgM3DEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_OFAfgs3DEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_OFAfg83DEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_OFAfhM3DEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_OFBGkM3DEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_OFBGkc3DEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_OFBGks3DEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OFBGk83DEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_OE7nAM3DEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OFAfgc3DEeWXa4SqMc_1_A" x="230" y="21" width="154"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_RjZ5AM3DEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_RjZ5As3DEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_RjZ5A83DEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_RjZ5BM3DEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_RjZ5Bc3DEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_RjZ5Bs3DEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_RjZ5B83DEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RjZ5CM3DEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_RjTyYM3DEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RjZ5Ac3DEeWXa4SqMc_1_A" x="63" y="296"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_tX0bIM3DEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_tX1CMM3DEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_tX1CMc3DEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_tX1CMs3DEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_tX1CM83DEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_tX1CNM3DEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_tX1CNc3DEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tX1CNs3DEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_tXrRMM3DEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tX0bIc3DEeWXa4SqMc_1_A" x="258" y="240"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_E3H-MM3EEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_E3H-Ms3EEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_E3H-M83EEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_E3H-NM3EEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_E3IlQM3EEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_E3IlQc3EEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_E3IlQs3EEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E3IlQ83EEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_E3ACYM3EEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E3H-Mc3EEeWXa4SqMc_1_A" x="529" y="277" width="177"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_KHHRIM3EEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_KHH4MM3EEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_KHH4Mc3EEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_KHH4Ms3EEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_KHH4M83EEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_KHH4NM3EEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_KHH4Nc3EEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KHH4Ns3EEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_KG-HMM3EEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KHHRIc3EEeWXa4SqMc_1_A" x="387" y="190" width="243"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_LEDlEM3FEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_LEDlEs3FEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_LEDlE83FEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_LEDlFM3FEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_LEEMIM3FEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_LEEMIc3FEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_LEEMIs3FEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LEEMI83FEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_LD3X0M3FEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LEDlEc3FEeWXa4SqMc_1_A" x="425" y="7" width="312"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_R9kakM3FEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_R9kaks3FEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_R9lBoM3FEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_R9lBoc3FEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_R9lBos3FEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_R9lBo83FEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_R9lBpM3FEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R9lBpc3FEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_R9Y0YM3FEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R9kakc3FEeWXa4SqMc_1_A" x="291" y="325"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_A33SsM4ZEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_A33Sss4ZEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_A335wM4ZEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_A335wc4ZEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_A335ws4ZEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_A335w84ZEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_A335xM4ZEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A335xc4ZEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_A3XjcM4ZEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A33Ssc4ZEeWZDurOoA8ahA" x="558" y="81"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_G_gmYM4ZEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_G_hNcM4ZEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_G_hNcc4ZEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G_hNcs4ZEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_G_hNc84ZEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_G_hNdM4ZEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_G_hNdc4ZEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G_hNds4ZEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_G_DTYM4ZEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G_gmYc4ZEeWZDurOoA8ahA" x="14" y="173"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_nOsqsM4ZEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_nOsqss4ZEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_nOsqs84ZEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nOtRwM4ZEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_nOtRwc4ZEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_nOtRws4ZEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_nOtRw84ZEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nOtRxM4ZEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_nOVeUM4ZEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nOsqsc4ZEeWZDurOoA8ahA" x="276" y="97"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8zqThc3CEeWXa4SqMc_1_A"/>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_8zqTgc3CEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Package" href="loan-repayment-feature.uml#_8zn3QM3CEeWXa4SqMc_1_A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8zqTgs3CEeWXa4SqMc_1_A" x="298" y="67" width="751" height="425"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DcfBoM3DEeWXa4SqMc_1_A" type="2011">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DcfBos3DEeWXa4SqMc_1_A" type="5014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DcfBo83DEeWXa4SqMc_1_A" x="-11" y="77"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DcfBpM3DEeWXa4SqMc_1_A" type="6029">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DcfBpc3DEeWXa4SqMc_1_A" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DcfBps3DEeWXa4SqMc_1_A" type="6037">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DcfBp83DEeWXa4SqMc_1_A" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DcfBqM3DEeWXa4SqMc_1_A" type="6048">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DcfBqc3DEeWXa4SqMc_1_A" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="loan-repayment-feature.uml#_DcdzgM3DEeWXa4SqMc_1_A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DcfBoc3DEeWXa4SqMc_1_A" x="100" y="233"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_GPxooM3DEeWXa4SqMc_1_A" type="2011">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GPxoos3DEeWXa4SqMc_1_A" type="5014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GPxoo83DEeWXa4SqMc_1_A" x="2" y="-23"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GPyPsM3DEeWXa4SqMc_1_A" type="6029">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GPyPsc3DEeWXa4SqMc_1_A" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GPyPss3DEeWXa4SqMc_1_A" type="6037">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GPyPs83DEeWXa4SqMc_1_A" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GPyPtM3DEeWXa4SqMc_1_A" type="6048">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_GPyPtc3DEeWXa4SqMc_1_A" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="loan-repayment-feature.uml#_GPxBkM3DEeWXa4SqMc_1_A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GPxooc3DEeWXa4SqMc_1_A" x="472" y="15"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_HRKNIM3DEeWXa4SqMc_1_A" type="2011">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HRKNIs3DEeWXa4SqMc_1_A" type="5014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HRKNI83DEeWXa4SqMc_1_A" x="39" y="16"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HRK0MM3DEeWXa4SqMc_1_A" type="6029">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HRK0Mc3DEeWXa4SqMc_1_A" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HRK0Ms3DEeWXa4SqMc_1_A" type="6037">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HRK0M83DEeWXa4SqMc_1_A" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HRK0NM3DEeWXa4SqMc_1_A" type="6048">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HRK0Nc3DEeWXa4SqMc_1_A" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="loan-repayment-feature.uml#_HRJmEM3DEeWXa4SqMc_1_A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HRKNIc3DEeWXa4SqMc_1_A" x="1090" y="231"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_VB6AMM3DEeWXa4SqMc_1_A" type="2016">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VB6AM83DEeWXa4SqMc_1_A" type="5025"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_VB6ANM3DEeWXa4SqMc_1_A" type="7013">
+      <children xmi:type="notation:Shape" xmi:id="_ZRm60M3DEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZRm60s3DEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZRm6083DEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ZRm61M3DEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZRnh4M3DEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_ZRnh4c3DEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_ZRnh4s3DEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRnh483DEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_ZRg0MM3DEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRm60c3DEeWXa4SqMc_1_A" x="221" y="27"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_d3ruEM3DEeWXa4SqMc_1_A" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_d3ruEs3DEeWXa4SqMc_1_A" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_d3ruE83DEeWXa4SqMc_1_A" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_d3ruFM3DEeWXa4SqMc_1_A" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_d3ruFc3DEeWXa4SqMc_1_A" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_d3ruFs3DEeWXa4SqMc_1_A"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_d3ruF83DEeWXa4SqMc_1_A"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d3ruGM3DEeWXa4SqMc_1_A"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="loan-repayment-feature.uml#_d3ikIM3DEeWXa4SqMc_1_A"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d3ruEc3DEeWXa4SqMc_1_A" x="424" y="29"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VB6ANc3DEeWXa4SqMc_1_A"/>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_VB6AMc3DEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Package" href="loan-repayment-feature.uml#_VB5ZIM3DEeWXa4SqMc_1_A"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VB6AMs3DEeWXa4SqMc_1_A" x="297" y="507" width="597" height="135"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_8QSgsc3CEeWXa4SqMc_1_A" name="diagram_compatibility_version" stringValue="1.1.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_8QSgss3CEeWXa4SqMc_1_A"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_8QSgs83CEeWXa4SqMc_1_A">
+    <owner xmi:type="uml:Model" href="loan-repayment-feature.uml#_8QJ90M3CEeWXa4SqMc_1_A"/>
+  </styles>
+  <element xmi:type="uml:Model" href="loan-repayment-feature.uml#_8QJ90M3CEeWXa4SqMc_1_A"/>
+  <edges xmi:type="notation:Connector" xmi:id="_KJivgM3DEeWXa4SqMc_1_A" type="4010" source="_HRKNIM3DEeWXa4SqMc_1_A" target="_GPxooM3DEeWXa4SqMc_1_A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_KJivg83DEeWXa4SqMc_1_A" type="6032">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_KJivhM3DEeWXa4SqMc_1_A" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_KJivgc3DEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Generalization" href="loan-repayment-feature.uml#_KJd3AM3DEeWXa4SqMc_1_A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KJivgs3DEeWXa4SqMc_1_A" points="[0, 0, 596, 195]$[0, -195, 596, 0]$[-582, -195, 14, 0]$[-596, -195, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KJu8wM3DEeWXa4SqMc_1_A" id="(0.26666666666666666,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KJu8wc3DEeWXa4SqMc_1_A" id="(1.0,0.42)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_LAu2MM3DEeWXa4SqMc_1_A" type="4010" source="_DcfBoM3DEeWXa4SqMc_1_A" target="_GPxooM3DEeWXa4SqMc_1_A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_LAvdQM3DEeWXa4SqMc_1_A" type="6032">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_LAvdQc3DEeWXa4SqMc_1_A" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_LAu2Mc3DEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Generalization" href="loan-repayment-feature.uml#_LAovkM3DEeWXa4SqMc_1_A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LAu2Ms3DEeWXa4SqMc_1_A" points="[1, 0, -352, 193]$[1, -194, -352, -1]$[1, -193, -352, 0]$[353, -193, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LA_U4M3DEeWXa4SqMc_1_A" id="(0.6333333333333333,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LA_78M3DEeWXa4SqMc_1_A" id="(0.0,0.5)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_2BApEM3EEeWXa4SqMc_1_A" type="4009" source="_ZRm60M3DEeWXa4SqMc_1_A" target="_RjZ5AM3DEeWXa4SqMc_1_A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_2BApE83EEeWXa4SqMc_1_A" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2BApFM3EEeWXa4SqMc_1_A" x="20" y="27"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_2BApFc3EEeWXa4SqMc_1_A" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2BApFs3EEeWXa4SqMc_1_A" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2BApEc3EEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_2A0b0M3EEeWXa4SqMc_1_A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2BApEs3EEeWXa4SqMc_1_A" points="[2, -10, -40, 120]$[-18, -152, -60, -22]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2BxeEM3EEeWXa4SqMc_1_A" id="(0.6214285714285714,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2BxeEc3EEeWXa4SqMc_1_A" id="(0.3630573248407643,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6ar_EM3EEeWXa4SqMc_1_A" type="4009" source="_d3ruEM3DEeWXa4SqMc_1_A" target="_ZRm60M3DEeWXa4SqMc_1_A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6ar_E83EEeWXa4SqMc_1_A" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6ar_FM3EEeWXa4SqMc_1_A" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_6ar_Fc3EEeWXa4SqMc_1_A" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6ar_Fs3EEeWXa4SqMc_1_A" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_6ar_Ec3EEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_6aYdEM3EEeWXa4SqMc_1_A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6ar_Es3EEeWXa4SqMc_1_A" points="[-35, 1, 173, -3]$[-139, 1, 69, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6bZJsM3EEeWXa4SqMc_1_A" id="(0.0,0.45)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6bZwwM3EEeWXa4SqMc_1_A" id="(1.0,0.43333333333333335)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_tGaQIM3FEeWXa4SqMc_1_A" type="4008" source="_R9kakM3FEeWXa4SqMc_1_A" target="_E3H-MM3EEeWXa4SqMc_1_A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_tGaQI83FEeWXa4SqMc_1_A" type="6006">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_tGaQJM3FEeWXa4SqMc_1_A" x="-2" y="-44"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_tGaQJc3FEeWXa4SqMc_1_A" type="6030">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_tGaQJs3FEeWXa4SqMc_1_A" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_tGaQIc3FEeWXa4SqMc_1_A"/>
+    <element xmi:type="uml:Include" href="loan-repayment-feature.uml#_tGNb0M3FEeWXa4SqMc_1_A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tGaQIs3FEeWXa4SqMc_1_A" points="[0, -18, 0, 44]$[-21, -73, -21, -11]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tHCiQM3FEeWXa4SqMc_1_A" id="(0.875,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tHCiQc3FEeWXa4SqMc_1_A" id="(0.0,0.5666666666666667)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Uv0UkM4ZEeWZDurOoA8ahA" type="4011" source="_HRKNIM3DEeWXa4SqMc_1_A" target="_A33SsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Uv07oM4ZEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Uv07oc4ZEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Uv07os4ZEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Uv07o84ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Uv0Ukc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="loan-repayment-feature.uml#_UvxRQM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Uv0Uks4ZEeWZDurOoA8ahA" points="[-15, -5, 82, 27]$[-71, -42, 26, -10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Uw89AM4ZEeWZDurOoA8ahA" id="(0.0,0.58)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Uw89Ac4ZEeWZDurOoA8ahA" id="(1.0,0.85)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Wi2YcM4ZEeWZDurOoA8ahA" type="4011" source="_HRKNIM3DEeWXa4SqMc_1_A" target="_LEDlEM3FEeWXa4SqMc_1_A">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Wi2_gM4ZEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Wi2_gc4ZEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Wi2_gs4ZEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Wi2_g84ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Wi2Ycc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="loan-repayment-feature.uml#_Wi0jQM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Wi2Ycs4ZEeWZDurOoA8ahA" points="[0, 0, 50, 114]$[-53, -119, -3, -5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Wj46QM4ZEeWZDurOoA8ahA" id="(0.0,0.18)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Wj46Qc4ZEeWZDurOoA8ahA" id="(1.0,0.5833333333333334)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Y56WcM4ZEeWZDurOoA8ahA" type="4009" source="_KHHRIM3EEeWXa4SqMc_1_A" target="_A33SsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Y569gM4ZEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Y569gc4ZEeWZDurOoA8ahA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Y569gs4ZEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Y569g84ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Y56Wcc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_Y5kYMM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Y56Wcs4ZEeWZDurOoA8ahA" points="[18, -30, -37, 56]$[31, -58, -24, 28]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Y6oIIM4ZEeWZDurOoA8ahA" id="(0.5761316872427984,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Y6ovMM4ZEeWZDurOoA8ahA" id="(0.37988826815642457,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_aZ3tUM4ZEeWZDurOoA8ahA" type="4009" source="_E3H-MM3EEeWXa4SqMc_1_A" target="_A33SsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aZ3tU84ZEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aZ4UYM4ZEeWZDurOoA8ahA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_aZ4UYc4ZEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_aZ4UYs4ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_aZ3tUc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_aZlZcM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aZ3tUs4ZEeWZDurOoA8ahA" points="[8, -30, -35, 132]$[114, -188, 71, -26]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aa9ScM4ZEeWZDurOoA8ahA" id="(0.6666666666666666,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aa9Scc4ZEeWZDurOoA8ahA" id="(0.5977653631284916,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_b8AOcM4ZEeWZDurOoA8ahA" type="4009" source="_OFAfgM3DEeWXa4SqMc_1_A" target="_A33SsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_b8AOc84ZEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_b8AOdM4ZEeWZDurOoA8ahA" x="-5" y="-1"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_b8AOdc4ZEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_b8AOds4ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_b8AOcc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_b7ppIM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_b8AOcs4ZEeWZDurOoA8ahA" points="[32, 5, -394, -63]$[390, 66, -36, -2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b9ajsM4ZEeWZDurOoA8ahA" id="(1.0,0.5166666666666667)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b9ajsc4ZEeWZDurOoA8ahA" id="(0.0,0.43333333333333335)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_xBEjsM4ZEeWZDurOoA8ahA" type="4009" source="_RjZ5AM3DEeWXa4SqMc_1_A" target="_G_gmYM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xBFKwM4ZEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xBFKwc4ZEeWZDurOoA8ahA" x="-21"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_xBFKws4ZEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_xBFKw84ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_xBEjsc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_xAn3wM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xBEjss4ZEeWZDurOoA8ahA" points="[-8, -30, 26, 55]$[0, -58, 34, 27]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xB1YsM4ZEeWZDurOoA8ahA" id="(0.5286624203821656,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xB1Ysc4ZEeWZDurOoA8ahA" id="(0.6358381502890174,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_y6Y1wM4ZEeWZDurOoA8ahA" type="4009" source="_OFAfgM3DEeWXa4SqMc_1_A" target="_G_gmYM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_y6Zc0M4ZEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_y6Zc0c4ZEeWZDurOoA8ahA" x="58"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_y6Zc0s4ZEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_y6Zc084ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_y6Y1wc4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_y6FTwM4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y6Y1ws4ZEeWZDurOoA8ahA" points="[-9, 5, 187, -124]$[-150, 103, 46, -26]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y7bXkM4ZEeWZDurOoA8ahA" id="(0.35714285714285715,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y7bXkc4ZEeWZDurOoA8ahA" id="(0.7861271676300579,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-uq8IM4ZEeWZDurOoA8ahA" type="4011" source="_DcfBoM3DEeWXa4SqMc_1_A" target="_G_gmYM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-urjMM4ZEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-urjMc4ZEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-urjMs4ZEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-urjM84ZEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-uq8Ic4ZEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="loan-repayment-feature.uml#_-upG8M4ZEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-uq8Is4ZEeWZDurOoA8ahA" points="[15, 2, -208, -39]$[202, 40, -21, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-vqaoM4ZEeWZDurOoA8ahA" id="(1.0,0.64)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-vqaoc4ZEeWZDurOoA8ahA" id="(0.0,0.45)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_pnPZ8M4aEeWZDurOoA8ahA" type="4009" source="_nOsqsM4ZEeWZDurOoA8ahA" target="_A33SsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pnQBAM4aEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pnQBAc4aEeWZDurOoA8ahA" x="-10" y="12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pnQBAs4aEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pnQoEM4aEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_pnPZ8c4aEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_pmrZQM4aEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pnPZ8s4aEeWZDurOoA8ahA" points="[48, -10, -92, 19]$[108, -37, -32, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pohzYM4aEeWZDurOoA8ahA" id="(1.0,0.4166666666666667)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_poiacM4aEeWZDurOoA8ahA" id="(0.0,0.7333333333333333)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_o2_l8M5gEeWkluFvPHDFHg" type="4009" source="_tX0bIM3DEeWXa4SqMc_1_A" target="_G_gmYM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_o2_l885gEeWkluFvPHDFHg" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_o3ANAM5gEeWkluFvPHDFHg" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_o3ANAc5gEeWkluFvPHDFHg" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_o3ANAs5gEeWkluFvPHDFHg" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_o2_l8c5gEeWkluFvPHDFHg"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_o13kkM5gEeWkluFvPHDFHg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_o2_l8s5gEeWkluFvPHDFHg" points="[-6, -3, 114, 68]$[-78, -77, 42, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o5gHYM5gEeWkluFvPHDFHg" id="(0.0,0.5833333333333334)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o5gucM5gEeWkluFvPHDFHg" id="(0.9884393063583815,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zYhm0M5nEeWkluFvPHDFHg" type="4009" source="_tX0bIM3DEeWXa4SqMc_1_A" target="_A33SsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zYhm085nEeWkluFvPHDFHg" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zYhm1M5nEeWkluFvPHDFHg" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_zYiN4M5nEeWkluFvPHDFHg" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zYiN4c5nEeWkluFvPHDFHg" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zYhm0c5nEeWkluFvPHDFHg"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_zX0cMM5nEeWkluFvPHDFHg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zYhm0s5nEeWkluFvPHDFHg" points="[-1, 25, -175, 124]$[239, 12, 65, 111]$[247, -100, 73, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zZqPQM5nEeWkluFvPHDFHg" id="(1.0,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zZqPQc5nEeWkluFvPHDFHg" id="(0.0782122905027933,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6E8bgM5nEeWkluFvPHDFHg" type="4008" source="_tX0bIM3DEeWXa4SqMc_1_A" target="_nOsqsM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6E9CkM5nEeWkluFvPHDFHg" type="6006">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6E9Ckc5nEeWkluFvPHDFHg" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_6E9Cks5nEeWkluFvPHDFHg" type="6030">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6E9Ck85nEeWkluFvPHDFHg" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_6E8bgc5nEeWkluFvPHDFHg"/>
+    <element xmi:type="uml:Include" href="loan-repayment-feature.uml#_6EbeIM5nEeWkluFvPHDFHg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6E8bgs5nEeWkluFvPHDFHg" points="[1, -14, -12, 78]$[-22, -104, -35, -12]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6Gi-AM5nEeWkluFvPHDFHg" id="(0.4142857142857143,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6GjlEM5nEeWkluFvPHDFHg" id="(0.16,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_9RVfAM5nEeWkluFvPHDFHg" type="4009" source="_nOsqsM4ZEeWZDurOoA8ahA" target="_G_gmYM4ZEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9RVfA85nEeWkluFvPHDFHg" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9RVfBM5nEeWkluFvPHDFHg" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9RVfBc5nEeWkluFvPHDFHg" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9RVfBs5nEeWkluFvPHDFHg" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9RVfAc5nEeWkluFvPHDFHg"/>
+    <element xmi:type="uml:Extend" href="loan-repayment-feature.uml#_9QwQMM5nEeWkluFvPHDFHg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9RVfAs5nEeWkluFvPHDFHg" points="[-66, 22, 156, -54]$[-189, 76, 33, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9SwbUM5nEeWkluFvPHDFHg" id="(0.0,0.9)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9SxCYM5nEeWkluFvPHDFHg" id="(1.0,0.26666666666666666)"/>
+  </edges>
+</notation:Diagram>

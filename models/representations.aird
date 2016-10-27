@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_F7ilQMf1EeW0RrsoG3ACLA" version="8.1.1">
+  <models xmi:type="notation:Diagram" href="model.notation#_ER87kMiVEeWBMJG2m38gJw"/>
+  <models xmi:type="uml:Model" href="model.uml#_EMhpAMiVEeWBMJG2m38gJw"/>
+</viewpoint:DAnalysis>

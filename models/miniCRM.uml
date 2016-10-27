@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_7B2IQM4dEeWZDurOoA8ahA" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_8HrH4M4dEeWZDurOoA8ahA" name="MiniCRM">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-zP9UM4dEeWZDurOoA8ahA" name="Manage customer records">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_mBQN4M4eEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_mdxKwc4eEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Dc9TYM4eEeWZDurOoA8ahA" name="Add/Update Customer Records">
+      <extend xmi:type="uml:Extend" xmi:id="_mdxKwM4eEeWZDurOoA8ahA" extendedCase="_-zP9UM4dEeWZDurOoA8ahA" extensionLocation="_mdxKwc4eEeWZDurOoA8ahA"/>
+      <include xmi:type="uml:Include" xmi:id="_HE6cEM4fEeWZDurOoA8ahA" addition="_PWY_gM4eEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FWWd8M4eEeWZDurOoA8ahA" name="View Customer Records">
+      <extend xmi:type="uml:Extend" xmi:id="_mBPm0M4eEeWZDurOoA8ahA" extendedCase="_-zP9UM4dEeWZDurOoA8ahA" extensionLocation="_mBQN4M4eEeWZDurOoA8ahA"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jCogoc4eEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Kg0XsM4eEeWZDurOoA8ahA" name="Manage Devices">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_k9JskM4eEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_67CgMc4eEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PWY_gM4eEeWZDurOoA8ahA" name="Add/Update Devices">
+      <extend xmi:type="uml:Extend" xmi:id="_k9JFgM4eEeWZDurOoA8ahA" extendedCase="_Kg0XsM4eEeWZDurOoA8ahA" extensionLocation="_k9JskM4eEeWZDurOoA8ahA"/>
+      <include xmi:type="uml:Include" xmi:id="_u_c38M4eEeWZDurOoA8ahA" addition="_R-H2wM4eEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_R-H2wM4eEeWZDurOoA8ahA" name="Add/Update Device Models">
+      <extend xmi:type="uml:Extend" xmi:id="_5VBkoM4eEeWZDurOoA8ahA" extendedCase="_qYzc8M4eEeWZDurOoA8ahA" extensionLocation="_5VBkoc4eEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VPgH8M4eEeWZDurOoA8ahA" name="View Devices">
+      <extend xmi:type="uml:Extend" xmi:id="_67CgMM4eEeWZDurOoA8ahA" extendedCase="_Kg0XsM4eEeWZDurOoA8ahA" extensionLocation="_67CgMc4eEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WrRiYM4eEeWZDurOoA8ahA" name="View Device Models">
+      <extend xmi:type="uml:Extend" xmi:id="_0sprUM4eEeWZDurOoA8ahA" extendedCase="_qYzc8M4eEeWZDurOoA8ahA" extensionLocation="_0sqSYM4eEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qYzc8M4eEeWZDurOoA8ahA" name="Manage Device Models">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_0sqSYM4eEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_3k3OkM4eEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_5VBkoc4eEeWZDurOoA8ahA" name="ExtensionPoint3"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9J_ggM4dEeWZDurOoA8ahA" name="Staff"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AWmxAM4fEeWZDurOoA8ahA" memberEnd="_AWn_IM4fEeWZDurOoA8ahA _AWn_Ic4fEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AWnYEM4fEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AWnYEc4fEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AWn_IM4fEeWZDurOoA8ahA" name="manage customer records" type="_-zP9UM4dEeWZDurOoA8ahA" association="_AWmxAM4fEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AWn_Ic4fEeWZDurOoA8ahA" name="staff" type="_9J_ggM4dEeWZDurOoA8ahA" association="_AWmxAM4fEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BWEp8M4fEeWZDurOoA8ahA" memberEnd="_BWFRAs4fEeWZDurOoA8ahA _BWFRA84fEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BWFRAM4fEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BWFRAc4fEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BWFRAs4fEeWZDurOoA8ahA" name="manage devices" type="_Kg0XsM4eEeWZDurOoA8ahA" association="_BWEp8M4fEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BWFRA84fEeWZDurOoA8ahA" name="staff" type="_9J_ggM4dEeWZDurOoA8ahA" association="_BWEp8M4fEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CabC4M4fEeWZDurOoA8ahA" memberEnd="_Cabp8M4fEeWZDurOoA8ahA _Cabp8c4fEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CabC4c4fEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CabC4s4fEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Cabp8M4fEeWZDurOoA8ahA" name="manage device models" type="_qYzc8M4eEeWZDurOoA8ahA" association="_CabC4M4fEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Cabp8c4fEeWZDurOoA8ahA" name="staff" type="_9J_ggM4dEeWZDurOoA8ahA" association="_CabC4M4fEeWZDurOoA8ahA"/>
+  </packagedElement>
+</uml:Model>

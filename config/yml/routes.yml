@@ -1,0 +1,614 @@
+
+################################################################################
+# This file will be used to define the various routes that the app will have
+################################################################################
+
+## Page not found
+404: config/template/sys-pages/404.php
+
+## Access Denied
+access_denied: config/template/sys-pages/access_denied.php
+
+## Home page
+home: config/template/sys-pages/home-layout.php
+
+## Login url
+login: src/login.php
+
+## Reset Password Url
+reset_pass: src/reset_password.php
+
+## Dashboard
+dashboard: src/dashboard_module/dashboard.php
+
+#### for county
+## Modules added by jj
+0: src/test_modd/under-construction.php
+1: src/transactions.php
+2: src/src/buyservice_transactions.php
+3: src/src/paybill_transactions.php
+4: src/src/querybill_transactions.php
+5: src/src/compliance_transactions.php
+6: src/src/ptransactions.php
+
+10: src/visits_module/medical_card.php
+11: src/visits_module/general_reciept.php
+
+41: src/sbp_module/business_permits.php
+42: src/sbp_module/search_sbp.php
+43: src/sbp_module/businesspermit_bills.php
+46: src/sbp_module/new_sbp_1.php
+45: src/sbp_module/new_location.php
+47: src/sbp_module/new_counties.php
+48: src/sbp_module/new_business_activity.php
+44: src/sbp_module/business_activities.php
+49: src/sbp_module/edit_business_activity.php
+40: src/sbp_module/manage_sbp.php
+
+51: src/rents_module/rents.php
+55: src/rents_module/new_house.php
+52: src/rents_module/search_house_rent_1.php
+56: src/rents_module/edit_house_rent.php
+57: src/rents_module/new_house_type.php
+58: src/rents_module/new_house_estate.php
+59: src/rents_module/rents_filtered_1.php
+50: src/rents_module/house_type_estate_assoc.php
+
+
+201: src/rate_module/select_customer.php
+202: src/rate_module/add_land_rate.php
+203: src/rate_module/edit_land_rate.php
+204: src/rate_module/land_record_view.php
+205: src/rate_module/list_customer_landrates_amalgamate.php
+206: src/rate_module/list_customer_landrates_subdivision.php
+207: src/rate_module/list_subdivision_selection.php
+208: src/rate_module/select_landrate1.php
+209: src/rate_module/land_attachment1.php
+210: src/rate_module/list_customer_landrates_transfer.php
+211: src/rate_module/land_transfer.php
+212: src/rate_module/list_all_landrates_for_evaluation.php
+213: src/rate_module/list_customer_landrates_categorize.php
+214: src/rate_module/list_all_landrates.php
+215: src/rate_module/list_billables.php
+217: src/rate_module/landrate_trace.php
+218: src/rate_module/list_customer_landrates.php
+219: src/rate_module/waivers_m.php
+220: src/rate_module/edit_waiver.php
+221: src/rate_module/land_evaluation.php
+222: src/rate_module/manage_evaluation.php
+223: src/rate_module/manage_transfer.php
+224: src/rate_module/valuation.php
+225: src/rate_module/new_valuation.php
+226: src/rate_module/edit_valuation.php
+227: src/rate_module/roll_schedule.php
+
+#### modules added by owori.B
+401: src/sbp_module/edit_sbp.php
+402: src/sbp_module/createbiz_bills.php
+403: src/sbp_module/compound_interest_bill.php
+404: src/sbp_module/pending_bills.php
+405: src/sbp_module/paid_bills.php
+406: src/sbp_module/manage_sbp_account.php
+
+#### reports module
+420: src/reports_module/registrations.php
+421: src/reports_module/commisions.php
+422: src/reports_module/savings.php
+423: src/reports_module/loan_repayments.php
+424: src/reports_module/policy_dependants.php
+425: src/reports_module/msp_visits.php
+
+500: src/rents_module/edit_house_type_estate_assoc.php
+501: src/rents_module/bills_filtered_paid_1.php
+502: src/rents_module/bills_filtered_unpaid_1.php
+503: src/rents_module/payments.php
+504: src/rents_module/house_rent_filter_plain.php
+505: src/rents_module/bills_filtered_account_1.php
+506: src/rents_module/bill_details.php
+507: src/rents_module/payment_details.php
+508: src/rents_module/rent_billing.php
+509: src/rents_module/rent_interest_billing.php
+510: src/rents_module/bill.php
+511: src/rents_module/Payments_filtered_account_1.php
+512: src/rents_module/edit_house_type.php
+513: src/rents_module/edit_house_estates.php
+514: src/rents_module/deleted_rents.php
+515: src/rents_module/rent_management.php
+
+601: src/construction_permits/construction_permits.php
+602: src/construction_permits/edit_cpermit.php
+603: src/construction_permits/search_construction_permit.php
+604: src/construction_permits/add_cpermit.php
+
+
+## REVENUE MANAGEMENT CHANNELS MODULE
+620: src/RMC_module/all_rmc.php
+621: src/RMC_module/add_rmc.php
+622: src/RMC_module/edit_rmc.php
+623: src/RMC_module/all_channels.php
+624: src/RMC_module/add_setup_channels.php
+625: src/RMC_module/edit_setup_channels.php
+626: src/RMC_module/revenue_bank.php
+627: src/RMC_module/add_revenue_bank.php
+628: src/RMC_module/edit_revenue_bank.php
+629: src/RMC_module/imfis_head.php
+630: src/RMC_module/add_head_imfis.php
+631: src/RMC_module/edit_head_imfis.php
+632: src/RMC_module/imfis_subcode.phpmasterfile_profile
+633: src/RMC_module/add_sub_imfis.php
+634: src/RMC_module/edit_sub_imfis.php
+635: src/RMC_module/all_attached_ifmis.php
+636: src/RMC_module/attach_ifmis.php
+637: src/RMC_module/edit_attached_ifmis.php
+638: src/RMC_module/manage_requests.php
+639: src/RMC_module/manage_county.php
+640: src/RMC_module/manage_subcounty.php
+641: src/RMC_module/edit_county.php
+642: src/RMC_module/manage_service_bill.php
+643: src/RMC_module/edit_service_bill.php
+644: src/RMC_module/edit_sub_county.php
+645: src/RMC_module/edit_requests.php
+
+## STAFF MODULE
+701: src/staff_module/staff.php
+702: src/staff_module/edit_staff.php
+703: src/staff_module/add_staff.php
+704: src/staff_module/search_staff.php
+705: src/staff_module/staff_profile.php
+706: src/staff_module/add_job.php
+707: src/staff_module/edit_job.php
+708: src/staff_module/all_jobs.php
+709: src/staff_module/add_department.php
+710: src/staff_module/edit_department.php
+712: src/staff_module/all_departments.php
+713: src/users_module/my_profile.php
+
+####: Masterfile Module
+720: src/masterfile_module/masterfile.php
+721: src/masterfile_module/edit_masterfile.php
+722: src/masterfile_module/add_masterfile.php
+723: src/masterfile_module/search_masterfile.php
+724: src/masterfile_module/masterfile_profile.php
+725: src/crm_module/add_msp_masterfile.php
+726: src/masterfile_module/deleted_masterfile.php
+727: src/masterfile_module/manage_address.php
+728: src/masterfile_module/edit_address_type.php
+729: src/masterfile_module/all_masterfile.php
+730: src/masterfile_module/restore_masterfile.php
+import_mf: src/masterfile_module/import_masterfile.php
+import_companies: src/masterfile_module/import_client_groups.php
+address_details: src/masterfile_module/addressDetails.php
+
+## CRM MODULE
+801: src/crm_module/my_tenants.php
+802: src/crm_module/my_landlords.php
+803: src/crm_module/my_contractors.php
+804: src/crm_module/search_crm.php
+805: src/crm_module/customer_profile.php
+810: src/crm_module/new_customer_profile.php
+826: src/crm_module/all_clients.php
+827: src/crm_module/all_contractors.php
+828: src/crm_module/all_landlords.php
+829: src/crm_module/insurance_policy.php
+830: src/crm_module/insurance_claim.php
+832: src/crm_module/customer_acc_info.php
+833: src/crm_module/customer_phone_bills.php
+834: src/crm_module/lesse_agreement.php
+835: src/crm_module/customer_statement.php
+
+manage_account: src/crm_module/manage_accounts.php
+add_bank: src/crm_module/add_bank.php
+add_branch: src/crm_module/add_branch.php
+my_properties: src/crm_module/my_properties.php
+
+#### User Management Module
+add_user: src/users_module/add_user.php
+all_users: src/users_module/users.php
+edit_user: src/users_module/edit_user.php
+view_prof: src/users_module/view_profile.php
+all_roles: src/users_module/all_roles.php
+add_role: src/users_module/add_role.php
+edit_role: src/users_module/edit_role.php
+del_role: src/users_module/del_role.php
+audit_trail: src/users_module/master_audit_trail.php
+manage_views: src/users_module/manage_views.php
+edit_action: src/users_module/edit_actions.php
+client_users: src/users_module/client_users.php
+
+####: System Manager Module
+all_views: src/system_manager/all_views.php
+add_view: src/system_manager/add_view.php
+edit_view: src/system_manager/edit_view.php
+all_actions: src/system_manager/all_actions.php
+add_action: src/system_manager/add_action.php
+ed_action: src/system_manager/ed_action.php
+add_item: src/system_manager/add_menu_item.php
+menu: src/system_manager/menu.php
+manage_menu: src/system_manager/manage_menu_items.php
+edit_menu: src/system_manager/edit_menu.php
+manage_db: src/system_manager/manage_db.php
+system_profile: src/system_manager/system_profile.php
+
+#### Reports
+4000: src/reports_module/revenue_channel_summary.php
+4001: src/reports_module/leaf_services_summary.php
+4002: src/reports_module/staff_summary.php
+4003: src/reports_module/daily_revenue_summary.php
+4004: src/reports_module/daily_leaf_services_summary.php
+4005: src/reports_module/daily_staff_summary.php
+
+####: Broadcast Module
+broadcast: src/broadcast_module/manage_broadcasts.php
+pre_message: src/broadcast_module/predefined_messages.php
+
+####: Support Module
+all_support: src/support_module/all_support.php
+issued_tickets: src/support_module/issued_tickets.php
+view_ticket: src/support_module/view_ticket.php
+all_voucher: src/support_module/all_vouchers.php
+man_category: src/support_module/manage_categories.php
+quotes: src/support_module/all_quotes.php
+received_quotes: src/support_module/received_quotes.php
+
+####: Referrals
+all_referrals: src/refarrals_module/all_refarrals.php
+inactive_cust: src/crm_module/inactive_accounts.php
+
+#### Plot module
+3000: src/prop_module/plots.php
+3001: src/prop_module/add_property.php
+edit_plot: src/prop_module/edit_plot.php
+view_prop: src/prop_module/view_property.php
+del_plot: src/prop_module/delete_plot.php
+prop_attr: src/prop_module/property_attributes.php
+pro_attr_alloc: src/prop_module/allocate_prop_attr.php
+prop_alloc: src/prop_module/prop_alloc.php
+add_prop: src/prop_module/add_prop.php
+5000: src/prop_module/add_prop_wizard.php
+5001: src/prop_module/property_info.php
+
+
+#### House Module
+all_houses: src/house_module/houses.php
+add_house: src/house_module/add_house.php
+edit_house: src/house_module/edit_house.php
+del_house: src/house_module/delete_house.php
+view_house: src/house_module/view_house.php
+in_plot: src/house_module/houses_in_plot.php
+house_attrbs: src/house_module/house_attributes.php
+view_houses: src/house_module/view_houses.php
+house_alloc: src/house_module/house_alloc.php
+900: src/house_module/house_profile.php
+
+#### Reports
+6000: src/payment_reports/house_payments.php
+6001: src/payment_reports/tenant_payments.php
+6002: src/payment_reports/plot_payments.php
+6003: src/payment_reports/paybill_payments.php
+6004: src/payment_reports/landlord_payments.php
+6005: src/payment_reports/landlord_houses.php
+
+##rent management module
+6010: src/rent_management_module/leases.php
+################################################################################
+# This file will be used to define the various routes that the app will have
+################################################################################
+
+## Page not found
+404: config/template/sys-pages/404.php
+
+## Access Denied
+access_denied: config/template/sys-pages/access_denied.php
+
+## Home page
+home: config/template/sys-pages/home-layout.php
+
+## Login url
+login: src/login.php
+
+## Reset Password Url
+reset_pass: src/reset_password.php
+
+## Dashboard
+dashboard: src/dashboard_module/dashboard.php
+
+#### for county
+## Modules added by jj
+0: src/test_modd/under-construction.php
+1: src/transactions.php
+2: src/src/buyservice_transactions.php
+3: src/src/paybill_transactions.php
+4: src/src/querybill_transactions.php
+5: src/src/compliance_transactions.php
+6: src/src/ptransactions.php
+
+10: src/visits_module/medical_card.php
+11: src/visits_module/general_reciept.php
+
+41: src/sbp_module/business_permits.php
+42: src/sbp_module/search_sbp.php
+43: src/sbp_module/businesspermit_bills.php
+46: src/sbp_module/new_sbp_1.php
+45: src/sbp_module/new_location.php
+47: src/sbp_module/new_counties.php
+48: src/sbp_module/new_business_activity.php
+44: src/sbp_module/business_activities.php
+49: src/sbp_module/edit_business_activity.php
+40: src/sbp_module/manage_sbp.php
+
+51: src/rents_module/rents.php
+55: src/rents_module/new_house.php
+52: src/rents_module/search_house_rent_1.php
+56: src/rents_module/edit_house_rent.php
+57: src/rents_module/new_house_type.php
+58: src/rents_module/new_house_estate.php
+59: src/rents_module/rents_filtered_1.php
+50: src/rents_module/house_type_estate_assoc.php
+
+## payments module
+139: src/payment_agent_module/searchbill.php
+140: src/payment_agent_module/payment.php
+141: src/payment_agent_module/confirmpayment.php
+142: src/payment_agent_module/buyservice.php
+143: src/payment_agent_module/buyservice_markets.php
+144: src/payment_agent_module/buyservice_psv.php
+145: src/payment_agent_module/payment_transactions.php
+146: src/payment_agent_module/bills.php
+147: src/payment_agent_module/search_bill.php
+148: src/payment_agent_module/test2.php
+149: src/payment_agent_module/manage_service_bill.php
+150: src/payment_agent_module/add_service_bill.php
+151: src/payment_agent_module/edit_service_bill.php
+152: src/payment_agent_module/manage_services.php
+153: src/payment_agent_module/add_services.php
+154: src/payment_agent_module/edit_services.php
+155: src/payment_agent_module/pay.php
+156: src/payment_agent_module/receipt.php
+160: src/payment_agent_module/buyservice.php
+161: src/payment_agent_module/journal.php
+162: src/parking_module/select_customer.php
+163: src/payment_agent_module/select_client.php
+164: src/payment_agent_module/credit_statement.php
+165: src/payment_agent_module/buy_service.php
+166: src/payment_agent_module/bs_tree.php
+167: src/payment_agent_module/buy_service_form.php
+168: src/payment_agent_module/all_billing_files.php
+169: src/payment_agent_module/gpay_transaction.php
+170: src/payment_agent_module/mpesa_request.php
+171: src/payment_agent_module/all_bills.php
+
+201: src/rate_module/select_customer.php
+202: src/rate_module/add_land_rate.php
+203: src/rate_module/edit_land_rate.php
+204: src/rate_module/land_record_view.php
+205: src/rate_module/list_customer_landrates_amalgamate.php
+206: src/rate_module/list_customer_landrates_subdivision.php
+207: src/rate_module/list_subdivision_selection.php
+208: src/rate_module/select_landrate1.php
+209: src/rate_module/land_attachment1.php
+210: src/rate_module/list_customer_landrates_transfer.php
+211: src/rate_module/land_transfer.php
+212: src/rate_module/list_all_landrates_for_evaluation.php
+213: src/rate_module/list_customer_landrates_categorize.php
+214: src/rate_module/list_all_landrates.php
+215: src/rate_module/list_billables.php
+217: src/rate_module/landrate_trace.php
+218: src/rate_module/list_customer_landrates.php
+219: src/rate_module/waivers_m.php
+220: src/rate_module/edit_waiver.php
+221: src/rate_module/land_evaluation.php
+222: src/rate_module/manage_evaluation.php
+223: src/rate_module/manage_transfer.php
+224: src/rate_module/valuation.php
+225: src/rate_module/new_valuation.php
+226: src/rate_module/edit_valuation.php
+227: src/rate_module/roll_schedule.php
+
+#### modules added by owori.B
+401: src/sbp_module/edit_sbp.php
+402: src/sbp_module/createbiz_bills.php
+403: src/sbp_module/compound_interest_bill.php
+404: src/sbp_module/pending_bills.php
+405: src/sbp_module/paid_bills.php
+406: src/sbp_module/manage_sbp_account.php
+
+#### reports module
+420: src/reports_module/registrations.php
+421: src/reports_module/commisions.php
+422: src/reports_module/savings.php
+423: src/reports_module/loan_repayments.php
+424: src/reports_module/policy_dependants.php
+425: src/reports_module/msp_visits.php
+
+500: src/rents_module/edit_house_type_estate_assoc.php
+501: src/rents_module/bills_filtered_paid_1.php
+502: src/rents_module/bills_filtered_unpaid_1.php
+503: src/rents_module/payments.php
+504: src/rents_module/house_rent_filter_plain.php
+505: src/rents_module/bills_filtered_account_1.php
+506: src/rents_module/bill_details.php
+507: src/rents_module/payment_details.php
+508: src/rents_module/rent_billing.php
+509: src/rents_module/rent_interest_billing.php
+510: src/rents_module/bill.php
+511: src/rents_module/Payments_filtered_account_1.php
+512: src/rents_module/edit_house_type.php
+513: src/rents_module/edit_house_estates.php
+514: src/rents_module/deleted_rents.php
+515: src/rents_module/rent_management.php
+
+601: src/construction_permits/construction_permits.php
+602: src/construction_permits/edit_cpermit.php
+603: src/construction_permits/search_construction_permit.php
+604: src/construction_permits/add_cpermit.php
+
+
+## REVENUE MANAGEMENT CHANNELS MODULE
+620: src/RMC_module/all_rmc.php
+621: src/RMC_module/add_rmc.php
+622: src/RMC_module/edit_rmc.php
+623: src/RMC_module/all_channels.php
+624: src/RMC_module/add_setup_channels.php
+625: src/RMC_module/edit_setup_channels.php
+626: src/RMC_module/revenue_bank.php
+627: src/RMC_module/add_revenue_bank.php
+628: src/RMC_module/edit_revenue_bank.php
+629: src/RMC_module/imfis_head.php
+630: src/RMC_module/add_head_imfis.php
+631: src/RMC_module/edit_head_imfis.php
+632: src/RMC_module/imfis_subcode.phpmasterfile_profile
+633: src/RMC_module/add_sub_imfis.php
+634: src/RMC_module/edit_sub_imfis.php
+635: src/RMC_module/all_attached_ifmis.php
+636: src/RMC_module/attach_ifmis.php
+637: src/RMC_module/edit_attached_ifmis.php
+638: src/RMC_module/manage_requests.php
+639: src/RMC_module/manage_county.php
+640: src/RMC_module/manage_subcounty.php
+641: src/RMC_module/edit_county.php
+642: src/RMC_module/manage_service_bill.php
+643: src/RMC_module/edit_service_bill.php
+644: src/RMC_module/edit_sub_county.php
+645: src/RMC_module/edit_requests.php
+
+## STAFF MODULE
+701: src/staff_module/staff.php
+702: src/staff_module/edit_staff.php
+703: src/staff_module/add_staff.php
+704: src/staff_module/search_staff.php
+705: src/staff_module/staff_profile.php
+706: src/staff_module/add_job.php
+707: src/staff_module/edit_job.php
+708: src/staff_module/all_jobs.php
+709: src/staff_module/add_department.php
+710: src/staff_module/edit_department.php
+712: src/staff_module/all_departments.php
+713: src/users_module/my_profile.php
+
+####: Masterfile Module
+720: src/masterfile_module/masterfile.php
+721: src/masterfile_module/edit_masterfile.php
+722: src/masterfile_module/add_masterfile.php
+723: src/masterfile_module/search_masterfile.php
+724: src/masterfile_module/masterfile_profile.php
+725: src/crm_module/add_msp_masterfile.php
+726: src/masterfile_module/deleted_masterfile.php
+727: src/masterfile_module/manage_address.php
+728: src/masterfile_module/edit_address_type.php
+729: src/masterfile_module/all_masterfile.php
+730: src/masterfile_module/restore_masterfile.php
+731: src/masterfile_module/my_masterfile.php
+import_mf: src/masterfile_module/import_masterfile.php
+import_companies: src/masterfile_module/import_client_groups.php
+address_details: src/masterfile_module/addressDetails.php
+
+## CRM MODULE
+801: src/crm_module/my_tenants.php
+802: src/crm_module/my_landlords.php
+803: src/crm_module/my_contractors.php
+804: src/crm_module/search_crm.php
+805: src/crm_module/customer_profile.php
+810: src/crm_module/new_customer_profile.php
+826: src/crm_module/all_clients.php
+827: src/crm_module/all_contractors.php
+828: src/crm_module/all_landlords.php
+
+829: src/crm_module/insurance_policy.php
+830: src/crm_module/insurance_claim.php
+832: src/crm_module/customer_acc_info.php
+833: src/crm_module/customer_phone_bills.php
+834: src/crm_module/lesse_agreement.php
+manage_skills: src/crm_module/manage_skills.php
+manage_account: src/crm_module/manage_accounts.php
+add_bank: src/crm_module/add_bank.php
+add_branch: src/crm_module/add_branch.php
+my_properties: src/crm_module/my_properties.php
+
+#### User Management Module
+add_user: src/users_module/add_user.php
+all_users: src/users_module/users.php
+edit_user: src/users_module/edit_user.php
+view_prof: src/users_module/view_profile.php
+all_roles: src/users_module/all_roles.php
+add_role: src/users_module/add_role.php
+edit_role: src/users_module/edit_role.php
+del_role: src/users_module/del_role.php
+audit_trail: src/users_module/master_audit_trail.php
+manage_views: src/users_module/manage_views.php
+edit_action: src/users_module/edit_actions.php
+client_users: src/users_module/client_users.php
+
+####: System Manager Module
+all_views: src/system_manager/all_views.php
+add_view: src/system_manager/add_view.php
+edit_view: src/system_manager/edit_view.php
+all_actions: src/system_manager/all_actions.php
+add_action: src/system_manager/add_action.php
+ed_action: src/system_manager/ed_action.php
+add_item: src/system_manager/add_menu_item.php
+menu: src/system_manager/menu.php
+manage_menu: src/system_manager/manage_menu_items.php
+edit_menu: src/system_manager/edit_menu.php
+manage_db: src/system_manager/manage_db.php
+system_profile: src/system_manager/system_profile.php
+
+#### Reports
+4000: src/reports_module/revenue_channel_summary.php
+4001: src/reports_module/leaf_services_summary.php
+4002: src/reports_module/staff_summary.php
+4003: src/reports_module/daily_revenue_summary.php
+4004: src/reports_module/daily_leaf_services_summary.php
+4005: src/reports_module/daily_staff_summary.php
+
+####: Broadcast Module
+broadcast: src/broadcast_module/manage_broadcasts.php
+pre_message: src/broadcast_module/predefined_messages.php
+
+####: Support Module
+all_support: src/support_module/all_support.php
+issued_tickets: src/support_module/issued_tickets.php
+view_ticket: src/support_module/view_ticket.php
+all_voucher: src/support_module/all_vouchers.php
+man_category: src/support_module/manage_categories.php
+quotes: src/support_module/all_quotes.php
+received_quotes: src/support_module/received_quotes.php
+
+####: Referrals
+all_referrals: src/refarrals_module/all_refarrals.php
+inactive_cust: src/crm_module/inactive_accounts.php
+
+#### Plot module
+3000: src/prop_module/plots.php
+3001: src/prop_module/add_property.php
+edit_plot: src/prop_module/edit_plot.php
+view_prop: src/prop_module/view_property.php
+del_plot: src/prop_module/delete_plot.php
+prop_attr: src/prop_module/property_attributes.php
+pro_attr_alloc: src/prop_module/allocate_prop_attr.php
+prop_alloc: src/prop_module/prop_alloc.php
+add_prop: src/prop_module/add_prop.php
+my_props: src/prop_module/my_properties.php
+
+#### House Module
+all_houses: src/house_module/houses.php
+add_house: src/house_module/add_house.php
+edit_house: src/house_module/edit_house.php
+del_house: src/house_module/delete_house.php
+view_house: src/house_module/view_house.php
+in_plot: src/house_module/houses_in_plot.php
+house_attrbs: src/house_module/house_attributes.php
+view_houses: src/house_module/view_houses.php
+house_alloc: src/house_module/house_alloc.php
+900: src/house_module/house_profile.php
+
+#### Reports
+6000: src/payment_reports/house_payments.php
+6001: src/payment_reports/tenant_payments.php
+6002: src/payment_reports/plot_payments.php
+6003: src/payment_reports/paybill_payments.php
+6004: src/payment_reports/landlord_payments.php
+6005: src/payment_reports/landlord_houses.php
+
+##rent management module
+6010: src/rent_management_module/leases.php
+

@@ -1,0 +1,30 @@
+1469173295:2016-07-22 10:41:35==1 Created  Lease Agreement
+1469173295:2016-07-22 10:41:35==Billing File: INSERT INTO customer_billing_file(
+	        created_by, service_account, start_date, 
+	        billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+	        created)
+			VALUES ('779', '', '2016-07-22', 
+	        'Monthly', '10000', '10000', '15',
+	        '2016-07-22 10:41:35') RETURNING billing_file_id
+1469173295:2016-07-22 10:41:35==2 Created Billing File
+1469173295:2016-07-22 10:41:35==INSERT INTO customer_bills(
+	            bill_due_date, bill_amount, 
+	            bill_date, bill_status, 
+	            bill_amount_paid, bill_balance, 
+	            billing_file_id, service_account, 
+	            mf_id, service_channel_id)
+	    		VALUES ('7days', '10000', 
+	    		'2016-07-22', '0', 
+	    		'10000', '0', 
+	    		'180', '',
+	    		'985', '22')
+1469173295:2016-07-22 10:41:35==3 Created Bill
+1469173295:2016-07-22 10:41:35==4 Created Jounal
+1469177494:2016-07-22 11:51:34==1 Created  Lease Agreement
+1469177495:2016-07-22 11:51:35==Billing File: INSERT INTO customer_billing_file(
+	        created_by, service_account, start_date, 
+	        billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+	        created)
+			VALUES ('', '', '2016-07-22', 
+	        'Monthly', '10000', '10000', '15',
+	        '2016-07-22 11:51:35') RETURNING billing_file_id

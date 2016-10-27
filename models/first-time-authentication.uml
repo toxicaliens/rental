@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mLLH4M27EeWXa4SqMc_1_A" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_nB7wwM27EeWXa4SqMc_1_A" name="First Time Authentication">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sOIv4M27EeWXa4SqMc_1_A" name="First Time Authentication"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pAK_EM27EeWXa4SqMc_1_A" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nURzEM29EeWXa4SqMc_1_A" general="_jjMuIM29EeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ezxKkM29EeWXa4SqMc_1_A" name="first_time_authentication" memberEnd="_ezxxos29EeWXa4SqMc_1_A _ezyYsM29EeWXa4SqMc_1_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ezxxoM29EeWXa4SqMc_1_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ezxxoc29EeWXa4SqMc_1_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ezxxos29EeWXa4SqMc_1_A" name="first time authentication" type="_sOIv4M27EeWXa4SqMc_1_A" association="_ezxKkM29EeWXa4SqMc_1_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ezyYsM29EeWXa4SqMc_1_A" name="customer" type="_pAK_EM27EeWXa4SqMc_1_A" association="_ezxKkM29EeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jjMuIM29EeWXa4SqMc_1_A" name="User"/>
+</uml:Model>

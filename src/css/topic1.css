@@ -1,0 +1,213 @@
+.topic1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.topic2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.subtopic {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 2em;
+	font-size: 18px;
+}
+div.topiclarge {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	}
+/* general site CSS */
+
+
+.sidebanner
+{
+	border:#CC0000 1px dashed;
+	padding: 2px;
+}
+
+/** css for the hint box **/
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid black;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid black;
+border-bottom: 3px solid black;
+visibility: hidden;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+font-weight: bold;
+color: navy;
+margin: 3px 8px;
+}
+
+/** girl kenya css **/
+.vline{
+	border-left-color: #F596BA;
+	border-left-style: dotted;
+	border-left-width: 1px;
+}
+.hline
+{
+	border-top-color:#F596BA;
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+.imgpsn {
+	border: 1px solid #f596ba;
+	padding: 2px;
+	margin:7px;
+	float: left;
+   	cursor: hand;
+		}
+		
+.imgpsn2 {
+	border: 1px solid #f596ba;
+	padding: 2px;
+	cursor: hand;
+		}
+
+
+div.topic {
+	font-size: 24px;
+	color: #990000;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	padding-left:10px;
+	}
+	/** talent test css **/
+	.hline2
+{
+	border-top-color:#273E26;
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+.vline2{
+	border-left-color: #273E26;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.subs {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding:3px;
+	color: #3E613D;
+}.subst {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding:3px;
+	color: #3E613D;
+}
+/**camlinks**/	
+.cambord
+{
+border:#CCCCCC 2px dotted;
+background:#F3F3F3;
+}
+/** pop ups **/
+
+.para
+{
+font-family: Arial;
+	font-size: 12px;
+}
+
+.parat
+{
+    font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+}
+.maint {
+	color: #990000;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+/**footer**/
+.bodypart {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	padding: 0.5em;
+}
+#modifytool{
+    font-size: 10px;
+    font-family: verdana;
+}
+.packlabel{
+    font-family: verdana;
+    font-size: 12px;
+    height: 14px;
+    width: 100px;
+    color:#000000
+}
+.packinput{
+    width: 250px;
+    height: 20px;
+    margin: 5px 5px;
+}
+input[type=submit]{
+    width: 100px;
+    height: 25px
+}
+#confbutton{
+    width: 100px !important;
+    height: 25px
+}
+#cashagentreceipts{
+    position: relative;
+    margin: 10px 200px;
+    width: 400px;
+    height: 250px;
+    background-color: #E6E6E6;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 1px 1px #888;
+    -webkit-box-shadow: 0 0 1px 1px #888;
+    box-shadow: 0 0 1px 1px #888;
+}
+#cashagentreceiptheader{
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #CCCCCC;
+    height: 50px;
+     font-size: 24px;
+     font-weight: bold;
+     font-family: "Georgia";
+    text-align: center;
+    line-height: 50px;
+}
+#cashagentreceiptfooter{
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #CCCCCC;
+    height: 50px;
+    width: 398px;
+    text-align: right;
+}
+#cashagentreceiptfooter a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Georgia";
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hzy2UM4bEeWZDurOoA8ahA" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_jfjNgM4bEeWZDurOoA8ahA" name="Insurance">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lKEOkM4bEeWZDurOoA8ahA" name="Manage Insurance">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_A6YT0c4cEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_EgwkoM4cEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_H1UFoM4cEeWZDurOoA8ahA" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_W5sq0M4cEeWZDurOoA8ahA" name="ExtensionPoint4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9tL_EM4bEeWZDurOoA8ahA" name="View Insurance status">
+      <extend xmi:type="uml:Extend" xmi:id="_A6YT0M4cEeWZDurOoA8ahA" extendedCase="_lKEOkM4bEeWZDurOoA8ahA" extensionLocation="_A6YT0c4cEeWZDurOoA8ahA"/>
+      <extend xmi:type="uml:Extend" xmi:id="__y-KYM4cEeWZDurOoA8ahA" extendedCase="_aqW5AM4cEeWZDurOoA8ahA" extensionLocation="__y-xcM4cEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CTvTcM4cEeWZDurOoA8ahA" name="Make Insurance claims">
+      <extend xmi:type="uml:Extend" xmi:id="_ppXZgM4dEeWZDurOoA8ahA" extendedCase="_aqW5AM4cEeWZDurOoA8ahA" extensionLocation="_ppXZgc4dEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GE_-kM4cEeWZDurOoA8ahA" name="Renew Insurance Cover">
+      <extend xmi:type="uml:Extend" xmi:id="_H1TekM4cEeWZDurOoA8ahA" extendedCase="_lKEOkM4bEeWZDurOoA8ahA" extensionLocation="_H1UFoM4cEeWZDurOoA8ahA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_QB5QEM4dEeWZDurOoA8ahA" extendedCase="_aqW5AM4cEeWZDurOoA8ahA" extensionLocation="_QB6eMM4dEeWZDurOoA8ahA"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_QgvksM4cEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_NE_CIM5hEeWkluFvPHDFHg" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UjKRQM4cEeWZDurOoA8ahA" name="View Claim History">
+      <extend xmi:type="uml:Extend" xmi:id="_W5sDwM4cEeWZDurOoA8ahA" extendedCase="_lKEOkM4bEeWZDurOoA8ahA" extensionLocation="_W5sq0M4cEeWZDurOoA8ahA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_lqeiEM4dEeWZDurOoA8ahA" extendedCase="_mn_vsM4cEeWZDurOoA8ahA" extensionLocation="_lqfJIM4dEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_aqW5AM4cEeWZDurOoA8ahA" name="Manage Insurance">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zDb8sM4cEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-dY3gc4cEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-2zdEM4cEeWZDurOoA8ahA" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__y-xcM4cEeWZDurOoA8ahA" name="ExtensionPoint4"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_M1FV0M4dEeWZDurOoA8ahA" name="ExtensionPoint5"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_QB6eMM4dEeWZDurOoA8ahA" name="ExtensionPoint6"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ppXZgc4dEeWZDurOoA8ahA" name="ExtensionPoint7"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cWMvwM4cEeWZDurOoA8ahA" name="Create Insurance Policy">
+      <extend xmi:type="uml:Extend" xmi:id="_-dY3gM4cEeWZDurOoA8ahA" extendedCase="_aqW5AM4cEeWZDurOoA8ahA" extensionLocation="_-dY3gc4cEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gkFsgM4cEeWZDurOoA8ahA" name="View Insurance details">
+      <extend xmi:type="uml:Extend" xmi:id="_-2y2AM4cEeWZDurOoA8ahA" extendedCase="_aqW5AM4cEeWZDurOoA8ahA" extensionLocation="_-2zdEM4cEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mn_vsM4cEeWZDurOoA8ahA" name="Manage Insurance claims">
+      <extend xmi:type="uml:Extend" xmi:id="_zDbVoM4cEeWZDurOoA8ahA" extendedCase="_aqW5AM4cEeWZDurOoA8ahA" extensionLocation="_zDb8sM4cEeWZDurOoA8ahA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_z1BKoM4cEeWZDurOoA8ahA" extendedCase="_qEKUkM4cEeWZDurOoA8ahA" extensionLocation="_z1BxsM4cEeWZDurOoA8ahA"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_lqfJIM4dEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qEKUkM4cEeWZDurOoA8ahA" name="Process Insurance claims">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_z1BxsM4cEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GRfF8M4dEeWZDurOoA8ahA" name="Make Payment OTC">
+      <extend xmi:type="uml:Extend" xmi:id="_NE90AM5hEeWkluFvPHDFHg" extendedCase="_GE_-kM4cEeWZDurOoA8ahA" extensionLocation="_NE_CIM5hEeWkluFvPHDFHg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_MJ98QM4dEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pdyGgM4bEeWZDurOoA8ahA" name="Inbox">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_15xGEM4bEeWZDurOoA8ahA" name="View Insurance Messages"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_sL9kAM4bEeWZDurOoA8ahA" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0V9xAM4bEeWZDurOoA8ahA" general="_s8Ag4M4bEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_sg4rIM4bEeWZDurOoA8ahA" name="Staff">
+    <generalization xmi:type="uml:Generalization" xmi:id="_yzw-cM4bEeWZDurOoA8ahA" general="_s8Ag4M4bEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_s8Ag4M4bEeWZDurOoA8ahA" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_39nNIM4bEeWZDurOoA8ahA" memberEnd="_39n0Mc4bEeWZDurOoA8ahA _39n0Ms4bEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_39nNIc4bEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_39n0MM4bEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_39n0Mc4bEeWZDurOoA8ahA" name="view insurance messages" type="_15xGEM4bEeWZDurOoA8ahA" association="_39nNIM4bEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_39n0Ms4bEeWZDurOoA8ahA" name="customer" type="_sL9kAM4bEeWZDurOoA8ahA" association="_39nNIM4bEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8RpOIM4bEeWZDurOoA8ahA" memberEnd="_8RqcQs4bEeWZDurOoA8ahA _8RqcQ84bEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8RqcQM4bEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8RqcQc4bEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8RqcQs4bEeWZDurOoA8ahA" name="manage insurance" type="_lKEOkM4bEeWZDurOoA8ahA" association="_8RpOIM4bEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8RqcQ84bEeWZDurOoA8ahA" name="customer" type="_sL9kAM4bEeWZDurOoA8ahA" association="_8RpOIM4bEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_x5IFsM4cEeWZDurOoA8ahA" memberEnd="_x5Iswc4cEeWZDurOoA8ahA _x5Isws4cEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x5IFsc4cEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x5IswM4cEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x5Iswc4cEeWZDurOoA8ahA" name="manage insurance" type="_aqW5AM4cEeWZDurOoA8ahA" association="_x5IFsM4cEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_x5Isws4cEeWZDurOoA8ahA" name="staff" type="_sg4rIM4bEeWZDurOoA8ahA" association="_x5IFsM4cEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Va1qsM4dEeWZDurOoA8ahA" memberEnd="_Va2Rwc4dEeWZDurOoA8ahA _Va2Rws4dEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Va1qsc4dEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Va2RwM4dEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Va2Rwc4dEeWZDurOoA8ahA" name="staff" type="_sg4rIM4bEeWZDurOoA8ahA" association="_Va1qsM4dEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Va2Rws4dEeWZDurOoA8ahA" name="make payment" type="_GRfF8M4dEeWZDurOoA8ahA" association="_Va1qsM4dEeWZDurOoA8ahA"/>
+  </packagedElement>
+</uml:Model>

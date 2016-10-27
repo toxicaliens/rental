@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Zkq5YM3GEeWXa4SqMc_1_A" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_a6OXEM3GEeWXa4SqMc_1_A" name="Credit Score">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_yQAKsM3GEeWXa4SqMc_1_A" name="View Credit Score"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_c3HhkM3GEeWXa4SqMc_1_A" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_vabrwM3GEeWXa4SqMc_1_A" general="_di2mMM3GEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_dONL4M3GEeWXa4SqMc_1_A" name="Staff">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qLb3UM3GEeWXa4SqMc_1_A" general="_di2mMM3GEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_di2mMM3GEeWXa4SqMc_1_A" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZLoOQM_qEeW6re1WnLn9xQ" memberEnd="_ZL57EM_qEeW6re1WnLn9xQ _ZL6iIM_qEeW6re1WnLn9xQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZL4s8M_qEeW6re1WnLn9xQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZL5UAM_qEeW6re1WnLn9xQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZL57EM_qEeW6re1WnLn9xQ" name="staff" type="_dONL4M3GEeWXa4SqMc_1_A" association="_ZLoOQM_qEeW6re1WnLn9xQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZL6iIM_qEeW6re1WnLn9xQ" name="view credit score" type="_yQAKsM3GEeWXa4SqMc_1_A" association="_ZLoOQM_qEeW6re1WnLn9xQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aGbCkM_qEeW6re1WnLn9xQ" memberEnd="_aGcQsM_qEeW6re1WnLn9xQ _aGcQsc_qEeW6re1WnLn9xQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aGbpoM_qEeW6re1WnLn9xQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aGbpoc_qEeW6re1WnLn9xQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aGcQsM_qEeW6re1WnLn9xQ" name="view credit score" type="_yQAKsM3GEeWXa4SqMc_1_A" association="_aGbCkM_qEeW6re1WnLn9xQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aGcQsc_qEeW6re1WnLn9xQ" name="customer" type="_c3HhkM3GEeWXa4SqMc_1_A" association="_aGbCkM_qEeW6re1WnLn9xQ"/>
+  </packagedElement>
+</uml:Model>

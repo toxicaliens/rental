@@ -1,0 +1,18 @@
+$(document).ready(function(){
+	$('#service_option').change(function(){
+		var service_option = $(this).val();
+		
+		$.post('src/parking_module/filter_optioncode.php', { service_option: service_option }, function(data){
+			$('#code_options').html(data);
+			// $('#show_query').text(data);
+		});
+	});
+
+	$('#code_options').click(function(){
+		var option_code = $(this).val();
+		if(option_code  == '' || option_code  == null){
+			alert('Kindly choose the Service Option  first.');
+			$('#service_option').focus();
+		}
+	});
+});

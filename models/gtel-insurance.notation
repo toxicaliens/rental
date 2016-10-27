@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_h0QJUM4bEeWZDurOoA8ahA" type="UseCase" name="UseCase Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_jflpwM4bEeWZDurOoA8ahA" type="2016">
+    <children xmi:type="notation:DecorationNode" xmi:id="_jflpw84bEeWZDurOoA8ahA" type="5025"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_jfmQ0M4bEeWZDurOoA8ahA" type="7013">
+      <children xmi:type="notation:Shape" xmi:id="_lKGq0M4bEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lKGq0s4bEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_lKGq084bEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lKGq1M4bEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_lKHR4M4bEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_lKHR4c4bEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_lKHR4s4bEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lKHR484bEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_lKEOkM4bEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lKGq0c4bEeWZDurOoA8ahA" x="7" y="147"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_9tTT0M4bEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_9tTT0s4bEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_9tTT084bEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9tTT1M4bEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_9tTT1c4bEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_9tTT1s4bEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_9tTT184bEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9tTT2M4bEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_9tL_EM4bEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9tTT0c4bEeWZDurOoA8ahA" x="65" y="31"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_CT4dYM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_CT5EcM4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_CT5Ecc4cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_CT5Ecs4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_CT5Ec84cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_CT5EdM4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_CT5Edc4cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CT5Eds4cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_CTvTcM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CT4dYc4cEeWZDurOoA8ahA" x="24" y="330"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_GFJIgM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_GFJIgs4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_GFJIg84cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_GFJIhM4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_GFJIhc4cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_GFJIhs4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_GFJIh84cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GFJIiM4cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_GE_-kM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GFJIgc4cEeWZDurOoA8ahA" x="148" y="266"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_UjYTsM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_UjYTss4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_UjYTs84cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_UjYTtM4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_UjYTtc4cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_UjYTts4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_UjYTt84cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UjYTuM4cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_UjKRQM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UjYTsc4cEeWZDurOoA8ahA" x="243" y="6"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_aqligM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_aqligs4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_aqlig84cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_aqlihM4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_aqlihc4cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_aqlihs4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_aqlih84cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aqliiM4cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_aqW5AM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aqligc4cEeWZDurOoA8ahA" x="526" y="199"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_cWdOcM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_cWd1gM4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_cWd1gc4cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_cWd1gs4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_cWd1g84cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_cWd1hM4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_cWd1hc4cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cWd1hs4cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_cWMvwM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cWdOcc4cEeWZDurOoA8ahA" x="501" y="326"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_gkVkIM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_gkVkIs4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_gkVkI84cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gkVkJM4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_gkVkJc4cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_gkVkJs4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_gkVkJ84cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gkVkKM4cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_gkFsgM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gkVkIc4cEeWZDurOoA8ahA" x="326" y="281"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_moSDkM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_moSDks4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_moSDk84cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_moSDlM4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_moSqoM4cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_moSqoc4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_moSqos4cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_moSqo84cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_mn_vsM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_moSDkc4cEeWZDurOoA8ahA" x="339" y="85"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_qEfrwM4cEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_qEfrws4cEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_qEfrw84cEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_qEfrxM4cEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_qEgS0M4cEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_qEgS0c4cEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_qEgS0s4cEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qEgS084cEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_qEKUkM4cEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qEfrwc4cEeWZDurOoA8ahA" x="493" y="13"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_GRxZ0M4dEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_GRyA4M4dEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_GRyA4c4dEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_GRyA4s4dEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_GRyA484dEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_GRyA5M4dEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_GRyA5c4dEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GRyA5s4dEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_GRfF8M4dEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GRxZ0c4dEeWZDurOoA8ahA" x="193" y="169" width="154"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jfmQ0c4bEeWZDurOoA8ahA"/>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_jflpwc4bEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Package" href="gtel-insurance.uml#_jfjNgM4bEeWZDurOoA8ahA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jflpws4bEeWZDurOoA8ahA" x="147" y="233" width="684" height="426"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_pdzUoM4bEeWZDurOoA8ahA" type="2016">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pdzUo84bEeWZDurOoA8ahA" type="5025"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pdzUpM4bEeWZDurOoA8ahA" type="7013">
+      <children xmi:type="notation:Shape" xmi:id="_1563EM4bEeWZDurOoA8ahA" type="3012">
+        <children xmi:type="notation:DecorationNode" xmi:id="_1563Es4bEeWZDurOoA8ahA" type="5022"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_1563E84bEeWZDurOoA8ahA" type="6046">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1563FM4bEeWZDurOoA8ahA" y="5"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_1563Fc4bEeWZDurOoA8ahA" type="7014">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_1563Fs4bEeWZDurOoA8ahA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_1563F84bEeWZDurOoA8ahA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1563GM4bEeWZDurOoA8ahA"/>
+        </children>
+        <element xmi:type="uml:UseCase" href="gtel-insurance.uml#_15xGEM4bEeWZDurOoA8ahA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1563Ec4bEeWZDurOoA8ahA" x="37" y="15"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdzUpc4bEeWZDurOoA8ahA"/>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_pdzUoc4bEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Package" href="gtel-insurance.uml#_pdyGgM4bEeWZDurOoA8ahA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdzUos4bEeWZDurOoA8ahA" x="148" y="77" width="253" height="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_sL-yIM4bEeWZDurOoA8ahA" type="2011">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sL_ZMM4bEeWZDurOoA8ahA" type="5014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sL_ZMc4bEeWZDurOoA8ahA" x="-13" y="67"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sL_ZMs4bEeWZDurOoA8ahA" type="6029">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sL_ZM84bEeWZDurOoA8ahA" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sL_ZNM4bEeWZDurOoA8ahA" type="6037">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sL_ZNc4bEeWZDurOoA8ahA" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sL_ZNs4bEeWZDurOoA8ahA" type="6048">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sL_ZN84bEeWZDurOoA8ahA" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="gtel-insurance.uml#_sL9kAM4bEeWZDurOoA8ahA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sL-yIc4bEeWZDurOoA8ahA" x="19" y="347"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_sg55QM4bEeWZDurOoA8ahA" type="2011">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sg55Qs4bEeWZDurOoA8ahA" type="5014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sg55Q84bEeWZDurOoA8ahA" x="7" y="71"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sg55RM4bEeWZDurOoA8ahA" type="6029">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sg55Rc4bEeWZDurOoA8ahA" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sg55Rs4bEeWZDurOoA8ahA" type="6037">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sg55R84bEeWZDurOoA8ahA" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sg55SM4bEeWZDurOoA8ahA" type="6048">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sg55Sc4bEeWZDurOoA8ahA" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="gtel-insurance.uml#_sg4rIM4bEeWZDurOoA8ahA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sg55Qc4bEeWZDurOoA8ahA" x="883" y="397"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_s8BH8M4bEeWZDurOoA8ahA" type="2011">
+    <children xmi:type="notation:DecorationNode" xmi:id="_s8BH8s4bEeWZDurOoA8ahA" type="5014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_s8BvAM4bEeWZDurOoA8ahA" x="3" y="66"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_s8BvAc4bEeWZDurOoA8ahA" type="6029">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_s8BvAs4bEeWZDurOoA8ahA" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_s8BvA84bEeWZDurOoA8ahA" type="6037">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_s8BvBM4bEeWZDurOoA8ahA" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_s8BvBc4bEeWZDurOoA8ahA" type="6048">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_s8BvBs4bEeWZDurOoA8ahA" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="gtel-insurance.uml#_s8Ag4M4bEeWZDurOoA8ahA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s8BH8c4bEeWZDurOoA8ahA" x="471" y="11"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_h0QJUc4bEeWZDurOoA8ahA" name="diagram_compatibility_version" stringValue="1.1.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_h0QJUs4bEeWZDurOoA8ahA"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_h0QJU84bEeWZDurOoA8ahA">
+    <owner xmi:type="uml:Model" href="gtel-insurance.uml#_hzy2UM4bEeWZDurOoA8ahA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="gtel-insurance.uml#_hzy2UM4bEeWZDurOoA8ahA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_yz3sIM4bEeWZDurOoA8ahA" type="4010" source="_sg55QM4bEeWZDurOoA8ahA" target="_s8BH8M4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yz3sI84bEeWZDurOoA8ahA" type="6032">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yz3sJM4bEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yz3sIc4bEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Generalization" href="gtel-insurance.uml#_yzw-cM4bEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yz3sIs4bEeWZDurOoA8ahA" points="[0, 0, 390, 359]$[0, -359, 390, 0]$[-390, -359, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y0L1MM4bEeWZDurOoA8ahA" id="(0.26666666666666666,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y0L1Mc4bEeWZDurOoA8ahA" id="(1.0,0.54)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_0WFFwM4bEeWZDurOoA8ahA" type="4010" source="_sL-yIM4bEeWZDurOoA8ahA" target="_s8BH8M4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_0WFFw84bEeWZDurOoA8ahA" type="6032">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0WFFxM4bEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0WFFwc4bEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Generalization" href="gtel-insurance.uml#_0V9xAM4bEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0WFFws4bEeWZDurOoA8ahA" points="[-6, -10, -428, 308]$[-6, -318, -428, 0]$[422, -318, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0WbEAM4bEeWZDurOoA8ahA" id="(1.0,0.2)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0WbEAc4bEeWZDurOoA8ahA" id="(0.0,0.56)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_39pCUM4bEeWZDurOoA8ahA" type="4011" source="_sL-yIM4bEeWZDurOoA8ahA" target="_1563EM4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_39pCU84bEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_39pCVM4bEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_39pCVc4bEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_39pCVs4bEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_39pCUc4bEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="gtel-insurance.uml#_39nNIM4bEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_39pCUs4bEeWZDurOoA8ahA" points="[1, -2, -201, 236]$[196, -240, -6, -2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-CD4M4bEeWZDurOoA8ahA" id="(1.0,0.52)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-CD4c4bEeWZDurOoA8ahA" id="(0.0,0.65)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_8RrDUM4bEeWZDurOoA8ahA" type="4011" source="_sL-yIM4bEeWZDurOoA8ahA" target="_lKGq0M4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8RrqYM4bEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8RrqYc4bEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8RrqYs4bEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8RrqY84bEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8RrDUc4bEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="gtel-insurance.uml#_8RpOIM4bEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8RrDUs4bEeWZDurOoA8ahA" points="[15, 7, -128, -67]$[128, 66, -15, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8SDd0M4bEeWZDurOoA8ahA" id="(1.0,0.76)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8SDd0c4bEeWZDurOoA8ahA" id="(0.0,0.5)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_A6gPoM4cEeWZDurOoA8ahA" type="4009" source="_9tTT0M4bEeWZDurOoA8ahA" target="_lKGq0M4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_A6g2sM4cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_A6g2sc4cEeWZDurOoA8ahA" x="-8" y="24"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_A6g2ss4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_A6g2s84cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_A6gPoc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_A6YT0M4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A6gPos4cEeWZDurOoA8ahA" points="[-5, 9, 38, -88]$[-40, 67, 3, -30]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A7BNAM4cEeWZDurOoA8ahA" id="(0.3181818181818182,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A7BNAc4cEeWZDurOoA8ahA" id="(0.5714285714285714,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_H1d2oM4cEeWZDurOoA8ahA" type="4009" source="_GFJIgM4cEeWZDurOoA8ahA" target="_lKGq0M4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H1edsM4cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H1edsc4cEeWZDurOoA8ahA" x="8" y="-3"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H1edss4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H1eds84cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_H1d2oc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_H1TekM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H1d2os4cEeWZDurOoA8ahA" points="[-69, -16, 118, 27]$[-159, -38, 28, 5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H2ApMM4cEeWZDurOoA8ahA" id="(0.0,0.35)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H2BQQM4cEeWZDurOoA8ahA" id="(1.0,0.5666666666666667)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_W6CCAM4cEeWZDurOoA8ahA" type="4009" source="_UjYTsM4cEeWZDurOoA8ahA" target="_lKGq0M4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_W6CpEM4cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_W6CpEc4cEeWZDurOoA8ahA" x="14" y="2"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_W6CpEs4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_W6CpE84cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_W6CCAc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_W5sDwM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W6CCAs4cEeWZDurOoA8ahA" points="[-50, 21, 190, -82]$[-214, 118, 26, 15]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_W7CHkM4cEeWZDurOoA8ahA" id="(0.007142857142857143,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_W7CHkc4cEeWZDurOoA8ahA" id="(1.0,0.05)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_x5JT0M4cEeWZDurOoA8ahA" type="4011" source="_sg55QM4bEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_x5JT084cEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_x5JT1M4cEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_x5J64M4cEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_x5J64c4cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_x5JT0c4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="gtel-insurance.uml#_x5IFsM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x5JT0s4cEeWZDurOoA8ahA" points="[-15, 8, 89, -53]$[-98, 56, 6, -5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x6BdkM4cEeWZDurOoA8ahA" id="(0.0,0.7)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x6Bdkc4cEeWZDurOoA8ahA" id="(1.0,0.5166666666666667)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zDtpgM4cEeWZDurOoA8ahA" type="4009" source="_moSDkM4cEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zDuQkM4cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zDuQkc4cEeWZDurOoA8ahA" x="-29" y="-7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_zDuQks4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zDuQk84cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zDtpgc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_zDbVoM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zDtpgs4cEeWZDurOoA8ahA" points="[39, 26, -66, -44]$[129, 61, 24, -9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEz1sM4cEeWZDurOoA8ahA" id="(0.8160919540229885,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEz1sc4cEeWZDurOoA8ahA" id="(0.24285714285714285,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_z1XI4M4cEeWZDurOoA8ahA" type="4009" source="_moSDkM4cEeWZDurOoA8ahA" target="_qEfrwM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_z1XI484cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_z1XI5M4cEeWZDurOoA8ahA" x="-10" y="-12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_z1XI5c4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_z1XI5s4cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_z1XI4c4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_z1BKoM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z1XI4s4cEeWZDurOoA8ahA" points="[3, -6, -58, 56]$[8, -39, -53, 23]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z2piUM4cEeWZDurOoA8ahA" id="(0.7011494252873564,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z2piUc4cEeWZDurOoA8ahA" id="(0.2616279069767442,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-drLYM4cEeWZDurOoA8ahA" type="4009" source="_cWdOcM4cEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-drLY84cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-drycM4cEeWZDurOoA8ahA" x="-11" y="12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-drycc4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-drycs4cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-drLYc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_-dY3gM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-drLYs4cEeWZDurOoA8ahA" points="[-8, -30, 9, 81]$[-8, -82, 9, 29]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-eTdgM4cEeWZDurOoA8ahA" id="(0.5617283950617284,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-eTdgc4cEeWZDurOoA8ahA" id="(0.6071428571428571,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-3INMM4cEeWZDurOoA8ahA" type="4009" source="_gkVkIM4cEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-3INM84cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-3INNM4cEeWZDurOoA8ahA" x="-13" y="10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-3INNc4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-3INNs4cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-3INMc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_-2y2AM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-3INMs4cEeWZDurOoA8ahA" points="[3, -4, -93, 72]$[62, -72, -34, 4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-4CMIM4cEeWZDurOoA8ahA" id="(0.8141025641025641,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-4CMIc4cEeWZDurOoA8ahA" id="(0.0,0.8666666666666667)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="__zS6gM4cEeWZDurOoA8ahA" type="4009" source="_9tTT0M4bEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="__zS6g84cEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__zS6hM4cEeWZDurOoA8ahA" x="-55" y="-6"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__zS6hc4cEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__zS6hs4cEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="__zS6gc4cEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#__y-KYM4cEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__zS6gs4cEeWZDurOoA8ahA" points="[-10, -7, -296, -137]$[106, 74, -180, -56]$[286, 130, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__0M5cM4cEeWZDurOoA8ahA" id="(1.0,0.85)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__0M5cc4cEeWZDurOoA8ahA" id="(0.0,0.4166666666666667)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_QCRDgM4dEeWZDurOoA8ahA" type="4009" source="_GFJIgM4cEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_QCRDg84dEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_QCRDhM4dEeWZDurOoA8ahA" x="-61" y="-7"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_QCRDhc4dEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_QCRDhs4dEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_QCRDgc4dEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_QB5QEM4dEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QCRDgs4dEeWZDurOoA8ahA" points="[17, -5, -214, 59]$[221, -70, -10, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QDvqMM4dEeWZDurOoA8ahA" id="(1.0,0.21666666666666667)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QDwRQM4dEeWZDurOoA8ahA" id="(0.0,0.6333333333333333)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Va240M4dEeWZDurOoA8ahA" type="4011" source="_GRxZ0M4dEeWZDurOoA8ahA" target="_sg55QM4bEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Va3f4M4dEeWZDurOoA8ahA" type="6008">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Va3f4c4dEeWZDurOoA8ahA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Va3f4s4dEeWZDurOoA8ahA" type="6033">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Va3f484dEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Va240c4dEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Association" href="gtel-insurance.uml#_Va1qsM4dEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Va240s4dEeWZDurOoA8ahA" points="[29, -4, -400, 42]$[429, -46, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Vbr_QM4dEeWZDurOoA8ahA" id="(1.0,0.5833333333333334)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Vbr_Qc4dEeWZDurOoA8ahA" id="(0.0,0.52)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_lq0gUM4dEeWZDurOoA8ahA" type="4009" source="_UjYTsM4cEeWZDurOoA8ahA" target="_moSDkM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lq1HYM4dEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_lq1HYc4dEeWZDurOoA8ahA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_lq1HYs4dEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_lq1HY84dEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_lq0gUc4dEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_lqeiEM4dEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lq0gUs4dEeWZDurOoA8ahA" points="[15, 10, -62, -59]$[82, 39, 5, -30]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lr3pMM4dEeWZDurOoA8ahA" id="(0.9571428571428572,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lr3pMc4dEeWZDurOoA8ahA" id="(0.3793103448275862,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ppsJoM4dEeWZDurOoA8ahA" type="4009" source="_CT4dYM4cEeWZDurOoA8ahA" target="_aqligM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ppsJo84dEeWZDurOoA8ahA" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ppsJpM4dEeWZDurOoA8ahA" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ppswsM4dEeWZDurOoA8ahA" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ppswsc4dEeWZDurOoA8ahA" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ppsJoc4dEeWZDurOoA8ahA"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_ppXZgM4dEeWZDurOoA8ahA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ppsJos4dEeWZDurOoA8ahA" points="[-8, -7, -362, 88]$[299, -7, -55, 88]$[360, -106, 6, -11]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pqrBEM4dEeWZDurOoA8ahA" id="(1.0,0.4)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pqrBEc4dEeWZDurOoA8ahA" id="(0.07142857142857142,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NFkQ8M5hEeWkluFvPHDFHg" type="4009" source="_GRxZ0M4dEeWZDurOoA8ahA" target="_GFJIgM4cEeWZDurOoA8ahA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NFkQ885hEeWkluFvPHDFHg" type="6007">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NFk4AM5hEeWkluFvPHDFHg" x="-6" y="-35"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NFk4Ac5hEeWkluFvPHDFHg" type="6031">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NFk4As5hEeWkluFvPHDFHg" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NFkQ8c5hEeWkluFvPHDFHg"/>
+    <element xmi:type="uml:Extend" href="gtel-insurance.uml#_NE90AM5hEeWkluFvPHDFHg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NFkQ8s5hEeWkluFvPHDFHg" points="[-9, 10, 11, -70]$[58, 73, 78, -7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NHVLgM5hEeWkluFvPHDFHg" id="(0.35064935064935066,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NHVLgc5hEeWkluFvPHDFHg" id="(0.5802469135802469,0.0)"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,27 @@
+.tables {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #A2BDEA;
+	padding-left: 0.3em;
+	font-weight: bold;
+}
+div.table2{
+	margin-top: 1em;
+	color: #000000;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+	div.table3{
+	margin-top: 1em;
+	color: #000000;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:12px
+	}

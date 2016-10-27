@@ -1,0 +1,31 @@
+################################################################################ 
+# This file will be used to define various packages to include in the app
+################################################################################
+
+basic:
+   - src/connection/config.php
+   - src/library.php
+   - src/parking_module/library.php
+   - src/payment_agent_module/library.php
+   - src/reports_library.php
+
+post:
+   - src/masterfile_module/masterfile_processor.php
+   - src/users_module/user_processor.php
+   - src/users_module/role_processor.php
+   - src/system_manager/view_processor.php
+   - src/system_manager/action_processor.php
+   - src/system_manager/manage_views_processor.php
+   - src/system_manager/manage_actions_processor.php
+   - src/system_manager/menu_processor.php
+   - src/system_manager/manage_menu_processor.php
+   - src/RMC_module/RMC_processor.php
+   - src/payment_agent_module/payment_agent_processor.php
+   - src/broadcast_module/broadcast_processor.php
+   - src/support_module/support_processor.php
+   - src/system_manager/maintenance_processor.php
+   - src/prop_module/property_processor.php
+   - src/crm_module/crm_processor.php
+   - src/crm_module/account_processor.php
+   - src/house_module/house_processor.php   
+   - src/rent_management_module/lease_processor.php

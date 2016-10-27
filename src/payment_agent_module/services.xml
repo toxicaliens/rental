@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ServiceMenu>
+<Services>
+<ServiceTypeId>1</ServiceTypeId>
+<ServiceId>1</ServiceId>
+<ServiceName>1 Day</ServiceName>
+<Description>1 Day Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>2</ServiceTypeId>
+<ServiceId>4</ServiceId>
+<ServiceName>Normal</ServiceName>
+<Description>Payment for a normal market</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>3</ServiceTypeId>
+<ServiceId>8</ServiceId>
+<ServiceName>Register PSV</ServiceName>
+<Description>Register PSV</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>5</ServiceTypeId>
+<ServiceId>19</ServiceId>
+<ServiceName>Land Rates</ServiceName>
+<Description>Land Rates</Description>
+<OptionCode>204</OptionCode>
+<InputId>206</InputId>
+<Price></Price>
+<CategoryIdentifier>4</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>1</ServiceTypeId>
+<ServiceId>2</ServiceId>
+<ServiceName>1 Month </ServiceName>
+<Description>1 Month Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>2</ServiceTypeId>
+<ServiceId>5</ServiceId>
+<ServiceName>Maasai</ServiceName>
+<Description>Payment for a maasai market</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>3</ServiceTypeId>
+<ServiceId>9</ServiceId>
+<ServiceName>Deregister PSV</ServiceName>
+<Description>Deregister PSV</Description>
+<OptionCode>207</OptionCode>
+<InputId>204</InputId>
+<Price>500</Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>5</ServiceTypeId>
+<ServiceId>20</ServiceId>
+<ServiceName>Rents</ServiceName>
+<Description>Rents</Description>
+<OptionCode>208</OptionCode>
+<InputId>207</InputId>
+<Price></Price>
+<CategoryIdentifier>4</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>1</ServiceTypeId>
+<ServiceId>3</ServiceId>
+<ServiceName>3 Months</ServiceName>
+<Description>3 Months Parking</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>2</ServiceTypeId>
+<ServiceId>6</ServiceId>
+<ServiceName>Wards</ServiceName>
+<Description>Estate Shop/Hawkers</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>3</ServiceTypeId>
+<ServiceId>11</ServiceId>
+<ServiceName>Change Route</ServiceName>
+<Description>Change Route</Description>
+<OptionCode>250</OptionCode>
+<InputId>212</InputId>
+<Price>500</Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>2</ServiceTypeId>
+<ServiceId>7</ServiceId>
+<ServiceName>Transit Fee</ServiceName>
+<Description>Payment for transit fee</Description>
+<OptionCode>200</OptionCode>
+<InputId>214</InputId>
+<Price>500</Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>3</ServiceTypeId>
+<ServiceId>17</ServiceId>
+<ServiceName>PSV 1 Month Parking</ServiceName>
+<Description>PSV 1 Month</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>5</ServiceTypeId>
+<ServiceId>18</ServiceId>
+<ServiceName>Business Permit</ServiceName>
+<Description>Business Permit</Description>
+<OptionCode>211</OptionCode>
+<InputId>205</InputId>
+<Price></Price>
+<CategoryIdentifier>4</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>3</ServiceTypeId>
+<ServiceId>21</ServiceId>
+<ServiceName>PSV 3 Months Parking</ServiceName>
+<Description>PSV 3 Months</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>1</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>6</ServiceTypeId>
+<ServiceId>13</ServiceId>
+<ServiceName>Document</ServiceName>
+<Description>Check validity of a document</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier>3</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>4</ServiceTypeId>
+<ServiceId>22</ServiceId>
+<ServiceName>Enter Invoice No</ServiceName>
+<Description></Description>
+<OptionCode>202</OptionCode>
+<InputId>10</InputId>
+<Price></Price>
+<CategoryIdentifier>2</CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>8</ServiceTypeId>
+<ServiceId>26</ServiceId>
+<ServiceName>Excise Duty</ServiceName>
+<Description>Excise Duty</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>8</ServiceTypeId>
+<ServiceId>27</ServiceId>
+<ServiceName>Import Duty</ServiceName>
+<Description>Import Duty</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>8</ServiceTypeId>
+<ServiceId>28</ServiceId>
+<ServiceName>IDF Form</ServiceName>
+<Description>IDF Form</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>9</ServiceTypeId>
+<ServiceId>29</ServiceId>
+<ServiceName>Motor Vehicle Registration</ServiceName>
+<Description>Motor Vehicle Registration</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>9</ServiceTypeId>
+<ServiceId>30</ServiceId>
+<ServiceName>Log Book Fee</ServiceName>
+<Description>Log Book Fee</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>9</ServiceTypeId>
+<ServiceId>31</ServiceId>
+<ServiceName>Driving License</ServiceName>
+<Description>Driving License</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>23</ServiceTypeId>
+<ServiceId>37</ServiceId>
+<ServiceName>Register Graduate Employee</ServiceName>
+<Description>Register Graduate Employee</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>24</ServiceTypeId>
+<ServiceId>38</ServiceId>
+<ServiceName>Register for Repayment</ServiceName>
+<Description>Register for Repayment</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>24</ServiceTypeId>
+<ServiceId>39</ServiceId>
+<ServiceName>Loan Balance</ServiceName>
+<Description>Check Loan Balance
+</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>24</ServiceTypeId>
+<ServiceId>40</ServiceId>
+<ServiceName>Book Appointment</ServiceName>
+<Description>Book an Appointment</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>25</ServiceTypeId>
+<ServiceId>41</ServiceId>
+<ServiceName>Track Status</ServiceName>
+<Description>Track Application Status</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>20</ServiceTypeId>
+<ServiceId>32</ServiceId>
+<ServiceName>Access</ServiceName>
+<Description>Over 40 Channels</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>20</ServiceTypeId>
+<ServiceId>33</ServiceId>
+<ServiceName>Family</ServiceName>
+<Description>Over 50 Channels</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>20</ServiceTypeId>
+<ServiceId>34</ServiceId>
+<ServiceName>Compact</ServiceName>
+<Description>Over 65 Channels</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>20</ServiceTypeId>
+<ServiceId>35</ServiceId>
+<ServiceName>Compact Plus</ServiceName>
+<Description>Over 70 Channels</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>20</ServiceTypeId>
+<ServiceId>36</ServiceId>
+<ServiceName>Premium</ServiceName>
+<Description>Over 95 Channels</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>1</ServiceTypeId>
+<ServiceId>42</ServiceId>
+<ServiceName>Hourly</ServiceName>
+<Description>Hourly</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>7</ServiceTypeId>
+<ServiceId>23</ServiceId>
+<ServiceName>DL Application Fee</ServiceName>
+<Description>Income Tax</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>7</ServiceTypeId>
+<ServiceId>24</ServiceId>
+<ServiceName>DL Renewal Fee</ServiceName>
+<Description>VAT</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>7</ServiceTypeId>
+<ServiceId>25</ServiceId>
+<ServiceName>Tax</ServiceName>
+<Description>Pay As You Earn</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>11</ServiceTypeId>
+<ServiceId>43</ServiceId>
+<ServiceName>DL Validity</ServiceName>
+<Description>DL Validity</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>11</ServiceTypeId>
+<ServiceId>44</ServiceId>
+<ServiceName>Tax Compliance</ServiceName>
+<Description>Tax Compliance</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>11</ServiceTypeId>
+<ServiceId>46</ServiceId>
+<ServiceName>Vehicle Search</ServiceName>
+<Description>Vehicle Search</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>12</ServiceTypeId>
+<ServiceId>45</ServiceId>
+<ServiceName>PIN Certificate</ServiceName>
+<Description>PIN Certificate</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>7</ServiceTypeId>
+<ServiceId>48</ServiceId>
+<ServiceName>Penalty/Fine</ServiceName>
+<Description>Penalty/Fine</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>12</ServiceTypeId>
+<ServiceId>47</ServiceId>
+<ServiceName>Tax</ServiceName>
+<Description>Tax</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>26</ServiceTypeId>
+<ServiceId>49</ServiceId>
+<ServiceName>Motor Vehicle Sale</ServiceName>
+<Description>Motor Vehicle Sale</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>26</ServiceTypeId>
+<ServiceId>50</ServiceId>
+<ServiceName>Tax Evasion</ServiceName>
+<Description>Tax Evasion</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>4</ServiceTypeId>
+<ServiceId>54</ServiceId>
+<ServiceName>Vehicle Bill</ServiceName>
+<Description>Check any Bill Attached to Your Vehicle</Description>
+<OptionCode>212</OptionCode>
+<InputId>216</InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>27</ServiceTypeId>
+<ServiceId>51</ServiceId>
+<ServiceName>Parking</ServiceName>
+<Description>Parking Related Payments</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>27</ServiceTypeId>
+<ServiceId>52</ServiceId>
+<ServiceName>Markets</ServiceName>
+<Description>Markets Related Payments</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>27</ServiceTypeId>
+<ServiceId>53</ServiceId>
+<ServiceName>PSV</ServiceName>
+<Description>Public Service Vehicles</Description>
+<OptionCode></OptionCode>
+<InputId></InputId>
+<Price></Price>
+<CategoryIdentifier></CategoryIdentifier>
+
+</Services>
+<Services>
+<ServiceTypeId>6</ServiceTypeId>
+<ServiceId>12</ServiceId>
+<ServiceName>Staff</ServiceName>
+<Description>Check whether a staff is a genuine CCN employee</Description>
+<OptionCode>777</OptionCode>
+<InputId>213</InputId>
+<Price></Price>
+<CategoryIdentifier>3</CategoryIdentifier>
+
+</Services>
+</ServiceMenu>
+

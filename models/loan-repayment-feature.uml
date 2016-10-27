@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8QJ90M3CEeWXa4SqMc_1_A" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_8zn3QM3CEeWXa4SqMc_1_A" name="Loan Repayment">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OE7nAM3DEeWXa4SqMc_1_A" name="View Loan Balance">
+      <extend xmi:type="uml:Extend" xmi:id="_b7ppIM4ZEeWZDurOoA8ahA" extendedCase="_A3XjcM4ZEeWZDurOoA8ahA" extensionLocation="_b7qQMM4ZEeWZDurOoA8ahA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_y6FTwM4ZEeWZDurOoA8ahA" extendedCase="_G_DTYM4ZEeWZDurOoA8ahA" extensionLocation="_y6FTwc4ZEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RjTyYM3DEeWXa4SqMc_1_A" name="Make Loan Repayment">
+      <extend xmi:type="uml:Extend" xmi:id="_xAn3wM4ZEeWZDurOoA8ahA" extendedCase="_G_DTYM4ZEeWZDurOoA8ahA" extensionLocation="_xAps8M4ZEeWZDurOoA8ahA"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_2A0b0c3EEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iYM10M4ZEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tXrRMM3DEeWXa4SqMc_1_A" name="Claim Airtime">
+      <extend xmi:type="uml:Extend" xmi:id="_o13kkM5gEeWkluFvPHDFHg" extendedCase="_G_DTYM4ZEeWZDurOoA8ahA" extensionLocation="_o2DKwM5gEeWkluFvPHDFHg"/>
+      <extend xmi:type="uml:Extend" xmi:id="_zX0cMM5nEeWkluFvPHDFHg" extendedCase="_A3XjcM4ZEeWZDurOoA8ahA" extensionLocation="_zX1qUM5nEeWkluFvPHDFHg"/>
+      <include xmi:type="uml:Include" xmi:id="_6EbeIM5nEeWkluFvPHDFHg" addition="_nOVeUM4ZEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_E3ACYM3EEeWXa4SqMc_1_A" name="Upload Direct Debit Files">
+      <extend xmi:type="uml:Extend" xmi:id="_aZlZcM4ZEeWZDurOoA8ahA" extendedCase="_A3XjcM4ZEeWZDurOoA8ahA" extensionLocation="_aZlZcc4ZEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_KG-HMM3EEeWXa4SqMc_1_A" name="Create Loan Repayment Record">
+      <extend xmi:type="uml:Extend" xmi:id="_Y5kYMM4ZEeWZDurOoA8ahA" extendedCase="_A3XjcM4ZEeWZDurOoA8ahA" extensionLocation="_Y5mNYM4ZEeWZDurOoA8ahA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LD3X0M3FEeWXa4SqMc_1_A" name="View Airtime allocations and consumptions"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_R9Y0YM3FEeWXa4SqMc_1_A" name="View Direct Debit Records">
+      <include xmi:type="uml:Include" xmi:id="_tGNb0M3FEeWXa4SqMc_1_A" addition="_E3ACYM3EEeWXa4SqMc_1_A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_A3XjcM4ZEeWZDurOoA8ahA" name="Manage Loan Repayments">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Y5mNYM4ZEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_aZlZcc4ZEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_b7qQMM4ZEeWZDurOoA8ahA" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_fQZXYM4ZEeWZDurOoA8ahA" name="ExtensionPoint4"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pmsnYM4aEeWZDurOoA8ahA" name="ExtensionPoint5"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zX1qUM5nEeWkluFvPHDFHg" name="ExtensionPoint6"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G_DTYM4ZEeWZDurOoA8ahA" name="Manage Loan Repayment">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_rLwWIM4ZEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xAps8M4ZEeWZDurOoA8ahA" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_y6FTwc4ZEeWZDurOoA8ahA" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_o2DKwM5gEeWkluFvPHDFHg" name="ExtensionPoint4"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9Qw3QM5nEeWkluFvPHDFHg" name="ExtensionPoint5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nOVeUM4ZEeWZDurOoA8ahA" name="View Loan Repayment History">
+      <extend xmi:type="uml:Extend" xmi:id="_pmrZQM4aEeWZDurOoA8ahA" extendedCase="_A3XjcM4ZEeWZDurOoA8ahA" extensionLocation="_pmsnYM4aEeWZDurOoA8ahA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_9QwQMM5nEeWkluFvPHDFHg" extendedCase="_G_DTYM4ZEeWZDurOoA8ahA" extensionLocation="_9Qw3QM5nEeWkluFvPHDFHg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_qXV2oc4ZEeWZDurOoA8ahA" name="ExtensionPoint1"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DcdzgM3DEeWXa4SqMc_1_A" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_LAovkM3DEeWXa4SqMc_1_A" general="_GPxBkM3DEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GPxBkM3DEeWXa4SqMc_1_A" name="User"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_HRJmEM3DEeWXa4SqMc_1_A" name="Staff">
+    <generalization xmi:type="uml:Generalization" xmi:id="_KJd3AM3DEeWXa4SqMc_1_A" general="_GPxBkM3DEeWXa4SqMc_1_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_VB5ZIM3DEeWXa4SqMc_1_A" name="Wallet">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZRg0MM3DEeWXa4SqMc_1_A" name="Make Payment">
+      <extend xmi:type="uml:Extend" xmi:id="_2A0b0M3EEeWXa4SqMc_1_A" extendedCase="_RjTyYM3DEeWXa4SqMc_1_A" extensionLocation="_2A0b0c3EEeWXa4SqMc_1_A"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6aZrMM3EEeWXa4SqMc_1_A" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_d3ikIM3DEeWXa4SqMc_1_A" name="Make Mpesa Payment">
+      <extend xmi:type="uml:Extend" xmi:id="_6aYdEM3EEeWXa4SqMc_1_A" extendedCase="_ZRg0MM3DEeWXa4SqMc_1_A" extensionLocation="_6aZrMM3EEeWXa4SqMc_1_A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UvxRQM4ZEeWZDurOoA8ahA" memberEnd="_UvyfYc4ZEeWZDurOoA8ahA _UvzGcM4ZEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Uvx4UM4ZEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UvyfYM4ZEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UvyfYc4ZEeWZDurOoA8ahA" name="manage loan repayments" type="_A3XjcM4ZEeWZDurOoA8ahA" association="_UvxRQM4ZEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UvzGcM4ZEeWZDurOoA8ahA" name="staff" type="_HRJmEM3DEeWXa4SqMc_1_A" association="_UvxRQM4ZEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Wi0jQM4ZEeWZDurOoA8ahA" memberEnd="_Wi1KUc4ZEeWZDurOoA8ahA _Wi1KUs4ZEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wi0jQc4ZEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wi1KUM4ZEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Wi1KUc4ZEeWZDurOoA8ahA" name="view airtime allocations and consumptions" type="_LD3X0M3FEeWXa4SqMc_1_A" association="_Wi0jQM4ZEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Wi1KUs4ZEeWZDurOoA8ahA" name="staff" type="_HRJmEM3DEeWXa4SqMc_1_A" association="_Wi0jQM4ZEeWZDurOoA8ahA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-upG8M4ZEeWZDurOoA8ahA" memberEnd="_-upuAs4ZEeWZDurOoA8ahA _-uqVEM4ZEeWZDurOoA8ahA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-upuAM4ZEeWZDurOoA8ahA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-upuAc4ZEeWZDurOoA8ahA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-upuAs4ZEeWZDurOoA8ahA" name="manage loan repayment" type="_G_DTYM4ZEeWZDurOoA8ahA" association="_-upG8M4ZEeWZDurOoA8ahA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-uqVEM4ZEeWZDurOoA8ahA" name="customer" type="_DcdzgM3DEeWXa4SqMc_1_A" association="_-upG8M4ZEeWZDurOoA8ahA"/>
+  </packagedElement>
+</uml:Model>

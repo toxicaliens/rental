@@ -1,0 +1,196 @@
+ROLE_USER:
+   0:
+      icon: icon-envelope
+      text: Inbox
+      url: #
+      children:
+         - { text: All Requests, url: index.php?num=1 }
+         - { text: All Transactions, url: index.php?num=6 }
+         - { text: Buy Service (Pay to consume), url: index.php?num=2 }
+         - { text: Pay Bill (Pay as you consume), url: index.php?num=3 }
+         - { text: Query Bill (Queries), url: index.php?num=4 }
+         - { text: Check Compliance (Validation), url: index.php?num=5 }
+   1:
+      icon: icon-tasks
+      text: Payment &amp; Bills
+      url: #
+      children:
+         - { text: Pay Bill, url: index.php?num=139 }
+         - { text: Payments, url: index.php?num=145 }
+         - { text: Bills, url: index.php?num=146 }
+         - { text: Manage Services, url: index.php?num=152 }
+         - { text: Manage Service Bills, url: index.php?num=149 }
+
+   2:
+      icon: icon-group
+      text: MASTERFILE
+      url: #
+      children:
+         - { text: Masterfile records, url: index.php?num=720 }
+         - { text: Search masterfiles, url: index.php?num=723 }
+         - { text: Add New masterfile, url: index.php?num=722 }
+   3:
+      icon: icon-keyboard
+      text: CRM
+      url: #
+      children:
+         - { text: All Customers, url: index.php?num=801 }
+         - { text: Search Customer, url: index.php?num=804 }
+         - { text: Add New Customer, url: index.php?num=803 }
+   4:
+      icon: icon-truck
+      text: Parking
+      url: #
+      children:
+         - { text: Parking Tickets, url: index.php?num=101 }
+         - { text: Parking Queries, url: index.php?num=102 }
+         - { text: Parking Bills, url: index.php?num=105 }
+         - { text: Manage Padlocks, url: index.php?num=80 }
+         - { text: Clamped Vehicles, url: index.php?num=103 }
+         - { text: Towed Vehicles, url: index.php?num=104 }
+         - { text: Manage Inspectors, url: index.php?num=107 }
+         - { text: Manage Clampers, url: index.php?num=109 }
+         - { text: Manage Declampers, url: index.php?num=1147 }
+         - { text: Manage Towers, url: index.php?num=110 }
+         - { text: Manage Streets And Regions, url: index.php?num=108 }
+         - { text: Manage Vehicles, url: index.php?num=132 }
+         - { text: Parking Options, url: index.php?num=106 }
+
+   5:
+      icon: icon-shopping-cart
+      text: Markets
+      url: #
+      children:
+         - { text: Market Tickets, url: index.php?num=301 }
+         - { text: Market Type, url: index.php?num=302 }
+         - { text: Market, url: index.php?num=316 }
+         - { text: Markets Register, url: index.php?num=305 }
+         - { text: Market Allocation, url: index.php?num=314 }
+         - { text: Cess Items, url: index.php?num=315 }
+         - { text: All Cess Packages, url: index.php?num=333 }
+         - { text: All Cess Invoices, url: index.php?num=332 }
+         - { text: Market Attendant, url: index.php?num=311 }
+         - { text: Market Bills, url: index.php?num=338 }
+         - { text: Market Items, url: index.php?num=306 }
+         - { text: Market Options, url: index.php?num=339 }
+   6:
+      icon: icon-ticket
+      text: Land Rates
+      url: #
+      children:
+         - { text: Valuation Roll, url: index.php?num=224 }
+         - { text: Evaluation, url: index.php?num=212 }
+         - { text: Rates, url: index.php?num=214 }
+         - { text: Rates Struck, url: index.php?num=900 }
+         - { text: Rates Payments, url: index.php?num=902 }
+         - { text: Sub-Division Requests, url: index.php?num=904 }
+         - { text: Bills, url: index.php?num=910 }
+         - { text: Transfer Requests, url: index.php?num=906 }
+         - { text: Payments, url: index.php?num=2911 }
+   7:
+      icon: icon-suitcase
+      text: Business Permits
+      url: #
+      children:
+         - { text: All SBP's, url: index.php?num=41 }
+         - { text: Search SBP, url: index.php?num=42 }
+         - { text: New Business, url: index.php?num=45}
+         - { text: Bills, url: index.php?num=43 }
+         - { text: Activity Codes/Rates, url: index.php?num=44 }
+   8:
+      icon: icon-building
+      text: Rents (House/Stalls)
+      url: #
+      children:
+         - { text: Rent Collection, url: index.php?num=51 }
+         - { text: Search House/Stall, url: index.php?num=52 }
+         - { text: Rent Bills, url: index.php?num=510 }
+         - { text: New House, url: index.php?num=55 }
+         - { text: Management, url: index.php?num=515 }
+         - { text: Filters, url: index.php?num=501 }
+         - { text: Create Rent Bills, url: index.php?num=508 }
+         - { text: Create Rent Interest Bills, url: index.php?num=509 }
+   9:
+      icon: icon-comments
+      text: Messaging System
+      url: #
+      children:
+         - { text: Test SMS, url: index.php?num=99 }
+         - { text: Sent SMS, url: index.php?num=2001 }
+         - { text: Sent Email, url: index.php?num=2012 }
+         - { text: All Response Messages, url: index.php?num=10 }
+   10:
+      icon: icon-wrench
+      text: Construction Permits
+      url: #
+      children:
+         - { text: Search Construction Permit, url: index.php?num=603 }
+         - { text: Add Construction Permit, url: index.php?num=604 }
+   11:
+      icon: icon-dollar
+      text: Taxes
+      url: #
+      children:
+         - { text: Domestic Tax, url: index.php?num=2801 }
+         - { text: Value Added Tax, url: index.php?num=2802 }
+         - { text: Corporate Tax, url: index.php?num=2803 }
+         - { text: Employment Income Tax, url: index.php?num=2804 }
+   12:
+      icon: icon-briefcase
+      text: Investment Income
+      url: #
+      children:
+         - { text: Setup Rates and Categories, url: index.php?num=2805 }
+         - { text: View Investments, url: index.php?num=2806 }
+         - { text: Payments, url: index.php?num=2807 }
+   13:
+      icon: icon-puzzle-piece
+      text: Social Payments
+      url: #
+      children:
+         - { text: NHIF, url: index.php?num=2808 }
+         - { text: NSSF, url: index.php?num=2809 }
+         - { text: PAYE, url: index.php?num=2810 }
+   14:
+      icon: icon-road
+      text: Road Transport Taxes
+      url: #
+      children:
+         - { text: Motor Vehicle Registration, url: index.php?num=1201 }
+         - { text: Motor Vehicle Transfer of Ownership, url: index.php?num=2812 }
+         - { text: Motor Vehicle Licenses, url: index.php?num=1202 }
+         - { text: PSV Licenses, url: index.php?num=2814 }
+         - { text: Penalties, url: index.php?num=2815 }
+   15:
+      icon: icon-group
+      text: Staff
+      url: #
+      children:
+         - { text: All Staff, url: index.php?num=701 }
+         - { text: Search Staff Member, url: index.php?num=704 }
+         - { text: Add Staff Member, url: index.php?num=703 }
+   16:
+      icon: icon-user
+      text: User Management
+      url: #
+      children:
+         - { text: Add User, url: index.php?num=4000 }
+         - { text: All User, url: index.php?num=4001 }
+   17:
+      icon: icon-cogs
+      text: System Manager
+      url: #
+      children:
+         - { text: Add User Role, url: index.php?num=3000 }
+         - { text: All User Roles, url: index.php?num=3001 }
+   18:
+       icon: icon-credit-card
+      text: REVENUE MANAGEMENT CHANNELS
+      url: #
+      children:
+
+anon:
+   0:
+      icon: icon-home
+      text: Welcome
+      url: index.php

@@ -2,10 +2,10 @@
 /**************************************************************************
 *CONNECTION DETAILS
 ***************************************************************************/
-$dbname="rentals";
-$dbuser="postgres";
-$dbpass="postgres";
-$dbhost="localhost";
+$dbname="rental";
+$dbuser="obulex";
+$dbpass="root";
+$dbhost="127.0.0.1";
 
 /*
 $dbname="ebpp";

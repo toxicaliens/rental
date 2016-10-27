@@ -21,6 +21,8 @@ $('#table1').on('click', 'tr', function() {
     edit_id = $(this).children('td:first').text();
     $('#edit_id').val(edit_id);
     $('#terminate_id').val(edit_id);
+    //prepare to show the dialog
+    $('#edit_lease_btn').attr('data-toggle', 'modal');
 
     var the_data = {'edit_id': edit_id};
 
@@ -48,8 +50,6 @@ $('#edit_lease_btn').click(function(){
     var edit_id = $('#edit_id').val();
     if(edit_id == ''){
         alert('Please select a record first');
-    }else{
-        $('#edit_lease_btn').attr('data-toggle', 'modal');
     }
 });
 

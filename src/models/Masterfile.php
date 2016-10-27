@@ -12,18 +12,10 @@
                         'name' => 'Surname',
                         'required' => true
                     ),
-                    'firstname' => array(
-                        'name' => 'First Name',
-                        'required' => true
-                    ),
                     'id_passport' => array(
                         'name' => 'National Id/Passport',
                         'required' => true,
                         'unique' => 'masterfile'
-                    ),
-                    'gender' => array(
-                        'name' => 'Gender',
-                        'required' => true
                     ),
                     'email' => array(
                         'name' => 'Email Address',
@@ -957,5 +949,10 @@
         public function getAllLandlords(){
             $data = $this->selectQuery('all_landlords', '*');
             return $data;
+        }
+
+        public function getLoginBussRole(){
+            $data = $this->selectQuery('masterfile', 'b_role', "mf_id = '".$_SESSION['mf_id']."'");
+            return $data[0]['b_role'];
         }
     }

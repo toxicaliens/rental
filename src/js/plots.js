@@ -91,7 +91,6 @@ $('#table1').on('click', 'tr', function() {
     var house_id = $(this).children('td:first').text();
     $('#attach_service').val(house_id);
     var prop_id = $(this).children('td:first').text();
-    // alert(prop_id);
     $('#edt').val(prop_id);
     $('#del-id').val(prop_id);
 
@@ -125,8 +124,7 @@ $('.edit_prop').on('click', function(){
             data: data,
             dataType: 'json',
             success: function(data){
-                // console.log($('#property_type').select2("data",'"'+data['prop_type']+'"'));
-                $('#property_type').select2('val','"'+data['prop_type']+'"');
+                $('#property_type1').val(data['prop_type']);
                 $('#name').val(data['plot_name']);
                 $('#units').val(data['units']);
                 $('#payment_code').val(data['payment_code']);

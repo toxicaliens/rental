@@ -38,28 +38,28 @@ class DashboardStats{
 		return $count = $this->getCount($query);
 	}
 
-	public function countCustomerRecords($table, $condition){
+	public function countActiveContractors($table, $condition){
 		$query = "SELECT * FROM $table WHERE (regdate_stamp >= '".$this->from_timestamp."' AND regdate_stamp <= '".$this->to_timestamp."') AND b_role = '$condition'";
 		return $count = $this->getCount($query);
 	}
 
-	public function countActiveCustomerRecords($table, $condition){
-		$query = "SELECT * FROM $table WHERE status = '$condition'";
+	public function myPropertyManagers($table){
+		$query = "SELECT * FROM $table WHERE created_by  = '".$_SESSION['mf_id']."' ";
 		return $count = $this->getCount($query);
 	}
 
-	public function countOpenTicketsRecords($table, $condition){
-		$query = "SELECT * FROM $table WHERE (reported_time >= '".$this->from_timestamp."' AND reported_time <= '".$this->to_timestamp."') AND status = '$condition'";
+	public function countNoLandlords($table){
+		$query = "SELECT * FROM $table WHERE created_by = '".$_SESSION['mf_id']."' ";
 		return $count = $this->getCount($query);
 	}
 
-	public function countActiveInsuranceRecords($table, $condition){
-		$query = "SELECT * FROM $table WHERE (start_date >= '".$this->from_timestamp."' AND start_date <= '".$this->to_timestamp."') AND status = '$condition'";
+	public function countTotalNoTenants($table){
+		$query = "SELECT * FROM $table WHERE b_role = 'tenant' AND created_by = '".$_SESSION['mf_id']."' ";
 		return $count = $this->getCount($query);
 	}
 
 	public function countReferalRecords($table){
-		$query = "SELECT * FROM $table";
+		$query = "SELECT * FROM $table WHERE pm_mfid = '".$_SESSION['mf_id']."' ";
 		return $count = $this->getCount($query);
 	}
 
@@ -68,4 +68,3 @@ class DashboardStats{
 		return $count = $this->getCount($query);
 	}
 }
-?>

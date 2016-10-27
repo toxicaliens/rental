@@ -113,23 +113,22 @@ set_js(array(
             </tr>
             </thead>
             <tbody>
-            <?php
+                <?php
 
-            $rows = $House->getHouseData();
-            if($rows){
-            foreach($rows as $row){
-
-            ?>
-
-           <tr>
-                <td><?=$row['house_id']; ?></td>
-                <td><?=$row['house_number']; ?></td>
-                <td><?=$row['rent_amount']; ?></td>
-                <td><?php echo $House->getPlotName($row['plot_id']); ?></td>
-                <td><?=$row['attached_to']; ?></td>
-                <td><a href="?num=house_alloc&&house_id=<?php echo $row['house_id'];?>" class="btn  btn-mini">View/attach attribute</a> </td>
-                <td><a href="?num=900&&house_id=<?php echo $row['house_id'];?>" class="btn btn-mini"><i class="icon-eye-open"></i> Profile</a></td>
-            </tr>
+                $rows = $House->getHouseData();
+                if($rows){
+                foreach($rows as $row){
+                    $full_name = trim($row['full_name']);
+                ?>
+               <tr>
+                    <td><?php echo $row['house_id']; ?></td>
+                    <td><?php echo $row['house_number']; ?></td>
+                    <td><?php echo $row['rent_amount']; ?></td>
+                    <td><?php echo $row['plot_name']; ?></td>
+                    <td><?php echo ($full_name != '') ? $full_name : 'Vacant'; ?></td>
+                    <td><a href="?num=house_alloc&&house_id=<?php echo $row['house_id'];?>" class="btn  btn-mini">View/attach attribute</a> </td>
+                    <td><a href="?num=900&&house_id=<?php echo $row['house_id'];?>" class="btn btn-mini"><i class="icon-eye-open"></i> Profile</a></td>
+                </tr>
 
             <?php }}?>
             </tbody>

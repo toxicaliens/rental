@@ -390,6 +390,7 @@ basic:
    edit_customer_address: edit_customer_address
    delete_customer_address: delete_customer_address
    Del693: Del693
+   Main: Main
 
    #### Maintenance Tickets
    add_category: add_category

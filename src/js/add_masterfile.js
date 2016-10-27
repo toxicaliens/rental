@@ -38,6 +38,23 @@ $('#b_role').on('change', function(){
 	}
 });
 
+$('#b_role').on('change', function() {
+	var role = $(this).val();
+	if(role == 'contractor'){
+		$('.surname').text('Title').val('');
+		$('.id_passport').text('Business No.').val('');
+		$('.gender').hide();
+		$('.firstname').hide();
+		$('.middlename').hide();
+	}else if('land_lord' || 'property_manager' || 'tenant'){
+		$('.surname').text('Surname').val('');
+		$('.id_passport').text('Id/Passport').val('');
+		$('.gender').show();
+		$('.firstname').show();
+		$('.middlename').show();
+	}
+});
+
 
 $('#bank_name').on('change', function(){
 	var bank_id = $(this).val();
@@ -234,10 +251,6 @@ var Masterfile = {
 					alert('You Must Provide Gender!');
 					$('#gender').focus();
 					return false;
-				}else if($('#pin_no').val() == ''){
-					alert('You Must Provide KRA Pin No!');
-					$('#pin_no').focus();
-					return false;
 				}else if($('#customer_type_id').val() == ''){
 					alert('You Must Provide Masterfile Type!');
 					$('#customer_type_id').focus();
@@ -249,28 +262,16 @@ var Masterfile = {
 
 			case 'contractor':
 				if($('#surname').val() == ''){
-					alert('You Must Provide the Surname of the Contractor!');
+					alert('You Must Provide the Title of the Contractor!');
 					$('#surname').focus();
-					return false;
-				}else if($('#firstname').val() == ''){
-					alert('You Must Provide First Name!');
-					$('#firstname').focus();
 					return false;
 				}else if($('#email').val() == ''){
 					alert('You Must Provide Email!');
 					$('#email').focus();
 					return false;
 				}else if($('#id_passport').val() == ''){
-					alert('You Must Provide Id/Passport!');
+					alert('You Must Provide business Number!');
 					$('#id_passport').focus();
-					return false;
-				}else if($('#gender').val() == ''){
-					alert('You Must Provide Gender!');
-					$('#gender').focus();
-					return false;
-				}else if($('#pin_no').val() == ''){
-					alert('You Must Provide KRA Pin No!');
-					$('#pin_no').focus();
 					return false;
 				}else if($('#customer_type_id').val() == ''){
 					alert('You Must Provide Masterfile Type!');

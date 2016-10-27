@@ -178,5 +178,3 @@ if(isset($_POST['details'])){
     <div class="clearfix"></div>
   </div>
 </div>
-
-

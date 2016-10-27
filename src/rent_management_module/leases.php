@@ -127,7 +127,7 @@ if(App::isAjaxRequest()) {
                 </div>
                 <label for="plot">Property Name:</label>
                 <div class="row-fluid" style="margin-bottom: 20px;">
-                        <select name="plot" class="span12 live_search" id="select_plot" style="width: 100%;" required/>
+                        <select name="plot" class="span12 live_search" id="select_plot" required/>
                     <option value="">--Choose property--</option>
                     <?php
                     $plots = $lease->getAllProperties();

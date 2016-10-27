@@ -1,15 +1,34 @@
+<?php $role = $mf->getLoginBussRole(); ?>
 <div class="row-fluid">
     <div class="span6">
         <div class="control-group">
             <label for="b_role" class="control-label">Business Role<span>*</span></label>
             <div class="controls">
-              <select name="b_role" class="span12" id="b_role">
-                  <option value="">--Choose Business Role--</option>
-                  <option value="tenant" <?php if(isset($_POST['b_role']) && $_POST['b_role'] == 'tenant') echo 'selected'; ?>>Tenant</option>
-                  <option value="land_lord" <?php if(isset($_POST['b_role']) && $_POST['b_role'] == 'land-lord') echo 'selected'; ?>>Land Lord</option>
-                  <option value="contractor" <?php if(isset($_POST['b_role']) && $_POST['b_role'] == 'contractor') echo 'selected'; ?>>Contractor</option>
-                  <option value="property_manager" <?php if(isset($_POST['b_role']) && $_POST['b_role'] == 'property-manager') echo 'selected'; ?>>Property Manager</option>
-              </select>
+                <select name="b_role" class="span12" id="b_role">
+                    <option value="">--Choose Business Role--</option>
+                        <?php
+                            if($role == 'staff'){ ?>
+                                <option value="tenant">Tenant</option>
+                                <option value="land_lord">Land Lord</option>
+                                <option value="contractor">Contractor</option>
+                                <option value="property_manager">Property Manager</option>
+                                <?php
+                                }elseif($role == 'land_lord'){ ?>
+                                <option value="tenant">Tenant</option>
+                                <option value="contractor">Contractor</option>
+                                <option value="property_manager">Property Manager</option>
+                                <?php
+                                }elseif($role == 'contractor'){ ?>
+                                <option value="tenant">Tenant</option>
+                                <option value="land_lord">Land Lord</option>
+                                <option value="property_manager">Property Manager</option>
+                                <?php
+                                }elseif($role == 'property_manager'){ ?>
+                                <option value="tenant">Tenant</option>
+                                <option value="land_lord">Land Lord</option>
+                                <option value="contractor">Contractor</option>
+                        <?php } ?>
+                </select>
             </div>
         </div>
     </div>
@@ -31,24 +50,23 @@
 <div class="row-fluid">
     <div class="span6">
         <div class="control-group">
-            <label for="surname" class="control-label" id="variation">Surname</label>
+            <label for="surname" class="control-label surname" id="variation">Surname</label>
             <div class="controls  input-icon">
-                <input type="text" name="surname" class="span12" maxlength="20" value="<?php $mf->get('surname'); ?>"
-                       id="surname" placeholder="Surname"/>
-            </div>				
+                <input type="text" name="surname" class="span12" maxlength="20" value="<?php $mf->get('surname'); ?>" id="surname"/>
+            </div>
         </div>
     </div>
-    <div class="span6">
+    <div class="span6 middlename">
         <div class="control-group">
-            <label class="control-label" for="id_passport" id="id_pass">ID # or Passport<span>*</span></label>
+            <label for="middlename" class="control-label">Middle Name</label>
             <div class="controls">
-                <input type="text" name="id_passport" maxlength="10" value="<?php $mf->get('id_passport'); ?>" class="span12" />
+                <input type="text" name="middlename" class="span12" id="middlename" maxlength="20" value="<?php echo $mf->get('middlename'); ?>" placeholder="Middle Name" />
             </div>
         </div>
     </div>
 </div>
 	
-<div class="row-fluid">
+<div class="row-fluid firstname">
     <div class="span6">
         <div class="control-group">
             <label for="firstname" class="control-label">First Name</label>
@@ -57,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="span6">
+    <div class="span6 gender">
         <div class="control-group">
             <label for="gender" class="control-label">Gender</label>
             <div class="controls">
@@ -70,30 +88,38 @@
         </div>
     </div>
 </div>
-		
+
 <div class="row-fluid">
-    <div class="span6">
-        <div class="control-group">
-            <label for="middlename" class="control-label">Middle Name</label>
-            <div class="controls">
-                    <input type="text" name="middlename" class="span12" id="middlename" maxlength="20" value="<?php echo $mf->get('middlename'); ?>" placeholder="Middle Name" />
-            </div>
-        </div>
-    </div>
     <div class="span6">
         <div class="control-group">
             <label for="email" class="control-label">Email <span>*</span></label>
             <div class="controls">
                 <div class="input-icon left">
                     <i class="icon-envelope"></i>
-                    <input type="email" name="email" class="span12" value="<?php echo $mf->get('email'); ?>" placeholder="email" />
+                    <input type="email" name="email" class="span12" id="email" value="<?php echo $mf->get('email'); ?>" placeholder="email" />
                 </div>
             </div>
         </div>
     </div>
+    <div class="span6">
+        <div class="control-group">
+            <label class="control-label id_passport" for="id_passport" id="id_pass">ID # or Passport<span>*</span></label>
+            <div class="controls">
+                <input type="text" name="id_passport" maxlength="10" value="<?php $mf->get('id_passport'); ?>" class="span12" id="id_passport"/>
+            </div>
+        </div>
+    </div>
 </div>
-
+		
 <div class="row-fluid">
+    <div class="span6">
+        <div class="control-group">
+            <label for="pin_no" class="control-label">Pin No.</label>
+            <div class="controls">
+                <input type="text" name="pin_no" class="span12" id="pin_no" maxlength="15" value="<?php echo $mf->get('pin_no'); ?>" placeholder="Pin Number" />
+            </div>
+        </div>
+    </div>
     <div class="span6">
         <label for="user_role" class="control-label">User Role</label>
         <div class="controls">
@@ -107,14 +133,6 @@
                         <option value="<?php echo $us_role['role_id']; ?>" <?php echo ($mf->get('user_role') == $us_role['role_id']) ? 'selected': ''; ?>><?php echo $us_role['role_name']; ?></option>
                     <?php }} ?>
             </select>
-        </div>
-    </div>
-    <div class="span6">
-        <div class="control-group">
-            <label for="occupation" class="control-label">Occupation</label>
-            <div class="controls">
-                <input type="text" name="occupation" id="occupation" class="span12" maxlength="25" value="<?php echo $mf->get('occupation'); ?>" placeholder="Occupation" />
-            </div>
         </div>
     </div>
 </div>
@@ -139,9 +157,9 @@
     </div>
     <div class="span6">
         <div class="control-group">
-            <label for="pin_no" class="control-label">Pin No.</label>
+            <label for="occupation" class="control-label">Occupation</label>
             <div class="controls">
-                <input type="text" name="pin_no" class="span12" id="pin_no" maxlength="15" value="<?php echo $mf->get('pin_no'); ?>" placeholder="Pin Number" />
+                <input type="text" name="occupation" id="occupation" class="span12" maxlength="25" value="<?php echo $mf->get('occupation'); ?>" placeholder="Occupation" />
             </div>
         </div>
     </div>

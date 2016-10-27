@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb328f81-8f07-4502-8fdb-6a91e6c7ea05" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/yml/constants.yml" afterPath="$PROJECT_DIR$/config/yml/constants.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/yml/include.yml" afterPath="$PROJECT_DIR$/config/yml/include.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/yml/routes.yml" afterPath="$PROJECT_DIR$/config/yml/routes.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crap/view.sql" afterPath="$PROJECT_DIR$/crap/view.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crm_module/account_processor.php" afterPath="$PROJECT_DIR$/src/crm_module/account_processor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crm_module/add_bank.php" afterPath="$PROJECT_DIR$/src/crm_module/add_bank.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crm_module/add_branch.php" afterPath="$PROJECT_DIR$/src/crm_module/add_branch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crm_module/all_clients.php" afterPath="$PROJECT_DIR$/src/crm_module/all_clients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/add_masterfile.js" afterPath="$PROJECT_DIR$/src/js/add_masterfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/bank.js" afterPath="$PROJECT_DIR$/src/js/bank.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/branch.js" afterPath="$PROJECT_DIR$/src/js/branch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/masterfile_module/edit_address_type.php" afterPath="$PROJECT_DIR$/src/masterfile_module/edit_address_type.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/masterfile_module/personal_details.php" afterPath="$PROJECT_DIR$/src/masterfile_module/personal_details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Accounts.php" afterPath="$PROJECT_DIR$/src/models/Accounts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Masterfile.php" afterPath="$PROJECT_DIR$/src/models/Masterfile.php" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/yml/routes.yml" afterPath="$PROJECT_DIR$/config/yml/routes.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/house_module/house_attributes.php" afterPath="$PROJECT_DIR$/src/house_module/house_attributes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/House.php" afterPath="$PROJECT_DIR$/src/models/House.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/plots.js" afterPath="$PROJECT_DIR$/src/js/plots.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Plots.php" afterPath="$PROJECT_DIR$/src/models/Plots.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/prop_module/add_property.php" afterPath="$PROJECT_DIR$/src/prop_module/add_property.php" />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+    </list>
+    <ignored path="rental.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="rental" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="Masterfile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Masterfile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="527" column="24" selection-start-line="527" selection-start-column="24" selection-end-line="527" selection-end-column="24" />
+              <folding>
+                <element signature="n#addTenant#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#addContractor#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#addPM#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#addAddress#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#createLoginAccount#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#generatePassword#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#findMasterFileByRoleName#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#getCustomerAddresses#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#checkForExistingRevenueChannelName#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#addAddressType#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#editAddress#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#deleteAddress#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#createPmFile#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#getAllMasterfile#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#getAllDelMasterfile#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#editMf#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#getAllUserRoles#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#getAllMasterfileType#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#blockUser#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#deleteMasterfile#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <element signature="n#getFullName#0;n#Masterfile#0;n#!!top" expanded="false" />
+                <marker date="1468617798262" expanded="true" signature="17308:17548" ph="SELECT * FRO... masterfile" />
+                <marker date="1468617798262" expanded="true" signature="17668:17944" ph="SELECT a.*, address" />
+                <marker date="1468617798262" expanded="true" signature="18071:18174" ph="SELECT * FRO... revenue_channel" />
+                <marker date="1468617798262" expanded="true" signature="18501:18622" ph="INSERT INTO address_types... " />
+                <marker date="1468617798262" expanded="true" signature="18769:18978" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="19133:19317" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="19432:19704" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="19956:20452" ph="UPDATE addre... " />
+                <marker date="1468617798262" expanded="true" signature="20633:20844" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="21001:21187" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="21302:21569" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="21696:21760" ph="DELETE FROM " />
+                <marker date="1468617798262" expanded="true" signature="21873:22013" ph="..." />
+                <marker date="1468617798262" expanded="true" signature="28340:28421" ph="UPDATE user_... " />
+                <marker date="1468617798262" expanded="true" signature="28677:28739" ph="DELETE FROM " />
+                <marker date="1468617798262" expanded="true" signature="28859:29056" ph="..." />
+=======
+      <file leaf-file-name="routes.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/yml/routes.yml">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="560">
+              <caret line="235" column="35" selection-start-line="235" selection-start-column="35" selection-end-line="235" selection-end-column="35" />
+              <folding>
+                <marker date="1468612610686" expanded="true" signature="11592:11596" ph="..." />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="add_bank.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crm_module/add_bank.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="127" selection-end-column="22" />
+=======
+      <file leaf-file-name="constants.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/yml/constants.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="373" column="3" selection-start-line="373" selection-start-column="3" selection-end-line="373" selection-end-column="9" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="bank.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/bank.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
+              <folding />
+=======
+      <file leaf-file-name="LeaseAgreement.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/models/LeaseAgreement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+              <folding>
+                <marker date="1468614355229" expanded="true" signature="317:505" ph="INSERT INTO lease... " />
+                <marker date="1468614355229" expanded="true" signature="1646:1800" ph="..." />
+                <marker date="1468614355229" expanded="true" signature="1992:2137" ph="SELECT lg.*,... lease" />
+                <marker date="1468614355229" expanded="true" signature="2384:2485" ph="SELECT CONCA... masterfile" />
+                <marker date="1468614355229" expanded="true" signature="2702:2732" ph="SELECT * FRO... houses_and_plots" />
+              </folding>
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="branch.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/branch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding />
+=======
+      <file leaf-file-name="lesse_agreement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crm_module/lesse_agreement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+              <folding>
+                <marker date="1468614151785" expanded="true" signature="3058:3088" ph="SELECT * fro... houses_and_plots" />
+              </folding>
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="add_branch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crm_module/add_branch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="139" column="65" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="65" />
+              <folding />
+=======
+      <file leaf-file-name="add_revenue_bank.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RMC_module/add_revenue_bank.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-732">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1468482366620" expanded="true" signature="581:611" ph="..." />
+              </folding>
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Accounts.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/models/Accounts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="226" column="41" selection-start-line="226" selection-start-column="41" selection-end-line="226" selection-end-column="41" />
+              <folding>
+                <element signature="n#getAllBank#0;n#Accounts#0;n#!!top" expanded="false" />
+                <element signature="n#getBankBranchesByBankId#0;n#Accounts#0;n#!!top" expanded="false" />
+=======
+      <file leaf-file-name="add_subcounty.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RMC_module/add_subcounty.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="44" />
+              <folding>
+                <marker date="1468482366636" expanded="true" signature="940:986" ph="SELECT * fro... county_ref" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_processor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crm_module/account_processor.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="378">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+=======
+            <state relative-caret-position="220">
+              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+=======
+            <state relative-caret-position="3944">
+              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="add_masterfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/add_masterfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+              <folding />
+=======
+      <file leaf-file-name="property_processor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prop_module/property_processor.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="370">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+              <folding>
+                <element signature="e#1355#2055#0#PHP" expanded="false" />
+                <marker date="1468603539470" expanded="true" signature="375:865" ph="..." />
+                <marker date="1468603539470" expanded="true" signature="391:569" ph="INSERT INTO ${DATABASE}.houses... " />
+                <marker date="1468603539470" expanded="true" signature="663:766" ph="..." />
+                <marker date="1468603539470" expanded="true" signature="1900:2045" ph="..." />
+              </folding>
+=======
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="personal_details.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/masterfile_module/personal_details.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="177" column="110" selection-start-line="177" selection-start-column="110" selection-end-line="177" selection-end-column="110" />
+=======
+      <file leaf-file-name="Plots.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Plots.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="183">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="52" />
+              <folding>
+                <marker date="1468612328823" expanded="true" signature="1611:1617" ph="..." />
+                <marker date="1468612328823" expanded="true" signature="1830:1838" ph="..." />
+                <marker date="1468612328823" expanded="true" signature="2751:2799" ph="..." />
+              </folding>
+=======
+            <state relative-caret-position="443">
+              <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+              <folding />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="SupportTickets.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/SupportTickets.php">
+=======
+      <file leaf-file-name="add_property.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/prop_module/add_property.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="196">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding>
+                <element signature="n#attachPlotToPmManager#0;n#House#0;n#!!top" expanded="false" />
+                <element signature="n#addAttrb#0;n#House#0;n#!!top" expanded="false" />
+              </folding>
+=======
+            <state relative-caret-position="256">
+              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plots.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/plots.js">
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/support_module/voucher_details.php" />
+        <option value="$PROJECT_DIR$/src/models/Database.php" />
+        <option value="$PROJECT_DIR$/src/models/Broadcast.php" />
+        <option value="$PROJECT_DIR$/src/support_module/all_support.php" />
+        <option value="$PROJECT_DIR$/src/dashboard_module/main_dashboard_stats.php" />
+        <option value="$PROJECT_DIR$/src/support_module/all_quotes.php" />
+        <option value="$PROJECT_DIR$/src/js/manage_voucher.js" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/support_module/all_vouchers.php" />
+        <option value="$PROJECT_DIR$/src/support_module/support_processor.php" />
+=======
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        <option value="$PROJECT_DIR$/src/house_module/house_processor.php" />
+        <option value="$PROJECT_DIR$/src/models/Masterfile.php" />
+        <option value="$PROJECT_DIR$/src/support_module/support_processor.php" />
+        <option value="$PROJECT_DIR$/config/yml/constants.yml" />
+        <option value="$PROJECT_DIR$/src/support_module/all_vouchers.php" />
+        <option value="$PROJECT_DIR$/crap/view.sql" />
+        <option value="$PROJECT_DIR$/src/models/SupportTickets.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/prop_module/add_property.php" />
+        <option value="$PROJECT_DIR$/src/house_module/house_attributes.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/models/SupportTickets.php" />
+        <option value="$PROJECT_DIR$/config/yml/include.yml" />
+        <option value="$PROJECT_DIR$/src/crm_module/account_processor.php" />
+        <option value="$PROJECT_DIR$/src/masterfile_module/edit_address_type.php" />
+        <option value="$PROJECT_DIR$/config/yml/routes.yml" />
+        <option value="$PROJECT_DIR$/src/crm_module/all_clients.php" />
+        <option value="$PROJECT_DIR$/src/models/Landlords.php" />
+        <option value="$PROJECT_DIR$/src/models/Tenants.php" />
+        <option value="$PROJECT_DIR$/crap/view.sql" />
+        <option value="$PROJECT_DIR$/config/yml/constants.yml" />
+        <option value="$PROJECT_DIR$/src/models/House.php" />
+        <option value="$PROJECT_DIR$/src/js/add_masterfile.js" />
+        <option value="$PROJECT_DIR$/src/masterfile_module/personal_details.php" />
+        <option value="$PROJECT_DIR$/src/models/Masterfile.php" />
+        <option value="$PROJECT_DIR$/src/crm_module/add_bank.php" />
+        <option value="$PROJECT_DIR$/src/js/bank.js" />
+        <option value="$PROJECT_DIR$/src/js/branch.js" />
+        <option value="$PROJECT_DIR$/src/crm_module/add_branch.php" />
+        <option value="$PROJECT_DIR$/src/models/Accounts.php" />
+=======
+        <option value="$PROJECT_DIR$/src/models/House.php" />
+        <option value="$PROJECT_DIR$/config/yml/routes.yml" />
+        <option value="$PROJECT_DIR$/src/models/Payments.php" />
+        <option value="$PROJECT_DIR$/src/crm_module/lesse_agreement.php" />
+        <option value="$PROJECT_DIR$/src/models/LeaseAgreement.php" />
+=======
+        <option value="$PROJECT_DIR$/src/models/House.php" />
+        <option value="$PROJECT_DIR$/src/house_module/house_attributes.php" />
+        <option value="$PROJECT_DIR$/src/models/Plots.php" />
+        <option value="$PROJECT_DIR$/src/js/plots.js" />
+        <option value="$PROJECT_DIR$/src/prop_module/add_property.php" />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="prop_module" />
+=======
+              <option name="myItemId" value="RMC_module" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_module" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm_module" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb328f81-8f07-4502-8fdb-6a91e6c7ea05" name="Default" comment="" />
+<<<<<<< HEAD
+      <created>1468603224031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1468603224031</updated>
+      <workItem from="1468603225518" duration="15697000" />
+=======
+      <created>1468612323782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1468612323782</updated>
+      <workItem from="1468612325149" duration="712000" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="15705000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="10370000" />
+=======
+    <option name="totallyTimeSpent" value="8065000" />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/masterfile_module/add_masterfile.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="2072" column="121" selection-start-line="2072" selection-start-column="121" selection-end-line="2072" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users_module/my_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masterfile_module/all_masterfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Oriems/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masterfile_module/edit_masterfile.php">
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/payment_agent_module/edit_service_bill.php">
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RMC_module/SupportTickets.php" />
+    <entry file="file://$PROJECT_DIR$/src/models/Library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="56" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/support_module/category_details.php">
+=======
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+    <entry file="file://$PROJECT_DIR$/src/system_manager/edit_menu.php">
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/js/manage_category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/manage_categories.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/crm_module/edit_crm.php" />
+    <entry file="file://$PROJECT_DIR$/src/connection/config.php">
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="42" column="59" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/voucher_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masterfile_module/add_masterfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masterfile_module/masterfile_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Broadcast.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crap/house_attibutes table">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/all_support.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dashboard_module/main_dashboard_stats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/all_quotes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/all_vouchers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/manage_voucher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/support_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/house_module/house_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="663">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="e#1069#1769#0#PHP" expanded="false" />
+=======
+        <state relative-caret-position="-71">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1468482371898" expanded="true" signature="710:724" ph="..." />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/device_module/manage_groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Quotes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/SupportTickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8058">
+          <caret line="474" column="35" selection-start-line="474" selection-start-column="35" selection-end-line="474" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/house_module/house_attributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/yml/include.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="459">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+=======
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="408" column="16" selection-start-line="408" selection-start-column="16" selection-end-line="408" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prop_module/property_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="205">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <marker date="1468578344998" expanded="true" signature="722:786" ph="INSERT INTO ${$table}... " />
+            <marker date="1468578344998" expanded="true" signature="1244:1281" ph="UPDATE ${$ta... " />
+            <marker date="1468578344998" expanded="true" signature="2230:2287" ph="UPDATE ${$ta... " />
+            <marker date="1468578344998" expanded="true" signature="2623:2646" ph="DELETE FROM " />
+            <marker date="1468578344998" expanded="true" signature="3094:3117" ph="DELETE FROM " />
+          </folding>
+=======
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Plots.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="369">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding>
+            <element signature="n#addPlot#0;n#Plots#0;n#!!top" expanded="false" />
+          </folding>
+=======
+        <state relative-caret-position="379">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masterfile_module/edit_address_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="306">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="67" selection-end-column="81" />
+          <folding>
+            <marker date="1468606945407" expanded="true" signature="596:623" ph="..." />
+            <marker date="1468606945407" expanded="true" signature="795:859" ph="SELECT * FRO... address_types" />
+          </folding>
+=======
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crm_module/all_clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <marker date="1468607354287" expanded="true" signature="746:939" ph="SELECT m.*, masterfile" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Landlords.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+=======
+        <state relative-caret-position="114">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Tenants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/crap/view.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/js/manage_voucher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/config/yml/routes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="213" column="35" selection-start-line="213" selection-start-column="35" selection-end-line="213" selection-end-column="35" />
+          <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/device_module/manage_groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Quotes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="4" selection-end-column="1" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1468610984188" expanded="true" signature="144:202" ph="SELECT * FRO... quotes" />
+            <marker date="1468610984188" expanded="true" signature="310:344" ph="SELECT * FRO... maintenance_vouchers" />
+          </folding>
+=======
+          <folding />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Masterfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="242">
+          <caret line="354" column="27" selection-start-line="354" selection-start-column="27" selection-end-line="354" selection-end-column="27" />
+=======
+        <state relative-caret-position="532">
+          <caret line="615" column="0" selection-start-line="615" selection-start-column="0" selection-end-line="615" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/LoanRepayments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="130" column="88" selection-start-line="130" selection-start-column="88" selection-end-line="130" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support_module/all_vouchers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crap/view.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/House.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="196">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="n#attachPlotToPmManager#0;n#House#0;n#!!top" expanded="false" />
+            <element signature="n#addAttrb#0;n#House#0;n#!!top" expanded="false" />
+=======
+        <state relative-caret-position="-55">
+          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/config/yml/routes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3944">
+          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/house_module/house_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding>
+            <element signature="e#1355#2055#0#PHP" expanded="false" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/js/add_masterfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+=======
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+    <entry file="file://$PROJECT_DIR$/src/support_module/support_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/SupportTickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4896">
+          <caret line="288" column="95" selection-start-line="285" selection-start-column="8" selection-end-line="288" selection-end-column="95" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/masterfile_module/personal_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="459">
+          <caret line="177" column="110" selection-start-line="177" selection-start-column="110" selection-end-line="177" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crm_module/crm_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+=======
+        <state relative-caret-position="370">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="e#1355#2055#0#PHP" expanded="false" />
+            <marker date="1468603539470" expanded="true" signature="375:865" ph="..." />
+            <marker date="1468603539470" expanded="true" signature="391:569" ph="INSERT INTO ${DATABASE}.houses... " />
+            <marker date="1468603539470" expanded="true" signature="663:766" ph="..." />
+            <marker date="1468603539470" expanded="true" signature="1900:2045" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Payments.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#6#47#0#PHP" expanded="true" />
+            <marker date="1468612721067" expanded="true" signature="240:751" ph="INSERT INTO customer_billing_file... " />
+            <marker date="1468612721067" expanded="true" signature="1201:1826" ph="INSERT INTO customer_bills... " />
+            <marker date="1468612721067" expanded="true" signature="2047:2114" ph="SELECT * FRO... revenue_service_bill" />
+            <marker date="1468612721067" expanded="true" signature="2400:3191" ph="INSERT INTO journal... " />
+          </folding>
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/bank.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="289">
+          <caret line="17" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crm_module/add_bank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="127" selection-end-column="22" />
+=======
+        <state relative-caret-position="560">
+          <caret line="235" column="35" selection-start-line="235" selection-start-column="35" selection-end-line="235" selection-end-column="35" />
+          <folding>
+            <marker date="1468612610686" expanded="true" signature="11592:11596" ph="..." />
+          </folding>
+=======
+        <state relative-caret-position="2312">
+          <caret line="136" column="53" selection-start-line="136" selection-start-column="53" selection-end-line="136" selection-end-column="53" />
+          <folding />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/house_module/house_attributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/js/branch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Masterfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="527" column="24" selection-start-line="527" selection-start-column="24" selection-end-line="527" selection-end-column="24" />
+          <folding>
+            <element signature="n#addTenant#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#addContractor#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#addPM#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#addAddress#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#createLoginAccount#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#generatePassword#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#findMasterFileByRoleName#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#getCustomerAddresses#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#checkForExistingRevenueChannelName#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#addAddressType#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#editAddress#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#deleteAddress#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#createPmFile#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#getAllMasterfile#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#getAllDelMasterfile#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#editMf#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#getAllUserRoles#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#getAllMasterfileType#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#blockUser#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#deleteMasterfile#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <element signature="n#getFullName#0;n#Masterfile#0;n#!!top" expanded="false" />
+            <marker date="1468617798262" expanded="true" signature="17308:17548" ph="SELECT * FRO... masterfile" />
+            <marker date="1468617798262" expanded="true" signature="17668:17944" ph="SELECT a.*, address" />
+            <marker date="1468617798262" expanded="true" signature="18071:18174" ph="SELECT * FRO... revenue_channel" />
+            <marker date="1468617798262" expanded="true" signature="18501:18622" ph="INSERT INTO address_types... " />
+            <marker date="1468617798262" expanded="true" signature="18769:18978" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="19133:19317" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="19432:19704" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="19956:20452" ph="UPDATE addre... " />
+            <marker date="1468617798262" expanded="true" signature="20633:20844" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="21001:21187" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="21302:21569" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="21696:21760" ph="DELETE FROM " />
+            <marker date="1468617798262" expanded="true" signature="21873:22013" ph="..." />
+            <marker date="1468617798262" expanded="true" signature="28340:28421" ph="UPDATE user_... " />
+            <marker date="1468617798262" expanded="true" signature="28677:28739" ph="DELETE FROM " />
+            <marker date="1468617798262" expanded="true" signature="28859:29056" ph="..." />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/models/House.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <marker date="1468612328823" expanded="true" signature="1611:1617" ph="..." />
+            <marker date="1468612328823" expanded="true" signature="1830:1838" ph="..." />
+            <marker date="1468612328823" expanded="true" signature="2751:2799" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RMC_module/add_revenue_bank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1468482366620" expanded="true" signature="581:611" ph="..." />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/crm_module/add_branch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="139" column="65" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crm_module/account_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Accounts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="226" column="41" selection-start-line="226" selection-start-column="41" selection-end-line="226" selection-end-column="41" />
+          <folding>
+            <element signature="n#getAllBank#0;n#Accounts#0;n#!!top" expanded="false" />
+            <element signature="n#getBankBranchesByBankId#0;n#Accounts#0;n#!!top" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/RMC_module/add_subcounty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <marker date="1468482366636" expanded="true" signature="940:986" ph="SELECT * fro... county_ref" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crm_module/lesse_agreement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+          <folding>
+            <marker date="1468614151785" expanded="true" signature="3058:3088" ph="SELECT * fro... houses_and_plots" />
+>>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/yml/constants.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="373" column="3" selection-start-line="373" selection-start-column="3" selection-end-line="373" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/prop_module/property_processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Plots.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/plots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/models/LeaseAgreement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+          <folding>
+            <marker date="1468614355229" expanded="true" signature="317:505" ph="INSERT INTO lease... " />
+            <marker date="1468614355229" expanded="true" signature="1646:1800" ph="..." />
+            <marker date="1468614355229" expanded="true" signature="1992:2137" ph="SELECT lg.*,... lease" />
+            <marker date="1468614355229" expanded="true" signature="2384:2485" ph="SELECT CONCA... masterfile" />
+            <marker date="1468614355229" expanded="true" signature="2702:2732" ph="SELECT * FRO... houses_and_plots" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/prop_module/add_property.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+          <folding />
+>>>>>>> 86fad29e01fbb4a6bcdcf966b7b9a6874274e6ce
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

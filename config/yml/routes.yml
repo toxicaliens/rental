@@ -55,6 +55,7 @@ dashboard: src/dashboard_module/dashboard.php
 50: src/rents_module/house_type_estate_assoc.php
 
 
+
 201: src/rate_module/select_customer.php
 202: src/rate_module/add_land_rate.php
 203: src/rate_module/edit_land_rate.php
@@ -175,6 +176,7 @@ dashboard: src/dashboard_module/dashboard.php
 728: src/masterfile_module/edit_address_type.php
 729: src/masterfile_module/all_masterfile.php
 730: src/masterfile_module/restore_masterfile.php
+731: src/masterfile_module/my_masterfile.php
 import_mf: src/masterfile_module/import_masterfile.php
 import_companies: src/masterfile_module/import_client_groups.php
 address_details: src/masterfile_module/addressDetails.php
@@ -194,7 +196,6 @@ address_details: src/masterfile_module/addressDetails.php
 832: src/crm_module/customer_acc_info.php
 833: src/crm_module/customer_phone_bills.php
 834: src/crm_module/lesse_agreement.php
-835: src/crm_module/customer_statement.php
 
 manage_account: src/crm_module/manage_accounts.php
 add_bank: src/crm_module/add_bank.php
@@ -266,6 +267,7 @@ prop_alloc: src/prop_module/prop_alloc.php
 add_prop: src/prop_module/add_prop.php
 5000: src/prop_module/add_prop_wizard.php
 5001: src/prop_module/property_info.php
+my_props: src/prop_module/my_properties.php
 
 
 #### House Module
@@ -497,7 +499,6 @@ dashboard: src/dashboard_module/dashboard.php
 728: src/masterfile_module/edit_address_type.php
 729: src/masterfile_module/all_masterfile.php
 730: src/masterfile_module/restore_masterfile.php
-731: src/masterfile_module/my_masterfile.php
 import_mf: src/masterfile_module/import_masterfile.php
 import_companies: src/masterfile_module/import_client_groups.php
 address_details: src/masterfile_module/addressDetails.php
@@ -512,6 +513,7 @@ address_details: src/masterfile_module/addressDetails.php
 826: src/crm_module/all_clients.php
 827: src/crm_module/all_contractors.php
 828: src/crm_module/all_landlords.php
+835: src/crm_module/customer_statement.php
 
 829: src/crm_module/insurance_policy.php
 830: src/crm_module/insurance_claim.php
@@ -587,7 +589,6 @@ prop_attr: src/prop_module/property_attributes.php
 pro_attr_alloc: src/prop_module/allocate_prop_attr.php
 prop_alloc: src/prop_module/prop_alloc.php
 add_prop: src/prop_module/add_prop.php
-my_props: src/prop_module/my_properties.php
 
 #### House Module
 all_houses: src/house_module/houses.php
@@ -611,4 +612,6 @@ house_alloc: src/house_module/house_alloc.php
 
 ##rent management module
 6010: src/rent_management_module/leases.php
+6011: src/rent_management_module/my_lease.php
+6012: src/rent_management_module/lease_details.php
 

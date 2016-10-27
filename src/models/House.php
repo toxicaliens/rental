@@ -169,9 +169,9 @@ class House extends Library
     public function getHouseData(){
         $role = $_SESSION['role_name'];
         if($role == SystemAdmin) {
-            $rows = $this->selectQuery('houses', '*');
+            $rows = $this->selectQuery('my_houses', '*', "pm_mfid = '".$_SESSION['mf_id']."' ");
         }elseif ($role == PM){
-            $rows = $this->selectQuery('house_details', '*',"pm_mfid = '".$_SESSION['mf_id']."'" );
+            $rows = $this->selectQuery('my_houses', '*',"pm_mfid = '".$_SESSION['mf_id']."'" );
         }elseif($role == LandLord){
             $rows = $this->selectQuery('house_details', '*',"landlord_mf_id= '".$_SESSION['mf_id']."'" );
         }

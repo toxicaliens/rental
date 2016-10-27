@@ -470,6 +470,32 @@ class LeaseAgreement extends Payments
 		$data = $this->selectQuery('all_tenants_with_houses', '*');
 		return $data;
 	}
+
+	public function getMyLease(){
+	    $data = $this->selectQuery('my_lease', '*', "pm_mfid = '".$_SESSION['mf_id']."' ");
+        return $data;
+    }
+
+    public function leaseInfo($tenant){
+        $data = $this->selectQuery('lease_info', '*', "tenant = '".$tenant."' ");
+        return $data;
+    }
+
+    public function getUser(){
+        $query = "SELECT CONCAT(surname,' ',firstname,' ',middlename) AS full_name FROM masterfile WHERE mf_id = '".$_SESSION['mf_id']."'";
+        if($result = run_query($query)){
+            if(get_num_rows($result)){
+                $rows = get_row_data($result);
+                return $rows['full_name'];
+            }
+        }
+    }
+
+    public function getPmTenants(){
+        extract($_POST);
+        $data = $this->selectQuery('pm_tenants', '*', 'created_by = "'.$_SESSION['mf_id'].'" ');
+        return $data;
+    }
 	
 }
 

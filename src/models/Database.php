@@ -71,7 +71,7 @@
 					}
 
 					$query = "UPDATE $table SET " . $fields_values_string . "  $prefix $condition_string";
-//									var_dump($query);exit;
+					//				var_dump($query);exit;
 					if (run_query($query)) {
 						return true;
 					} else {

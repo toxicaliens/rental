@@ -1,0 +1,16 @@
+1470997265:2016-08-12 13:21:05==1 Created  Lease Agreement
+1470997265:2016-08-12 13:21:05==Billing File: INSERT INTO customer_billing_file(
+	        created_by, service_account, start_date, 
+	        billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+	        created)
+			VALUES ('779', '', '2016-08-12', 
+	        '', '', '', '',
+	        '2016-08-12 13:21:05') RETURNING billing_file_id
+1470999960:2016-08-12 14:06:00==1 Created  Lease Agreement
+1470999960:2016-08-12 14:06:00==Billing File: INSERT INTO customer_billing_file(
+	        created_by, service_account, start_date, 
+	        billing_interval, billing_amount, billing_amount_balance, service_bill_id,
+	        created)
+			VALUES ('779', '', '2016-08-12', 
+	        '', '', '', '',
+	        '2016-08-12 14:06:00') RETURNING billing_file_id

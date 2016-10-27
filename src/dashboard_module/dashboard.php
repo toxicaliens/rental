@@ -5,7 +5,7 @@
     $from_date = date("2011-m-01");
     $to_date = date("Y-m-d");
     
-    $period = new DashboardStats($from_date,$to_date);  
+    $period = new DashboardStats($from_date,$to_date);
 ?>
 <!-- BEGIN OVERVIEW STATISTIC BARS-->
 <div id="page" class="dashboard">

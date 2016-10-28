@@ -82,10 +82,11 @@ if(App::isAjaxRequest()) {
                 </thead>
                 <tbody>
 
-                    <?php $results = $lease->getAllLeasesByRole();
-                       if(count($results)){
-                           foreach ($results as $result ){
-                    ?>
+                    <?php
+                        $results = $lease->getAllLeasesByRole();
+                           if(count($results)){
+                               foreach ($results as $result ){
+                        ?>
                         <tr>
                             <td><?php echo $result['lease_id'] ?></td>
                             <td><?php echo $result['house_number']?></td>
@@ -118,16 +119,16 @@ if(App::isAjaxRequest()) {
                             <span class="btn btn-file">
                                 <span class="fileupload-new">Attach file</span>
                                 <span class="fileupload-exists">Change</span>
-                                <input type="file" class="default" name="lease_doc" required/>
+                                <input type="file" class="default" name="lease_doc"/>
                             </span>
                             <span class="fileupload-preview"></span>
                             <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none"></a>
                         </div>
                     </div>
                 </div>
-                <label for="plot">Property Name:</label>
+                <label for="plot_id">Property Name:</label>
                 <div class="row-fluid" style="margin-bottom: 20px;">
-                        <select name="plot" class="span12 live_search" id="select_plot" required/>
+                        <select name="plot_id" class="span12 live_search" id="select_plot" required/>
                     <option value="">--Choose property--</option>
                     <?php
                     $plots = $lease->getAllProperties();

@@ -135,7 +135,7 @@
 		}
 		
 		public function uploadImage($filename, $destination){
-//			var_dump($destination);exit;
+			//var_dump($destination);exit;
 			if(move_uploaded_file($filename, $destination)){
 				return $destination;
 			}

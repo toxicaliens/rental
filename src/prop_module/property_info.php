@@ -138,9 +138,9 @@ set_js(array(
                             }
                             ?>
                             <li class="<?=$tab1; ?>"><a href="#tab_1_1" data-toggle="tab"><i class="icon-user"></i> Property Info</a></li>
-                            <li class="<?=$tab2; ?>"><a href="#tab_1_2" data-toggle="tab"><i class="icon-map-marker"></i> Property services</a></li>
-                            <li class="<?=$tab3; ?>"><a href="#tab_1_3" data-toggle="tab"><i class="icon-map-marker"></i> Property units</a></li>
-                            <li class="<?=$tab4; ?>"><a href="#tab_1_4" data-toggle="tab"><i class="icon-map-marker"></i> Property Attributes</a></li>
+                            <li class="<?=$tab2; ?>"><a href="#tab_1_2" data-toggle="tab"><i class="icon-barcode"></i> Property services</a></li>
+                            <li class="<?=$tab3; ?>"><a href="#tab_1_3" data-toggle="tab"><i class="icon-list-alt"></i> Property units</a></li>
+                            <li class="<?=$tab4; ?>"><a href="#tab_1_4" data-toggle="tab"><i class="icon-sitemap"></i> Property Attributes</a></li>
 
                         </ul>
 

@@ -3,8 +3,8 @@
 *CONNECTION DETAILS
 ***************************************************************************/
 $dbname="rental";
-$dbuser="obulex";
-$dbpass="root";
+$dbuser="postgres";
+$dbpass="postgres";
 $dbhost="127.0.0.1";
 
 /*

@@ -124,4 +124,16 @@ class Quotes extends SupportTickets
 			$this->flashMessage('quotes', 'error', 'Encountered an error! '.get_last_error());
 
 	}
+
+	public function updateComplete($id){
+		$status = 'TRUE';
+		$result = $this->updateQuery2('quotes',
+			array(
+
+				'job_status' => $status
+			),
+			array('qoute_id' => $id)
+		);
+		return $result;
+	}
 }

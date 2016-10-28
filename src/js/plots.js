@@ -124,15 +124,17 @@ $('.edit_prop').on('click', function(){
             data: data,
             dataType: 'json',
             success: function(data){
-                $('#property_type1').val(data['prop_type']);
+                // $('#property_type').val(data['prop_type']);
+                $('#property_type').val(data['prop_type']).trigger('change');
+                $('#option_type').val(data['option_type']).trigger('change');
                 $('#name').val(data['plot_name']);
                 $('#units').val(data['units']);
                 $('#payment_code').val(data['payment_code']);
                 $('#pay_bill').val(data['paybill_number']);
-                $('#property_manager').val(data['pm_mfid']);
-                $('#landlord').val(data['landlord_mfid']);
+                $('#property_manager').val(data['pm_mfid']).trigger('change');
+                $('#landlord').val(data['landlord_mf_id']).trigger('change');
                 $('#lr_no').val(data['lr_no']);
-                $('#locatioin').val(data['location']);
+                $('#location').val(data['location']);
 
             }
         });

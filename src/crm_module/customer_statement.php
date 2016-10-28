@@ -143,7 +143,10 @@ set_js(array(
                 }
                 $customer_statement = $customer_s->selectQuery('customer_statement','*',"mf_id = '".$customer_name."'");
             }
+            $total_debit = 0;
+            $total_credit = 0;
             if (count($customer_statement) >0 ){
+
                 foreach ($customer_statement as $row){
                 $j_date = trim(date('d/m/Y', strtotime($row['journal_date'])));
                 $customer_name = $row['customer_name'];
@@ -173,6 +176,7 @@ set_js(array(
                     <td style="text-align:right;">
                         <?php
                         if($dr_cr == 'Debit'){
+                            $total_debit =($total_debit) + ($amount);
                             echo number_format($amount, 2);
                         }
                         ?>
@@ -180,6 +184,7 @@ set_js(array(
                     <td style="text-align:right;">
                         <?php
                         if($dr_cr == 'Credit'){
+                            $total_credit = $total_credit + $amount;
                             echo number_format($amount, 2);
                         }
                         ?>
@@ -190,14 +195,14 @@ set_js(array(
             }
             ?>
             <tr>
-                <td colspan="3" style="text-align:right;font-weight:bold">Totals:</td>
+                <td colspan="4" style="text-align:right;font-weight:bold">Totals:</td>
                 <td style="text-align:right;font-weight:bold">
 <!--                    --><?php
 //                    $query = "SELECT SUM(amount) as total_debit FROM journal WHERE dr_cr = 'DR' AND mf_id = '".$mf_id."' $criteria";
 //                    $result = run_query($query);
 //                    $row = get_row_data($result);
 //                    $debit_total = $row['total_debit'];
-//                    echo number_format($debit_total, 2);
+                    echo number_format($total_debit, 2);
 //                    ?>
                 </td>
                 <td style="text-align:right;font-weight:bold">
@@ -206,22 +211,22 @@ set_js(array(
 //                    $result = run_query($query);
 //                    $row = get_row_data($result);
 //                    $credit_total = $row['total_credit'];
-//                    echo number_format($credit_total, 2);
+                    echo number_format($total_credit, 2);
 //                    ?>
                 </td>
             </tr>
             <tr>
-                <td colspan="3" style="text-align:right;font-weight:bold">Current Balance:</td>
-                <td colspan="3" style="text-align:right;font-weight:bold">
+                <td colspan="5" style="text-align:right;font-weight:bold">Current Balance:</td>
+                <td colspan="4" style="text-align:right;font-weight:bold">
                     <?php
-//                    $credit_balance = $credit_total - $debit_total;
-//                    if($credit_balance < 0){
-//                        $absolute = abs($credit_balance);
-//                        $negative = number_format($absolute, 2);
-//                        echo "<span class='negative'>($negative)</span>";
-//                    }else{
-//                        echo number_format($credit_balance, 2);
-//                    }
+                    $credit_balance = $total_credit - $total_debit;
+                    if($credit_balance < 0){
+                        $absolute = abs($credit_balance);
+                        $negative = number_format($absolute, 2);
+                        echo "<span class='negative'>($negative)</span>";
+                    }else{
+                        echo number_format($credit_balance, 2);
+                    }
 
                     ?>
                 </td>

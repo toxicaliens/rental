@@ -1,6 +1,6 @@
 <a href="#add_house" class="btn btn-primary" data-toggle="modal"><i class="icon-plus"></i> Add</a>
-<a href="#edit_house_details" class=" btn btn-primary edit-house"><i class="icon-trash"></i> Edit</a>
-<a href="#delete-house" class="btn btn-danger delete-house"><i class="icon-remove"></i> Delete</a>
+<a href="#edit_house_details" class=" btn btn-default edit-house"><i class="icon-edit"></i> Edit</a>
+<a href="#delete-house" class="btn btn-danger delete-house"><i class="icon-trash"></i> Delete</a>
 <br><br>
     <?php
     $House->splash('p_units');

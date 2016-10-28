@@ -26,6 +26,7 @@
 
 					$query = "INSERT INTO $table(".$field_string.") VALUES(".$input_string.") $return_field";
 //                    var_dump($query);exit;
+                    traceActivity($query, '');
 					if($result = run_query($query)){
 						if(empty($return_field))
 							return $result;
@@ -72,6 +73,7 @@
 
 					$query = "UPDATE $table SET " . $fields_values_string . "  $prefix $condition_string";
 					//				var_dump($query);exit;
+                    traceActivity($query, 'lksjdl');
 					if (run_query($query)) {
 						return true;
 					} else {

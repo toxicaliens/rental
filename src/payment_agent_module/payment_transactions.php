@@ -1,6 +1,4 @@
-<?php
-include_once('src/models/Transactions.php');
-
+<?
 set_layout("dt-layout.php", array(
 	'pageSubTitle' => 'Payments',
 	'pageSubTitleText' => '',
@@ -10,33 +8,11 @@ set_layout("dt-layout.php", array(
 		array ( 'text'=>'Payments' )
 	)
 ));
-?>
-
-<div class="widget">
-  <div class="widget-title"><h4><i class="icon-money"></i> Filters</h4>
-    <span class="tools">
-      <a href="javascript::void();"><i class="<?php echo (!isset($_POST['date_range'])) ? 'icon-chevron-up': 'icon-chevron-down'; ?>"></i></a>
-    </span>
-  </div>
-  <div class="widget-body form" <?php echo (!isset($_POST['date_range'])) ? 'style="display: none;"': ''; ?>">
-    <form action="" method="post" class="form-horizontal">
-      <div class="row-fluid">
-        <div class="span6">
-          <div class="control-group">
-            <label for="date_range" class="control-label">Date Range:</label>
-            <div class="controls">
-              <div class="input-prepend input-append">
-                 <span class="add-on"><i class="icon-calendar"></i></span>
-                 <input type="text" name="date_range" class="m-wrap m-ctrl-medium date-range" required value="<?php echo (isset($_POST['date_range'])) ? $_POST['date_range'] : ''; ?>" />
-                 <button class="btn"><i class="icon-search"></i></button>
-              </div>             
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>    
-  </div>
-</div>
+   $distinctQuery2 = "select count(transaction_id) as total_transactions from ".DATABASE.".transactions";
+   $resultId2 = run_query($distinctQuery2);
+   $arraa = get_row_data($resultId2);
+   $total_rows2 = $arraa['total_transactions'];
+ ?>
 
 <div class="widget">
   <div class="widget-title">
@@ -44,41 +20,52 @@ set_layout("dt-layout.php", array(
   </div>
   <div class="widget-body">
 
-<table id="table1" class="table table-bordered">
+   <table id="table1" class="table table-bordered">
  <thead>
   <tr>
    <th>Trans#</th>
    <th>Cash Paid</th>
    <th>Details</th>
-   <th>Customer Acc#</th>
+   <th>Receipt Number</th>
    <th>T. Date</th>
+   <th>Agent</th>
+   <th>Revenue Channel</th>
+   <th>Reciepts</th>
   </tr>
  </thead>
  <tbody>
 
- <?php
-    $date_range = (isset($_POST['date_range'])) ? Transactions::getFromAndToDates($_POST['date_range']) : '';
-    $condition = (isset($_POST['date_range'])) ? Transactions::filterTransactions($date_range[0], $date_range[1]) : '';
-
-    $distinctQuery = "select t.*, m.*  from ".DATABASE.".transactions t
-    LEFT JOIN masterfile m ON m.mf_id = t.mf_id WHERE transaction_id IS NOT NULL $condition";
-    $resultId = run_query($distinctQuery);
-	  while($row = get_row_data($resultId)){
+ <?
+   $distinctQuery = "select t.*, t.transaction_date::bigint AS tranc_date, m.*, r.* from ".DATABASE.".transactions t
+   LEFT JOIN masterfile m ON m.mf_id = t.agent_id
+   LEFT JOIN revenue_channel r ON r.revenue_channel_id = t.service_type_id
+  ";
+  //var_dump($distinctQuery);exit;
+   $resultId = run_query($distinctQuery);
+	while($row = get_row_data($resultId))
+	{
 		$trans_id = trim($row['transaction_id']);
     $cashpaid= $row['cash_paid'];
 		$details = $row['details'];
-		$receiptnumber = $row['service_account'];
-    $tdate = $row['transaction_date'];
+		$receiptnumber = $row['receiptnumber'];
+    $tdate = date("d-m-Y H:i:s", $row['tranc_date']);
 		$agent = $row['surname'].' '.$row['firstname'].' '.$row['middlename'];
+    $service_type = $row['service_type_id'];
+		$revenue_channel_name = $row['revenue_channel_name'];
 		
-		?>
+		 ?>
 		  <tr>
 		   <td><?=$trans_id; ?></td>
 		   <td><?=$cashpaid; ?></td>
 		   <td><?=$details; ?></td>
        <td><?=$receiptnumber; ?></td>
-       <td><?=$tdate; ?></td>       
-                                      
+       <td><?=$tdate; ?></td>
+		   <td><?=$agent; ?></td>
+       <td><?=$revenue_channel_name; ?></td>
+       <td>
+         <a id="edit_link" class="btn btn-mini" href="index.php?num=170&trans=<?=$trans_id; ?>">
+            <i class="icon-print"></i> Reciepts</a>
+       </td>                             
 		  </tr>
 		 <?
  	}

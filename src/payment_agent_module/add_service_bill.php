@@ -179,7 +179,7 @@ if(isset($_SESSION['parking'])){
 
                                        
 </form>
-<!-- END FORM -->
+                                    <!-- END FORM -->
 
 <?php
 //argDump($query);exit;
@@ -191,5 +191,5 @@ set_js(array(
     "assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
     "assets/scripts/form-validator.js",
     "src/js/add.crm.customer.js",
-    "src/js/get_service_bill_amt.js"
+    "src/js/go_back.js"
 ));

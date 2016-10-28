@@ -39,6 +39,7 @@ basic:
    add_quotation: add_quotation
    delete_quotation: delete_quotation
    edit_quotation: edit_quotation
+   mark_complete: mark_complete
 
    # Loan Repayment Constants
    upload_csv: upload_csv

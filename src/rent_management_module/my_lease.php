@@ -1,16 +1,16 @@
 <?php
-    require_once 'src/models/LeaseAgreement.php';
-    $lease = new LeaseAgreement();
+require_once 'src/models/LeaseAgreement.php';
+$lease = new LeaseAgreement();
 
-    set_title('MY LEASE');
-    set_layout("dt-layout.php", array(
-        'pageSubTitle' => 'My Lease',
-        'pageSubTitleText' => 'All Leases for logged in Property Manager',
-        'pageBreadcrumbs' => array (
-            array ( 'url'=>'#', 'text'=>'Home' ),
-            array ( 'text'=>'My Lease' )
-        )
-    ));
+set_title('MY LEASE');
+set_layout("dt-layout.php", array(
+    'pageSubTitle' => 'My Lease',
+    'pageSubTitleText' => 'All Leases for logged in Property Manager',
+    'pageBreadcrumbs' => array (
+        array ( 'url'=>'#', 'text'=>'Home' ),
+        array ( 'text'=>'My Lease' )
+    )
+));
 ?>
 <div class="widget">
     <div class="widget-title"><h4><i class="icon-reorder"></i> <span style="color: green;"><?php echo $lease->getUser();?></span></h4></div>

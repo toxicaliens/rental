@@ -142,15 +142,17 @@
 					$order_string = (!empty($order_field) && !empty($order_type)) ? 'ORDER BY '.$order_field.' '.$order_type : '';
 
 					$query = "SELECT ".$field_string." FROM $table $condition $order_string";
-//					var_dump($query);
+					traceActivity($query, 'hjghjg');
 					if($result = run_query($query)){
-						if(get_num_rows($result)){
+						$return = array();
+					    if(get_num_rows($result)){
 							while ($rows = get_row_data($result)) {
 								$return[] = $rows;
 							}
-							return $return;
 						}
+                        return $return;
 					}else{
+                        traceActivity($query, 'hjghjg');
 						return false;
 					}
 				}

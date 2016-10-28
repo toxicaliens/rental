@@ -278,7 +278,6 @@ del_house: src/house_module/delete_house.php
 view_house: src/house_module/view_house.php
 in_plot: src/house_module/houses_in_plot.php
 house_attrbs: src/house_module/house_attributes.php
-view_houses: src/house_module/view_houses.php
 house_alloc: src/house_module/house_alloc.php
 900: src/house_module/house_profile.php
 

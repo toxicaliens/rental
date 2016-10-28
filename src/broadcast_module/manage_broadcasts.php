@@ -89,7 +89,7 @@ if(App::isAjaxRequest()){
 					while($rows = get_row_data($result)){
 				?>
 	            <label class="checkbox" style="display: inline;">
-                    <input type="radio" name="broad_cast_type" <?=($rows['message_type_code'] == 'INBOX') ? 'checked': ''; ?> value="<?=$rows['message_type_id']; ?>" required/> <?=$rows['message_type_name']; ?>
+                    <input type="radio" name="broad_cast_type" <?php echo ($rows['message_type_code'] == 'INBOX') ? 'checked': ''; ?> value="<?=$rows['message_type_id']; ?>" required/> <?=$rows['message_type_name']; ?>
                 </label>
                 <?php } ?>
 	        </div>
@@ -163,4 +163,5 @@ if(App::isAjaxRequest()){
 		</div>
 	</div>
 </form>
-<? set_js(array('src/js/manage_broadcast.js')); } ?>
+<?php set_js(array('src/js/manage_broadcast.js')); } ?>
+

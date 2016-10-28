@@ -790,9 +790,7 @@ switch($_POST['action'])
                                      revenue_channel_id='".$revenue_channel_id."',
                                      bill_due_time='".$bill_due_time."',
                                      service_channel_id = '".$service_option."',
-                                     bill_interval = '".$interval."',
-                                     product_id = '".$product_id."',
-                                     plot_id= '".$plot_id."'
+                                     bill_interval = '".$interval."'
                                      WHERE revenue_bill_id=$revenue_bill_id";
                                      
               //echo $editservicebill;

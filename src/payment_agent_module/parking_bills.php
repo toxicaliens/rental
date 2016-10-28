@@ -1,4 +1,4 @@
-<?
+<?php
 set_layout("dt-layout.php", array(
 	'pageSubTitle' => 'Parking Bills',
 	'pageSubTitleText' => '',

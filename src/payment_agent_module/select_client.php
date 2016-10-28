@@ -67,7 +67,7 @@ if(isset($_POST['mf_id'])){
                   <select id="select2_sample2" name="mf_id" class="packinput span12">
                     <option value="">--Select Customer--</option>
                     <?php
-                        $categories=run_query("SELECT * from masterfile WHERE b_role = 'client'");
+                        $categories=run_query("select c.*, m.* from ccn_customers c LEFT JOIN masterfile m ON m.mf_id = c.mf_id");
                          while ($fetch=get_row_data($categories))
                          {
                          echo "<option value='".$fetch['mf_id']."'>".$fetch['surname']." ".$fetch['firstname']." ".$fetch['middlename']."</option>";

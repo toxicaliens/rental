@@ -3,7 +3,7 @@ include_once('src/models/Quotes.php');
 $Quotes = new Quotes;
 
 if(App::isAjaxRequest()){
-	$Quotes->getQuoteDataFromQuoteId($_POST['quote_id']);
+		$Quotes->getQuoteDataFromQuoteId($_POST['quote_id']);
 }else{
 	set_layout("dt-layout.php", array(
 		'pageSubTitle' => 'Manage Quotations',
@@ -35,7 +35,6 @@ if(App::isAjaxRequest()){
 			<tr>
 			  	<th>ID#</th>
 				<th>Bid Amount</th>
-
 				<th>Bid Date</th>
 				<th>Status</th>
 				<th>Job Status</th>
@@ -57,13 +56,38 @@ if(App::isAjaxRequest()){
 		<tr>
 				<td><?php echo $rows['qoute_id'] ;?></td>
 				<td><?php echo $rows['bid_amount'] ; ?></td>
-
 				<td><?php echo $rows['bid_date'] ;?></td>
 				<td><?php echo ($rows['bid_status'] == 't') ? 'Approved':'Pending'  ;?></td>
 				<td><?php echo $Quotes->checkIfQuoteWasApproved($rows['bid_status'], $rows['job_status']); ?></td>
-				<td><a href="#edit-quotation" class="btn btn-mini btn-warning edit_quot" edit-id="<?php echo $rows['qoute_id']; ?>" data-toggle="modal"><i class="icon-edit"></i> Edit</a></td>
-				<td><a href="#delete_quotaion" class="btn btn-mini btn-danger del_quot" edit-id="<?php echo $rows['qoute_id']; ?>" data-toggle="modal"><i class="icon-trash"></i> Delete</a></td>
-				<td><?php echo ($rows['bid_status'] == 't') ? '<a href="#mark-complete" class="btn btn-mini btn-success mark-complete" edit-id="<?php  ?>" data-toggle="modal"><i class="icon-tick"></i> Mark as complete</a>':'' ;?></td>
+				<td><?php
+					if($rows['job_status'] == 'f'){
+					?>
+					<?php
+					if($rows['bid_status'] == 'f'){
+						?>
+					<a href="#edit-quotation" class="btn btn-mini btn-warning edit_quot" edit-id="<?php echo $rows['qoute_id']; ?>" data-toggle="modal"><i class="icon-edit"></i> Edit</a>
+					<?php }}?>
+				</td>
+				<td><?php
+					if($rows['job_status'] == 'f'){
+					?>
+					<?php
+					if($rows['bid_status'] == 'f'){
+						?>
+					<a href="#delete_quotaion" class="btn btn-mini btn-danger del_quot" edit-id="<?php echo $rows['qoute_id']; ?>" data-toggle="modal"><i class="icon-trash"></i> Delete</a>
+				   <?php }}?>
+				</td>
+				<td><?php
+
+					if($rows['job_status'] == 'f'){
+					?>
+					<?php
+					if($rows['bid_status'] == 't'){
+					?>
+					<a href="#mark-complete" class="btn btn-mini btn-success mark-complete"
+					   data-toggle="modal" qoute_id="<?php echo $rows['qoute_id']; ?>"><i class="icon-tick"></i> Mark as complete</a>
+				<?php }}?>
+				</td>
 
 		</tr>
 		<?php
@@ -85,10 +109,10 @@ if(App::isAjaxRequest()){
 			<h3 id="myModalLabel1"><i class="icon-comments"></i> Add Quotation</h3>
 		</div>
 		<div class="modal-body">
-	        <div class="row-fluid">
-	        	Quation
-
-	        </div>
+<!--	        <div class="row-fluid">-->
+<!--	        	Quation-->
+<!---->
+<!--	        </div>-->
 
 	        <div class="row-fluid">
 	        	<label for="bid_amount" class="control-label">Bid Amount</label>
@@ -124,10 +148,10 @@ if(App::isAjaxRequest()){
 			<h3 id="myModalLabel1"><i class="icon-comments"></i> Edit Quotation</h3>
 		</div>
 		<div class="modal-body">
-	        <div class="row-fluid">
-	        	Quotation
-
-	        </div>
+<!--	        <div class="row-fluid">-->
+<!--	        	Quotation-->
+<!---->
+<!--	        </div>-->
 
 	        <div class="row-fluid">
 	        	<label for="bid_amount" class="control-label">Bid Amount</label>
@@ -190,11 +214,11 @@ if(App::isAjaxRequest()){
         </div>
         <!-- hidden fields -->
         <input type="hidden" name="action" value="mark_complete"/>
-        <input type="hidden" id="delete_id" name="mark_complete"/>
+        <input type="hidden" id="qoute_id" name="qoute_id"/>
         <div class="modal-footer">
             <?php createSectionButton($_SESSION['role_id'], $_GET['num'], 'No659'); ?>
             <?php createSectionButton($_SESSION['role_id'], $_GET['num'], 'Yes660'); ?>
         </div>
     </div>
 </form>
-<? set_js(array('src/js/quotation.js')); } ?>
+<?php set_js(array('src/js/quotation.js')); }?>

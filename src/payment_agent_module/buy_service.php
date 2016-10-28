@@ -30,7 +30,7 @@ if(isset($_POST['revenue_channel'])){
   <div class="widget-title">
     <h4><i class="icon-reorder"></i> Select Revenue Channel - Step 1 of 2</h4>
   </div>
-  <div class="widget-body form">
+  <div class="widget-body">
      <form name="cdetails" method="post" action="" class="form-horizontal">
       <div class="row-fluid">
         <div class="span6">

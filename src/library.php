@@ -89,13 +89,14 @@ function get_row_data($result_set) {
 }
 
 //to trace activity in a file
-function traceActivity($text)
-{
-    date_default_timezone_set("Africa/Nairobi");
-    $today = time().":".date("Y-m-d H:i:s");
-    $myFile = "logs/".date("Y-m-d")."_api_posts.txt";
-    $fh = fopen($myFile,'a');
-    fwrite($fh, $today."==".$text."\n");
+function traceActivity($text, $filename) {
+    $today = time();
+    $today = $today . " | " . date("Y-m-d H:i:s");
+
+    $myFile = 'logs/log'.date('Y-m-d').'.txt';
+    $fh = fopen($myFile, 'a');
+
+    fwrite($fh, $today . "==" . $text . "\n");
     fclose($fh);
 }
 

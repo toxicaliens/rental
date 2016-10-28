@@ -1,4 +1,4 @@
-<?php
+<?
 if($_POST['edit_service_bill'] == "Save Changes")
 {
     $creterio = $_GET['edit_id'];

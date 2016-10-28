@@ -4,6 +4,10 @@
 
 basic:
   ### device Constants
+   bulk_payment: bulk_payment
+   process_payment: process_payment
+   usp_code: RE
+   usp_name: Rental
    add_phone_types: add_phone_types
    edit_phone_types: edit_phone_types
    delete_phone_type: delete_phone_type
@@ -35,6 +39,7 @@ basic:
    add_quotation: add_quotation
    delete_quotation: delete_quotation
    edit_quotation: edit_quotation
+   mark_complete: mark_complete
 
    # Loan Repayment Constants
    upload_csv: upload_csv

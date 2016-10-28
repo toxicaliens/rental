@@ -592,8 +592,14 @@ class House extends Library
         }
         //print_r($hs_service_ids);
         $return = array();
-        $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
-            "service_option_type = '".leaf."' AND status IS TRUE");
+        $role = $_SESSION['role_name'];
+        if($role != SystemAdmin) {
+            $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
+                "service_option_type = '" .leaf. "' AND status IS TRUE AND created_by = '" .$_SESSION['mf_id']. "' ");
+        }else{
+            $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
+                "service_option_type = '" .leaf. "' AND status IS TRUE ");
+        }
         if(count($leaf_services)){
             foreach ($leaf_services as $leaf_service){
                 if(!in_array($leaf_service['service_channel_id'], $hs_service_ids)){

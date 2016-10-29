@@ -178,7 +178,7 @@ ALTER TABLE plots ADD COLUMN lr_no character varying(255);
 ALTER TABLE plots
   ADD CONSTRAINT plots_lr_no_key UNIQUE(lr_no);
 
-<<<<<<< HEAD
+
 -- ALTER TABLE property_manager;
 ALTER TABLE property_manager ADD COLUMN created_by bigint;
 
@@ -190,7 +190,6 @@ ALTER TABLE contractor ADD COLUMN created_by bigint;
 
 -- ALTER TABLE landlords;
 ALTER TABLE landlords ADD COLUMN created_by bigint;
-=======
 -- add lease table
 CREATE TABLE lease
 (
@@ -201,4 +200,11 @@ CREATE TABLE lease
   end_date date,
   CONSTRAINT lease_pkey PRIMARY KEY (lease_id)
 );
->>>>>>> e4c7adede92222ff449ca4f7fa401a4aad303510
+-- DROP VIEW public.service_bills_and_options;
+
+-- deleted view
+--CREATE OR REPLACE VIEW public.service_bills_and_options AS
+  SELECT sb.product_id,
+    sc.price AS loan_amount
+  FROM revenue_service_bill sb
+    LEFT JOIN service_channels sc ON sc.service_channel_id = sb.service_channel_id;

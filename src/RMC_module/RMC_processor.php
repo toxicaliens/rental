@@ -1,6 +1,6 @@
 <?php
-include_once('src/models/RevenueManager.php');
-$revenue_manager = new RevenueManager;
+    include_once('src/models/RevenueManager.php');
+    $revenue_manager = new RevenueManager;
 
 // error_reporting(0);
 switch($_POST['action'])
@@ -66,12 +66,12 @@ switch($_POST['action'])
     }
   break;
 
-  case add_revenue_channels:
-                logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
-                  //var_dump($_POST);exit;
-               $revenue_manager->addRevenueChannel($_POST);
-                $processed = 1;
-	break;
+    case add_revenue_channels:
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        //var_dump($_POST);exit;
+        $revenue_manager->addRevenueChannel($_POST);
+        $processed = 1;
+        break;
 
 	case edit_revenue_channels:
 		logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
@@ -712,65 +712,24 @@ switch($_POST['action'])
                   }            $processed = 1;
   break;
 
-   case Del413:
-    logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
-    $sub_county_id = $_POST['sub_county_id'];
-    $delete = run_query("DELETE FROM sub_county WHERE sub_county_id= '".$sub_county_id."'");
-    if($delete){
-      $_SESSION['RMC'] = '<div class="alert alert-success">
-            <button class="close" data-dismiss="alert">×</button>
-            <strong>Success!</strong> The item was successfully deleted!.
-          </div>';
-    }
-     $processed = 1;
-  break;
+    case Del413:
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $sub_county_id = $_POST['sub_county_id'];
+        $delete = run_query("DELETE FROM sub_county WHERE sub_county_id= '".$sub_county_id."'");
+            if($delete){
+            $_SESSION['RMC'] = '<div class="alert alert-success">
+                <button class="close" data-dismiss="alert">×</button>
+                <strong>Success!</strong> The item was successfully deleted!.
+                </div>';
+            }
+        $processed = 1;
+        break;
 
- case addservicebill:
-                logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
-                extract($_POST);
-                  //var_dump($_POST);exit;
-                if(!checkForExistingEntry('revenue_service_bill', 'bill_code',  $bill_code)){
-                  if(!checkForExistingEntry('revenue_service_bill', 'bill_name',  $bill_name)){
-//                   if(isset($_POST['plot_id'])&&($_POST['product_id'])){
-//                       $plot_id = $_POST['plot_id'];
-//                       $product_id = $_POST['product_id'];
-//                   }else{
-//                       $plot_id = '';
-//                       $product_id = '';
-//                   }
-                $addservicebill="INSERT INTO revenue_service_bill
-                     (bill_name,bill_description,bill_category,bill_type,amount_type,bill_code,bill_due_time,amount,revenue_channel_id,bill_interval,service_channel_id, product_id,plot_id)
-                             VALUES('".$bill_name."','".$bill_description."','".$bill_category."','".$bill_type."',
-                              '".$amount_type."','".$bill_code."','".$bill_due_time."','".$amount."','".$revenue_channel_id."', '".$interval."', '".$service_option."', '".$product_id."','".$plot_id."')";
-//                  var_dump($addservicebill);exit;
-                $result = run_query($addservicebill);
-
-                if (!$result) {
-                    $errormessage = '<div class="alert alert-error">
-                                        <button class="close" data-dismiss="alert">×</button>
-                                        <strong>Error!</strong> Entry not Added!
-                                    </div>'; 
-                    $_SESSION['RMC'] = pg_last_error();
-                  }else{
-                  $_SESSION['RMC'] = '<div class="alert alert-success">
-                            <button class="close" data-dismiss="alert">×</button>
-                            <strong>Success!</strong> Entry added successfully.
-                        </div>';
-                    }           
-                  }else{
-                    $_SESSION['RMC'] = '<div class="alert alert-warning">
-                            <button class="close" data-dismiss="alert">×</button>
-                            <strong>Warning!</strong> The bill name('.$bill_name.') already exists.
-                        </div>';
-                  }
-                  }else{
-                    $_SESSION['RMC'] = '<div class="alert alert-warning">
-                            <button class="close" data-dismiss="alert">×</button>
-                            <strong>Warning!</strong> The bill code('.$bill_code.') already exists.
-                        </div>';
-                  }
-                     $processed = 1;
-  break;
+    case addservicebill:
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $revenue_manager->addServiceBill($_POST);
+        $_SESSION['warnings'] = $revenue_manager->getWarnings();
+        break;
 
    case editservicebill:
       logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
@@ -1066,6 +1025,3 @@ switch($_POST['action'])
       }
     break;
 }
-
-
-?>

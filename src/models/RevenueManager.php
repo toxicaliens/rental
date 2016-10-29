@@ -92,6 +92,61 @@
 			}
 			return $message;
 		}
+
+        public function addServiceBill($post){
+            //var_dump($_POST);exit;
+            $this->validate($post, array(
+                'bill_code' => array(
+                    'name' => 'Bill Code',
+                    'required' => true,
+                    'unique' => 'revenue_service_bill'
+                ),
+                'bill_description' => array(
+                    'name' => 'Bill Description',
+                    'required' => true
+                ),
+                'bill_type' => array(
+                    'name' => 'Bill Type',
+                    'required' => true
+                ),
+                'amount_type' => array(
+                    'name' => 'Amount Type',
+                    'required' => true
+                ),
+                'bill_due_time' => array(
+                    'name' => 'Bill Due Time',
+                    'required' => true
+                ),
+                'revenue_channel_id' => array(
+                    'name' => 'Revenue Channel',
+                    'required' => true
+                )
+            ));
+
+            if($this->getValidationStatus()) {
+                $result = $this->insertQuery('revenue_service_bill',
+                    array(
+                        'bill_name' => $post['bill_name'],
+                        'bill_description' => $post['bill_description'],
+                        'bill_category' => $post['bill_category'],
+                        'bill_code' => $post['bill_code'],
+                        'bill_type' => $post['bill_type'],
+                        'bill_interval' => $post['bill_interval'],
+                        'amount_type' => $post['amount_type'],
+                        'bill_due_time' => $post['bill_due_time'],
+                        'revenue_channel_id' => $post['revenue_channel_id'],
+                        'service_channel_id' => $post['service_option'],
+                        'amount' => $post['amount']
+                    )
+                );
+                //var_dump($result);exit;
+                if($result){
+                    $this->flashMessage('rev_mg', 'success', 'Service Bill '.$post['bill_description'].' has been added!');
+                }else{
+                    $this->flashMessage('rev_mg', 'error', 'Encountered an error!');
+                }
+            }
+        }
 }
 
 

@@ -48,22 +48,21 @@
 		$revenue_channel_name= $row['revenue_channel_name'];
 		$interval = $row['bill_interval'];
 		$service = getBillServiceOption($row['service_channel_id']);
-		$product_id= $row['product_id'];
 		
 		 ?>
 		  <tr>
-		   <td><?=$revenue_bill_id; ?></td>
-           <td><?=$bill_name; ?></td>
-           <td><?=$bill_description; ?></td>
-           <td><?=$bill_category; ?></td>
-           <td><?=$bill_type; ?></td>
-           <td><?=$interval; ?></td>
-           <td><?=$amount_type; ?></td>
-           <td><?=$revenue_channel_name; ?></td>
-           <td><?=$service; ?></td>
-           <td><?=$bill_code; ?></td>
-           <td><?=$bill_due_time; ?></td>
-           <td><?=$amount; ?></td>
+		   <td><?php echo $revenue_bill_id; ?></td>
+           <td><?php echo $bill_name; ?></td>
+           <td><?php echo $bill_description; ?></td>
+           <td><?php echo $bill_category; ?></td>
+           <td><?php echo $bill_type; ?></td>
+           <td><?php echo $interval; ?></td>
+           <td><?php echo $amount_type; ?></td>
+           <td><?php echo $revenue_channel_name; ?></td>
+           <td><?php echo $service; ?></td>
+           <td><?php echo $bill_code; ?></td>
+           <td><?php echo $bill_due_time; ?></td>
+           <td><?php echo $amount; ?></td>
            
            <td><a id="edit_link" class="btn btn-mini" href="index.php?num=643&edit_id=<?=$revenue_bill_id; ?>">
                    <i class="icon-edit"></i> Edit</a></td>

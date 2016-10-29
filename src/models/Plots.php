@@ -56,6 +56,14 @@ class Plots extends Masterfile{
                 'name'=>'Town/City',
                 'required'=>true
             ),
+            'region'=>array(
+                'name'=>'Region',
+                'required'=>true
+            ),
+            'longitude_latitude'=>array(
+                'name'=>'Longitude and Latitude',
+                'required'=>true
+            )
 
         ));
         if(!isset($_POST['option_type'])){
@@ -79,7 +87,9 @@ class Plots extends Masterfile{
                     'county'=>$_POST['county'],
                     'town_city'=>$_POST['town_city'],
                     'street'=>$_POST['street'],
-                    'building_number'=>$_POST['building_number']
+                    'building_number'=>$_POST['building_number'],
+                    'region'=>$_POST['region'],
+                    'longitude_latitude'=>$_POST['longitude_latitude']
                 )
             );
             if($result){
@@ -494,8 +504,14 @@ class Plots extends Masterfile{
         }
         //print_r($hs_service_ids);
         $return = array();
-        $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
-            "service_option_type = '".leaf."' AND status IS TRUE");
+        $role = $_SESSION['role_name'];
+        if($role != SystemAdmin) {
+            $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
+                "service_option_type = '" .leaf. "' AND status IS TRUE AND created_by = '" .$_SESSION['mf_id']. "' ");
+        }else{
+            $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
+                "service_option_type = '" .leaf. "' AND status IS TRUE ");
+        }
         if(count($leaf_services)){
             foreach ($leaf_services as $leaf_service){
                 if(!in_array($leaf_service['service_channel_id'], $hs_service_ids)){

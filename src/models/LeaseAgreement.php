@@ -1,7 +1,7 @@
 <?php
 include_once('src/models/Payments.php');
 /**
-* 
+*
 */
 class LeaseAgreement extends Payments
 {
@@ -9,7 +9,7 @@ class LeaseAgreement extends Payments
     public function addLeaseAgreement(){
 
         $post = $_POST;
-		//var_dump($post);exit;
+//		var_dump($post);exit;
         $this->validate($post, array(
             'tenant' => array(
                 'name' => 'Tenant',
@@ -60,8 +60,8 @@ class LeaseAgreement extends Payments
         if($valid) {
             $doc_id = $this->addLeaseDoc($_FILES, $destination);
             if($doc_id){
-                    if($this->addLease($post['tenant'], $post['house_id'], $post['plot_id'], $post['lease_type'], $post['start_date'], $post['end_date'], $doc_id)) {
-                        // get the rent service bill
+                if($this->addLease($post['tenant'], $post['house_id'], $post['plot_id'], $post['lease_type'], $post['start_date'], $post['end_date'], $doc_id)) {
+                    // get the rent service bill
                     $sb = $this->selectQuery('revenue_service_bill', '*', "bill_code = '".MontlyRent."'");
                     $service_bill_id = $sb[0]['revenue_bill_id'];
                     $bill_interval = $sb[0]['bill_interval'];
@@ -69,6 +69,7 @@ class LeaseAgreement extends Payments
                     // get the rent amount
                     $house = $this->selectQuery('houses', 'rent_amount, house_number', "house_id = '".$post['house_id']."'");
                     $rent_amount = $house[0]['rent_amount'];
+                    //var_dump($rent_amount);exit;
                     $house_no = $house[0]['house_number'];
                     // create billing file
                     $this->insertQuery('customer_billing_file', array(
@@ -84,7 +85,7 @@ class LeaseAgreement extends Payments
 
                     // get plot services
                     $plot_data = $this->selectQuery('houses_and_plots', 'plot_id', "house_id = '".$post['house_id']."'");
-//                    var_dump($plot_data);exit;
+                    //var_dump($plot_data);exit;
                     $plot_services = $this->selectQuery('ps_data', '*', "plot_id = '".$plot_data[0]['plot_id']."'");
                     if(count($plot_services)){
                         foreach ($plot_services as $plot_service) {
@@ -117,10 +118,8 @@ class LeaseAgreement extends Payments
 
                     // get house services
                     $house_services = $this->selectQuery('hs_data', '*', "house_id = '".$post['house_id']."'");
-//                    var_dump($house_services);exit;
-                    //traceActivity('House Services Array: '.$house_services, 'slfjsld');
+                    //var_dump($house_services);exit;
                     if(count($house_services)){
-                        traceActivity('Count Services');
                         foreach ($house_services as $house_service){
                             // create a bill
                             $bill_data = $this->insertQuery('customer_bills', array(
@@ -157,7 +156,7 @@ class LeaseAgreement extends Payments
                 $this->flashMessage('lease', 'error', 'Failed to add lease document! '.get_last_error());
             }
         }
-        //$this->endTranc();
+        $this->endTranc();
     }
 
 	public function addLease($tenant, $house_id, $plot_id,$lease_type, $start_date, $end_date, $doc_id){
@@ -479,6 +478,6 @@ class LeaseAgreement extends Payments
         $data = $this->selectQuery('my_statement', '*', "mf_id = $tenant");
         return $data;
     }
-	
+
 }
 

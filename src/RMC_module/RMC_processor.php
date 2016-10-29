@@ -739,9 +739,9 @@ switch($_POST['action'])
 //                       $product_id = '';
 //                   }
                 $addservicebill="INSERT INTO revenue_service_bill
-                     (bill_name,bill_description,bill_category,bill_type,amount_type,bill_code,bill_due_time,amount,revenue_channel_id,bill_interval,service_channel_id, product_id,plot_id)
+                     (bill_name,bill_description,bill_category,bill_type,amount_type,bill_code,bill_due_time,amount,revenue_channel_id,bill_interval,service_channel_id)
                              VALUES('".$bill_name."','".$bill_description."','".$bill_category."','".$bill_type."',
-                              '".$amount_type."','".$bill_code."','".$bill_due_time."','".$amount."','".$revenue_channel_id."', '".$interval."', '".$service_option."', '".$product_id."','".$plot_id."')";
+                              '".$amount_type."','".$bill_code."','".$bill_due_time."','".$amount."','".$revenue_channel_id."', '".$interval."', '".$service_option."')";
 //                  var_dump($addservicebill);exit;
                 $result = run_query($addservicebill);
 

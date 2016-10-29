@@ -138,6 +138,9 @@
 			//var_dump($destination);exit;
 			if(move_uploaded_file($filename, $destination)){
 				return $destination;
+			}else{
+				$this->setWarning('Failed to upload the document');
+				return false;
 			}
 		}
 			

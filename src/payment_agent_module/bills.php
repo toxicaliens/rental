@@ -53,11 +53,11 @@ set_layout("dt-layout.php", array(
                 $duedate= date("d-m-Y H:i:s",strtotime($row['bill_due_date']));
 		$customer_id = $row['mf_id'];
     $full_name = $row['surname'].' '.$row['firstname'].' '.$row['middlename'];
-		$bill_amt = $row['bill_amt'];
+		$bill_amt = $row['bill_amount'];
                 // $bstatus = $row['bill_status'];
 		$serviceaccount = $row['service_account'];
                 $bill_balance = $row['bill_balance'];
-                $serviceaccounttype = $row['service_account_type'];
+//                $serviceaccounttype = $row['service_account_type'];
 
 
 		 ?>

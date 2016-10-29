@@ -25,8 +25,8 @@
                     $input_string = rtrim($input_string, ',');
 
 					$query = "INSERT INTO $table(".$field_string.") VALUES(".$input_string.") $return_field";
-//                    var_dump($query);exit;
-                    traceActivity($query, '');
+//                    var_dump($query);
+//                    traceActivity($query, '');
 					if($result = run_query($query)){
 						if(empty($return_field))
 							return $result;
@@ -142,7 +142,8 @@
 					$order_string = (!empty($order_field) && !empty($order_type)) ? 'ORDER BY '.$order_field.' '.$order_type : '';
 
 					$query = "SELECT ".$field_string." FROM $table $condition $order_string";
-					traceActivity($query, 'hjghjg');
+//					traceActivity($query, 'hjghjg');
+//                    var_dump($query);
 					if($result = run_query($query)){
 						$return = array();
 					    if(get_num_rows($result)){
@@ -152,7 +153,7 @@
 						}
                         return $return;
 					}else{
-                        traceActivity($query, 'hjghjg');
+//                        traceActivity($query, 'hjghjg');
 						return false;
 					}
 				}

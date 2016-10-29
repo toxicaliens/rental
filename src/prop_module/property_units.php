@@ -4,6 +4,7 @@
 <br><br>
     <?php
     $House->splash('p_units');
+    (isset($_SESSION['warnings'])) ? $House->displayWarnings('warnings') : '';
     if(isset($_SESSION['p_units'])){
         echo $_SESSION['p_units'];
         unset($_SESSION['p_units']);

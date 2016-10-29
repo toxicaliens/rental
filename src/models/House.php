@@ -302,7 +302,8 @@ class House extends Library
         if ($this->getValidationStatus()) {
             //check for existing entry
             $results = $this->selectQuery('houses','house_number',"house_number = '".$house_number."' AND plot_id = '".$plot."'");
-            if($results >  0){
+//            var_dump($results);die;
+            if(count($results)> 0){
                 $this->setWarning('Unit Number ('.$_POST['house_number'].') already exists in this property');
             }
             //if the validation has passed, run a query to insert the details

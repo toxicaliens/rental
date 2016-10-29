@@ -3,7 +3,7 @@
 *CONNECTION DETAILS
 ***************************************************************************/
 
-$dbname="rental";
+$dbname="rentals";
 $dbuser="postgres";
 $dbpass="postgres";
 $dbhost="127.0.0.1";

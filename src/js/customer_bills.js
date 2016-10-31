@@ -4,7 +4,8 @@
 var CustomerBillsDt = $('#customer_bills').DataTable({
     processing: true,
     serverSide: true,
-    ajax: "?num=146"
+    ajax: "?num=146",
+    order: [[0, 'desc']]
 });
 
 // refresh the grid

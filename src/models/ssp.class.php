@@ -230,7 +230,7 @@ class SSP {
 	 *  @param  array $columns Column information array
 	 *  @return array          Server-side processing response array
 	 */
-	static function simple ( $request, $conn, $table, $primaryKey, $columns )
+	static function simple ( $request, $conn, $table, $primaryKey, $columns,$filter=null )
 	{
 		$bindings = array();
 		$db = self::db( $conn );
@@ -238,7 +238,11 @@ class SSP {
 		// Build the SQL query string from the request
 //		$limit = self::limit( $request, $columns );
 		$order = self::order( $request, $columns );
-		$where = self::filter( $request, $columns, $bindings );
+        if(!is_null($filter) || !empty($filter)){
+            $where = $filter;
+        }else{
+            $where = self::filter( $request, $columns, $bindings );
+        }
 
 		// Main query to actually get the data
 		$data = self::sql_exec( $db, $bindings,

@@ -1,30 +1,30 @@
 <?php
 if(App::isAjaxRequest()){
-// DB table to use
+    // DB table to use
     $table = 'customer_bills_view';
 
-// Table's primary key
+    // Table's primary key
     $primaryKey = 'bill_id';
 
-// Array of database columns which should be read and sent back to DataTables.
-// The `db` parameter represents the column name in the database, while the `dt`
-// parameter represents the DataTables column identifier. In this case simple
-// indexes
+    // Array of database columns which should be read and sent back to DataTables.
+    // The `db` parameter represents the column name in the database, while the `dt`
+    // parameter represents the DataTables column identifier. In this case simple
+    // indexes
     $columns = array(
-        array( 'db' => 'bill_id', 'dt' => 0 ),
-        array( 'db' => 'bill_due_date',  'dt' => 1 ),
-        array( 'db' => 'full_name',   'dt' => 2 ),
-        array( 'db' => 'bill_amount',     'dt' => 3 ),
-        array( 'db' => 'service_account',     'dt' => 4 ),
-        array( 'db' => 'bill_balance',     'dt' => 5 )
+        array('db' => 'bill_id', 'dt' => 0),
+        array('db' => 'bill_due_date', 'dt' => 1),
+        array('db' => 'full_name', 'dt' => 2),
+        array('db' => 'bill_amount', 'dt' => 3),
+        array('db' => 'service_account', 'dt' => 4),
+        array('db' => 'bill_balance', 'dt' => 5)
     );
     require 'src/connection/config.php';
-//    var_dump($dbpass);exit;
+    //    var_dump($dbpass);exit;
     // SQL server connection information
     $sql_details = array(
         'user' => $dbuser,
         'pass' => $dbpass,
-        'db'   => $dbname,
+        'db' => $dbname,
         'host' => $dbhost,
         'port' => $dbport
     );
@@ -35,10 +35,15 @@ if(App::isAjaxRequest()){
      * server-side, there is no need to edit below this line.
      */
 
-    require( 'src/models/ssp.class.php' );
-
+    require('src/models/ssp.class.php');
+    $role = $_SESSION['role_name'];
+    if($role == SystemAdmin){
+        $filter = NULL;
+    }else{
+        $filter =  "WHERE mf_id = '".$_SESSION['mf_id']."'";
+    }
     echo json_encode(
-        SSP::simple( $_GET, $sql_details, $table, $primaryKey, $columns )
+        SSP::simple($_GET, $sql_details, $table, $primaryKey, $columns,$filter)
     );
 }else{
     set_layout("dt-layout.php", array(

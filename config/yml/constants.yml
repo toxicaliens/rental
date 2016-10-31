@@ -4,6 +4,7 @@
 
 basic:
   ### device Constants
+   DATABASE: public
    bulk_payment: bulk_payment
    process_payment: process_payment
    usp_code: RE

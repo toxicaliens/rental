@@ -55,14 +55,20 @@ class LeaseAgreement extends Payments
 //			return false;
 //		}
 
-        //$this->beginTranc();
         $valid = $this->getValidationStatus();
         if($valid) {
+            $this->beginTranc();
             $doc_id = $this->addLeaseDoc($_FILES, $destination);
             if($doc_id){
                 if($this->addLease($post['tenant'], $post['house_id'], $post['plot_id'], $post['lease_type'], $post['start_date'], $post['end_date'], $doc_id)) {
+<<<<<<< HEAD
                     // get the rent service bill
                     $sb = $this->selectQuery('revenue_service_bill', '*', "bill_code = '".MontlyRent."'");
+=======
+                        // get the rent service bill
+                    $sb = $this->selectQuery('revenue_service_bill', 'revenue_bill_id,bill_interval', "bill_code = '".MontlyRent."'");
+//                    var_dump($sb);die;
+>>>>>>> ce6694a7570de335a014da154df4e13a0c87cc66
                     $service_bill_id = $sb[0]['revenue_bill_id'];
                     $bill_interval = $sb[0]['bill_interval'];
 
@@ -72,7 +78,7 @@ class LeaseAgreement extends Payments
                     //var_dump($rent_amount);exit;
                     $house_no = $house[0]['house_number'];
                     // create billing file
-                    $this->insertQuery('customer_billing_file', array(
+                    if(!$this->insertQuery('customer_billing_file', array(
                         'created_by' => $_SESSION['mf_id'],
                         'start_date' => date('Y-m-d', strtotime($post['start_date'])),
                         'billing_interval' => $bill_interval,
@@ -80,17 +86,27 @@ class LeaseAgreement extends Payments
                         'created' => date('Y-m-d, H:i:s'),
                         'service_bill_id' => $service_bill_id,
                         'service_account' => $house_no,
-                        'status' => '1'
-                    ));
+                        'status' => '1',
+                        'unit_number'=>$_POST['house_id']
+                    ))){
+                        $this->setWarning('Failed to Create customer billing file'.get_last_error());
+                    }
 
                     // get plot services
+<<<<<<< HEAD
                     $plot_data = $this->selectQuery('houses_and_plots', 'plot_id', "house_id = '".$post['house_id']."'");
                     //var_dump($plot_data);exit;
+=======
+                    $plot_data = $this->selectQuery('houses', 'plot_id,house_number', "house_id = '".$post['house_id']."'");
+//                    var_dump($plot_data);die;
+//                    echo $plot_data[0];
+>>>>>>> ce6694a7570de335a014da154df4e13a0c87cc66
                     $plot_services = $this->selectQuery('ps_data', '*', "plot_id = '".$plot_data[0]['plot_id']."'");
-                    if(count($plot_services)){
+//                    var_dump($plot_services);die;
+                    if($plot_services != false && count($plot_services) > 0 ){
                         foreach ($plot_services as $plot_service) {
                             // create a bill
-                            $bill_data = $this->insertQuery('customer_bills', array(
+                            if(!$bill_data = $this->insertQuery('customer_bills', array(
                                 'bill_amount' => $plot_service['price'],
                                 'bill_date' => date('Y-m-d'),
                                 'bill_status' => '0',
@@ -98,31 +114,43 @@ class LeaseAgreement extends Payments
                                 'bill_balance' => $plot_service['price'],
                                 'mf_id' => $post['tenant'],
                                 'service_channel_id' => $plot_service['service_channel_id'],
-                                'service_account' => $plot_service['house_number']
-                            ), 'bill_id');
+                                'service_account' => $plot_data[0]['house_number'],
+                                'unit_number'=>$_POST['house_id']
+                            ), 'bill_id')){
+                                $this->setWarning('Failed to create customer bill'.get_last_error());
+                            }
 
                             // create a debit journal
-                            $this->insertQuery('journal', array(
+                            if(!$this->insertQuery('journal', array(
                                 'bill_id' => $bill_data['bill_id'],
                                 'amount' => $plot_service['price'],
                                 'dr_cr' => 'DR',
                                 'journal_type' => 1,
-                                'service_account' => $plot_service['house_number'],
+                                'service_account' => $plot_data[0]['house_number'],
                                 'particulars' => $plot_service['service_option'].' '.$plot_service['option_code'],
                                 'stamp' => time(),
                                 'mf_id' => $post['tenant'],
                                 'journal_code' => 'SA'
-                            ));
+                            ))){
+                                $this->setWarning('Failed to create journal'.get_last_error());
+                            }
                         }
                     }
 
                     // get house services
                     $house_services = $this->selectQuery('hs_data', '*', "house_id = '".$post['house_id']."'");
+<<<<<<< HEAD
                     //var_dump($house_services);exit;
                     if(count($house_services)){
+=======
+//                    var_dump($house_services);exit;
+                    //traceActivity('House Services Array: '.$house_services, 'slfjsld');
+                    if($house_services != false && count($house_services)> 0){
+//                        traceActivity('Count Services','dll');
+>>>>>>> ce6694a7570de335a014da154df4e13a0c87cc66
                         foreach ($house_services as $house_service){
                             // create a bill
-                            $bill_data = $this->insertQuery('customer_bills', array(
+                            if(!$bill_data = $this->insertQuery('customer_bills', array(
                                 'bill_amount' => $house_service['price'],
                                 'bill_date' => date('Y-m-d'),
                                 'bill_status' => '0',
@@ -130,11 +158,14 @@ class LeaseAgreement extends Payments
                                 'bill_balance' => $house_service['price'],
                                 'mf_id' => $post['tenant'],
                                 'service_channel_id' => $house_service['service_channel_id'],
-                                'service_account' => $house_service['house_number']
-                            ), 'bill_id');
+                                'service_account' => $house_service['house_number'],
+                                'unit_number'=>$_POST['house_id']
+                            ), 'bill_id')){
+                                $this->setWarning('Failed to create customer bill'.get_last_error());
+                            }
 
                             // create a debit journal
-                            $this->insertQuery('journal', array(
+                            if(!$this->insertQuery('journal', array(
                                 'bill_id' => $bill_data['bill_id'],
                                 'amount' => $house_service['price'],
                                 'dr_cr' => 'DR',
@@ -144,19 +175,28 @@ class LeaseAgreement extends Payments
                                 'stamp' => time(),
                                 'mf_id' => $post['tenant'],
                                 'journal_code' => 'SA'
-                            ));
+                            ))){
+                                $this->setWarning('Failed to create journal'.get_last_error());
+                            }
                         }
                     }
+                    $this->endTranc();
 
-                    $this->flashMessage('lease', 'success', 'Lease Agreement has been created!');
+
                 }else {
-                    $this->flashMessage('lease', 'error', 'Failed to add lease agreement! ' . get_last_error());
+
                 }
-            }else{
-                $this->flashMessage('lease', 'error', 'Failed to add lease document! '.get_last_error());
             }
         }
+<<<<<<< HEAD
         $this->endTranc();
+=======
+        if(count($this->getWarnings())> 0){
+
+        }else{
+            $this->flashMessage('lease', 'success', 'Lease Agreement has been created!');
+        }
+>>>>>>> ce6694a7570de335a014da154df4e13a0c87cc66
     }
 
 	public function addLease($tenant, $house_id, $plot_id,$lease_type, $start_date, $end_date, $doc_id){
@@ -187,7 +227,8 @@ class LeaseAgreement extends Payments
 	public function addLeaseDoc($file, $destination){
 		extract($_POST);
 		$doc_path = $this->uploadImage($file['lease_doc']['tmp_name'], $destination);
-			$data = $this->insertQuery('documents',
+
+			if($data = $this->insertQuery('documents',
 				array(
 					'doc_name' => $file['lease_doc']['name'],
 					'local_path' => $doc_path,
@@ -195,9 +236,11 @@ class LeaseAgreement extends Payments
 					'created_by' => $_SESSION['mf_id']
 				),
 				'doc_id'
-			);
-			//var_dump($data['doc_id']);exit;
-			return $data['doc_id'];
+			)) {
+                return $data['doc_id'];
+            }else{
+                return false;
+            }
 	}
 
 	public function getAllLeaseAgreements(){
@@ -373,9 +416,10 @@ class LeaseAgreement extends Payments
 
 	public function getNameByMfId($mf_id){
 		$result = $this->selectQuery('masterfile','surname,firstname,middlename', "mf_id ='".$mf_id."' ");
-
-		echo $result[0]['surname'].'  '.$result[0]['firstname'].'  '.$result[0]['middlename'];
-	}
+        if(count($result) > 0) {
+            echo $result[0]['surname'] . '  ' . $result[0]['firstname'] . '  ' . $result[0]['middlename'];
+        }
+    }
 
     public function getLeaseByLeaseId($id){
         $data = $this->selectQuery('lease_details', '*', "lease_id = '".sanitizeVariable($id)."' ");

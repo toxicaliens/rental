@@ -76,7 +76,23 @@
 ?>
 
 <div class="widget">
-    <div class="widget-title"><h4><i class="icon-reorder"></i> Manage Houses</h4></div>
+<<<<<<< HEAD
+    <div class="widget-title"><h4><i class="icon-reorder"></i> Manage Houses</h4>
+        <span class="actions">
+            <div class="btn-group">
+<!--                 <a class="btn btn-small btn-primary" ><i class="icon-list"></i> Actions</a>-->
+<!--                 <a class="btn btn-small btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-caret-down"></span>-->
+<!--                 </a>-->
+                 <ul class="dropdown-menu">
+                    <li><a href="#add_house" data-toggle="modal"><i class="icon-plus"></i> Add</a></li>
+                    <li><a href="#edit-house" class="edit_house"><i class="icon-trash"></i> Edit</a></li>
+                    <li><a href="#delete-house" class="delete-house"><i class="icon-remove"></i> Delete</a></li>
+                 </ul>
+            </div>
+<!--            <a href="#attach_services"  class="btn btn-small btn-success attach_service"><i class="icon-paper-clip"></i> Attach a service</a>-->
+        </span>
+    </div>
+
     <div class="widget-body form">
         <?php
         if(isset($_SESSION['houses'])){

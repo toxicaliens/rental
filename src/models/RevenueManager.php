@@ -1,9 +1,9 @@
 <?php
+	require_once('src/models/Masterfile.php');
 	/**
 	* 
 	*/
-	require_once 'src/models/Library.php';
-	class RevenueManager extends Library
+	class RevenueManager extends Masterfile
 	{
 		public function getAllRevenueChannelsForRegions()
 		{
@@ -27,70 +27,344 @@
 
 		public function getAllRevenueChannels()
 		{
-			$results = $this->selectQuery('revenue_channel','*');
-
-			return $results;
+			$query = "SELECT * FROM revenue_channel ORDER BY revenue_channel_name ASC";
+			// var_dump($query);exit;
+			return run_query($query);
 		}
-		//function to add a new revenue channel
-		public function addRevenueChannel(){
-			extract($_POST);
-			if(!checkForExistingEntry('revenue_channel', 'revenue_channel_name', $revenue_channel_name)){
-				if(!checkForExistingEntry('revenue_channel', 'revenue_channel_code', $revenue_channel_code)){
-					$add_revenue_channels="INSERT INTO revenue_channel(revenue_channel_name,revenue_channel_code)
-    			                       VALUES('".$revenue_channel_name."', '".$revenue_channel_code."')";
-					// var_dump($add_revenue_channels);exit;
-					$result = run_query($add_revenue_channels);
 
-					if (!$result) {
-						$errormessage = '<div class="alert alert-warning">
-                                            <button class="close" data-dismiss="alert">×</button>
-                                            <strong>Warning!</strong> The revenue channel('.$revenue_channel_name.') already exists. Try another!
-                                        </div>';
-						$_SESSION['RMC'] = $errormessage;
-					}else{
-						$_SESSION['RMC'] = '<div class="alert alert-success">
-                                <button class="close" data-dismiss="alert">×</button>
-                                <strong>Success!</strong> Entry added successfully.
-                            </div>';
-					}
-				}else{
-					$_SESSION['RMC'] = '<div class="alert alert-warning">
-                            <button class="close" data-dismiss="alert">×</button>
-                            <strong>Success!</strong> The revenue channel code('.$revenue_channel_code.') already exists.
-                        </div>';
-				}
-			}else{
-				$_SESSION['RMC'] = '<div class="alert alert-warning">
-                            <button class="close" data-dismiss="alert">×</button>
-                            <strong>Success!</strong> The revenue channel name('.$revenue_channel_name.') already exists.
-                        </div>';
+		public function getAllRegions()
+		{
+			$query = "SELECT * FROM region ORDER BY region_name ASC";
+			// var_dump($query);exit;
+			return run_query($query);
+		}
+
+		public function getAllCountiesd()
+		{
+			$query = "SELECT * FROM county_ref ORDER BY county_name";
+			return run_query($query);
+		}
+
+		public function getAllSubcounties()
+		{	
+			$query = "SELECT * FROM sub_county ORDER BY sub_county_name ASC";
+			return run_query($query);
+		}
+
+		public function getSubcountiesInCounty($county_id)
+		{	
+			$query = "SELECT * FROM sub_county WHERE county_ref_id = '".$county_id."'";
+			return run_query($query);
+		}
+
+		public function populateTargetAmountsForEachSubcounty($rev_id){
+			$result = $this->getAllSubcounties();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getTargetAmountForSubcounty($rows['sub_county_id'], $rev_id);
 			}
 		}
 
-		//function to get edit details by id
-		public function getRevenueChannelById($id){
-			$result =$this->selectQuery('revenue_channel','*', "revenue_channel_id ='".sanitizeVariable($id)."' ");
-			return $result[0];
-		}
-		//function to delete a revenue channel
-		public function deleteRevenueChannel($id){
-			$message = array();
-			$result = $this->deleteQuery('revenue_channel',"revenue_channel_id = '".$id."' ");
-
-			if($result){
-				$errormessage = '<div class="alert alert-success">
-                                            <button class="close" data-dismiss="alert">×</button>
-                                            <strong>Success!</strong>Revenue Channel Deleted!
-                                        </div>';
-				$_SESSION['RMC'] = $errormessage;
+		public function getTargetAmountForSubcounty($subcounty_id, $rev_id){
+			$query = "SELECT * FROM forecast WHERE subcounty_id = '".$subcounty_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				echo "<td>Ksh. ".number_format($target_amt,2)."</td>";
 			}else{
-				$errormessage = '<div class="alert alert-error">
-                                            <button class="close" data-dismiss="alert">×</button>
-                                            <strong>Error!</strong>Revenue Channel Not Deleted !
-                                        </div>';
-				$_SESSION['RMC'] = $errormessage;
+				echo "<td><a href=\"#add_sub_forecast\" data-toggle=\"modal\" sub_id=\"$subcounty_id\" rev_id=\"$rev_id\" class=\"btn btn-mini add_sub_forecast\"><i class=\"icon-plus\"></i> Add Forecast</a></td>";
 			}
-			return $message;
+		}
+
+		public function populateTargetAmountsForEachRegion($rev_id){
+			$result = $this->getAllRegions();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getTargetAmountForRegion($rows['region_id'], $rev_id);
+			}
+		}
+
+		public function getTargetAmountForRegion($region_id , $rev_id){
+			$query = "SELECT * FROM forecast WHERE region_id = '".$region_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				echo "<td>Ksh. ".number_format($target_amt,2)."</td>";
+			}else{
+				echo "<td><a href=\"#add_forecast\" data-toggle=\"modal\" reg_id=\"$region_id\" rev_id=\"$rev_id\" class=\"btn btn-mini add_forecast\"><i class=\"icon-plus\"></i> Add Forecast</a></td>";
+			}
+		}
+
+		public function getSubcountyForecastsByRevenueChannel($rev_id){
+			$query = "SELECT f.*, s.sub_county_name FROM forecast f
+			LEFT JOIN sub_county s ON s.sub_county_id = f.subcounty_id
+			WHERE revenue_channel_id = '".$rev_id."' AND subcounty_id IS NOT NULL";
+			return run_query($query);
+		}
+
+		public function getRevenueName($rev_id){
+			$query = "SELECT revenue_channel_name FROM revenue_channel WHERE revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);		
+			$rows = get_row_data($result);
+			return $rows['revenue_channel_name'];	
+		}
+
+		public function getRegionForecastsByRevenueChannel($rev_id){
+			$query = "SELECT f.*, r.region_name FROM forecast f
+			LEFT JOIN region r ON r.region_id = f.region_id
+			WHERE revenue_channel_id = '".$rev_id."' AND f.region_id IS NOT NULL";
+			return run_query($query);
+		}
+
+		  public function getMonthlyTargetAmountForSubcounty($subcounty_id, $rev_id){
+			$query = "SELECT * FROM forecast WHERE subcounty_id = '".$subcounty_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 30.4;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	public function populateMonthlyTargetAmountsForEachSubcounty($rev_id){
+			$result = $this->getAllSubcounties();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getMonthlyTargetAmountForSubcounty($rows['sub_county_id'], $rev_id);
+			}
+		}
+
+	public function populateMonthlyTargetAmountsForEachRegion($rev_id){
+			$result = $this->getAllRegions();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getMonthlyTargetAmountForRegion($rows['region_id'], $rev_id);
+			}
+		}
+
+	public function getMonthlyTargetAmountForRegion($region_id , $rev_id){
+			$query = "SELECT * FROM forecast WHERE region_id = '".$region_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 30.4;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	 public function getQuaterlyTargetAmountForSubcounty($subcounty_id, $rev_id){
+			$query = "SELECT * FROM forecast WHERE subcounty_id = '".$subcounty_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 91.3;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	public function populateQuaterlyTargetAmountsForEachSubcounty($rev_id){
+			$result = $this->getAllSubcounties();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getQuaterlyTargetAmountForSubcounty($rows['sub_county_id'], $rev_id);
+			}
+		}
+
+	public function populateQuaterlyTargetAmountsForEachRegion($rev_id){
+			$result = $this->getAllRegions();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getQuaterlyTargetAmountForRegion($rows['region_id'], $rev_id);
+			}
+		}
+
+	public function getQuaterlyTargetAmountForRegion($region_id , $rev_id){
+			$query = "SELECT * FROM forecast WHERE region_id = '".$region_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 91.3;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	public function getSemiTargetAmountForSubcounty($subcounty_id, $rev_id){
+			$query = "SELECT * FROM forecast WHERE subcounty_id = '".$subcounty_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 182.5;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	public function populateSemiTargetAmountsForEachSubcounty($rev_id){
+			$result = $this->getAllSubcounties();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getSemiTargetAmountForSubcounty($rows['sub_county_id'], $rev_id);
+			}
+		}
+
+	public function populateSemiTargetAmountsForEachRegion($rev_id){
+			$result = $this->getAllRegions();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getSemiTargetAmountForRegion($rows['region_id'], $rev_id);
+			}
+		}
+
+	public function getSemiTargetAmountForRegion($region_id , $rev_id){
+			$query = "SELECT * FROM forecast WHERE region_id = '".$region_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 182.5;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	public function getAnnualTargetAmountForSubcounty($subcounty_id, $rev_id){
+			$query = "SELECT * FROM forecast WHERE subcounty_id = '".$subcounty_id."' AND revenue_channel_id = '".$rev_id."'";
+			$result = run_query($query);
+			$num_rows =  get_num_rows($result);
+			if($num_rows != 0){
+				$rows = get_row_data($result);
+				$target_amt = $rows['target_amount'];
+				$amount = $target_amt * 365;
+				echo "<td>Ksh. ".number_format($amount,2)."</td>";
+			}else{
+				echo "<td>0</td>";
+			}
+		}
+
+	public function populateAnnualTargetAmountsForEachSubcounty($rev_id){
+			$result = $this->getAllSubcounties();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getAnnualTargetAmountForSubcounty($rows['sub_county_id'], $rev_id);
+			}
+		}
+
+	public function populateAnnualTargetAmountsForEachRegion($rev_id){
+			$result = $this->getAllRegions();
+
+			//loop all subcounties while populating the target amount
+			while ($rows = get_row_data($result)) {
+				//get target amounts for the respective subcounty
+				$this->getAnnualTargetAmountForRegion($rows['region_id'], $rev_id);
+			}
+		}
+
+	public function getAnnualTargetAmountForRegion($region_id , $rev_id){
+		$query = "SELECT * FROM forecast WHERE region_id = '".$region_id."' AND revenue_channel_id = '".$rev_id."'";
+		$result = run_query($query);
+		$num_rows =  get_num_rows($result);
+		if($num_rows != 0){
+			$rows = get_row_data($result);
+			$target_amt = $rows['target_amount'];
+			$amount = $target_amt * 365;
+			echo "<td>Ksh. ".number_format($amount,2)."</td>";
+		}else{
+			echo "<td>0</td>";
+		}
+	}
+
+	public function checkForExistingForecast($table, $column1, $value1, $column2, $value2){
+      $check_query = "SELECT * FROM $table WHERE $column1 = '".$value1."' AND $column2 = '".$value2."'";
+      // var_dump($check_query);exit;
+	  $result = run_query($check_query);
+	  $num_rows = get_num_rows($result);
+	  if($num_rows >= 1){
+	    return true;
+	  }else{
+	    return false;
+	  }
+    }
+
+    public function getLeafOptions(){
+    	$return = array();
+    	$query = "SELECT service_channel_id, service_option, option_code FROM service_channels 
+    	WHERE service_option_type = 'Leaf'";
+    	if($result = run_query($query)){
+    		if(get_num_rows($result)){
+    			while ($rows = get_row_data($result)) {
+    				$return[] = $rows;
+    			}
+    			return $return;
+    		}
+    	}
+    }
+
+    public function getServicePrice($service_id){
+    	$query = "SELECT price FROM service_channels WHERE service_channel_id = '".$service_id."'";
+    	if($result = run_query($query)){
+    		if($get_num_rows($result)){
+    			$rows = get_row_data($result);
+    			return $rows['price'];
+    		}
+    	}
+    }
+
+    public function getCurrencySymbols(){
+    	$data = $this->selectQuery('currency', '*');
+		return $data;
+	}
+
+	public function getServiceBillName($service_bill_id){
+		$rows = $this->selectQuery('revenue_service_bill', 'bill_name', "revenue_bill_id = '".$service_bill_id."'");
+		return $rows[0]['bill_name'];
+	}
+
+		public function getServiceBillCode($service_bill_id){
+			$rows = $this->selectQuery('revenue_service_bill', 'bill_code', "revenue_bill_id = '".$service_bill_id."'");
+			return $rows[0]['bill_code'];
 		}
 
         public function addServiceBill($post){
@@ -148,6 +422,7 @@
             }
         }
 }
+?>
 
 
 

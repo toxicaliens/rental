@@ -922,13 +922,13 @@
         }
 
         public function getFullName($mf_id){
-            if(!empty($mf_id)) {
-                $data = $this->selectQuery('all_masterfile', 'full_name', "mf_id = '" . sanitizeVariable($mf_id) . "'");
-                $data = $data[0]['full_name'];
-            }else {
-                $data = '';
-            }
-            return $data;
+//            if(!empty($mf_id)) {
+//                $data = $this->selectQuery('all_masterfile', 'full_name', "mf_id = '" . sanitizeVariable($mf_id) . "'");
+//                $data = $data[0]['full_name'];
+//            }else {
+//                $data = '';
+//            }
+//            return $data;
         }
 
         public function getMfByBrole($brole){

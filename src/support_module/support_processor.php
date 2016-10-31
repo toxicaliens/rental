@@ -91,6 +91,12 @@ switch ($_POST['action']) {
 		$Quotes->declineVoucher();
 		$_SESSION['support_error'] = $Quotes->getWarnings();
 		break;
+	
+	case mark_complete:
+		logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+		//var_dump($_POST);exit;
+		$Quotes->updateComplete($_POST['qoute_id']);
+		break;
 
 
 }

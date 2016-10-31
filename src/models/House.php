@@ -302,7 +302,8 @@ class House extends Library
         if ($this->getValidationStatus()) {
             //check for existing entry
             $results = $this->selectQuery('houses','house_number',"house_number = '".$house_number."' AND plot_id = '".$plot."'");
-            if($results >  0){
+//            var_dump($results);die;
+            if(count($results)> 0){
                 $this->setWarning('Unit Number ('.$_POST['house_number'].') already exists in this property');
             }
             //if the validation has passed, run a query to insert the details
@@ -592,8 +593,14 @@ class House extends Library
         }
         //print_r($hs_service_ids);
         $return = array();
-        $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
-            "service_option_type = '".leaf."' AND status IS TRUE");
+        $role = $_SESSION['role_name'];
+        if($role != SystemAdmin) {
+            $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
+                "service_option_type = '" .leaf. "' AND status IS TRUE AND created_by = '" .$_SESSION['mf_id']. "' ");
+        }else{
+            $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
+                "service_option_type = '" .leaf. "' AND status IS TRUE ");
+        }
         if(count($leaf_services)){
             foreach ($leaf_services as $leaf_service){
                 if(!in_array($leaf_service['service_channel_id'], $hs_service_ids)){

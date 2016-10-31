@@ -278,7 +278,6 @@ del_house: src/house_module/delete_house.php
 view_house: src/house_module/view_house.php
 in_plot: src/house_module/houses_in_plot.php
 house_attrbs: src/house_module/house_attributes.php
-view_houses: src/house_module/view_houses.php
 house_alloc: src/house_module/house_alloc.php
 900: src/house_module/house_profile.php
 
@@ -378,6 +377,7 @@ dashboard: src/dashboard_module/dashboard.php
 169: src/payment_agent_module/gpay_transaction.php
 170: src/payment_agent_module/mpesa_request.php
 171: src/payment_agent_module/all_bills.php
+payment_receipt: src/payment_agent_module/bulk_payment_receipt.php
 
 201: src/rate_module/select_customer.php
 202: src/rate_module/add_land_rate.php

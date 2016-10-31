@@ -49,11 +49,6 @@ class LeaseAgreement extends Payments
         // validate document
         $uniqid = uniqid();
         $destination = $this->_destination.$uniqid.$_FILES['lease_doc']['name'];
-//		$allowed_exts = array('doc', 'docx', 'pdf', 'rtf', 'png', 'gif', 'jpg', 'xlsx');
-//		if(!$this->validateImage($destination, $allowed_exts)){
-//			$this->setWarning('File type not allowed!');
-//			return false;
-//		}
 
         $valid = $this->getValidationStatus();
         if($valid) {
@@ -63,7 +58,6 @@ class LeaseAgreement extends Payments
                 if($this->addLease($post['tenant'], $post['house_id'], $post['plot_id'], $post['lease_type'], $post['start_date'], $post['end_date'], $doc_id)) {
                         // get the rent service bill
                     $sb = $this->selectQuery('revenue_service_bill', 'revenue_bill_id,bill_interval', "bill_code = '".MontlyRent."'");
-//                    var_dump($sb);die;
                     $service_bill_id = $sb[0]['revenue_bill_id'];
                     $bill_interval = $sb[0]['bill_interval'];
 
@@ -88,10 +82,7 @@ class LeaseAgreement extends Payments
 
                     // get plot services
                     $plot_data = $this->selectQuery('houses', 'plot_id,house_number', "house_id = '".$post['house_id']."'");
-//                    var_dump($plot_data);die;
-//                    echo $plot_data[0];
                     $plot_services = $this->selectQuery('ps_data', '*', "plot_id = '".$plot_data[0]['plot_id']."'");
-//                    var_dump($plot_services);die;
                     if($plot_services != false && count($plot_services) > 0 ){
                         foreach ($plot_services as $plot_service) {
                             // create a bill
@@ -184,7 +175,7 @@ class LeaseAgreement extends Payments
 		extract($_POST);
 		$start_date = date('Y-m-d', strtotime($start_date));
 		$end_date = date('Y-m-d', strtotime($end_date));
-        //$doc_id = (isset($doc_id) && !empty($doc_id)) ? $doc_id : 'NULL';
+        $doc_id = (isset($doc_id) && !empty($doc_id)) ? $doc_id : 'NULL';
 		if($this->getValidationStatus()) {
 			$data = $this->insertQuery('lease',
 				array(
@@ -208,20 +199,17 @@ class LeaseAgreement extends Payments
 	public function addLeaseDoc($file, $destination){
 		extract($_POST);
 		$doc_path = $this->uploadImage($file['lease_doc']['tmp_name'], $destination);
+        if($data = $this->insertQuery('documents',
+            array(
+                'doc_name' => $file['lease_doc']['name'],
+                'local_path' => $doc_path,
+                'created_date' => date('Y-m-d'),
+                'created_by' => $_SESSION['mf_id']
+            ),
+            'doc_id'
+        ))
+            return $data['doc_id'];
 
-			if($data = $this->insertQuery('documents',
-				array(
-					'doc_name' => $file['lease_doc']['name'],
-					'local_path' => $doc_path,
-					'created_date' => date('Y-m-d'),
-					'created_by' => $_SESSION['mf_id']
-				),
-				'doc_id'
-			)) {
-                return $data['doc_id'];
-            }else{
-                return false;
-            }
 	}
 
 	public function getAllLeaseAgreements(){
@@ -274,14 +262,14 @@ class LeaseAgreement extends Payments
         $allowed_exts = array('doc', 'docx', 'pdf', 'rtf', 'png', 'gif', 'jpg');
         $this->beginTranc();
         if(!empty($_FILES['lease_doc']['name'])) {
-            if (!$this->validateImage($destination, $allowed_exts)) {
+            if (!$this->validateImage($destination)) {
                 $this->setWarning('File type not allowed!');
                 return false;
             }
             $valid = $this->getValidationStatus();
             if ($valid) {
                 $_FILES['doc_id'] = $_POST['doc_id'];
-                if ($this->updateLeaseDoc($_FILES, $destination, $allowed_exts)) {
+                if ($this->updateLeaseDoc($_FILES, $destination)) {
                     if ($this->updateLease($post['tenant'], $post['house_id'], $post['lease_type'], $post['start_date'], $post['end_date'], $doc_id)) {
                         $this->flashMessage('lease', 'success', 'Lease Agreement has been updates!');
                     } else {
@@ -302,8 +290,8 @@ class LeaseAgreement extends Payments
         $this->endTranc();
     }
 
-    public function updateLeaseDoc($file, $destination, $allowed_extensions){
-        $doc_path = $this->uploadImage($file['lease_doc']['tmp_name'], $destination, $allowed_extensions);
+    public function updateLeaseDoc($file, $destination){
+        $doc_path = $this->uploadImage($file['lease_doc']['tmp_name'], $destination);
         if(!empty($doc_path)) {
             $data = $this->updateQuery2('documents',
                 array(
@@ -478,8 +466,8 @@ class LeaseAgreement extends Payments
         return $data;
     }
 
-    public function leaseInfo($tenant){
-        $data = $this->selectQuery('lease_info', '*', "tenant = '".$tenant."' ");
+    public function leaseInfo(){
+        $data = $this->selectQuery('my_lease', '*', "lease_id = '".$_GET['lease']."' ");
         return $data;
     }
 
@@ -499,8 +487,8 @@ class LeaseAgreement extends Payments
         return $data;
     }
 
-    public function getMyLeaseStatement($tenant){
-        $data = $this->selectQuery('my_statement', '*', "mf_id = $tenant");
+    public function getMyLeaseStatement(){
+        $data = $this->selectQuery('journal', '*', "mf_id = '".$_GET['tenant']."' AND unit_number = '".$_GET['unit']."' ");
         return $data;
     }
 

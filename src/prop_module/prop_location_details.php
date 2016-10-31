@@ -23,9 +23,9 @@
     </div>
     <div class="span6">
         <div class="control-group">
-            <label for="town" class="control-label">Town/City:</label>
+            <label for="town" class="control-label">Region:</label>
             <div class="controls">
-                <input type="text" name="town_city" id="t-c" class="span12" value="<?php echo $prop->get('town_city'); ?>"/>
+                <input type="text" name="region" id="t-c" class="span12" value="<?php echo $prop->get('region'); ?>"/>
             </div>
         </div>
     </div>
@@ -33,12 +33,23 @@
 <div class="row-fluid">
     <div class="span6">
         <div class="control-group">
+            <label for="town" class="control-label">Town/City:</label>
+            <div class="controls">
+                <input type="text" name="town_city" id="t-c" class="span12" value="<?php echo $prop->get('town_city'); ?>"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="span6">
+        <div class="control-group">
             <label for="location" class="control-label">Street:</label>
             <div class="controls">
                 <input type="text" name="street" id="street" class="span12" value="<?php echo $prop->get('street'); ?>"/>
             </div>
-        </div>
+      </div>
     </div>
+</div>
+<div class="row-fluid">
     <div class="span6">
         <div class="control-group">
             <label for="building-number" class="control-label">Building Number</label>
@@ -47,8 +58,7 @@
             </div>
         </div>
     </div>
-</div>
-<div class="row-fluid">
+
     <div class="span6">
         <div class="control-group">
             <label for="lr_no" class="control-label">Land Reg. No:</label>
@@ -59,4 +69,14 @@
 
     </div>
 
+</div>
+<div class="row-fluid">
+    <div class="span6">
+        <div class="control-group">
+            <label for="longitude" class="control-label">Longitude/Latitude</label>
+            <div class="controls">
+                <input type="text" name="longitude_latitude" class="span12" placeholder="Degrees, minutes, and seconds (DMS):example  41°24'12.2"N">
+            </div>
+        </div>
+    </div>
 </div>

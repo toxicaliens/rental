@@ -6,3 +6,7 @@ var CustomerBillsDt = $('#customer_bills').DataTable({
     serverSide: true,
     ajax: "?num=146"
 });
+
+$('#refresh-dt').click(function() {
+    CustomerBillsDt.ajax.reload();
+});

@@ -94,10 +94,10 @@ function traceActivity($text, $filename) {
     $today = $today . " | " . date("Y-m-d H:i:s");
 
     $myFile = 'logs/log'.date('Y-m-d').'.txt';
-    $fh = fopen($myFile, 'a');
-
-    fwrite($fh, $today . "==" . $text . "\n");
-    fclose($fh);
+//    $fh = fopen($myFile, 'a');
+//
+//    fwrite($fh, $today . "==" . $text . "\n");
+//    fclose($fh);
 }
 
 function getPricipalName($afyapoa_id){

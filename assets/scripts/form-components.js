@@ -292,7 +292,7 @@ var FormComponents = function () {
         });
 
         $('#select2_sample80').select2({
-            placeholder: "Select county",
+            placeholder: "Select Revenue Channel",
             allowClear: true
         });
 

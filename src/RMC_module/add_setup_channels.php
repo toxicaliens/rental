@@ -32,14 +32,15 @@ if(isset($_SESSION['RMC'])){
                <label for="revenue_channel_id" class="control-label">Revenue channel name:<span class="required"></span></label>
                <div class="controls">
                  <select class="span12" id="select2_sample80" class="span7 select2" name="revenue_channel_id" id="revenue_channel_id" required>
-                     <option value="">Choose Revenue Name</option>
+                     <option value="">--Choose Revenue Name--</option>
                      <?php
-                $revenue_channel_id=run_query("SELECT * from revenue_channel Order by revenue_channel_name");
-                while ($fetch=get_row_data($revenue_channel_id))
-                {
-                echo "<option value='".$fetch['revenue_channel_id']."'>".$fetch['revenue_channel_name']."</option>";
-                }
-                ?></select>
+                        $revenue_channel_id=run_query("SELECT * from revenue_channel Order by revenue_channel_name");
+                        while ($fetch=get_row_data($revenue_channel_id))
+                        {
+                        echo "<option value='".$fetch['revenue_channel_id']."'>".$fetch['revenue_channel_name']."</option>";
+                        }
+                    ?>
+                 </select>
                </div>
             </div>
          </div>

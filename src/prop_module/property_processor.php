@@ -4,6 +4,7 @@ $prop = new Plots();
 switch($_POST['action'])
 {
     case add_property:
+//        var_dump($_POST);die;
         logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
         $prop->addPlot($_POST);
         $_SESSION['warnings'] = $prop->getWarnings();

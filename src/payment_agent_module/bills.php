@@ -74,27 +74,24 @@ if(App::isAjaxRequest()){
 <div class="widget">
   <div class="widget-title">
     <h4>Customer Details</h4>
-    <span class="actions">
-        <a href="index.php?num=163" class="btn btn-primary btn-small">NEW</a>
-    </span>
+      <span class="actions">
+          <button id="refresh-dt" class="btn btn-info btn-small"><i class="icon-refresh"></i> Refresh</button>
+      </span>
   </div>
   <div class="widget-body">
-
-   <table id="customer_bills" class="table table-bordered">
- <thead>
-  <tr>
-   <th>Bill#</th>
-   <th>B.Due date</th>
-   <th>Customer Name</th>
-   <th>B.Amount</th>
-   <th>Service Account</th>
-   <th>B.Balance</th>
-  </tr>
- </thead>
- <tbody>
-  </tbody>
-</table>
-<div class="clearfix"></div>
+      <table id="customer_bills" class="table table-bordered">
+          <thead>
+               <tr>
+                   <th>Bill#</th>
+                   <th>B.Due date</th>
+                   <th>Customer Name</th>
+                   <th>B.Amount</th>
+                   <th>Service Account</th>
+                   <th>B.Balance</th>
+               </tr>
+          </thead>
+      </table>
+    <div class="clearfix"></div>
 </div>
 </div>
 <?php

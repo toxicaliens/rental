@@ -147,4 +147,21 @@ CREATE OR REPLACE VIEW public.bill_data AS
     sc.service_option
   FROM customer_bills cb
     LEFT JOIN service_channels sc ON cb.service_channel_id = sc.service_channel_id;
->>>>>>> ce6694a7570de335a014da154df4e13a0c87cc66
+
+-- customer bills views
+CREATE OR REPLACE VIEW public.customer_bills_view AS
+  SELECT c.bill_id,
+    c.bill_amount,
+    c.bill_date,
+    c.bill_status,
+    c.bill_amount_paid,
+    c.bill_balance,
+    c.billing_file_id,
+    c.mf_id,
+    c.service_channel_id,
+    c.service_account,
+    c.total_cash_received,
+    c.bill_due_date,
+    concat(m.surname, ' ', m.firstname, ' ', m.middlename) AS full_name
+  FROM (customer_bills c
+    LEFT JOIN masterfile m ON ((m.mf_id = c.mf_id)));

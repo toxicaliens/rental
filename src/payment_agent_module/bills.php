@@ -1,81 +1,85 @@
- <?
-set_layout("dt-layout.php", array(
-	'pageSubTitle' => 'Bills',
-	'pageSubTitleText' => '',
-	'pageBreadcrumbs' => array (
-		array ( 'url'=>'index.php', 'text'=>'Home' ),
-		array ( 'text'=>'Payments & Bills' ),
-		array ( 'text'=>'Bills' )
-	)
-));
-   $distinctQuery2 = "select count(bill_id) as total_bills from ".DATABASE.".customer_bills";
-   $resultId2 = run_query($distinctQuery2);
-   $arraa = get_row_data($resultId2);
-   $total_rows2 = $arraa['total_bills'];
+<?php
+if(App::isAjaxRequest()){
+    // DB table to use
+    $table = 'customer_bills_view';
+
+    // Table's primary key
+    $primaryKey = 'bill_id';
+
+    // Array of database columns which should be read and sent back to DataTables.
+    // The db parameter represents the column name in the database, while the dt
+    // parameter represents the DataTables column identifier. In this case simple
+    // indexes
+    $columns = array(
+        array('db' => 'bill_id', 'dt' => 0),
+        array('db' => 'bill_due_date', 'dt' => 1),
+        array('db' => 'full_name', 'dt' => 2),
+        array('db' => 'bill_amount', 'dt' => 3),
+        array('db' => 'service_account', 'dt' => 4),
+        array('db' => 'bill_balance', 'dt' => 5)
+    );
+    require 'src/connection/config.php';
+    //    var_dump($dbpass);exit;
+    // SQL server connection information
+    $sql_details = array(
+        'user' => $dbuser,
+        'pass' => $dbpass,
+        'db' => $dbname,
+        'host' => $dbhost,
+        'port' => $dbport
+    );
+
+
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+     * If you just want to use the basic configuration for DataTables with PHP
+     * server-side, there is no need to edit below this line.
+     */
+
+    require('src/models/ssp.class.php');
+    $role = $_SESSION['role_name'];
+    if($role == SystemAdmin){
+        $filter = NULL;
+    }else{
+        $filter =  "WHERE mf_id = '".$_SESSION['mf_id']."'";
+    }
+    echo json_encode(
+        SSP::simple($_GET, $sql_details, $table, $primaryKey, $columns,$filter)
+    );
+}else{
+    set_layout("dt-layout.php", array(
+    'pageSubTitle' => 'Bills',
+    'pageSubTitleText' => '',
+    'pageBreadcrumbs' => array (
+        array ( 'url'=>'index.php', 'text'=>'Home' ),
+        array ( 'text'=>'Payments & Bills' ),
+        array ( 'text'=>'Bills' )
+    )
+    ));
  ?>
 
 <div class="widget">
   <div class="widget-title">
     <h4>Customer Details</h4>
-    <span class="actions">
-        <a href="index.php?num=163" class="btn btn-primary btn-small">NEW</a>
-    </span>
+      <span class="actions">
+          <button id="refresh-dt" class="btn btn-info btn-small"><i class="icon-refresh"></i> Refresh</button>
+      </span>
   </div>
   <div class="widget-body">
-
-   <table id="table1" class="table table-bordered">
- <thead>
-  <tr>
-   <th>Bill#</th>
-   <th>B.Due date</th>
-   <th>Customer Name</th>
-   <th>B.Amount</th>
-   <th>Service Account</th>
-   <th>B.Balance</th>
-   <th>Action</th>
-  </tr>
- </thead>
- <tbody>
-
- <?
-   $distinctQuery = "select c.*, m.* from ".DATABASE.".customer_bills c
-   LEFT JOIN masterfile m ON m.mf_id = c.mf_id
-  ";
-   $resultId = run_query($distinctQuery);
-   $total_rows = get_num_rows($resultId);
-
-
-	$con = 1;
-	$total = 0;
-	while($row = get_row_data($resultId))
-	{
-		$trans_id = trim($row['bill_id']);
-                $duedate= date("d-m-Y H:i:s",strtotime($row['bill_due_date']));
-		$customer_id = $row['mf_id'];
-    $full_name = $row['surname'].' '.$row['firstname'].' '.$row['middlename'];
-		$bill_amt = $row['bill_amount'];
-                // $bstatus = $row['bill_status'];
-		$serviceaccount = $row['service_account'];
-                $bill_balance = $row['bill_balance'];
-//                $serviceaccounttype = $row['service_account_type'];
-
-
-		 ?>
-		  <tr>
-		    <td><?=$trans_id; ?></td>
-		    <td><?=$duedate; ?></td>
-		    <td><?=$full_name; ?></td>
-        <td><?=$bill_amt; ?></td>
-        <td><?=$serviceaccount; ?></td>
-        <td><?=$bill_balance; ?></td>
-        <td><a href=index.php?num=140&bill_id=<?=$trans_id; ?> class="btn btn-mini">
-                    <i class="icon-money"></i> Pay</a></td>
-		  </tr>
-		 <?
- 	}
-	?>
-  </tbody>
-</table>
-<div class="clearfix"></div>
+      <table id="customer_bills" class="table table-bordered">
+          <thead>
+               <tr>
+                   <th>Bill#</th>
+                   <th>B.Due date</th>
+                   <th>Customer Name</th>
+                   <th>B.Amount</th>
+                   <th>Service Account</th>
+                   <th>B.Balance</th>
+               </tr>
+          </thead>
+      </table>
+    <div class="clearfix"></div>
 </div>
 </div>
+<?php
+    set_js(array('src/js/customer_bills.js')); }
+ ?>

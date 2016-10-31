@@ -94,7 +94,7 @@ class SSP {
 		$limit = '';
 
 		if ( isset($request['start']) && $request['length'] != -1 ) {
-			$limit = "LIMIT ".intval($request['start']).", ".intval($request['length']);
+			$limit = "LIMIT ".intval($request['length']);
 		}
 
 		return $limit;
@@ -131,7 +131,7 @@ class SSP {
 						'ASC' :
 						'DESC';
 
-					$orderBy[] = '`'.$column['db'].'` '.$dir;
+					$orderBy[] = ''.$column['db'].' '.$dir;
 				}
 			}
 
@@ -173,7 +173,7 @@ class SSP {
 
 				if ( $requestColumn['searchable'] == 'true' ) {
 					$binding = self::bind( $bindings, '%'.$str.'%', PDO::PARAM_STR );
-					$globalSearch[] = "`".$column['db']."` LIKE ".$binding;
+					$globalSearch[] = "".$column['db']." LIKE ".$binding;
 				}
 			}
 		}
@@ -190,7 +190,7 @@ class SSP {
 				if ( $requestColumn['searchable'] == 'true' &&
 				 $str != '' ) {
 					$binding = self::bind( $bindings, '%'.$str.'%', PDO::PARAM_STR );
-					$columnSearch[] = "`".$column['db']."` LIKE ".$binding;
+					$columnSearch[] = "".$column['db']." LIKE ".$binding;
 				}
 			}
 		}
@@ -242,8 +242,8 @@ class SSP {
 
 		// Main query to actually get the data
 		$data = self::sql_exec( $db, $bindings,
-			"SELECT `".implode("`, `", self::pluck($columns, 'db'))."`
-			 FROM `$table`
+			"SELECT ".implode(", ", self::pluck($columns, 'db'))."
+			 FROM $table
 			 $where
 			 $order
 			 $limit"
@@ -251,16 +251,16 @@ class SSP {
 
 		// Data set length after filtering
 		$resFilterLength = self::sql_exec( $db, $bindings,
-			"SELECT COUNT(`{$primaryKey}`)
-			 FROM   `$table`
+			"SELECT COUNT({$primaryKey})
+			 FROM $table
 			 $where"
 		);
 		$recordsFiltered = $resFilterLength[0][0];
 
 		// Total data set length
 		$resTotalLength = self::sql_exec( $db,
-			"SELECT COUNT(`{$primaryKey}`)
-			 FROM   `$table`"
+			"SELECT COUNT({$primaryKey})
+			 FROM   $table"
 		);
 		$recordsTotal = $resTotalLength[0][0];
 
@@ -279,8 +279,8 @@ class SSP {
 
 
 	/**
-	 * The difference between this method and the `simple` one, is that you can
-	 * apply additional `where` conditions to the SQL queries. These can be in
+	 * The difference between this method and the simple one, is that you can
+	 * apply additional where conditions to the SQL queries. These can be in
 	 * one of two forms:
 	 *
 	 * * 'Result condition' - This is applied to the result set, but not the
@@ -333,8 +333,8 @@ class SSP {
 
 		// Main query to actually get the data
 		$data = self::sql_exec( $db, $bindings,
-			"SELECT `".implode("`, `", self::pluck($columns, 'db'))."`
-			 FROM `$table`
+			"SELECT ".implode(", ", self::pluck($columns, 'db'))."
+			 FROM $table
 			 $where
 			 $order
 			 $limit"
@@ -342,16 +342,16 @@ class SSP {
 
 		// Data set length after filtering
 		$resFilterLength = self::sql_exec( $db, $bindings,
-			"SELECT COUNT(`{$primaryKey}`)
-			 FROM   `$table`
+			"SELECT COUNT({$primaryKey})
+			 FROM   $table
 			 $where"
 		);
 		$recordsFiltered = $resFilterLength[0][0];
 
 		// Total data set length
 		$resTotalLength = self::sql_exec( $db, $bindings,
-			"SELECT COUNT(`{$primaryKey}`)
-			 FROM   `$table` ".
+			"SELECT COUNT({$primaryKey})
+			 FROM   $table ".
 			$whereAllSql
 		);
 		$recordsTotal = $resTotalLength[0][0];

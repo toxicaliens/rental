@@ -36,14 +36,14 @@ if(App::isAjaxRequest()){
      */
 
     require('src/models/ssp.class.php');
-    $role = $_SESSION['role_name'];
-    if($role == SystemAdmin){
-        $filter = NULL;
-    }else{
-        $filter =  "WHERE mf_id = '".$_SESSION['mf_id']."'";
-    }
+//    $role = $_SESSION['role_name'];
+//    if($role == SystemAdmin){
+//        $filter = NULL;
+//    }else{
+//        $filter =  "WHERE mf_id = '".$_SESSION['mf_id']."'";
+//    }
     echo json_encode(
-        SSP::simple($_GET, $sql_details, $table, $primaryKey, $columns,$filter)
+        SSP::simple($_GET, $sql_details, $table, $primaryKey, $columns)
     );
 }else{
     set_layout("dt-layout.php", array(

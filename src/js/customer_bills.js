@@ -12,6 +12,3 @@ var CustomerBillsDt = $('#customer_bills').DataTable({
 $('#refresh-dt').click(function() {
     CustomerBillsDt.ajax.reload();
 });
-
-// filter the grid
-CustomerBillsDt.ajax.url('?num=146&filter=1').load();

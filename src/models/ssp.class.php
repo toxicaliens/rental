@@ -173,7 +173,7 @@ class SSP {
 
 				if ( $requestColumn['searchable'] == 'true' ) {
 					$binding = self::bind( $bindings, '%'.$str.'%', PDO::PARAM_STR );
-					$globalSearch[] = "".$column['db']." LIKE ".$binding;
+					$globalSearch[] = "lower(".$column['db']."::text) LIKE ".strtolower($binding);
 				}
 			}
 		}
@@ -313,7 +313,6 @@ class SSP {
 		$limit = self::limit( $request, $columns );
 		$order = self::order( $request, $columns );
 		$where = self::filter( $request, $columns, $bindings );
-
 		$whereResult = self::_flatten( $whereResult );
 		$whereAll = self::_flatten( $whereAll );
 

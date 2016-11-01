@@ -2,6 +2,20 @@
     require_once 'src/models/LeaseAgreement.php';
     $lease = new LeaseAgreement();
 
+    $rows = $lease->leaseInfo();
+
+    if(count($rows)){
+    foreach ($rows as $row){
+    $lease_id = $row['lease_id'];
+    $tenant_name = $row['tenant_name'];
+    $start_date = $row['start_date'];
+    $end_date = $row['end_date'];
+    $status = $row['status'];
+    $plot_name = $row['plot_name'];
+    $house_number = $row['house_number'];
+    $lease_type = $row['lease_type'];
+
+
     set_title('LEASE DETAILS');
     set_layout("dt-layout.php", array(
         'pageSubTitle' => 'Lease Details',
@@ -56,3 +70,4 @@
         </form>
     </div>
 </div>
+<?php }} ?>

@@ -291,7 +291,7 @@
         }
 
         public function addPersonalDetails($surname, $firstname, $middlename, $id_passport, $gender, $image_path, $regdate_stamp, $b_role, $customer_type_id, $email){
-            //$regdate_stamp = date('Y-m-d', strtotime($regdate_stamp));
+           // $regdate_stamp = date('Y-m-d', strtotime($regdate_stamp));
             $data = $this->insertQuery('masterfile',
                 array(
                     'surname' => $surname,

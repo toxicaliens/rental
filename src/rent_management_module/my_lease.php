@@ -51,7 +51,7 @@
                         <td><?php echo $start_date; ?></td>
                         <td><?php echo $end_date; ?></td>
                         <td><?php echo ($row['status'] == 't') ? 'Active' : 'Inactive'?></td>
-                        <td><a href="index.php?num=6012&tenant=<?php echo $tenant; ?>&unit=<?php echo $house_id?>&lease=<?php echo $lease_id?> "
+                        <td><a href="index.php?num=6012&tenant=<?php echo $tenant; ?>&unit=<?php echo $house_id?>&lease=<?php echo $lease_id?>"
                                class="btn btn-mini"><i class="icon-edit"></i> Manage</a></td>
                     </tr>
                 <?php }} ?>

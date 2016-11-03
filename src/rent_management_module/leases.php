@@ -95,7 +95,7 @@
                         <td><?php echo $result['start_date']?> </td>
                         <td><?php echo $result['end_date']?></td>
                         <td><?php echo ($result['status'] == 't' )? 'Active':'Inactive' ?></td>
-                        <td><a href="index.php?num=6012&lease_id=<?php echo $result['lease_id']; ?>&unit=<?php echo $result['house_number']?> "
+                        <td><a href="index.php?num=6012&lease=<?php echo $result['lease_id']; ?>&unit=<?php echo $result['house_number']?> "
                                class="btn btn-mini"><i class="icon-eye-open"></i> View Lease</a></td>
                         <td><?php echo ($result['status'] == 't' )? '<button data-toggle="modal" terminate-id="'.$result['lease_id'].'" data-target="#terminate_lease1" class="btn btn-mini btn-danger terminate_lease"><i class="icon-remove icon-white"></i> Terminate</button>':'' ?></td>
                     </tr>

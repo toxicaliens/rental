@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
+<<<<<<< HEAD
     <data-source name="PostgreSQL - rental@oriems.com" uuid="b6ff9c57-9d22-4168-a6fb-72c056e1163a">
       <database-info product="PostgreSQL" version="9.1.22" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
         <identifier-quote-string>&quot;</identifier-quote-string>
@@ -18,6 +19,11 @@
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <resolve-scope>rentals:postgres,public</resolve-scope>
+=======
+    <data-source name="PostgreSQL - rental@localhost" uuid="1c4b1890-4bc6-468e-9b9c-1953bb83cc20">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+>>>>>>> 59458701142030e3dbb8dddc3ef586ef2e520e6f
     </data-source>
   </component>
 </project>

@@ -40,6 +40,7 @@
         $tenant = $_GET['tenant'];
         $unit = $_GET['unit'];
         $rows = $lease->getMyLeaseStatement();
+        $rows = $rows['all'];
         //var_dump($rows);exit;
         if(count($rows)){
             foreach ($rows as $row ){

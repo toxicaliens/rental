@@ -2,14 +2,8 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="PostgreSQL - rental@localhost" uuid="1c4b1890-4bc6-468e-9b9c-1953bb83cc20">
-      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <user-name>postgres</user-name>
-      <introspection-scope>rental:public,pg_catalog,postgres</introspection-scope>
-      <resolve-scope>rental:public,postgres</resolve-scope>
     </data-source>
   </component>
 </project>

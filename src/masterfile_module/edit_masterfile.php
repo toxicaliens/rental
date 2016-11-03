@@ -164,25 +164,18 @@
             </div>
         </div>
         <div class="span6">
-            <div class="control-group">
-                <label for="house" class="control-label">House:</label>
-                <div class="controls">
-                    <select name="house" id="house" class="span12 live_search">
-                        <option value="">--Choose House--</option>
-                        <?php
-                            $houses = $mf->getAllHouses();
-                            $houses = $houses['all'];
-                            $tenant_house = $mf->getAllHouses("tenant_mf_id = '".$_GET['mf_id']."'");
-                            $tenant_hs_id = $tenant_house['specific'];
-                            if(count($houses)){
-                                foreach ($houses as $house){
-                        ?>
-                            <option value="<?php echo $house['house_id']; ?>"
-                            <?php echo ($tenant_hs_id['house_id'] == $house['house_id']) ? 'selected': ''; ?>>
-                            <?php echo $house['house_number'].' ('.$house['plot_name'].')'; ?></option>
+            <label for="user_role" class="control-label" id="userole">User Role</label>
+            <div class="controls">
+                <select name="user_role" class="span12 live_search" id="user_role">
+<!--                    <option value="">--choose role--</option>-->
+                    <?php
+                    $us_roles = $mf->getAllUserRoles();
+                    if(count($us_roles)){
+                        foreach ($us_roles as $us_role){
+                            ?>
+                            <option value="<?php echo $us_role['role_id']; ?>" <?php echo ($us_role['role_id'] == $row['user_role']) ? 'selected': ''; ?>><?php echo $us_role['role_name']; ?></option>
                         <?php }} ?>
-                    </select>
-                </div>
+                </select>
             </div>
         </div>
     </div>
@@ -202,21 +195,7 @@
                 </div>
             </div>
         </div>
-        <div class="span6">
-            <label for="user_role" class="control-label" id="userole">User Role</label>
-            <div class="controls">
-                <select name="user_role" class="span12 live_search" id="user_role">
-                    <option value="">--choose role--</option>
-                    <?php
-                        $us_roles = $mf->getAllUserRoles();
-                        if(count($us_roles)){
-                            foreach ($us_roles as $us_role){
-                    ?>
-                    <option value="<?php echo $us_role['role_id']; ?>" <?php echo ($us_role['role_id'] == $row['user_role']) ? 'selected': ''; ?>><?php echo $us_role['role_name']; ?></option>
-                    <?php }} ?>
-                </select>
-            </div>
-        </div>
+
     </div>
     <div class="clearfix"></div>
     <!-- hidden fields -->

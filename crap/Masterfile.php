@@ -291,7 +291,7 @@
         }
 
         public function addPersonalDetails($surname, $firstname, $middlename, $id_passport, $gender, $image_path, $regdate_stamp, $b_role, $customer_type_id, $email){
-            //$regdate_stamp = date('Y-m-d', strtotime($regdate_stamp));
+           // $regdate_stamp = date('Y-m-d', strtotime($regdate_stamp));
             $data = $this->insertQuery('masterfile',
                 array(
                     'surname' => $surname,
@@ -922,13 +922,13 @@
         }
 
         public function getFullName($mf_id){
-//            if(!empty($mf_id)) {
-//                $data = $this->selectQuery('all_masterfile', 'full_name', "mf_id = '" . sanitizeVariable($mf_id) . "'");
-//                $data = $data[0]['full_name'];
-//            }else {
-//                $data = '';
-//            }
-//            return $data;
+            if(!empty($mf_id)) {
+                $data = $this->selectQuery('all_masterfile', 'full_name', "mf_id = '" . sanitizeVariable($mf_id) . "'");
+                $data = $data[0]['full_name'];
+            }else {
+                $data = '';
+            }
+            return $data;
         }
 
         public function getMfByBrole($brole){

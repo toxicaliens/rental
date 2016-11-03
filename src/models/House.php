@@ -331,6 +331,13 @@ class House extends Library
                 $this->_total_service_charge = $data;
                 $this->_charge_rate = $data;
             }
+            $allowed_houses = $this->selectQuery('plots','units',"plot_id = '".$_POST['plot']."' ");
+            echo $allowed_houses = $allowed_houses[0][0];
+            $existing_houses = $this->selectQuery('houses','count(*) as count',"plot_id = '".$_POST['plot']."' ");
+            echo $existing_houses = $existing_houses[0]['count'];
+            if($allowed_houses <= $existing_houses){
+                $this->setWarning('Oops! You have reached the maximum number ('.$allowed_houses.') of units you can add to this property');
+            }
             if(count($this->getWarnings())== '') {
                 if ($this->addHouseDetails($house_number, $plot, $this->_rent_amount,$this->_square_footage, $this->_rent_rate, $this->_rate_per_sqrft,$this->_service_charge, $this->_charge_rate,$this->_total_service_charge)) {
                         $this->flashMessage('p_units', 'success', 'House has been added.');

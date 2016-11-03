@@ -118,8 +118,14 @@ if(isset($_POST['action'])) {
 					<td><?php echo $plot['plot_name']; ?></td>
 					<td><?php if(!empty($plot['prop_type'])){echo $prop->getName($plot['prop_type']);}?></td>
 					<td><?php echo $plot['units']; ?></td>
-					<td><?php echo $prop->getFullName($plot['pm_mfid']); ?></td>
-					<td><?php echo $prop->getFullName($plot['landlord_mf_id']); ?></td>
+					<td><?php if(!empty($plot['pm_mfid'])){
+							$user = $prop->selectQuery('masterfile','concat(surname, \' \',firstname,\' \',middlename)as username'," mf_id = '".$plot['pm_mfid']."' ");
+							echo $user[0][0];
+						} ?></td>
+					<td><?php if(!empty($plot['landlord_mf_id'])){
+							$user = $prop->selectQuery('masterfile','concat(surname, \' \',firstname,\' \',middlename)as username'," mf_id = '".$plot['landlord_mf_id']."' ");
+							echo $user[0][0];
+						} ?></td>
 					<td><a href="?num=5001&&prop_id=<?php echo $plot['plot_id'];?>" class="btn btn-mini"><i class="icon-eye-open"></i> Profile</a></td>
 
 

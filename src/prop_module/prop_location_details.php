@@ -2,7 +2,7 @@
 <div class="row-fluid">
     <div class="span6">
         <div class="control-group">
-            <label for="county" class="control-label">County:</label>
+            <label for="county" class="control-label">County*:</label>
             <div class="controls">
                 <select name="county" class="span12 select2" selected ="<?php echo $prop->get('county'); ?>">
                     <option value="">--Select county--</option>
@@ -23,7 +23,7 @@
     </div>
     <div class="span6">
         <div class="control-group">
-            <label for="town" class="control-label">Region:</label>
+            <label for="town" class="control-label">Region*:</label>
             <div class="controls">
                 <input type="text" name="region" id="t-c" class="span12" value="<?php echo $prop->get('region'); ?>"/>
             </div>
@@ -33,7 +33,7 @@
 <div class="row-fluid">
     <div class="span6">
         <div class="control-group">
-            <label for="town" class="control-label">Town/City:</label>
+            <label for="town" class="control-label">Town/City*:</label>
             <div class="controls">
                 <input type="text" name="town_city" id="t-c" class="span12" value="<?php echo $prop->get('town_city'); ?>"/>
             </div>
@@ -61,7 +61,7 @@
 
     <div class="span6">
         <div class="control-group">
-            <label for="lr_no" class="control-label">Land Reg. No:</label>
+            <label for="lr_no" class="control-label">Land Reg. No*:</label>
             <div class="controls">
                 <input type="text" name="lr_no" id="lr_no" class="span12" value="<?php echo $prop->get('lr_no'); ?>"/>
             </div>

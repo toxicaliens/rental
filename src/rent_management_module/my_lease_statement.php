@@ -28,7 +28,7 @@
     <tr>
         <th class="center-align">Date</th>
         <th class="center-align">Service Account</th>
-        <th class="center-align">Payment Mode</th>
+        <th class="center-align">Journal Type</th>
         <th class="center-align">Particulars</th>
         <th class="center-align">Debit</th>
         <th class="center-align">Credit</th>
@@ -38,15 +38,15 @@
 
     <?php
         $tenant = $_GET['tenant'];
-        $rows = $lease->getMyLeaseStatement($tenant);
+        $unit = $_GET['unit'];
+        $rows = $lease->getMyLeaseStatement();
+        //var_dump($rows);exit;
         if(count($rows)){
             foreach ($rows as $row ){
                 $journal_date = trim(date('d/m/Y', strtotime($row['journal_date'])));
-                $full_name = $row['full_name'];
                 $amount = trim($row['amount']);
                 $service_account = $row['service_account'];
                 $particulars = $row['particulars'];
-                $payment_mode = $row['payment_mode'];
                 $dr_cr = $row['dr_cr'];
                 if($dr_cr == 'DR')
                     $dr_cr = 'Debit';
@@ -64,7 +64,7 @@
             <tr>
                 <td><?php echo $journal_date; ?></td>
                 <td><?php echo $service_account; ?></td>
-                <td><?php echo $payment_mode; ?></td>
+                <td><?php echo $journal_type; ?></td>
                 <td><?php echo $particulars; ?></td>
                 <td style="text-align:right;">
                     <?php
@@ -86,7 +86,7 @@
         <td colspan="4" style="text-align:right;font-weight:bold">Totals:</td>
         <td style="text-align:right;font-weight:bold">
             <?php
-            $query = "SELECT SUM(amount) as total_debit FROM journal WHERE dr_cr = 'DR' AND mf_id = '".$_GET['tenant']."' ";
+            $query = "SELECT SUM(amount) as total_debit FROM journal WHERE dr_cr = 'DR' AND unit_number = '".$unit."' ";
             $result = run_query($query);
             $row = get_row_data($result);
             $debit_total = $row['total_debit'];
@@ -95,7 +95,7 @@
         </td>
         <td style="text-align:right;font-weight:bold">
             <?php
-            $query = "SELECT SUM(amount) as total_credit FROM journal WHERE dr_cr = 'CR' AND mf_id = '".$_GET['tenant']."' ";
+            $query = "SELECT SUM(amount) as total_credit FROM journal WHERE dr_cr = 'CR' AND unit_number = '".$unit."' ";
             $result = run_query($query);
             $row = get_row_data($result);
             $credit_total = $row['total_credit'];

@@ -1,4 +1,6 @@
-<?
+<?php
+require_once 'src/models/RevenueManager.php';
+$revenue_manager = new RevenueManager();
 set_layout("dt-layout.php", array(
   'pageSubTitle' => 'All Service Options',
   'pageSubTitleText' => '',
@@ -45,18 +47,9 @@ $customer_num=$the_rows['total_channels'];
     </thead>
   <tbody>
  <?
-   $distinctQuery = "SELECT s.*, r.*, c.* FROM service_channels s 
-   LEFT JOIN request_types r ON r.request_type_id = s.request_type_id
-   LEFT JOIN revenue_channel c ON c.revenue_channel_id = s.revenue_channel_id
-   Order by service_channel_id DESC ";
-   $resultId = run_query($distinctQuery); 
-   $total_rows = get_num_rows($resultId);
-  
-   
-  $con = 1;
-  $total = 0;
-  while($row = get_row_data($resultId))
-  {
+ $service_options = $revenue_manager->getAllServiceOptions();
+ if(count($service_options)){
+     foreach ($service_options as $row){
     $revenue_channel_name=$row['revenue_channel_name'];
     $service_channel_id=$row['service_channel_id'];
     $service_option=$row['service_option'];
@@ -67,7 +60,7 @@ $customer_num=$the_rows['total_channels'];
     
     $parent_name = getParentName($parent_id);
     $request_type_name=$row['request_type_name']
-    
+
  ?>
       <tr>
       <td><?=$service_channel_id; ?></td>
@@ -83,7 +76,7 @@ $customer_num=$the_rows['total_channels'];
        </tr>
      <?
  
-  }
+  }}
      
   ?>
   

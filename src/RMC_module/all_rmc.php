@@ -83,12 +83,12 @@ set_layout("dt-layout.php", array(
 	<div id="add_rev" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3 id="myModalLabel1">Terminate Lease Agreement </h3>
+			<h3 id="myModalLabel1">Add New Revenue Channel </h3>
 		</div>
 		<div class="modal-body">
 
 				<div class="control-group">
-					<label for="revenue_channel_name" class="control-label">Revenue channel name:<span class="required"></span></label>
+					<label for="revenue_channel_name" autocomplete="off" class="control-label">Revenue channel name:<span class="required"></span></label>
 					<div class="controls">
 						<input type="text" name="revenue_channel_name" class="span12" required/>
 					</div>
@@ -96,7 +96,7 @@ set_layout("dt-layout.php", array(
 				<div class="control-group">
 					<label for="revenue_channel_code" class="control-label">Revenue Channel Code:</label>
 					<div class="controls">
-						<input type="text"  id="revenue_channel_code" name="revenue_channel_code" class="span12" title="e.g. pk_ser for Parking Service" required/>
+						<input type="text"  id="revenue_channel_code" autocomplete="off" name="revenue_channel_code" class="span12" title="e.g. pk_ser for Parking Service" required/>
 					</div>
 				</div>
 <!--			hidden fields-->
@@ -116,7 +116,7 @@ set_layout("dt-layout.php", array(
 	<div id="edit_rev" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3 id="myModalLabel1">Terminate Lease Agreement </h3>
+			<h3 id="myModalLabel1">Edit Revenue Channel </h3>
 		</div>
 		<div class="modal-body">
 

@@ -27,7 +27,8 @@
 <ul class="unstyled span5">
     <li><span>Town/City: </span><?php echo $results[0]['town_city']; ?></li>
     <li><span>Street: </span><?php echo $results[0]['street']; ?></li>
-    <li><span>Longitude/Latitude: </span><?php echo $results[0]['longitude_latitude']; ?></li>
+    <?php echo  (!empty($results[0]['longitude']))? '<li><span>Longitude: </span>'.$results[0]['longitude'].'</li>': ''?>
+    <?php echo  (!empty($results[0]['latitude']))? '<li><span>Latitude: </span>'.$results[0]['latitude'].'</li>': ''?>
     <li><span>Building Number: </span><?php echo $results[0]['building_number']; ?></li>
     <li><span>Property Manager: </span><?php echo $prop->getFullName($results[0]['pm_mfid']); ?></li>
     <li><span>Landlord: </span><?php echo $prop->getFullName($results[0]['landlord_mf_id']); ?></li>

@@ -67,7 +67,16 @@ class Plots extends Masterfile{
         }else{
             $option_type = $_POST['option_type'];
         }
-
+        if (!empty($_POST[$_POST['longitude']])){
+            $longitude = $_POST['longitude'];
+        }else{
+            $longitude = 0;
+        }
+        if (!empty($_POST[$_POST['latitude']])){
+            $latitude = $_POST['latitude'];
+        }else{
+            $latitude = 0;
+        }
         if($this->getValidationStatus()) {
             $result = $this->insertQuery('plots',
                 array(
@@ -85,8 +94,8 @@ class Plots extends Masterfile{
                     'street'=>$_POST['street'],
                     'building_number'=>$_POST['building_number'],
                     'region'=>$_POST['region'],
-                    'longitude'=>$_POST['longitude'],
-                    'latitude'=>$_POST['latitude']
+                    'longitude'=>$longitude,
+                    'latitude'=>$latitude
                 )
             );
             if($result){
@@ -509,6 +518,7 @@ class Plots extends Masterfile{
             $leaf_services = $this->selectQuery('service_channels', 'service_option, option_code, service_channel_id, price',
                 "service_option_type = '" .leaf. "' AND status IS TRUE ");
         }
+//        var_dump($leaf_services);die;
         if(count($leaf_services)){
             foreach ($leaf_services as $leaf_service){
                 if(!in_array($leaf_service['service_channel_id'], $hs_service_ids)){

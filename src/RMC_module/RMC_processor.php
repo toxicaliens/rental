@@ -142,10 +142,10 @@ switch($_POST['action'])
 	            extract($_POST);
               $parent_id = ($parent_id != 0) ? $parent_id : 'NULL';
                 $add_setup_channels="INSERT INTO service_channels
-                (revenue_channel_id,service_option,service_option_type,option_code,price,parent_id,request_type_id)
+                (revenue_channel_id,service_option,service_option_type,option_code,price,parent_id,request_type_id,created_by)
 			                       VALUES
 			    ('".$revenue_channel_id."','".$service_option."','". $service_option_type."',
-			    	'".$option_code."','".$price."',".$parent_id.",'".$request_type_id."')";
+			    	'".$option_code."','".$price."',".$parent_id.",'".$request_type_id."', '".$_SESSION['mf_id']."')";
  //var_dump($add_setup_channels);exit;
                 $result = run_query($add_setup_channels);
 
@@ -739,9 +739,9 @@ switch($_POST['action'])
 //                       $product_id = '';
 //                   }
                 $addservicebill="INSERT INTO revenue_service_bill
-                     (bill_name,bill_description,bill_category,bill_type,amount_type,bill_code,bill_due_time,amount,revenue_channel_id,bill_interval,service_channel_id)
+                     (bill_name,bill_description,bill_category,bill_type,amount_type,bill_code,bill_due_time,amount,revenue_channel_id,bill_interval,service_channel_id, created_by)
                              VALUES('".$bill_name."','".$bill_description."','".$bill_category."','".$bill_type."',
-                              '".$amount_type."','".$bill_code."','".$bill_due_time."','".$amount."','".$revenue_channel_id."', '".$interval."', '".$service_option."')";
+                              '".$amount_type."','".$bill_code."','".$bill_due_time."','".$amount."','".$revenue_channel_id."', '".$interval."', '".$service_option."', '".$_SESSION['mf_id']."')";
 //                  var_dump($addservicebill);exit;
                 $result = run_query($addservicebill);
 

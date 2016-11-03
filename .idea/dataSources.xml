@@ -7,7 +7,13 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://oriems.com:5432/rental</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="PostgreSQL - rentals@localhost" uuid="1a319dbd-08bb-4720-aa33-6c557ca0eb36">
+    <data-source source="LOCAL" name="PostgreSQL - rentals@localhost [2]" uuid="6a7ac860-adec-49c5-94e2-3d4f09760e22">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/rentals</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - rentals@localhost" uuid="0e9a31a9-9193-4997-b60d-2b2a53aa9cb9">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

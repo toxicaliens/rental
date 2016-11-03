@@ -73,9 +73,17 @@
 <div class="row-fluid">
     <div class="span6">
         <div class="control-group">
-            <label for="longitude" class="control-label">Longitude/Latitude</label>
+            <label for="longitude" class="control-label">Longitude</label>
             <div class="controls">
-                <input type="text" name="longitude_latitude" class="span12" placeholder="Degrees, minutes, and seconds (DMS):example  41°24'12.2"N">
+                <input type="text" name="longitude" class="span12" >
+            </div>
+        </div>
+    </div>
+    <div class="span6">
+        <div class="control-group">
+            <label for="longitude" class="control-label">Latitude</label>
+            <div class="controls">
+                <input type="text" name="latitude" class="span12" >
             </div>
         </div>
     </div>

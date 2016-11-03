@@ -65,8 +65,8 @@
            <td><?=$bill_due_time; ?></td>
            <td><?=$amount; ?></td>
            
-           <td><a id="edit_link" class="btn btn-mini" href="index.php?num=643&edit_id=<?=$revenue_bill_id; ?>">
-                   <i class="icon-edit"></i> Edit</a></td>
+           <td><?php echo ($bill_code != 'MR')? '<a id="edit_link" class="btn btn-mini" href="index.php?num=643&edit_id='.$revenue_bill_id.'">
+                   <i class="icon-edit"></i> Edit</a>':''?></td>
 		  </tr>
 		 <?
  	}

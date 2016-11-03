@@ -59,10 +59,6 @@ class Plots extends Masterfile{
             'region'=>array(
                 'name'=>'Region',
                 'required'=>true
-            ),
-            'longitude_latitude'=>array(
-                'name'=>'Longitude and Latitude',
-                'required'=>true
             )
 
         ));
@@ -89,13 +85,14 @@ class Plots extends Masterfile{
                     'street'=>$_POST['street'],
                     'building_number'=>$_POST['building_number'],
                     'region'=>$_POST['region'],
-                    'longitude_latitude'=>$_POST['longitude_latitude']
+                    'longitude'=>$_POST['longitude'],
+                    'latitude'=>$_POST['latitude']
                 )
             );
             if($result){
                 $this->flashMessage('plots', 'success', 'A new Plot has been added!');
             }else{
-                $this->flashMessage('plots', 'error', 'Encountered an error!');
+                $this->flashMessage('plots', 'error', 'Encountered an error!'.get_last_error());
             }
         }
     }

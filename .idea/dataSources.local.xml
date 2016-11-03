@@ -9,14 +9,23 @@
       <secret-storage>master_key</secret-storage>
       <user-name>obulex</user-name>
     </data-source>
-    <data-source name="PostgreSQL - rentals@localhost" uuid="1a319dbd-08bb-4720-aa33-6c557ca0eb36">
+    <data-source name="PostgreSQL - rentals@localhost [2]" uuid="6a7ac860-adec-49c5-94e2-3d4f09760e22">
       <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <resolve-scope>rentals:public,postgres</resolve-scope>
+      <resolve-scope>rentals:postgres,public</resolve-scope>
+    </data-source>
+    <data-source name="PostgreSQL - rentals@localhost" uuid="0e9a31a9-9193-4997-b60d-2b2a53aa9cb9">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <resolve-scope>rentals:postgres,public</resolve-scope>
     </data-source>
   </component>
 </project>

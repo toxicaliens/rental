@@ -109,17 +109,17 @@
             <div class="control-group">
                 <label for="revenue_channel" class="control-label">Revenue Channel:</label>
                 <div class="controls">
-                    <select class="span12" name="revenue_channel_id" id="revenue_channel" >
+                    <select class="span12 live_search" name="revenue_channel_id" id="revenue_channel" >
                         <option value="">--Choose Revenue Channel--</option>
                         <?php
-                            $query = "SELECT * FROM revenue_channel";
-                            $result = run_query($query);
-                            while($row = get_row_data($result)){
-                            $rev_chan_id = $row['revenue_channel_id'];
-                            $rev_chan_name = $row['revenue_channel_name'];
-
-                            echo "<option value=\"$rev_chan_id\">$rev_chan_name</option>";
+                        $revenue_channels = $revenue_manager->getAllRevenueChannels();
+                        if(count($revenue_channels)){
+                            foreach ($revenue_channels as $revenue_channel){
+                                ?>
+                            <option value="<?php echo $revenue_channel['revenue_channel_id']?>"><?php echo $revenue_channel['revenue_channel_name']?></option>
+                        <?php
                             }
+                        }
                         ?>
                     </select>
                 </div>

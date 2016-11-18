@@ -454,3 +454,6 @@ basic:
 
    #### Rent ManagementMonthly
    MontlyRent: MR
+
+   #### SAS constants
+   PMSAS: PMSAS

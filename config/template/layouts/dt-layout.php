@@ -26,7 +26,7 @@
 	<link href="assets/css/pages/profile.css" rel="stylesheet" type="text/css" />
 	<link href="src/datatables/extras/TableTools/media/css/TableTools.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="assets/plugins/chosen-bootstrap/chosen/chosen.css" />
-	<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" />
+		<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" />
 	<link rel="stylesheet" type="text/css" href="assets/plugins/select2/select2.css" />
 	<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/datepicker.css" />
 	<link rel="stylesheet" type="text/css" href="assets/plugins/jquery-tags-input/jquery.tagsinput.css" />
@@ -177,7 +177,7 @@ echo $content;
 	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/date.js"></script>
    	<script type="text/javascript" src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-   	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+   	<script type="text/javascript" src="assets/plugins/notification/SmartNotification.min.js"></script>
 	<script>
 		$('select').css('width', '100%');
 	</script>
@@ -186,6 +186,7 @@ echo $content;
    	<script src="assets/scripts/form-components.js"></script>
    	<script src="src/js/disable_price.js"></script>
    	<script src="src/js/delete.js"></script>
+   	<script src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.js"></script>
    	<script src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.js"></script>
 	<script>
 		$(document).ready(function(){

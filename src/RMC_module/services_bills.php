@@ -13,7 +13,6 @@
                                <th>Code</th>
 					           <th>Due Time</th>
                                <th>Amount</th>
-                               
                                <th>Edit</th>
 					          </tr>
 					         </thead>

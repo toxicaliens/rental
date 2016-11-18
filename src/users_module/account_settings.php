@@ -8,14 +8,6 @@
 <div class="row-fluid">
       <div class="span6">
           <div class="control-group">
-              <label for="user_name" class="control-label">User Name:</label>
-              <div class="controls">
-                <input type="text" name="user_name" value="<?=$_SESSION['sys_name']; ?>" class="m-wrap span8" required>
-              </div>
-          </div>
-      </div>
-      <div class="span6">
-          <div class="control-group">
               <label for="old_password" class="control-label">Current Password:</label>
               <div class="controls">
                <input type="password" name="old_password"  class="m-wrap span8" required>
@@ -32,17 +24,21 @@
               </div>
           </div>
       </div>
-      <div class="span6">
-          <div class="control-group">
-              <label for="pass_again" class="control-label">Re-type New Password:</label>
-              <div class="controls">
+
+</div>
+<div class="row-fluid">
+    <div class="span6">
+        <div class="control-group">
+            <label for="pass_again" class="control-label">Re-type New Password:</label>
+            <div class="controls">
                 <input type="password" name="pass_again"  class="m-wrap span8"   required>
-              </div>
-          </div>
-      </div>
+            </div>
+        </div>
+    </div>
 </div>
 <input type="hidden" name="cur_mf_id" value="<?=$_SESSION['mf_id']; ?>"/>
 <input type="hidden" name="action" id="action" value="change_password" class="packinput">
+<input type="hidden" name="tab2">
     <div class="form-actions">
         <?php viewActions($_GET['num'], $_SESSION['role_id']); ?>
     </div>

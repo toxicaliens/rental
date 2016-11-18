@@ -1,5 +1,7 @@
 <?php
 //error_reporting('0');
+require_once 'src/models/SystemProfile.php';
+$profile = new SystemProfile();
 switch($_POST['action'])
 {
 case add_user:
@@ -98,6 +100,17 @@ case add_user:
 
         }
     break;
+
+//    case 'change-email':
+//        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+//        $profile->changeEmail();
+//        break;
+
+    case 'update_client_settings':
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $profile->updateClientSettings();
+        $_SESSION['warnings']= $profile->getWarnings();
+        break;
 
     case Del255:
     logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);

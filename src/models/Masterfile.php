@@ -267,12 +267,14 @@
 
                 $this->beginTranc();
 
+
                 $mf_id = $this->addPersonalDetails($surname, $firstname, $middlename, $id_passport, $gender, $image_path, $regdate_stamp, $b_role, $customer_type_id, $email);
                 if(!empty($mf_id)){
                     if($this->addAddress($phone_number, $postal_address, $town, $mf_id, $address_type_id, $ward, $street, $building, $county, $postal_code)) {
                         if($this->createPmFile($mf_id)) {
                             if($this->createLoginAccount($pm_data, $mf_id)) {
                                 $this->flashMessage('mf', 'success', 'Masterfile has been added.');
+                                $this->createBillingFileForPm($mf_id);
                             }else{
                                 $this->flashMessage('mf', 'error', 'Failed to create login account! ' . get_last_error());
                             }
@@ -300,7 +302,7 @@
                     'id_passport' => $id_passport,
                     'gender' => $gender,
                     'images_path' => $image_path,
-                    'regdate_stamp' => $regdate_stamp,
+                    'regdate_stamp' => date('Y-m-d',strtotime($regdate_stamp)),
                     'b_role' => $b_role,
                     'dob' => 'NULL',
                     'time_stamp' => time(),
@@ -331,6 +333,28 @@
             );
             //var_dump($result);exit;
             return $result;
+        }
+
+        public function createBillingFileForPm($mf_id){
+            $service_bill = $this->selectQuery('revenue_service_bill', '*', "bill_code = '".PMSAS."'");
+//                var_dump($service_bill);die;
+
+            $billing_file = $this->insertQuery('customer_billing_file',array(
+                'biller_mfid'=>$_SESSION['mf_id'],
+                'start_date'=>date('Y-m-d',time()),
+                'billing_interval'=>'Monthly',
+                'billing_amount'=>$service_bill[0]['amount'],
+                'created'=>date('Y-m-d',time()),
+                'updated'=>date('Y-m-d H:m:s',time()),
+                'service_bill_id'=>$service_bill[0]['revenue_bill_id'],
+                'service_account'=>$mf_id,
+                'status'=>'1'
+
+            ));
+            if(!$billing_file){
+                $this->setWarning('failed to create billing file'.get_last_error());
+            }
+
         }
 
         public function createLoginAccount($post, $mf_id){

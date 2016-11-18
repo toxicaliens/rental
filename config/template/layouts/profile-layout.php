@@ -153,7 +153,9 @@ echo $content;
    <!-- END CORE PLUGINS -->
    <!-- BEGIN PAGE LEVEL PLUGINS -->
    <script type="text/javascript" src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.js"></script>
-   <script type="text/javascript" src="src/js/delete.js"></script>
+	<script type="text/javascript" src="assets/plugins/notification/SmartNotification.min.js"></script>
+
+	<script type="text/javascript" src="src/js/delete.js"></script>
    <!-- END PAGE LEVEL PLUGINS -->
    <!-- BEGIN PAGE LEVEL SCRIPTS -->
    <script src="assets/scripts/app.js"></script>

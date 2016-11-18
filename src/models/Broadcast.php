@@ -97,7 +97,7 @@
                     'required'=>true
                 )
             );
-            var_dump($broad_cast_type);die;
+//            var_dump($broad_cast_type);die;
             $broad_cast_type = '{'.$broad_cast_type.'}';
             $this->validate($_POST, $rules);
             if($this->getValidationStatus()){

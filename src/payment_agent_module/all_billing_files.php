@@ -58,14 +58,20 @@ set_layout("dt-layout.php", array(
  <?php
     $date_range = (isset($_POST['date_range'])) ? $b_file->getFromAndToDates($_POST['date_range']) : '';
     $condition = (isset($_POST['date_range'])) ? $b_file->filterBillingFiles($date_range[0], $date_range[1]) : '';
-    
-    $distinctQuery = "SELECT 
+    if($_SESSION['role_name'] == SystemAdmin){
+        $condition2 = null;
+    }else{
+        $condition2 = " AND c.biller_mfid = '".$_SESSION['mf_id']."' ";
+
+    }
+ $distinctQuery = "SELECT 
     c.*, sc.service_option
     from customer_billing_file c
    LEFT JOIN service_channels sc ON sc.service_channel_id = c.service_bill_id
-   WHERE c.status IS TRUE $condition";
+   WHERE c.status IS TRUE $condition $condition2 ";
    $resultId = run_query($distinctQuery);
    $total_rows = get_num_rows($resultId);
+ var_dump($distinctQuery);
 
 
 	$con = 1;

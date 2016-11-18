@@ -73,7 +73,7 @@ class LeaseAgreement extends Payments
                     $house_no = $house[0]['house_number'];
                     // create billing file
                     if(!$this->insertQuery('customer_billing_file', array(
-                        'created_by' => $_SESSION['mf_id'],
+                        'biller_mfid' => $_SESSION['mf_id'],
                         'start_date' => date('Y-m-d', strtotime($post['start_date'])),
                         'billing_interval' => $bill_interval,
                         'billing_amount' => $rent_amount,
@@ -102,6 +102,7 @@ class LeaseAgreement extends Payments
                                 'bill_amount_paid' => 0,
                                 'bill_balance' => $plot_service['price'],
                                 'mf_id' => $post['tenant'],
+                                'biller_mfid' => $_SESSION['mf_id'],
                                 'service_channel_id' => $plot_service['service_channel_id'],
                                 'service_account' => $plot_data[0]['house_number'],
                                 'unit_number'=>$_POST['house_id']
@@ -142,6 +143,7 @@ class LeaseAgreement extends Payments
                                 'bill_amount_paid' => 0,
                                 'bill_balance' => $house_service['price'],
                                 'mf_id' => $post['tenant'],
+                                'biller_mfid' => $_SESSION['mf_id'],
                                 'service_channel_id' => $house_service['service_channel_id'],
                                 'service_account' => $house_service['house_number'],
                                 'unit_number'=>$_POST['house_id']

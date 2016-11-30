@@ -57,6 +57,8 @@ class LeaseAgreement extends Payments
 
         $valid = $this->getValidationStatus();
         if($valid) {
+            //set the vacant status to false
+
             $this->beginTranc();
             $doc_id = $this->addLeaseDoc($_FILES, $destination);
             if($doc_id){
@@ -66,6 +68,12 @@ class LeaseAgreement extends Payments
 //                    var_dump($sb);die;
                     $service_bill_id = $sb[0]['revenue_bill_id'];
                     $bill_interval = $sb[0]['bill_interval'];
+
+                    $result = $this->updateQuery2('houses',array(
+                        'vacant'=>'0'
+                    ),array(
+                        'house_id'=>$_POST['house_id']
+                    ));
 
                     // get the rent amount
                     $house = $this->selectQuery('houses', 'rent_amount, house_number', "house_id = '".$post['house_id']."'");
@@ -350,6 +358,11 @@ class LeaseAgreement extends Payments
 	public function terminateLeaseAgreement($post){
 		extract($_POST);
 		//var_dump($post);exit;
+        $result = $this->selectQuery('lease','house_id',"lease_id = '".$_POST['edit_id']."'");
+        var_dump($result);die;
+//        echo $result[0]['house_id'];die;
+        $this->beginTranc();
+        die;
 		$result = $this->updateQuery2('lease',
 			array(
 				'status' => '0'
@@ -358,6 +371,8 @@ class LeaseAgreement extends Payments
 				'lease_id' => $post['edit_id']
 			)
 		);
+
+        $this->endTranc();
 		//var_dump($result);exit;
 
 	}
@@ -416,16 +431,27 @@ class LeaseAgreement extends Payments
     public function terminateLease(){
         extract($_POST);
         //var_dump($_POST);exit;
+        $result = $this->selectQuery('lease','house_id',"lease_id = '".$_POST['edit_id']."'");
+        $house_id = $result[0]['house_id'];
+        $this->beginTranc();
         $result = $this->updateQuery2('lease',array(
             'status'=>'0'
         ),
             array(
                 'lease_id'=> $_POST['edit_id']
             ));
+
+        $result2 = $this->updateQuery2('houses',array(
+            'vacant'=>'1',
+            'vacant_since'=>date('Y-m-d H:m:s',time())
+        ),array(
+            'house_id'=>$house_id
+        ));
+        $this->endTranc();
         if ($result) {
             $this->flashMessage('lease', 'success', 'Lease Agreement has been terminated!');
         }else {
-            $this->flashMessage('lease', 'error', 'Encountered an error while terminating the Lease Agreement!');
+            $this->flashMessage('lease', 'error', 'Encountered an error while terminating the Lease Agreement!'.get_last_error());
         }
     }
 

@@ -5,21 +5,25 @@
  * Date: 24/10/16
  * Time: 13:39
  */
-require_once('src/models/ReceivedQuotes.php');
-$property_ledger = new ReceivedQuotes();
+require_once('src/models/Plots.php');
+require 'vendor/autoload.php';
+require 'vendor/Carbon/Carbon.php';
+$carbon = new Carbon\Carbon();
+//use Carbon\Carbon;
+$property_ledger = new Plots();
 if (App::isAjaxRequest()){
 
 }else{
-    set_title('Property Ledger');
+    set_title('Vacant Units');
     set_layout("dt-layout.php", array(
-        'pageSubTitle' => 'Statement',
+        'pageSubTitle' => 'SVacant Units',
         'pageSubTitleText' => '',
         'pageBreadcrumbs' => array (
             array ( 'url'=>'#', 'text'=>'Home' ),
             array ( 'text'=>'Property manager' ),
-            array ( 'text'=>'Property Ledger' )
+            array ( 'text'=>'Vacant Units' )
         ),
-        'pageWidgetTitle'=>'<i class="icon-reorder"></i>Property Statement'
+        'pageWidgetTitle'=>'<i class="icon-reorder"></i>All Vacant Units'
     ));
 
     set_css(array(
@@ -32,8 +36,12 @@ if (App::isAjaxRequest()){
 
     ?>
     <div class="widget" >
-        <div class="widget-title"><h4><i class="icon-reorder"></i> Property Statement</h4>
 
+        <div class="widget-title"><h4><i class="icon-reorder"></i> All Vacant Units</h4>
+            <?php
+//            echo $howOldAmI = $carbon->createFromDate(1995, 5, 21)->age;
+//            printf("Now: %s", $carbon->now());
+            ?>
         </div>
         <div class="widget-body form">
             <form action="" class="form-horizontal" method="post">
@@ -71,15 +79,12 @@ if (App::isAjaxRequest()){
                     </div>
                 </div>
             </form>
-            <table class="table table-bordered">
+            <table class="table table-hover table-bordered" id="table1">
                 <thead>
                 <tr>
-                    <th class="center-align">Date</th>
-                    <th class="center-align">Service Account</th>
-                    <th class="center-align">Payment Mode</th>
-                    <th class="center-align">Particulars</th>
-                    <th class="center-align">Debit</th>
-                    <th class="center-align">Credit</th>
+                    <th class="center-align">ID</th>
+                    <th class="center-align">Unit Number</th>
+                    <th class="center-align">Vacant Since</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -87,72 +92,25 @@ if (App::isAjaxRequest()){
                 ;$total_debit = 0;
                 $total_credit = 0;
                 if(isset($_POST['property_id'])) {
-                    $records = $property_ledger->selectQuery('ledger', '*', " property_id = '" . $_POST['property_id'] . "'");
+                    $records = $property_ledger->selectQuery('houses', '*', " plot_id = '" . $_POST['property_id'] . "' AND vacant IS TRUE ");
+//                    var_dump($records);
 //    }else{
 //        $records = $property_ledger->selectQuery('ledger', '*', " created_by = '". $_SESSION['mf_id']."' ");
 //    }
                     if(count($records)){
+                        $count = 0;
                         foreach ($records as $record){
+                            $count++
                             ?>
                             <tr>
-                                <td><?php echo $record['ledger_date']; ?></td>
-                                <td><?php echo $record['ledger_date']; ?></td>
-                                <td><?php echo $record['payment_method']; ?></td>
-                                <td><?php echo $record['payment_voucher_id']; ?></td>
-                                <th style="text-align:right;">
-                                    <?php
-
-                                    if($record['ledger_type'] == 'DR'){
-                                        $total_debit =($total_debit) + ($record['amount']);
-                                        echo '- '. number_format($record['amount'], 2);
-                                    }
-                                    ?>
-                                </th>
-                                <th style="text-align:right;">
-                                    <?php
-                                    if($record['ledger_type'] == 'Credit'){
-                                        $total_credit = $total_credit + $record['amount'];
-                                        echo number_format($record['amount'], 2);
-                                    }
-                                    ?>
-                                </th>
+                                <td><?php echo $count; ?></td>
+                                <td><?php echo $record['house_number']; ?></td>
+                                <td><?php echo $carbon->createFromTimestamp(strtotime($record['vacant_since']))->diffForHumans(); ?></td>
                             </tr>
                         <?php }}} ?>
-
-
-                <tr>
-                    <td colspan="4" style="text-align:right;font-weight:bold">Totals:</td>
-                    <td style="text-align:right;font-weight:bold">
-                        <?php
-
-                        echo '- '. number_format($total_debit, 2);
-                        ?>
-                    </td>
-                    <td style="text-align:right;font-weight:bold">
-                        <?php
-                        echo number_format($total_credit, 2);
-                        ?>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="5" style="text-align:right;font-weight:bold">Current Balance:</td>
-                    <td colspan="4" style="text-align:right;font-weight:bold">
-                        <?php
-                        $credit_balance = $total_credit - $total_debit;
-                        if($credit_balance < 0){
-                            $absolute = abs($credit_balance);
-//                    $negative = number_format($absolute, 2);
-                            $negative = number_format($credit_balance, 2);
-                            echo "<span class='negative'>($negative)</span>";
-                        }else{
-                            echo number_format($credit_balance, 2);
-                        }
-
-                        ?>
-                    </td>
-                </tr>
                 </tbody>
             </table>
+            <div class="clearfix"></div>
         </div>
     </div>
 

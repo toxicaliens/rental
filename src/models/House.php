@@ -358,7 +358,8 @@ class House extends Library
                 'rate_per_square_footage'=>$rate_perft,
                 'service_charge'=>$service_charge,
                 'service_charge_rate'=>$charge_rate,
-                'total_service_charge'=>$total_service_charge
+                'total_service_charge'=>$total_service_charge,
+                'vacant_since'=>date('Y-m-d H:m:s',time())
             ));
             return $result;
         }

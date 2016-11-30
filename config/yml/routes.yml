@@ -587,6 +587,7 @@ pro_attr_alloc: src/prop_module/allocate_prop_attr.php
 prop_alloc: src/prop_module/prop_alloc.php
 add_prop: src/prop_module/add_prop.php
 property_ledger: src/prop_module/property_ledger.php
+vacant_houses: src/prop_module/vacant_houses.php
 
 #### House Module
 all_houses: src/house_module/houses.php

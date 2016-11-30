@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="PostgreSQL - rentals@localhost" uuid="8f2463ee-b296-4ec1-b946-7db48aec86b1">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/rentals</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="PostgreSQL - rental@oriems.com" uuid="33cac384-9f5d-4359-8c6b-c6e4c001bcf0">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://oriems.com:5432/rental</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - rentalss@localhost" uuid="0e5460b4-6fec-4ace-92e4-7f4e665037d9">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/rentalss</jdbc-url>
     </data-source>
   </component>
 </project>

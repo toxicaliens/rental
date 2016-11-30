@@ -74,6 +74,9 @@
                         case Property_Manager:
                             $this->addPM($_POST);
                             break;
+                        case 'supplier':
+                            $this->addSupplier($_POST);
+                            break;
                     }
                 }
 			}else{
@@ -165,6 +168,49 @@
                         }else {
                             $this->flashMessage('mf', 'error', 'Failed to create address! ' . get_last_error());
                         }
+                }else{
+                    $this->flashMessage('mf', 'error', 'Failed to add Personal Details! '.get_last_error());
+                }
+            }
+            $this->endTranc();
+            App::redirectTo('?num=722');
+        }
+        public function addSupplier($contractor_data){
+            extract($_POST);
+            // validate
+            //var_dump($contractor_data); exit;
+            $this->validate($contractor_data, array(
+                'surname' => array(
+                    'name' => 'Title',
+                    'required' => true
+                )
+            ));
+
+            if($this->getValidationStatus()){
+                $uniq_id = uniqid();
+                $destination = $this->_destination.$uniq_id.$_FILES['profile-pic']['name'];
+                $image_path = '';
+                if(!empty($_FILES['profile-pic']['name'])) {
+                    $image_path = $this->uploadImage($_FILES['profile-pic']['tmp_name'], $destination);
+                }else{
+                    $image_path = '';
+                }
+
+                $this->beginTranc();
+
+                $mf_id = $this->addPersonalDetails($surname, $firstname, $middlename, $id_passport, $gender, $image_path, $regdate_stamp, $b_role, $customer_type_id, $email);
+                if(!empty($mf_id)){
+                    if($this->addAddress($phone_number, $postal_address, $town, $mf_id, $address_type_id, $ward, $street, $building, $county, $postal_address)) {
+                        $bank_acc_id = $this->createBankAccount($mf_id, $bank_name, $branch_name, $account_no, $pin_no);
+                        if($bank_acc_id) {
+                            $this->flashMessage('mf', 'success', 'Masterfile has been added.');
+
+                            } else {
+                                $this->flashMessage('mf', 'error', 'Failed to create supplier ! ' . get_last_error());
+                            }
+                    }else {
+                        $this->flashMessage('mf', 'error', 'Failed to create address! ' . get_last_error());
+                    }
                 }else{
                     $this->flashMessage('mf', 'error', 'Failed to add Personal Details! '.get_last_error());
                 }

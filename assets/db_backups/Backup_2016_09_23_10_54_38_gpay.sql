@@ -5431,13 +5431,13 @@ DROP TABLE IF EXISTS quotes CASCADE;
 
  CREATE TABLE quotes (contractor_mf_id int8,maintainance_id int8,create_user int8,expire_date date,job_status bool,bid_date date DEFAULT now(),qoute_id int4 NOT NULL DEFAULT nextval('qoutes_qoute_id_seq'::regclass),approve_user int8,bid_status bool,bid_amount float8);
 -- Data for table 'quotes'
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('8','3455734457854','779','5','2016-07-22',NULL,'t',NULL,'f',NULL);
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('4','4355','779','2','2016-07-15',NULL,'t',NULL,'f',NULL);
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('16','343434','779','2','2016-09-08',NULL,'f',NULL,'f',NULL);
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('17','56','779','2','2016-09-08',NULL,'f',NULL,'f',NULL);
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('5','544243241','779','6','2016-07-15',NULL,'t',NULL,'f',NULL);
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('18','120','1086','13','2016-09-13',NULL,'t',NULL,'f',NULL);
-INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintainance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('19','4100','779','7','2016-09-19',NULL,'f',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('8','3455734457854','779','5','2016-07-22',NULL,'t',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('4','4355','779','2','2016-07-15',NULL,'t',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('16','343434','779','2','2016-09-08',NULL,'f',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('17','56','779','2','2016-09-08',NULL,'f',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('5','544243241','779','6','2016-07-15',NULL,'t',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('18','120','1086','13','2016-09-13',NULL,'t',NULL,'f',NULL);
+INSERT INTO quotes(qoute_id,bid_amount,contractor_mf_id,maintenance_id,bid_date,expire_date,bid_status,approve_user,job_status,create_user) VALUES('19','4100','779','7','2016-09-19',NULL,'f',NULL,'f',NULL);
 -- Indexes for table 'quotes'
 CREATE UNIQUE INDEX qoutes_pkey ON quotes USING btree (qoute_id);
 -- Structure for table 'referrals'
@@ -11661,7 +11661,7 @@ CREATE OR REPLACE VIEW allocated_indices AS
 CREATE OR REPLACE VIEW bank_and_branches AS
  SELECT b.bank_name, br.branch_name, b.bank_id, br.branch_id, br.branch_code, br.status FROM (banks b LEFT JOIN bank_branch br ON ((br.bank_id = b.bank_id)));DROP VIEW IF EXISTS allocated_indices;
 CREATE OR REPLACE VIEW contractors_quotes AS
- SELECT q.qoute_id, q.bid_amount, q.bid_date, q.bid_status, q.job_status, pg_catalog.concat(m.surname, ' ', m.firstname, ' ', m.middlename) AS full_name, q.maintainance_id, mv.maintenance_name FROM ((quotes q LEFT JOIN masterfile m ON ((m.mf_id = q.contractor_mf_id))) LEFT JOIN maintenance_vouchers mv ON ((mv.voucher_id = q.maintainance_id)));DROP VIEW IF EXISTS allocated_indices;
+ SELECT q.qoute_id, q.bid_amount, q.bid_date, q.bid_status, q.job_status, pg_catalog.concat(m.surname, ' ', m.firstname, ' ', m.middlename) AS full_name, q.maintenance_id, mv.maintenance_name FROM ((quotes q LEFT JOIN masterfile m ON ((m.mf_id = q.contractor_mf_id))) LEFT JOIN maintenance_vouchers mv ON ((mv.voucher_id = q.maintainance_id)));DROP VIEW IF EXISTS allocated_indices;
 CREATE OR REPLACE VIEW customers_and_accounts AS
  SELECT ca.customer_code, ca.status, ca.referee_mf_id, ca.issued_phone_number, ca.current_phone_number, gd.imei, pg_catalog.concat(m.surname, ' ', m.firstname, ' ', m.middlename) AS customer_name, gdm.device_model_id, gdm.model, gd.device_id, ca.customer_account_id, ca.mf_id FROM (((customer_account ca LEFT JOIN gtel_device gd ON ((gd.device_id = ca.device_id))) LEFT JOIN masterfile m ON ((m.mf_id = ca.mf_id))) LEFT JOIN gtel_device_model gdm ON ((gdm.device_model_id = gd.device_model_id)));DROP VIEW IF EXISTS allocated_indices;
 CREATE OR REPLACE VIEW devices_and_customer_accounts AS

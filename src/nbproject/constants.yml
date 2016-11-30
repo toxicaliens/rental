@@ -1,0 +1,457 @@
+################################################################################
+# Define the various constants that will be used throughout the system.
+################################################################################
+
+basic:
+  ### device Constants
+   DATABASE: public
+   DB_CONNECT_ERROR_MESSAGE: Connection temporarily unavailable - Contact Ken
+   bulk_payment: bulk_payment
+   process_payment: process_payment
+   usp_code: RE
+   usp_name: Rental
+   add_phone_types: add_phone_types
+   edit_phone_types: edit_phone_types
+   delete_phone_type: delete_phone_type
+   add_phone: add_phone
+   attach_device: attach_device
+   edit_phone: edit_phone
+   delete_phone: delete_phone
+   add_group: add_group
+   edit_group: edit_group
+   manage_apps: manage_apps
+   attach_apps_to_groups: attach_apps_to_groups
+   add_group_allocations: add_group_allocations
+   delete_group_allocations: delete_group_allocations
+   detach_device: detach_device
+   Del569: Del569
+   Del575: Del575
+
+   #broadcast constants
+   add_broadcast: add_broadcast
+   add_pre_message: add_pre_message
+   edit_pre_message: edit_pre_message
+   del_pre_message: del_pre_message
+
+   #Support tickets constants
+   assign_staff: assign_staff
+   add_Respond: add_Respond
+   add_support: add_support
+   reassign_staff: reassign_staff
+   add_quotation: add_quotation
+   delete_quotation: delete_quotation
+   edit_quotation: edit_quotation
+   mark_complete: mark_complete
+
+   # Loan Repayment Constants
+   upload_csv: upload_csv
+   upload_insurance: upload_insurance
+
+   INBOX: INBOX
+
+   # Wallet Constants
+   add_customer_balance: add_customer_balance
+   edit_customer_balance: edit_customer_balance
+   delete_customer_balance: delete_customer_balance
+   
+   add_mps_user: add_mps_user
+   add_dependant: add_dependant
+   edit_dependant: edit_dependant
+   delete_dependant: delete_dependant
+   send_to_mcare: send_to_mcare
+   resend_sms: resend_sms
+   add_policy: add_policy
+   add_visit_type: add_visit_type
+   edit_visit_type: edit_visit_type
+   waiver_the_bill: waiver_the_bill
+   add_ailment: add_ailment
+   delete_ailment: delete_ailment
+   edit_ailment: edit_ailment
+   pay_the_bill: pay_the_bill
+   delete_med_report: delete_med_report
+   add_med_report: add_med_report
+   edit_med_report: edit_med_report
+   remove_visit_service: remove_visit_service
+   edit_visit_service: edit_visit_service
+   add_visit_service: add_visit_service
+   delete_visit: delete_visit
+   edit_visit: edit_visit
+   add_visit: add_visit
+   delete_symptom: delete_symptom
+   add_complaints: add_complaints
+   edit_complaints: edit_complaints
+   delete_complaints: delete_complaints
+   edit_symptom: edit_symptom
+   add_symptom: add_symptom
+   delete_procedure: delete_procedure
+   edit_procedure: edit_procedure
+   add_procedure: add_procedure
+   add_pharmacy: add_pharmacy
+   add_test: add_test
+   delete_referrals: delete_referrals
+   edit_referrals: edit_referrals
+   add_referrals: add_referrals
+   add_service_inputs: add_service_inputs
+   edit_service_inputs: edit_service_inputs
+   delete_service_inputs: delete_service_inputs
+   Del464: Del464
+   Del436: Del436
+   Del175: Del175
+   Del180: Del180
+   Del236: Del236
+   Del252: Del252
+   Del253: Del253
+   Del254: Del254
+   Del255: Del255
+   Del258: Del258
+   Del262: Del262
+   Del265: Del265
+   Del266: Del266
+   Del269: Del269
+   Del268: Del268
+   Del270: Del270
+   Del271: Del271
+   Del273: Del273
+   Del286: Del286
+   Del289: Del289
+   Del299: Del299
+   Del297: Del297
+   Del304: Del304
+   Del309: Del309
+   Del314: Del314
+   Del319: Del319
+   Del334: Del334
+   Del338: Del338
+   Del332: Del332
+   Del355: Del355
+   Del357: Del357
+   Del358: Del358
+   Del359: Del359
+   Del361: Del361
+   Del364: Del364
+   Del370: Del370
+   Del379: Del379
+   Del383: Del383
+   Del386: Del386
+   Del394: Del394
+   Del564: Del564
+   Del559: Del559
+   delete_channel_input: delete_channel_input
+   edit_channel_input: edit_channel_input
+   add_channel_inputs: add_channel_inputs
+   Del396: Del396
+   Del405: Del405
+   Del410: Del410
+   Del413: Del413
+   Del415: Del415
+   Del417: Del417
+   Del449: Del449
+   Parking_service: ICGPAK
+   Parking_Department: Pk_Dept
+   Administration_Department: Adm_Dept
+   Finance_Department: Fin_Dept
+   Parking_Head_of_Parking: pk_hp
+   Parking_Supervisor: pk_su
+   Parking_Inspector: pk_insp
+   Parking_Attendant: pk_agt
+   Pay_Bill: PB
+   BUY_SERVICE: BS
+   leaf: Leaf
+   Clamper: pk_cl
+   Declamper: pk_dcl
+   Tower: pk_tow
+   Revenue_Clerk: Rv_Ck
+   add_action: add_action
+   add_agent: add_agent
+   add_clamp_records: add_clamp_records
+   add_dept: add_dept
+   add_job: add_job
+   add_menu_item: add_menu_item
+   add_role: add_role
+   add_padlock: add_padlock
+   add_parking_bills: add_parking_bills
+   add_parking_type: add_parking_type
+   add_service_bills: add_service_bills
+   addservicebill: addservicebill
+   add_towing_records: add_towing_records
+   add_user: add_user
+   add_vehicle: add_vehicle
+   add_vehicle_type: add_vehicle_type
+   add_view: add_view
+   ed_action: ed_action
+   edit_action: edit_action
+   edit_agent: edit_agent
+   edit_clamp_records: edit_clamp_records
+   edit_dept: edit_dept
+   edit_region: edit_region
+   edit_street: edit_street
+   add_clamper_assignment: add_clamper_assignment
+   add_inspector_assignment: add_inspector_assignment
+   add_parking_options: add_parking_options
+   add_region_assignment: add_region_assignment
+   add_tower_assignment: add_tower_assignment
+   buy_service_form: buy_service_form
+   edit_declamper_assignment: edit_declamper_assignment
+   edit_job: edit_job
+   edit_masterfile: edit_masterfile
+   edit_menu_details: edit_menu_details
+   edit_vehicle: edit_vehicle
+   edit_vehicle_type: edit_vehicle_type
+   edit_modes: edit_modes
+   edit_padlock: edit_padlock
+   edit_parking_bills: edit_parking_bills
+   edit_parking_queries: edit_parking_queries
+   edit_parking_options: edit_parking_options
+   edit_parking_type: edit_parking_type
+   edit_inspector_allocations: edit_inspector_allocations
+   editservicebill: editservicebill
+   edit_tower_assignment: edit_tower_assignment
+   edit_towing_records: edit_towing_records
+   edit_user: edit_user
+   edit_role: edit_role
+   edit_view: edit_view
+   manage_actions: manage_actions
+   manage_menu: manage_menu
+   manage_views: manage_views
+   activatewaiver: activatewaiver
+   addaddress: addaddress
+   addcounty: addcounty
+   addlandrate: addlandrate
+   addnewbusinessactivity: addnewbusinessactivity
+   addnewhouseestate: addnewhouseestate
+   addnewhousetype: addnewhousetype
+   addnewsbp: addnewsbp
+   addnewsbp2: addnewsbp2
+   addtypeestateassoc: addtypeestateassoc
+   add_cess_item: add_cess_item
+   add_cess_package: add_cess_package
+   add_cit: add_cit
+   add_construction_permits: add_construction_permits
+   add_crm: add_crm
+   add_declamper: add_declamper
+   add_market: add_market
+   add_masterfile: add_masterfile
+   add_market_allocation: add_market_allocation
+   add_market_attendant: add_market_attendant
+   add_market_item: add_market_item
+   add_market_option: add_market_option
+   add_market_session: add_market_session
+   add_market_type: add_market_type
+   add_parking_session: add_parking_session
+   add_rate_track: add_rate_track
+   add_region: add_region
+   add_staff: add_staff
+   add_street: add_street
+   add_userlevel: add_userlevel
+   amalgamate: amalgamate
+   assign_padlock: assign_padlock
+   attachtocustomer: attachtocustomer
+   changecategory: changecategory
+   changeconfig: changeconfig
+   change_password: change_password
+   clearfromamalgamation: clearfromamalgamation
+   createCessBill: createCessBill
+   createwaiver: createwaiver
+   createwaiverblock: createwaiverblock
+   create_invoice: create_invoice
+   deactivatewaiver: deactivatewaiver
+   deletehouseestate: deletehouseestate
+   deletehousetype: deletehousetype
+   deletewaiver: deletewaiver
+   delete_house_rent: delete_house_rent
+   editaddress: editaddress
+   edit_address_type: edit_address_type
+   edithouseestate: edithouseestate
+   edithouserent: edithouserent
+   edithousetype: edithousetype
+   editlandrate: editlandrate
+   editnewbusinessactivity: editnewbusinessactivity
+   edittypeestateassoc: edittypeestateassoc
+   editsbp: editsbp
+   editwaiver: editwaiver
+   edit_cess_item: edit_cess_item
+   edit_cess_package: edit_cess_package
+   edit_clamper_assignment: edit_clamper_assignment
+   edit_cpermit: edit_cpermit
+   edit_crm: edit_crm
+   edit_market: edit_market
+   edit_market_allocation: edit_market_allocation
+   edit_market_attendant: edit_market_attendant
+   edit_market_item: edit_market_item
+   edit_market_option: edit_market_option
+   edit_market_type: edit_market_type
+   edit_mkt_registration: edit_mkt_registration
+   edit_parking_session: edit_parking_session
+   edit_rate_track: edit_rate_track
+   edit_staff: edit_staff
+   enternewhouserent: enternewhouserent
+   filterbyestate: filterbyestate
+   gen_invoice: gen_invoice
+   markasevaluated: markasevaluated
+   mkt_registration: mkt_registration
+   permanently_delete_house_rent: permanently_delete_house_rent
+   restore_house_rent: restore_house_rent
+   reset_password: reset_password
+   reset_pwd: reset_pwd
+   selectforamalgamation: selectforamalgamation
+   showhouses: showhouses
+   subdivisionselection: subdivisionselection
+   transfertocustomer: transfertocustomer
+   update_customer_bill_and_log_transaction: update_customer_bill_and_log_transaction
+   cess_item_name:  cess_item_name
+   add_evaluation: add_evaluation
+   market_name: market_name
+   add_query: add_query
+   add_revenue_channels: add_revenue_channels
+   edit_revenue_channels: edit_revenue_channels
+   add_setup_channels: add_setup_channels
+   edit_setup_channels: edit_setup_channels
+   add_bank_details: add_bank_details
+   edit_bank_details: edit_bank_details
+   edit_head_ifmis: edit_head_ifmis
+   add_head_ifmis: add_head_ifmis
+   edit_sub_ifmis: edit_sub_ifmis
+   add_sub_ifmis: add_sub_ifmis
+   attach_ifmis: attach_ifmis
+   edit_attached_ifmis: edit_attached_ifmis
+   add_attendant_assignment: add_attendant_assignment
+   edit_attendant_allocations: edit_attendant_allocations
+   addcounty: addcounty
+   addsubcounty: addsubcounty
+   add_requests: add_requests
+   edit_county: edit_county
+   edit_requests: edit_requests
+   edit_sub_county: edit_sub_county
+   edit_skill: edit_skill
+   delete_skill: delete_skill
+   add_skill: add_skill
+   Del735: Del735
+
+   ### device module
+   delete_attribute: delete_attribute
+   edit_attribute: edit_attribute
+   add_attribute: add_attribute 
+
+   ### device processor
+   delete_model_attributes: delete_model_attributes
+   add_model_attribute: add_model_attribute 
+   delete_model_attributes: delete_model_attributes
+   edit_model_attribute: edit_model_attribute
+   delete_customer_account: delete_customer_account
+
+   ### rmc processor
+   add_each_sub_forecast: add_each_sub_forecast
+   add_each_region_forecast: add_each_region_forecast 
+   edit_subcounty_forecast: edit_subcounty_forecast
+   edit_region_forecast: edit_region_forecast
+   add_region_forecast: add_region_forecast
+   add_subcounty_forecast: add_subcounty_forecast
+   delete_address: delete_address
+   add_address: add_address
+   add_address_type: add_address_type
+   edit_address: edit_address
+
+   ### Support processor
+   add_comment: add_comment
+   decline_maintenance_voucher: decline_maintenance_voucher
+   approve_maintenance_voucher: approve_maintenance_voucher
+
+   ### accounnt processor
+   delete_masterfile: delete_masterfile
+   add_bank: add_bank
+   add_branch: add_branch
+   edit_bank: edit_bank
+   delete_bank: delete_bank
+   delete_branch: delete_branch
+   edit_branch: edit_branch
+
+   
+   ### Airtime processor
+   upload_txt: upload_txt
+
+   Email: EMAIL
+
+   delete_customer_account: delete_customer_account
+
+   #### Masterfile Import
+   import_masterfile: import_masterfile
+   import_client_groups: import_client_groups
+
+   ###Restore and Backup
+   backup: backup
+   restore: restore
+
+   #### setting module
+   add_setting: add_setting
+   edit_setting: edit_setting
+   delete_setting: delete_setting
+
+   #### Masterfile Processor
+   Tenant: tenant
+   Landlord: land_lord
+   Contractor: contractor
+   Property_Manager: property_manager
+   delete_address_type: delete_address_type
+   Del700: Del700
+   add_customer_address: add_customer_address
+   edit_customer_address: edit_customer_address
+   delete_customer_address: delete_customer_address
+   Del693: Del693
+   Main: Main
+
+   #### Maintenance Tickets
+   add_category: add_category
+   edit_category: edit_category
+   delete_category: delete_category
+   add_voucher: add_voucher
+   edit_voucher: edit_voucher
+   delete_voucher: delete_voucher
+   approve_maintenance_voucher: approve_maintenance_voucher
+   decline_maintenance_voucher: decline_maintenance_voucher
+
+   #### Property Module
+   add_property: add_property
+   edit_property: edit_property
+   delete_property: delete_property
+   landlord_mfid: landlord_mfid
+   attch_prop_attr: attch_prop_attr
+   detach_prop_attr: detach_prop_attr
+
+   #### house module
+   attrib_name: attrib_name
+   edit_house: edit_house
+   add_house: add_house
+   add_house: add_house
+   edit_house: edit_house
+   delete_house: delete_house
+   delete_house_spec: delete_house_spec
+   edit_house: edit_house
+   edit_house_spec: edit_house_spec
+   add_house_specs: add_house_specs
+   edit_house_prop_attr: edit_house_prop_attr
+   delete_prop_attr: delete_prop_attr
+   house_number: house_number
+   Leaf_Service: Leaf 
+   Leaf_Service: Leaf
+
+   #### Message Types
+   Push: PUSH_NOTIFICATION
+   SMS: SMS
+   Email: EMAIL
+
+   #### CRM
+   add_lease_agreement: add_lease_agreement
+
+    #### User Management
+   PM: Property Manager
+   LandLord: Landlord
+   Contra: Contractor
+   SystemAdmin: System Admin
+   TN: Tenant
+   
+   # leaseprocessor
+   update_lease: update_lease
+   terminate_lease: terminate_lease
+
+   #### Rent ManagementMonthly
+   MontlyRent: MR

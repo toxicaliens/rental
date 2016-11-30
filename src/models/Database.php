@@ -25,7 +25,7 @@
                     $input_string = rtrim($input_string, ',');
 
 					$query = "INSERT INTO $table(".$field_string.") VALUES(".$input_string.") $return_field";
-                    var_dump($query);
+//                    var_dump($query);die;
 //                    traceActivity($query, '');
 					if($result = run_query($query)){
 						if(empty($return_field))

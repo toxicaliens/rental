@@ -79,7 +79,7 @@ class LeaseAgreement extends Payments
                         'billing_amount' => $rent_amount,
                         'created' => date('Y-m-d, H:i:s'),
                         'service_bill_id' => $service_bill_id,
-                        'service_account' => $house_no,
+                        'service_account' => $doc_id,
                         'status' => '1',
                         'unit_number'=>$_POST['house_id']
                     ))){
@@ -104,7 +104,8 @@ class LeaseAgreement extends Payments
                                 'mf_id' => $post['tenant'],
                                 'biller_mfid' => $_SESSION['mf_id'],
                                 'service_channel_id' => $plot_service['service_channel_id'],
-                                'service_account' => $plot_data[0]['house_number'],
+//                                'service_account' => $plot_data[0]['house_number'],
+                                'service_account' => $doc_id,
                                 'unit_number'=>$_POST['house_id']
                             ), 'bill_id')){
                                 $this->setWarning('Failed to create customer bill'.get_last_error());
@@ -116,7 +117,8 @@ class LeaseAgreement extends Payments
                                 'amount' => $plot_service['price'],
                                 'dr_cr' => 'DR',
                                 'journal_type' => 1,
-                                'service_account' => $plot_data[0]['house_number'],
+                                'service_account' => $doc_id,
+//                                'service_account' => $plot_data[0]['house_number'],
                                 'particulars' => $plot_service['service_option'].' '.$plot_service['option_code'],
                                 'stamp' => time(),
                                 'mf_id' => $post['tenant'],
@@ -145,7 +147,8 @@ class LeaseAgreement extends Payments
                                 'mf_id' => $post['tenant'],
                                 'biller_mfid' => $_SESSION['mf_id'],
                                 'service_channel_id' => $house_service['service_channel_id'],
-                                'service_account' => $house_service['house_number'],
+//                                'service_account' => $house_service['house_number'],
+                                'service_account' => $doc_id,
                                 'unit_number'=>$_POST['house_id']
                             ), 'bill_id')){
                                 $this->setWarning('Failed to create customer bill'.get_last_error());
@@ -158,6 +161,7 @@ class LeaseAgreement extends Payments
                                 'dr_cr' => 'DR',
                                 'journal_type' => 1,
                                 'service_account' => $house_service['house_number'],
+                                'service_account' => $doc_id,
                                 'particulars' => $house_service['service_option'].' '.$house_service['option_code'],
                                 'stamp' => time(),
                                 'mf_id' => $post['tenant'],

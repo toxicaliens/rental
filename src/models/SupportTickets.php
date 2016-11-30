@@ -3,9 +3,16 @@ include_once('src/models/Masterfile.php');;
 
 class SupportTickets extends Masterfile{
  	public function allMaintenanceTickets(){
+		if($_SESSION['role_name'] == SystemAdmin){
+			$condtion = Null;
+		}else{
+			$condtion = " WHERE mt.reported_by = '".$_SESSION['mf_id']."'";
+		}
  		$query ="SELECT mt.*, c.category_name, CONCAT(m.surname,' ',m.firstname,' ',m.middlename) AS customer_name FROM maintenance_ticket mt
  		LEFT JOIN masterfile m ON m.mf_id = mt.reported_by
- 		LEFT JOIN category c ON c.category_id = mt.subject";
+ 		LEFT JOIN category c ON c.category_id = mt.subject
+ 		$condtion
+ 		";
  		$result = run_query($query);
 		return $result;
  	}
@@ -189,8 +196,13 @@ class SupportTickets extends Masterfile{
  	}
 
 	public function getVoucherCategories(){
+		if($_SESSION['role_name'] == SystemAdmin){
+			$condition = Null;
+		}else{
+			$condition = " WHERE created_by = '".$_SESSION['mf_id']."'";
+		}
 		$query = "SELECT * FROM category
-    	";
+    	 $condition";
 		// var_dump($query);exit;
 		return run_query($query);
 	}
@@ -201,12 +213,12 @@ class SupportTickets extends Masterfile{
 			'category_name'=>array(
 				'name'=> 'Category Name ',
 				'required'=>true,
-				'unique'=>'category'
+//				'unique'=>'category'
 			),
 			'category_code'=>array(
 				'name'=> 'Category Code',
 				'required'=>true,
-				'unique'=>'category'
+//				'unique'=>'category'
 			)
 		);
 		// var_dump($validate);
@@ -227,7 +239,8 @@ class SupportTickets extends Masterfile{
 		$result = $this->insertQuery('category',
 			array(
 				'category_name' => $category_name,
-				'category_code' => $category_code
+				'category_code' => $category_code,
+				'created_by'=>$_SESSION['mf_id']
 			)
 		);
 
@@ -303,9 +316,25 @@ class SupportTickets extends Masterfile{
 	}
 
 	public function getMaintenanceVoucher(){
-		$query ="SELECT * FROM maintenancevoucher";
+        if($_SESSION['role_name'] == SystemAdmin){
+            $condition = Null;
+        }else{
+            $condition = " WHERE create_user = '".$_SESSION['mf_id']."'";
+        }
+		$query ="SELECT * FROM maintenancevoucher $condition";
 		$result = run_query($query);
         return $result;
+	}
+
+	public function getMaintenanceVoucherForContractors(){
+//		if($_SESSION['role_name'] == SystemAdmin){
+//			$condition = Null;
+//		}else{
+//			$condition = " WHERE create_user = '".$_SESSION['mf_id']."'";
+//		}
+		$query ="SELECT * FROM maintenancevoucher WHERE approve_status IS TRUE ";
+		$result = run_query($query);
+		return $result;
 	}
 
 	public function addVoucher(){
@@ -322,28 +351,44 @@ class SupportTickets extends Masterfile{
 			'maintenance_name'=>array(
 				'name'=> 'Maintenance Description',
 				'required'=>true
-			)
+			),
+            'property_id'=>array(
+                'name'=>'Property',
+                'required'=>true
+            ),
+            'maintenance_description'=>array(
+                'name'=>'maintenance description',
+                'required'=>true
+            )
 		);
 		// var_dump($validate);
 		$this->validate($_POST, $validate);
 		if ($this->getValidationStatus()){
 			//if the validation has passed, run a query to insert the details
 			//into the database
-			if($this-> addvoucherDetails($category_id, $maintenance_name, $complaint, $user, $status)){
-				$this->flashMessage('support', 'success', 'Maintenance Voucher has been added.');
+            if($unit_id == ''){
+                $unit_id = 0;
+            }else{
+                $unit_id = $_POST['unit_id'];
+            }
+			if($this-> addvoucherDetails($category_id, $maintenance_name, $complaint, $user, $status,$property_id,$unit_id,$maintenance_description)){
+				$this->flashMessage('support', 'success', 'Maintenance ticket has been added.');
 			}else{
-				$this->flashMessage('support', 'error', 'Failed to create maintenance voucher! ' . get_last_error());
+				$this->flashMessage('support', 'error', 'Failed to create maintenance ticket! ' . get_last_error());
 			}
 		}
 
 	}
 
-	public function addvoucherDetails($category_id, $maintenance_name, $complaint, $user, $status){
+	public function addvoucherDetails($category_id, $maintenance_name, $complaint, $user, $status,$property_id,$unit_id,$maintenance_description){
 		$result = $this->insertQuery('maintenance_vouchers',
 			array(
 				'category_id' => $category_id,
-				'complaint_id' => $complaint,
+//				'complaint_id' => $complaint,
 				'maintenance_name' => $maintenance_name,
+                'property_id'=>$property_id,
+                'unit_id'=>$unit_id,
+                'maintenance_description'=>$maintenance_description,
 				'create_user' => $user,
 				'approve_status' => $status
 			)
@@ -439,7 +484,11 @@ class SupportTickets extends Masterfile{
 
 	public function approveVoucher($voucher_id){
 		$this->beginTranc();
-		$result = $this->updateQuery2('maintenance_vouchers', array('approve_status' => '1'), array('voucher_id' => $voucher_id));
+		$result = $this->updateQuery2('maintenance_vouchers', array(
+			'approve_status' => '1',
+			'approve_user'=>$_SESSION['mf_id']
+
+		), array('voucher_id' => $voucher_id));
 		if($result){
 			$data = $this->prepRecipMfids(Contractor);
 			$mfids = $data['list'];

@@ -11,22 +11,28 @@
                                 <option value="tenant">Tenant</option>
                                 <option value="land_lord">Land Lord</option>
                                 <option value="contractor">Contractor</option>
-                                <option value="property_manager">Property Manager</option>
+                                <option value="property_manager">Property Manager</option>                                <option value="supplier">Supplier</option>
+
                                 <?php
                                 }elseif($role == 'land_lord'){ ?>
                                 <option value="tenant">Tenant</option>
                                 <option value="contractor">Contractor</option>
                                 <option value="property_manager">Property Manager</option>
+                                <option value="supplier">Supplier</option>
+
                                 <?php
                                 }elseif($role == 'contractor'){ ?>
                                 <option value="tenant">Tenant</option>
                                 <option value="land_lord">Land Lord</option>
                                 <option value="property_manager">Property Manager</option>
+                                <option value="supplier">Supplier</option>
+
                                 <?php
                                 }elseif($role == 'property_manager'){ ?>
                                 <option value="tenant">Tenant</option>
                                 <option value="land_lord">Land Lord</option>
                                 <option value="contractor">Contractor</option>
+                                <option value="supplier">Supplier</option>
                         <?php } ?>
                 </select>
             </div>

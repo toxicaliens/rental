@@ -1,7 +1,7 @@
 $('#b_role').on('change', function(){
 	var role = $(this).val();
 
-	if(role == 'land_lord' || role == 'property_manager' || role == 'contractor'){
+	if(role == 'land_lord' || role == 'property_manager' || role == 'contractor' || role == 'supplier'){
 		// alert('working');
 		$('#account_no').removeAttr('disabled').val('');
 		$('#bank_name').removeAttr('disabled').val('');
@@ -35,12 +35,16 @@ $('#b_role').on('change', function(){
 		$('.skill_name').hide();
 		$('#occupation').attr('disabled', 'disabled').val('');
 		$('#user_role').attr('readonly', 'readonly').val('66');
+	}else if (role == 'supplier'){
+		$('.skill_name').hide();
+		$('#occupation').attr('disabled', 'disabled').val('');
+		$('#user_role').attr('disabled', 'disabled').val('');
 	}
 });
 
 $('#b_role').on('change', function() {
 	var role = $(this).val();
-	if(role == 'contractor'){
+	if(role == 'contractor' || role== 'supplier'){
 		$('.surname').text('Title').val('');
 		$('.id_passport').text('Business No.').val('');
 		$('.gender').hide();
@@ -260,9 +264,30 @@ var Masterfile = {
 				}
 			break;
 
+			case 'supplier':
+				if($('#surname').val() == ''){
+					alert('You Must Provide the Title!');
+					$('#surname').focus();
+					return false;
+				}else if($('#email').val() == ''){
+					alert('You Must Provide Email!');
+					$('#email').focus();
+					return false;
+				}else if($('#id_passport').val() == ''){
+					alert('You Must Provide business Number!');
+					$('#id_passport').focus();
+					return false;
+				}else if($('#customer_type_id').val() == ''){
+					alert('You Must Provide Masterfile Type!');
+					$('#customer_type_id').focus();
+					return false;
+				}else{
+					return true;
+				}
+			break;
 			case 'contractor':
 				if($('#surname').val() == ''){
-					alert('You Must Provide the Title of the Contractor!');
+					alert('You Must Provide the Title!');
 					$('#surname').focus();
 					return false;
 				}else if($('#email').val() == ''){
@@ -284,7 +309,7 @@ var Masterfile = {
 				}else{
 					return true;
 				}
-			break;
+				break;
 
 			case 'property_manager':
 				if($('#surname').val() == ''){

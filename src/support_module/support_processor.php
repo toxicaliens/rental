@@ -1,8 +1,10 @@
 <?php
 //include_once('src/models/SupportTickets.php');
 include_once('src/models/Quotes.php');
+include_once('src/models/ReceivedQuotes.php');
 //$Support = new SupportTickets;
 $Quotes = new Quotes();
+$received_quotes= new ReceivedQuotes();
 
 switch ($_POST['action']) {
 	case assign_staff:
@@ -48,11 +50,19 @@ switch ($_POST['action']) {
 		break;
 
 	case add_quotation:
+//	    var_dump($_POST);die;
 		logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
 		$Quotes->addQuataion();
 	break;
 
+    case 'add_quotation_pm':
+//	    var_dump($_POST);die;
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $Quotes->addQuotationPm();
+        break;
+
 	case add_voucher:
+//	    var_dump($_POST);die;
 		logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
 		$Quotes->addVoucher();
 		$_SESSION['support_error'] = $Quotes->getWarnings();
@@ -97,6 +107,26 @@ switch ($_POST['action']) {
 		//var_dump($_POST);exit;
 		$Quotes->updateComplete($_POST['qoute_id']);
 		break;
+    case 'create-payment-voucher':
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $received_quotes->createPaymentVoucher();
+        $_SESSION['support_error'] = $received_quotes->getWarnings();
+        break;
+    case 'pay-voucher':
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $received_quotes->settleVoucher();
+        $_SESSION['support_error'] = $received_quotes->getWarnings();
+        break;
+    case 'add_expense':
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $received_quotes->addExpenseBillItem();
+        $_SESSION['support_error'] = $received_quotes->getWarnings();
+        break;
+    case 'raise-payment-voucher':
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $received_quotes->createExpenseVoucher();
+        $_SESSION['support_error'] = $received_quotes->getWarnings();
+        break;
 
 
 }

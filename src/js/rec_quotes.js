@@ -54,3 +54,7 @@ $('#received_quotes').on('click', '.cancel-btn', function(){
         return false;
     }
 });
+$('#received_quotes').on('click', '.c-payment-v',function () {
+    var quote_id = $(this).attr('quote-id');
+    $('#quote_id').val(quote_id);
+});

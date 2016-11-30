@@ -73,20 +73,20 @@ if(App::isAjaxRequest()) {
     ?>
     <div class="widget">
         <div class="widget-title"><h4><i class="icon-reorder"></i> Property Manager</h4>
-            <span class="actions">
-			 <div class="btn-group">
-                 <a class="btn btn-small btn-primary" ><i class="icon-list"></i> Actions</a>
-                 <a class="btn btn-small btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-caret-down"></span>
-                 </a>
-                 <ul class="dropdown-menu">
-                    <li><a href="?num=add_prop"><i class="icon-plus"></i> Add</a></li>
-                    <li><a href="#update_prop"" class=" edit_prop "><i class="icon-trash"></i> Edit</a></li>
-                    <li><a href="#del_prop79" class="del_prop"><i class="icon-remove"></i> Delete</a></li>
-                 </ul>
-            </div>
-			<a href="#attach_services"  class="btn btn-small btn-success attach_service"><i class="icon-paper-clip"></i> Attach a service</a>
+<!--            <span class="actions">-->
+<!--			 <div class="btn-group">-->
+<!--                 <a class="btn btn-small btn-primary" ><i class="icon-list"></i> Actions</a>-->
+<!--                 <a class="btn btn-small btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-caret-down"></span>-->
+<!--                 </a>-->
+<!--                 <ul class="dropdown-menu">-->
+<!--                    <li><a href="?num=add_prop"><i class="icon-plus"></i> Add</a></li>-->
+<!--                    <li><a href="#update_prop"" class=" edit_prop "><i class="icon-trash"></i> Edit</a></li>-->
+<!--                    <li><a href="#del_prop79" class="del_prop"><i class="icon-remove"></i> Delete</a></li>-->
+<!--                 </ul>-->
+<!--            </div>-->
+<!--			<a href="#attach_services"  class="btn btn-small btn-success attach_service"><i class="icon-paper-clip"></i> Attach a service</a>-->
 
-		</span>
+<!--		</span>-->
         </div>
         <div class="widget-body">
             <?php
@@ -100,8 +100,6 @@ if(App::isAjaxRequest()) {
                     <th>P No#</th>
                     <th>Name</th>
                     <th>Property Category</th>
-                    <th>Property Type</th>
-                    <th>Location</th>
                     <th>LR#</th>
                     <th>Units/Houses</th>
                     <th>Property Manager</th>
@@ -120,8 +118,6 @@ if(App::isAjaxRequest()) {
                             <td><?php echo $plot['plot_id']; ?></td>
                             <td><?php echo $plot['plot_name']; ?></td>
                             <td><?php if(!empty($plot['prop_type'])){echo $prop->getName($plot['prop_type']);}?></td>
-                            <td><?php if(!empty($plot['option_type'])){echo $prop->getOptionName($plot['option_type']);}?></td>
-                            <td><?php echo $plot['location'];?></td>
                             <td><?php echo $plot['lr_no']; ?></td>
                             <td><?php echo $plot['units']; ?></td>
                             <td><?php echo $prop->getFullName($plot['pm_mfid']); ?></td>

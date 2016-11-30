@@ -71,7 +71,7 @@ set_layout("dt-layout.php", array(
    WHERE c.status IS TRUE $condition $condition2 ";
    $resultId = run_query($distinctQuery);
    $total_rows = get_num_rows($resultId);
- var_dump($distinctQuery);
+// var_dump($distinctQuery);
 
 
 	$con = 1;

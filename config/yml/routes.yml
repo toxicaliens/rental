@@ -242,15 +242,6 @@ system_profile: src/system_manager/system_profile.php
 broadcast: src/broadcast_module/manage_broadcasts.php
 pre_message: src/broadcast_module/predefined_messages.php
 
-####: Support Module
-all_support: src/support_module/all_support.php
-issued_tickets: src/support_module/issued_tickets.php
-view_ticket: src/support_module/view_ticket.php
-all_voucher: src/support_module/all_vouchers.php
-man_category: src/support_module/manage_categories.php
-quotes: src/support_module/all_quotes.php
-received_quotes: src/support_module/received_quotes.php
-
 ####: Referrals
 all_referrals: src/refarrals_module/all_refarrals.php
 inactive_cust: src/crm_module/inactive_accounts.php
@@ -575,6 +566,12 @@ man_category: src/support_module/manage_categories.php
 quotes: src/support_module/all_quotes.php
 received_quotes: src/support_module/received_quotes.php
 
+all_tickets: src/support_module/all_mainteinance_tickets_contr.php
+pm_tickets: src/support_module/my_maintenance_tickets_pro.php
+payment_vouchers: src/support_module/my_payment_vouchers_pro.php
+my_quotations: src/support_module/my_quotations_contr.php
+expense_items: src/support_module/expense_bill_items.php
+
 ####: Referrals
 all_referrals: src/refarrals_module/all_refarrals.php
 inactive_cust: src/crm_module/inactive_accounts.php
@@ -589,6 +586,7 @@ prop_attr: src/prop_module/property_attributes.php
 pro_attr_alloc: src/prop_module/allocate_prop_attr.php
 prop_alloc: src/prop_module/prop_alloc.php
 add_prop: src/prop_module/add_prop.php
+property_ledger: src/prop_module/property_ledger.php
 
 #### House Module
 all_houses: src/house_module/houses.php

@@ -9,16 +9,21 @@
         }else if(isset($_POST['cancel_quote_id'])){
             logAction('cancel_awarded_quote', $_SESSION['sess_id'], $_SESSION['mf_id']);
             $quote->cancelAward($_POST['cancel_quote_id']);
+        }else if(isset($_POST['create-payment-voucher']) && !empty($_POST['create-payment-voucher'])){
+            logAction('create-payment-voucher', $_SESSION['sess_id'], $_SESSION['mf_id']);
+            $quote->cratePaymentVoucher($_POST['create-payment-voucher']);
         }else{
             if (isset($_GET['filter'])) {
                 if(!empty($_GET['filter'])) {
-                    $condition = "maintainance_id = '" . $_GET['filter'] . "'";
+                    $condition = "maintenance_id = '" . $_GET['filter'] . "'";
                     $quote->getAllQuotesInJson($condition);
                 }else{
-                    $quote->getAllQuotesInJson();
+                    $condition = "created_by = '".$_SESSION['mf_id']."' ";
+                    $quote->getAllQuotesInJson($condition);
                 }
             } else {
-                $quote->getAllQuotesInJson();
+                $condition = "created_by = '".$_SESSION['mf_id']."' ";
+                $quote->getAllQuotesInJson($condition);
             }
         }
     }else{
@@ -71,6 +76,11 @@
         </span>
     </div>
     <div class="widget-body form">
+        <?php
+        $quote->splash('support');
+        // display all encountered errors
+        (isset($_SESSION['support_error'])) ? $quote->displayWarnings('support_error') : '';
+        ?>
         <table id="received_quotes" class="table table-bordered">
             <thead>
                 <tr>
@@ -82,10 +92,31 @@
                     <th>Bid Status</th>
                     <th>Job Status</th>
                     <th>Action</th>
+                    <th>Payment Voucher</th>
                 </tr>
             </thead>
         </table>
         <div class="clearfix"></div>
     </div>
 </div>
+
+        <form action=""  method="post">
+            <div id="create-payment-voucher" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel1">Create Payment Voucher</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to create a payment voucher for this quotation?</p>
+                </div>
+                <!-- hidden fields -->
+                <input type="hidden" name="action" value="create-payment-voucher"/>
+                <input type="hidden" id="quote_id" name="quote_id"/>
+                <div class="modal-footer">
+                    <?php createSectionButton($_SESSION['role_id'],$_GET['num'],'No764'); ?>
+                    <?php createSectionButton($_SESSION['role_id'],$_GET['num'],'Yes763'); ?>
+                </div>
+            </div>
+        </form>
 <?php set_js(array('src/js/rec_quotes.js'));} ?>
+

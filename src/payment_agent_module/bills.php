@@ -42,8 +42,15 @@ if(App::isAjaxRequest()){
 //    }else{
 //        $filter =  "WHERE mf_id = '".$_SESSION['mf_id']."'";
 //    }
+    if($_SESSION['role_name'] != 'System Admin'){
+//        $val = null;
+        $val = "WHERE mf_id = '" . $_SESSION['mf_id'] . "' OR biller_mfid = '".$_SESSION['mf_id']."'  ";
+    }else {
+//        var_dump($val);
+        $val = '';
+    }
     echo json_encode(
-        SSP::simple($_GET, $sql_details, $table, $primaryKey, $columns)
+        SSP::simple($_GET, $sql_details, $table, $primaryKey, $columns, $val)
     );
 }else{
     set_layout("dt-layout.php", array(

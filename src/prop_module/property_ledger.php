@@ -75,7 +75,6 @@ if (App::isAjaxRequest()){
     <thead>
     <tr>
         <th class="center-align">Date</th>
-        <th class="center-align">Service Account</th>
         <th class="center-align">Payment Mode</th>
         <th class="center-align">Particulars</th>
         <th class="center-align">Debit</th>
@@ -93,11 +92,12 @@ if (App::isAjaxRequest()){
 //    }
         if(count($records)){
             foreach ($records as $record){
+                $payment_mode = $property_ledger->selectQuery('payment_mode','payment_mode_name',"payment_mode_id = '".$record['payment_method']."'");
+//                var_dump($payment_mode);
                 ?>
                 <tr>
                     <td><?php echo $record['ledger_date']; ?></td>
-                    <td><?php echo $record['ledger_date']; ?></td>
-                    <td><?php echo $record['payment_method']; ?></td>
+                    <td><?php echo $payment_mode[0][0]; ?></td>
                     <td><?php echo $record['payment_voucher_id']; ?></td>
                     <th style="text-align:right;">
                         <?php
@@ -121,7 +121,7 @@ if (App::isAjaxRequest()){
 
 
         <tr>
-            <td colspan="4" style="text-align:right;font-weight:bold">Totals:</td>
+            <td colspan="3" style="text-align:right;font-weight:bold">Totals:</td>
             <td style="text-align:right;font-weight:bold">
                 <?php
 
@@ -135,8 +135,8 @@ if (App::isAjaxRequest()){
             </td>
         </tr>
         <tr>
-            <td colspan="5" style="text-align:right;font-weight:bold">Current Balance:</td>
-            <td colspan="4" style="text-align:right;font-weight:bold">
+            <td colspan="4" style="text-align:right;font-weight:bold">Current Balance:</td>
+            <td colspan="3" style="text-align:right;font-weight:bold">
                 <?php
                 $credit_balance = $total_credit - $total_debit;
                 if($credit_balance < 0){

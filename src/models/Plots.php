@@ -59,6 +59,10 @@ class Plots extends Masterfile{
             'region'=>array(
                 'name'=>'Region',
                 'required'=>true
+            ),
+            'property_code'=>array(
+                'name'=>'property Code',
+                'required'=>true
             )
 
         ));
@@ -95,7 +99,8 @@ class Plots extends Masterfile{
                     'building_number'=>$_POST['building_number'],
                     'region'=>$_POST['region'],
                     'longitude'=>$longitude,
-                    'latitude'=>$latitude
+                    'latitude'=>$latitude,
+                    'property_code'=>strtoupper($_POST['property_code'])
                 )
             );
             if($result){

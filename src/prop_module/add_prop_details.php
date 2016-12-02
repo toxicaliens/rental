@@ -89,3 +89,12 @@
         </div>
     </div>
 </div>
+
+<div class="row-fluid">
+    <div class="span6">
+        <label for="property-code" class="control-label">Property Code</label>
+        <div class="controls">
+            <input type="text" name="property_code" class="span12" value="<?php echo $prop->get('property_code') ?>" id="property-code">
+        </div>
+    </div>
+</div>

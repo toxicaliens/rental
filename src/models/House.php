@@ -349,8 +349,14 @@ class House extends Library
     }
         //method to insert house details into the db
         public function addHouseDetails($house_number, $plot_id, $rent_amount,$square_footage, $rent_rate, $rate_perft,$service_charge, $charge_rate,$total_service_charge){
+            $property_c = $this->selectQuery('plots','property_code',"plot_id ='".$plot_id."' ");
+            if(!empty($property_c[0][0])){
+                $property_code = $property_c[0][0];
+            }else{
+                $property_code = '';
+            }
             $result = $this->insertQuery('houses',array(
-                'house_number' => ucfirst($house_number),
+                'house_number' => $property_code.ucfirst($house_number),
                 'plot_id' => $plot_id,
                 'rent_amount'=> $rent_amount,
                 'square_footage'=>$square_footage,

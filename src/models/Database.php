@@ -2,7 +2,11 @@
 	/**
 	* 
 	*/
-	class Database{
+
+require 'vendor/autoload.php';
+require 'vendor/Carbon/Carbon.php';
+$carbon = new Carbon\Carbon();
+	class Database extends Carbon\Carbon {
 		private $_data = array();
 
 		public function insertQuery($table, $inputs = array(), $return_field = ''){

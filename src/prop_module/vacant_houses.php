@@ -6,9 +6,6 @@
  * Time: 13:39
  */
 require_once('src/models/Plots.php');
-require 'vendor/autoload.php';
-require 'vendor/Carbon/Carbon.php';
-$carbon = new Carbon\Carbon();
 //use Carbon\Carbon;
 $property_ledger = new Plots();
 if (App::isAjaxRequest()){
@@ -16,7 +13,7 @@ if (App::isAjaxRequest()){
 }else{
     set_title('Vacant Units');
     set_layout("dt-layout.php", array(
-        'pageSubTitle' => 'SVacant Units',
+        'pageSubTitle' => 'Vacant Units',
         'pageSubTitleText' => '',
         'pageBreadcrumbs' => array (
             array ( 'url'=>'#', 'text'=>'Home' ),
@@ -100,12 +97,18 @@ if (App::isAjaxRequest()){
                     if(count($records)){
                         $count = 0;
                         foreach ($records as $record){
-                            $count++
+                            $count++;
+                            $max_date = $property_ledger->selectQuery('customer_bills','max(bill_date)',"unit_number ='".$record['house_id']."' ");
+                           if(!empty($max_date[0][0])){
+                               $vacant_since = $max_date[0][0];
+                           }else{
+                               $vacant_since = $record['vacant_since'];
+                           }
                             ?>
                             <tr>
                                 <td><?php echo $count; ?></td>
                                 <td><?php echo $record['house_number']; ?></td>
-                                <td><?php echo $carbon->createFromTimestamp(strtotime($record['vacant_since']))->diffForHumans(); ?></td>
+                                <td><?php echo $property_ledger->createFromTimestamp(strtotime($vacant_since))->diffForHumans(); ?></td>
                             </tr>
                         <?php }}} ?>
                 </tbody>

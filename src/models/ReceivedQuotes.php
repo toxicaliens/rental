@@ -315,4 +315,18 @@ class ReceivedQuotes extends Quotes{
             }
         }
     }
+
+    public function deleteExpenseCategory(){
+        extract($_POST);
+        $result = $this->deleteQuery2('expense_bill_items',array(
+            'expense_id'=>$_POST['delete_id']
+        ));
+
+        if($result){
+            $this->flashMessage('support','success','The item has been deleted');
+
+        }else{
+            $this->flashMessage('support','error','delete expense'.get_last_error());
+        }
+    }
 }

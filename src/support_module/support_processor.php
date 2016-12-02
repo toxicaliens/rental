@@ -127,6 +127,10 @@ switch ($_POST['action']) {
         $received_quotes->createExpenseVoucher();
         $_SESSION['support_error'] = $received_quotes->getWarnings();
         break;
+    case 'delete_expense_category':
+        logAction($_POST['action'], $_SESSION['sess_id'], $_SESSION['mf_id']);
+        $received_quotes->deleteExpenseCategory();
+        $_SESSION['support_error'] = $received_quotes->getWarnings();
 
 
 }

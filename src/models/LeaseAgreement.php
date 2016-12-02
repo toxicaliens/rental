@@ -105,7 +105,7 @@ class LeaseAgreement extends Payments
                             // create a bill
                             if(!$bill_data = $this->insertQuery('customer_bills', array(
                                 'bill_amount' => $plot_service['price'],
-                                'bill_date' => date('Y-m-d'),
+                                'bill_date' => $this->now('Africa/Nairobi'),
                                 'bill_status' => '0',
                                 'bill_amount_paid' => 0,
                                 'bill_balance' => $plot_service['price'],
@@ -128,7 +128,7 @@ class LeaseAgreement extends Payments
                                 'service_account' => $doc_id,
 //                                'service_account' => $plot_data[0]['house_number'],
                                 'particulars' => $plot_service['service_option'].' '.$plot_service['option_code'],
-                                'stamp' => time(),
+                                'stamp' => $this->now('Africa/Nairobi'),
                                 'mf_id' => $post['tenant'],
                                 'journal_code' => 'SA',
                                 'unit_number'=>$_POST['house_id']
@@ -148,7 +148,7 @@ class LeaseAgreement extends Payments
                             // create a bill
                             if(!$bill_data = $this->insertQuery('customer_bills', array(
                                 'bill_amount' => $house_service['price'],
-                                'bill_date' => date('Y-m-d'),
+                                'bill_date' => $this->now('Africa/Nairobi'),
                                 'bill_status' => '0',
                                 'bill_amount_paid' => 0,
                                 'bill_balance' => $house_service['price'],
@@ -171,7 +171,7 @@ class LeaseAgreement extends Payments
                                 'service_account' => $house_service['house_number'],
                                 'service_account' => $doc_id,
                                 'particulars' => $house_service['service_option'].' '.$house_service['option_code'],
-                                'stamp' => time(),
+                                'stamp' => $this->now('Africa/Nairobi'),
                                 'mf_id' => $post['tenant'],
                                 'journal_code' => 'SA'
                             ))){
@@ -443,7 +443,7 @@ class LeaseAgreement extends Payments
 
         $result2 = $this->updateQuery2('houses',array(
             'vacant'=>'1',
-            'vacant_since'=>date('Y-m-d H:m:s',time())
+            'vacant_since'=>$this->now('Africa/Nairobi')
         ),array(
             'house_id'=>$house_id
         ));

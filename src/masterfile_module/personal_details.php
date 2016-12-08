@@ -7,33 +7,49 @@
                 <select name="b_role" class="span12" id="b_role">
                     <option value="">--Choose Business Role--</option>
                         <?php
-                            if($role == 'staff'){ ?>
+
+                            if($_SESSION['role_name'] == 'staff'){ ?>
                                 <option value="tenant">Tenant</option>
                                 <option value="land_lord">Land Lord</option>
-                                <option value="contractor">Contractor</option>
-                                <option value="property_manager">Property Manager</option>                                <option value="supplier">Supplier</option>
+                                <option value="contractor">Contractor</option>                                 <option value="staff">Staff</option>
+                                <option value="supplier">Supplier</option>
 
                                 <?php
-                                }elseif($role == 'land_lord'){ ?>
+                                }elseif($_SESSION['role_name']== 'land_lord'){ ?>
                                 <option value="tenant">Tenant</option>
                                 <option value="contractor">Contractor</option>
-                                <option value="property_manager">Property Manager</option>
                                 <option value="supplier">Supplier</option>
 
                                 <?php
                                 }elseif($role == 'contractor'){ ?>
-                                <option value="tenant">Tenant</option>
-                                <option value="land_lord">Land Lord</option>
-                                <option value="property_manager">Property Manager</option>
-                                <option value="supplier">Supplier</option>
 
                                 <?php
-                                }elseif($role == 'property_manager'){ ?>
-                                <option value="tenant">Tenant</option>
+                                }elseif($_SESSION['role_name'] == 'Property Manager'){ ?>
                                 <option value="land_lord">Land Lord</option>
                                 <option value="contractor">Contractor</option>
                                 <option value="supplier">Supplier</option>
-                        <?php } ?>
+                                <option value="staff">Staff</option>
+                                <option value="tenant">Tenant</option>
+                            <?php }else if($_SESSION['role_name'] == SystemAdmin){
+                                ?>
+                                <option value="property_manager">Property Manager</option>
+                                <option value="land_lord">Land Lord</option>
+                                <option value="contractor">Contractor</option>
+                                <option value="supplier">Supplier</option>
+                                <option value="staff">Staff</option>
+                                <option value="tenant">Tenant</option>
+                    <?php
+
+                            }else{
+                                ?>
+                                <option value="tenant">Tenant</option>
+                                <option value="land_lord">Land Lord</option>
+                                <option value="contractor">Contractor</option>                                 <option value="staff">Staff</option>
+                                <option value="supplier">Supplier</option>
+                    <?php
+                            }
+
+                        ?>
                 </select>
             </div>
         </div>
@@ -131,8 +147,20 @@
         <div class="controls">
             <select name="user_role" class="span12 live_search" id="user_role">
                 <option value="">--choose role--</option>
+
                 <?php
-                $us_roles = $mf->getAllUserRoles();
+                if($_SESSION['role_name'] != SystemAdmin){
+                    $condition = "created_by = '".$_SESSION['mf_id']."'";
+                    ?>
+                    <option value="68">Landlord</option>
+                    <option value="69">Contractor</option>
+                    <option value="72">Tenant</option>
+                    <option value="73">Supplier</option>
+                    <?php
+                }else{
+                    $condition = Null;
+                }
+                $us_roles = $mf->getAllUserRoles($condition);
                 if(count($us_roles)){
                     foreach ($us_roles as $us_role){
                         ?>

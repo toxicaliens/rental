@@ -77,6 +77,9 @@
                         case 'supplier':
                             $this->addSupplier($_POST);
                             break;
+                        case 'staff':
+                            $this->addStaff($_POST);
+                            break;
                     }
                 }
 			}else{
@@ -319,8 +322,9 @@
                     if($this->addAddress($phone_number, $postal_address, $town, $mf_id, $address_type_id, $ward, $street, $building, $county, $postal_code)) {
                         if($this->createPmFile($mf_id)) {
                             if($this->createLoginAccount($pm_data, $mf_id)) {
+//                                $bf_res = $this->createBillingFileForPm($mf_id);
+//                                var_dump($bf_res);die;
                                 $this->flashMessage('mf', 'success', 'Masterfile has been added.');
-                                $this->createBillingFileForPm($mf_id);
                             }else{
                                 $this->flashMessage('mf', 'error', 'Failed to create login account! ' . get_last_error());
                             }
@@ -335,7 +339,7 @@
                 }
             }
             $this->endTranc();
-            App::redirectTo('?num=722');
+//            App::redirectTo('?num=722');
         }
 
         public function addPersonalDetails($surname, $firstname, $middlename, $id_passport, $gender, $image_path, $regdate_stamp, $b_role, $customer_type_id, $email){
@@ -358,6 +362,9 @@
                 ),
                 'mf_id'
             );
+            if(!$data){
+                $this->setWarning('Failed to add address details'.get_last_error());
+            }
             //var_dump($data);exit;
             return $data['mf_id'];
         }
@@ -389,7 +396,7 @@
                 'biller_mfid'=>$_SESSION['mf_id'],
                 'start_date'=>date('Y-m-d',time()),
                 'billing_interval'=>'Monthly',
-                'billing_amount'=>$service_bill[0]['amount'],
+                'billing_amount'=>$service_bill[0]['billing_amount'],
                 'created'=>date('Y-m-d',time()),
                 'updated'=>date('Y-m-d H:m:s',time()),
                 'service_bill_id'=>$service_bill[0]['revenue_bill_id'],
@@ -408,6 +415,19 @@
             $full_name = $post['surname'].' '.$post['firstname'];
 
             $pass_data = $this->generatePassword();
+            if($_SESSION['role_name'] == SystemAdmin){
+                $user_level = 1;
+                $client_mfid = $mf_id;
+            }else{
+                $user_level = 2;
+                $result = $this->selectQuery('user_login2','client_mfid',"mf_id = '".$_SESSION['mf_id']."'");
+//                var_dump($result);die;
+                if($result[0][0] != '') {
+                    $client_mfid = $result[0][0];
+                }else{
+                    $client_mfid = 0;
+                }
+            }
             $result = $this->insertQuery('user_login2',
                 array(
                     'username' => $email,
@@ -415,10 +435,13 @@
                     'user_active' => '1',
                     'user_role' => $post['user_role'],
                     'mf_id' => $mf_id,
-                    'email' => $email
+                    'email' => $email,
+                    'user_level'=>$user_level,
+                    'client_mfid'=>$client_mfid,
+                    'created_by'=>$_SESSION['mf_id']
                 )
             );
-            //var_dump($result);exit;
+//            var_dump($result);exit;
             if($result) {
                 $subject = "Welcome! Login Credentials";
                 $body = "Dear $full_name\n";
@@ -427,6 +450,8 @@
                 $body .= "Password: ".$pass_data['plain_pass'];
                 $this->sendEmail($email, $subject, $body);
                 return true;
+            }else{
+                $this->setWarning('Failed to create User login account'.get_last_error());
             }
         }
 
@@ -794,6 +819,17 @@
                 return false;
             }
         }
+        public function createStaffFile($mf_id){
+           $result =  $this->insertQuery('staff',array(
+                'mf_id'=>$mf_id,
+                'created_by' => $_SESSION['mf_id']
+            ));
+            if($result) {
+                return true;
+            }else {
+                return false;
+            }
+        }
 
         public function createContractorFile($mf_id, $skills){
             extract($_POST);
@@ -1025,4 +1061,56 @@
             $data = $this->selectQuery('masterfile', 'b_role', "mf_id = '".$_SESSION['mf_id']."'");
             return $data[0]['b_role'];
         }
-    }
+
+        public function addStaff($landlord_data = array()){
+            extract($_POST);
+//            print_r($landlord_data);exit;
+            // validate
+            $this->validate($landlord_data, array(
+                'user_role' => array(
+                    'name' => 'System User Role',
+                    'required' => true
+                )
+            ));
+
+            if($this->getValidationStatus()){
+                $uniq_id = uniqid();
+                $destination = $this->_destination.$uniq_id.$_FILES['profile-pic']['name'];
+                $image_path = '';
+                if(!empty($_FILES['profile-pic']['name'])) {
+                    $image_path = $this->uploadImage($_FILES['profile-pic']['tmp_name'], $destination);
+                }else{
+                    $image_path = '';
+                }
+
+                $this->beginTranc();
+
+                $mf_id = $this->addPersonalDetails($surname, $firstname, $middlename, $id_passport, $gender, $image_path, $regdate_stamp, $b_role, $customer_type_id, $email);
+                if(!empty($mf_id)){
+//                    $bank_acc_id = $this->createBankAccount($mf_id, $bank_name, $branch_name, $account_no, $pin_no);
+                    if($this->createStaffFile($mf_id)){
+                        if($this->addAddress($phone_number, $postal_address, $town, $mf_id, $address_type_id, $ward, $street, $building, $county, $postal_code)) {
+                            if($this->createLoginAccount($landlord_data, $mf_id)) {
+
+                            }else{
+                                $this->setWarning('Failed to create login account! ' . get_last_error());
+                            }
+                        }else{
+                            $this->setWarning('Failed to create address! ' . get_last_error());
+                        }
+                    }else{
+                        $this->setWarning('Failed to create '.get_last_error());
+                    }
+
+                if(count($this->getWarnings()) == 0){
+                    $this->flashMessage('mf', 'success', 'Masterfile has been added.');
+                }
+            }else{
+                    $this->setWarning('Failed to add personal details'.get_last_error());
+                }
+            $this->endTranc();
+//            App::redirectTo('?num=722');
+        }
+
+        }
+	}

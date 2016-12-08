@@ -608,6 +608,9 @@ house_alloc: src/house_module/house_alloc.php
 6003: src/payment_reports/paybill_payments.php
 6004: src/payment_reports/landlord_payments.php
 6005: src/payment_reports/landlord_houses.php
+6006: src/reports_module/property_landlords_re.php
+6007: src/reports_module/property_units.php
+6007: src/reports_module/houses_inarrears.php
 
 ##rent management module
 6010: src/rent_management_module/leases.php

@@ -29,7 +29,7 @@ $carbon = new Carbon\Carbon();
                     $input_string = rtrim($input_string, ',');
 
 					$query = "INSERT INTO $table(".$field_string.") VALUES(".$input_string.") $return_field";
-//                    var_dump($query);die;
+//                    var_dump($query);
 //                    traceActivity($query, '');
 					if($result = run_query($query)){
 						if(empty($return_field))

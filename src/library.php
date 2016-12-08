@@ -1746,7 +1746,11 @@ function checkLogin($username, $password) {
         $_SESSION['logedIn'] = true;
         // $_SESSION['sessionId'] = $array['job_id'];
         $_SESSION['logged'] = true;
-        $_SESSION['mf_id'] = $array['mf_id'];
+        if($array['user_level'] == 1 ){
+            $_SESSION['mf_id'] = $array['mf_id'];
+        }else{
+            $_SESSION['mf_id'] = $array['client_mfid'];
+        }
         $_SESSION['client_mf_id'] = $array['client_mf_id'];
         $_SESSION['role_name'] = $array['role_name'];
 

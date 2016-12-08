@@ -12,6 +12,11 @@ $('#b_role').on('change', function(){
 		$('#bank_name').attr('disabled', 'disabled').val('');
 		$('#branch_name').attr('disabled', 'disabled').val('');
 		$('#pin_no').attr('disabled', 'disabled').val('');
+	}else if(role == 'staff'){
+		$('#account_no').attr('disabled', 'disabled').val('');
+		$('#bank_name').attr('disabled', 'disabled').val('');
+		$('#branch_name').attr('disabled', 'disabled').val('');
+		$('#pin_no').attr('disabled', 'disabled').val('');
 	}
 });
 
@@ -39,7 +44,12 @@ $('#b_role').on('change', function(){
 		$('.skill_name').hide();
 		$('#occupation').attr('disabled', 'disabled').val('');
 		$('#user_role').attr('disabled', 'disabled').val('');
+	}else if(role == 'staff'){
+		$('.skill_name').hide();
+		$('#occupation').attr('disabled','disabled').val('');
+		// $('#user_role').attr('readonly', 'readonly').val('72');
 	}
+
 });
 
 $('#b_role').on('change', function() {
@@ -340,6 +350,36 @@ var Masterfile = {
 					return true;
 				}
 			break;
+			case 'staff':
+				// validation
+				if($('#surname').val() == ''){
+					alert('You Must Provide Surname!');
+					$('#surname').focus();
+					return false;
+				}else if($('#firstname').val() == ''){
+					alert('You Must Provide First Name!');
+					$('#firstname').focus();
+					return false;
+				}else if($('#email').val() == ''){
+					alert('You Must Provide Email!');
+					$('#email').focus();
+					return false;
+				}else if($('#id_passport').val() == ''){
+					alert('You Must Provide Id/Passport!');
+					$('#id_passport').focus();
+					return false;
+				}else if($('#gender').val() == ''){
+					alert('You Must Provide Gender!');
+					$('#gender').focus();
+					return false;
+				}else if($('#customer_type_id').val() == ''){
+					alert('You Must Provide Masterfile Type!');
+						$('#customer_type_id').focus();
+						return false;
+				}else{
+					return true;
+				}
+				break;
 		}
 	},
 }
@@ -374,7 +414,7 @@ var Masterfile2 = {
 		}else{
 			return true;
 		}
-	},
+	}
 }
 
 //end of wizard validation

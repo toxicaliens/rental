@@ -1,4 +1,6 @@
 <?php
+require_once 'src/models/Library.php';
+$library = new Library();
 //error_reporting('0');
 switch($_POST['action'])
 {
@@ -15,10 +17,13 @@ case add_role:
                             You did not enter a role name
                         </div>';
 		} else {
+            $result = $library->selectQuery('user_roles','role_name',"role_name = '".ucfirst($role_name)."' AND created_by = '".$_SESSION['mf_id']."'");
+//            var_dump($result);die;
+            if(!count($result)){
             $id = '';
-            if(!checkForExistingEntry('user_roles', 'role_name', $role_name)){
+//            if(!checkForExistingEntry('user_roles', 'role_name', $role_name)){
 
-                $query="INSERT INTO ".DATABASE.".user_roles(role_name,role_status, created_by) VALUES('".$role_name."', '".$status."', '".$_SESSION['mf_id']."') 
+                $query="INSERT INTO ".DATABASE.".user_roles(role_name,role_status, created_by) VALUES('".ucfirst($role_name)."', '".$status."', '".$_SESSION['mf_id']."') 
                 RETURNING role_id";
                 
                 if($data=run_query($query)){
@@ -30,7 +35,8 @@ case add_role:
               //var_dump($query);exit;
                 $id_data = get_row_data($data);
                 $id = $id_data['role_id'];
-                //argDump( $data);exit; 
+                //argDump( $data);exit;
+
 
             }
             
